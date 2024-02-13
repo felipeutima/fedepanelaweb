@@ -9,6 +9,8 @@ import banner3 from "assets/img/banner3.png"
 import fhre from "assets/img/fhre.png"
 import finagro from "assets/img/finagro.png"
 import aexcid from "assets/img/aexcid.png"
+import pselogo from "assets/img/pselogo.png"
+
 import CardsSocial from "./CardsSocial";
 import CardsSquare from "./CardsSquare";
 
@@ -16,6 +18,7 @@ function Header() {
   return (
     <>
       <div className="container-flex" style={{
+        marginTop:"60px",
         backgroundColor: "rgba(0, 0, 0, .1)", border: "solid rgba(0, 0, 0, .15)",
         boxShadow: "inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15)", borderWidth: "1px 0"
       }}>
@@ -55,7 +58,7 @@ function Header() {
         <div className="container" style={{ paddingLeft: "170px", paddingRight: "170px" }}>
           <div className="row my-3">
             <div className="col-md-3 d-flex justify-content-center">
-              <CardsSquare titulo="" cuerpo="Conoce más " imagen={finagro} />
+              <CardsSquare titulo="" cuerpo="Conoce más " imagen={pselogo} />
             </div>
             <div className="col-md-3 d-flex justify-content-center">
               <CardsSquare titulo="" cuerpo="Conoce más " imagen={aexcid} />

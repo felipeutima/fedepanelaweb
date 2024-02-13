@@ -11,12 +11,11 @@ import basenav from "assets/img/basenav.png"
 import fedepng from "assets/img/fedepng.png"
 import pselogo from "assets/img/pselogo.png"
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-
+import { motion, useScroll } from 'framer-motion';
 
 function NavigationBar() {
 
-
+  const { scrollYProgress } = useScroll();
 
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
   useEffect(() => {
@@ -36,7 +35,9 @@ function NavigationBar() {
   }, []);
 
   return (
+    
     <>
+    
       <header style={{ position: 'fixed', top: 0, left: -10, zIndex: 2 }}>
 
 
@@ -65,60 +66,34 @@ function NavigationBar() {
 
 
       </header>
-      <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
+      <Navbar    bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary shadow-lg">
 
         <div className="container">
 
           <Navbar.Brand style={{ zIndex: 3, marginLeft: "110px", marginRight: "180px" }} href="#" >
             <img
               src={fedepng}
-              width={130}
-              style={{ marginTop: "-28px", position: "fixed" }}
+              width={120}
+              style={{ marginTop: "-8px", position: "fixed"  }}
               className=""
               alt="Fedepanela"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
-            >
-              <Nav.Link href="#home" className="ms-4">   <img
-                src={pselogo}
-                width={"30px"}
-                className="d-inline-block align-top"
-                alt="React Bootstrap logo"
-              /></Nav.Link>
-
-              <Nav.Link href="#home">Paute con nosotros</Nav.Link>
-              <Nav.Link href="#home">Expopanela</Nav.Link>
 
 
-
-
-
-            </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="¿Qué deseas buscar?"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Buscar</Button>
-            </Form>
-          </Navbar.Collapse>
         </div>
       </Navbar>
+      
 
 
 
 
-      <Navbar className={` ${isNavbarFixed ? 'fixed-top py-4  navbar-dark' : ''}`}
+    
+
+      <Navbar className="fixed-top py-4 "
         expand="lg"
-        style={{ zIndex: 1, background: `${isNavbarFixed ? ' linear-gradient(to right, #C3460F 40%, #E2B22B 95%)' : 'white'}`, transition: "background-color 0.3s ease" }}    >
+        style={{ zIndex: 1, background:  'white', borderBottom: "solid 1px #C3460F" }}    >
 
         <div className="container">
 
@@ -131,7 +106,7 @@ function NavigationBar() {
             >
 
 
-              <NavDropdown style={{ marginLeft: "320px" }} title="Nuestra Federación" id="navbarScrollingDropdown">
+              <NavDropdown style={{ marginLeft: "320px"}}  title="Nuestra Federación" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="#action3">Quiénes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Plan Estratégico</NavDropdown.Item>
@@ -178,7 +153,7 @@ function NavigationBar() {
 
 
 
-              <NavDropdown title="Área Técnica" id="navbarScrollingDropdown">
+              <NavDropdown title="Áreas" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
                   Another action
@@ -200,13 +175,25 @@ function NavigationBar() {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
+              <NavDropdown title="Convenios" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Gestión</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">
+                  Something else here
+                </NavDropdown.Item>
+              </NavDropdown>
 
             </Nav>
 
           </Navbar.Collapse>
+
         </div>
       </Navbar>
-    </>
+
+  </>
   );
 }
 

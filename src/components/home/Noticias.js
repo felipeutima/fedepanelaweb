@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import CardsNews from "./CardsNews";
 
+import fedebg from "assets/img/fedebg.png"
 
 
 function Noticias() {
@@ -12,10 +13,15 @@ function Noticias() {
 
     return (
         <>
+        <div className="container-flex " style={{
+        backgroundImage: `url(${fedebg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }} >
 
-            <h1 className="text-center my-2">Noticias</h1>
+            <h1 className="text-center my-5 h1-title">Últimas Noticias</h1>
             <>
-                <div className="container   mb-5">
+                <div className="container  mb-5" >
 
                     <Carousel className="mt-3">
                         <Carousel.Item>
@@ -67,7 +73,9 @@ function Noticias() {
 
                     </Carousel>
                 </div>
+                
             </>
+            </div>
         </>
 
     );

@@ -27,4 +27,4 @@ const mapStateToProps = state => ({
 })
 export default connect(mapStateToProps, {
 
-})(cordionComponent)
+})(AccordionComponent)
