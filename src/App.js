@@ -3,7 +3,7 @@ import store from './store';
 import Error404 from 'containers/errors/error404';
 import Home from 'containers/pages/home';
 import { Provider } from 'react-redux';
-import Nfqs from 'containers/pages/nfqs';
+import Nfqs from 'containers/pages/Nuestra Federación/Nfqs';
 
 function App() {
   return (

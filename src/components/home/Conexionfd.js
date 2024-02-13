@@ -10,7 +10,7 @@ import Card3d from "./Card3d";
 function Conexionfd({titulo, cuerpo}) {
     return (
         <>
-        <h1 className="text-center">CONEXIÓN PANELERA</h1>
+        <h1 className="text-center h1-title">CONEXIÓN PANELERA</h1>
         <div className="container">
             <div className="row">
                 <div className="col-md-3">
