@@ -70,7 +70,7 @@ function NavigationBar() {
 
         <div className="container">
 
-          <Navbar.Brand style={{ zIndex: 3, marginLeft: "110px", marginRight: "180px" }} href="#" >
+          <Navbar.Brand style={{ zIndex: 3, marginLeft: "110px", marginRight: "180px" }} href="/" >
             <img
               src={fedepng}
               width={120}
@@ -108,20 +108,20 @@ function NavigationBar() {
 
               <NavDropdown style={{ marginLeft: "320px"}}  title="Nuestra Federación" id="navbarScrollingDropdown">
 
-                <NavDropdown.Item href="#action3">Quiénes Somos</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Plan Estratégico</NavDropdown.Item>
+                <NavDropdown.Item href="/NuestraFederacion/quienessomos">Quiénes Somos</NavDropdown.Item>
+                <NavDropdown.Item href="/NuestraFederacion/PlanEstrategico">Plan Estratégico</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Estructura Fedepanela</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Directorio</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Estatutos</NavDropdown.Item>
+                <NavDropdown.Item href="/NuestraFederacion/directorio">Directorio</NavDropdown.Item>
+                <NavDropdown.Item href="/NuestraFederacion/estatutos">Estatutos</NavDropdown.Item>
 
               </NavDropdown>
               <NavDropdown title="Fondo de Fomento" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="#action3">Quiénes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Estructura Orgánica</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Servicios</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/Servicios">Servicios</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Programas</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Normatividad</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/Normatividad">Normatividad</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Procesos de recaudo</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Atención al ciudadano</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Calendario de eventos</NavDropdown.Item>
