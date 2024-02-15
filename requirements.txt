@@ -19,4 +19,6 @@ boto3==1.24.92
 django-storages==1.13.1
 django-admin
 dj-database-url==1.0.0
+django-ckeditor
+python-slugify==6.1.2
 
