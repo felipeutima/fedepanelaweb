@@ -9,7 +9,11 @@ import Estatutos from 'containers/pages/Nuestra Federación/Estatutos';
 import EstructuraFede from 'containers/pages/Nuestra Federación/EstructuraFede';
 import PlanEstrategico from 'containers/pages/Nuestra Federación/PlanEstrategico';
 import NormatividadFDF from 'containers/pages/Fondo de fomento/NormatividadFDF';
-import ServiciosFDF from 'containers/pages/Fondo de fomento/ServiciosFDF'
+import ServiciosFDF from 'containers/pages/Fondo de fomento/ServiciosFDF';
+import Comercial from 'containers/pages/Normatividad/Comercial';
+import Ambiental from 'containers/pages/Normatividad/Ambiental';
+import Sanitarias from 'containers/pages/Normatividad/Sanitarias';
+
 
 function App() {
   return (
@@ -45,6 +49,20 @@ function App() {
           <Route path="/FondodeFomento/Normatividad" element={<NormatividadFDF />} />
           {/*PlanEstrategico Display */}
           <Route path="/FondodeFomento/Servicios" element={<ServiciosFDF />} />
+
+
+
+
+
+
+          {/*Normatividad*/}
+          <Route path="/Normatividad/Comercial" element={<Comercial />} />
+          <Route path="/Normatividad/Ambiental" element={<Ambiental />} />
+          <Route path="/Normatividad/Sanitarias" element={<Sanitarias />} />
+
+
+
+
 
 
 

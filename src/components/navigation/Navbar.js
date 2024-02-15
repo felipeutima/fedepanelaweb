@@ -134,9 +134,9 @@ function NavigationBar() {
               </NavDropdown>
               <NavDropdown title="Normatividad" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Estatutos</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Comercial</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Ambiental</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Sanitarias</NavDropdown.Item>
+                <NavDropdown.Item href="/Normatividad/Comercial">Comercial</NavDropdown.Item>
+                <NavDropdown.Item href="/Normatividad/Ambiental">Ambiental</NavDropdown.Item>
+                <NavDropdown.Item href="/Normatividad/Sanitarias">Sanitarias</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Laboral</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Ley de transparencia" id="navbarScrollingDropdown">
