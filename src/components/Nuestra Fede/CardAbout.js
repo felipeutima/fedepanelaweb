@@ -9,16 +9,16 @@ import { Download } from "react-bootstrap-icons";
 function CardAbout({ titulo, cuerpo, imagen }) {
     return (
         <>
-            <div class="card_about">
+            <div class="card_about mx-auto">
                 <div class="face face1">
                     <div class="content">
-                        <img style="  width: 130px;" class="image" src={imagen}/>
+                        <img class="image" src={imagen}/>
                             <h3>{titulo}</h3>
                     </div>
                 </div>
                 <div class="face face2">
                     <div class="content">
-                        <p> {cuerpo}</p>
+                        <p className="text-muted"> {cuerpo}</p>
                     </div>
                 </div>
             </div>

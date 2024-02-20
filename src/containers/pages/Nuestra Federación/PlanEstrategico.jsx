@@ -10,6 +10,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 
+
 const items = [
     { id: 1, title: 'Sostenibilidad Institucional', subtitle: 'Subtitle 1' },
     { id: 2, title: 'Sostenibilidad de la cadena', subtitle: 'Subtitle 2' },
@@ -116,58 +117,34 @@ function PlanEstrategico() {
 
             </div>
 
-            <div className="container-flex" style={{ backgroundColor: "#FFAE12" }}>
-                <div className="container py-5" >
-                    <h2 className="h2-title">PLAN
-                        ESTRÁTEGICO
-                        2018 - 2022</h2>
-                    <p>
-                        Fedepanela ha diseñado y puesto en marcha el Plan Estratégico para el Desarrollo del Subsector Panelero 2018 – 2022, con el objetivo de lograr el mejoramiento y la eficiencia de las agroindustrias paneleras del país.
-                    </p>
-                    <p>El Plan Estratégico contempla el desarrollo de los siguientes programas.</p>
+            <div className="container">
                     <div className="row">
-                        {items.map(item => (
-                            <div className="col-md-4 mb-3" key={item.id}>
-                                <motion.div
-                                    layoutId={item.id}
-                                    onClick={() => setSelectedId(item.id)}
-                                    style={{
-                                        cursor: 'pointer',
-                                        border: '1px solid #ddd',
-                                        borderRadius: '10px', // Bordes redondeados
-                                        padding: '10px',
-                                        backgroundColor: '#fff',
-                                      }}
-                                    
+                        <div className="col-md-2"></div>
+                        <div className="col-md-4"> 
+                        <CardAbout titulo="Misión" 
+                        cuerpo="Somos una organización gremial nacional comprometida con la investigación y el desarrollo tecnológico, económico, social y ambiental del subsector panelero, que orienta políticas públicas y gestiona recursos públicos y privados para contribuir al mejoramiento de la calidad de vida de sus Federados."
+                        imagen=""
 
-                                >
+                        />
+                        
+                        </div>
+                        <div className="col-md-4"> 
+                        <CardAbout titulo="Visión" 
+                        cuerpo="En el año 2022, seremos la organización que represente a la totalidad de los productores de la caña panelera, posicionaremos los productos a nivel nacional e internacional y contribuiremos a que el sector sea rentable, sostenible y competitivo."
+                        imagen=""
 
-                                    <motion.h2>{item.title}</motion.h2>
-                                    <motion.h5>{item.subtitle}</motion.h5>
-                                </motion.div>
-                            </div>
-                        ))}
+                        />
+                        
+                        </div>
+                        <div className="col-md-2"></div>
+
+
                     </div>
 
-                    <AnimatePresence>
-                        {selectedId && (
-                            <motion.div
-                                layoutId={selectedId}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5 }}
-                                className="position-fixed top-50 start-50 translate-middle"
-                                style={{ zIndex: 1000, backgroundColor: 'white', padding: '20px',borderRadius: '10px' }}
-                            >
-                                <motion.h5>{items.find(item => item.id === selectedId).subtitle}</motion.h5>
-                                <motion.h2>{items.find(item => item.id === selectedId).title}</motion.h2>
-                                <motion.button onClick={() => setSelectedId(null)}>Cerrar</motion.button>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
+
                 </div>
-            </div>
+
+
 
 
             <Footer />

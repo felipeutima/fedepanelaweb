@@ -5,13 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-function Card3d({ titulo }) {
+function CardHeader({ img }) {
     return (
         <>
-            <div class="cards">
-                <figure class="card">
-                    <figcaption class="card_title">{titulo}</figcaption>
-                </figure>
+            <div class="card-head">
+                <div class="container">
+                <img className="img-fluid"
+                        src={img}
+                        
+                    />
+
+                </div>
+        
             </div>
         </>
 
@@ -23,4 +28,4 @@ const mapStateToProps = state => ({
 })
 export default connect(mapStateToProps, {
 
-})(Card3d)
+})(CardHeader)

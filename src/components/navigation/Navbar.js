@@ -3,13 +3,11 @@ import { connect } from "react-redux"
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import basenav from "assets/img/basenav.png"
 import fedepng from "assets/img/fedepng.png"
-import pselogo from "assets/img/pselogo.png"
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
 
@@ -165,16 +163,6 @@ function NavigationBar() {
               </NavDropdown>
 
 
-              <NavDropdown title="Gestión de conocimiento" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Gestión</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
               <NavDropdown title="Convenios" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Gestión</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">

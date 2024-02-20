@@ -5,24 +5,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-function CardNews({titulo, cuerpo}) {
+function CardNews({ titulo, cuerpo, img }) {
     return (
         <>
-            <div class="card_news">
-                <div class="img">
-                    <div class="save">
-  
-                    </div>
-                </div>
+            <div class="card_news   ">
+                <div class="image"><img className="img-fluid" src={img}/></div>
+                <div class="content">
+                    <a href="#">
+                        <span class="title">
+                            {titulo}
+                        </span>
+                    </a>
 
-                <div class="text">
-                    <p class="h3"> {titulo} </p>
-                    <p class="p"> {cuerpo} </p>
+                    <p class="desc">
+                        {cuerpo}
+                    </p>
 
-                    <div class="icon-box">
-                       
-                        <p class="span">Fecha
-                        </p></div>
+                    <a class="action" href="#">
+                        Ver más
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
                 </div>
             </div>
         </>
