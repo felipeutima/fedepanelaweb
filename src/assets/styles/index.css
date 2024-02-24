@@ -1098,7 +1098,7 @@ navbar .fixed-top {
   height: 110px;
   position: relative;
   padding: 25px;
-  background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #FFF7B1 0%, rgba(255, 255, 255, 0) 71.88%)
+  background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #ffffff 0%, rgba(255, 255, 255, 0) 71.88%)
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     , #FFFFFF;
   box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -1271,4 +1271,311 @@ navbar .fixed-top {
 .info .phone:hover i {
   background: #005B24;
   color: #fff;
+}
+
+/*CardPerson */
+
+.card-person {
+  width: 350px;
+  height: 300px;
+  margin: auto; /* Margen automático en los ejes X e Y */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #fffffe;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border: 1px solid #DEDEDE;
+}
+
+.card-person::before {
+  content: "";
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 3px solid #fefefe;
+  background: linear-gradient(40deg, #C3460F 0%, #FFCC28 100%);
+  transition: all 0.3s ease;
+}
+
+.card-person * {
+  z-index: 1;
+}
+
+.card-person img  {
+  width: 90px;
+  height: 90px;
+  background-color: #1468BF;
+  border-radius: 50%;
+  border: 4px solid #fefefe;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+
+.card-person .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.5s ease;
+}
+
+.card-person .card-info span {
+  font-weight: 600;
+  font-size: 24px;
+  color: #161A42;
+  margin-top: 15px;
+  line-height: 5px;
+}
+
+.card-person .card-info p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card-person .button {
+  text-decoration: none;
+  background-color: #1468BF;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+
+.card-person:hover {
+  width: 300px;
+  border-radius: 250px;
+}
+
+.card-person:hover::before {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-bottom: none;
+  transform: scale(0.95);
+}
+
+.card-person:hover .card-info {
+  transform: translate(0%,-15%);
+}
+
+.card-person .button:hover {
+  background-color: #FF6844;
+  transform: scale(1.1);
+}
+
+
+/*FEATURE */
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  margin: auto; /* Centrar horizontalmente */
+  text-align: center; /* Centrar verticalmente */
+}
+
+
+/*CardAtention */
+.card-atention {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  border-radius: 0.5rem;
+  max-width: 590px;
+  margin: 0 auto; /* Centro horizontalmente */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+}
+
+.card-atention .div_image_v {
+  background: #85380F;
+  border-bottom: none;
+  position: relative;
+  text-align: center;
+  margin: -20px -20px 0;
+  border-radius: 5px 5px 0 0;
+  padding: 35px;
+}
+
+.card-atention .dismiss {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: black;
+  border: 2px solid #D1D5DB;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  transition: .3s ease;
+}
+
+.card-atention .dismiss:hover {
+  background-color: #ee0d0d;
+  border: 2px solid #ee0d0d;
+  color: #fff;
+}
+
+.card-atention .card-atention .header {
+  padding: 1.25rem 1rem 1rem 1rem;
+}
+
+.card-atention .image {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f6f6;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  animation: animate .6s linear alternate-reverse infinite;
+  transition: .6s ease;
+}
+
+.card-atention .image svg {
+  color: #066e29;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto;
+  display: block; /* Añade esta línea */
+}
+
+.card-atention .image {
+  text-align: center;
+}
+
+.card-atention .content {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.card-atention .title {
+  color: #066e29;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.card-atention .message {
+  margin-top: 0.5rem;
+  color: #595b5f;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.09);
+  }
+}
+
+
+/*CARD EVENTS*/
+
+.card-events {
+  max-width: 320px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(243, 244, 246);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-events .header {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.card-events .title {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: rgba(17, 24, 39, 1);
+  text-decoration: none;
+}
+
+.card-events .title:hover {
+  text-decoration: underline royalblue;
+}
+
+.card-events .name {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgba(75, 85, 99, 1);
+}
+
+.card-events .image {
+  display: block;
+  flex-shrink: 0;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  background-color: royalblue;
+}
+
+.card-events .description {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(107, 114, 128, 1);
+}
+
+.card-events .post-info {
+  margin-top: 1.5rem;
+  display: flex;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.card-events .cr {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.card-events .dt {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: rgba(75, 85, 99, 1);
+}
+
+.card-events .dd {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(107, 114, 128,1);
 }

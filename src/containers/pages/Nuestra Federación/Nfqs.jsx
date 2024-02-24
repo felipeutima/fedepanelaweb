@@ -3,7 +3,7 @@ import Layout from "hocs/layouts/Layout"
 import AccordionComponent from "components/Nuestra Fede/AccordionComponent"
 import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
-import quienessomos from "assets/img/Fedepanela-quienes-somos.jpg"
+import quienessomos from "assets/img/somos.png"
 import { motion } from 'framer-motion';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useState } from 'react';

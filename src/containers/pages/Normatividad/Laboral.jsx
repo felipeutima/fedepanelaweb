@@ -4,13 +4,11 @@ import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
 import CardDownload from "components/Nuestra Fede/CardDownload"
 import { motion } from 'framer-motion';
-import re333 from "assets/docs/sanitarias/RESOLUCIN_333_DE_2011.pdf"
-import re779 from "assets/docs/sanitarias/RESOLUCIN_779_DE_2006.pdf"
-import re3462 from "assets/docs/sanitarias/RESOLUCIN_3462_DE_2008.pdf"
-import re3544 from "assets/docs/sanitarias/RESOLUCIN_3544_DE_2009.pdf"
-import re4121 from "assets/docs/sanitarias/RESOLUCIN_4121_DE_2011.pdf"
-import re5109 from "assets/docs/sanitarias/RESOLUCIN_5109_DE_2005.pdf"
-import re16379 from "assets/docs/sanitarias/RESOLUCIN_16379_DE_2003.pdf"
+import de295 from "assets/docs/laboral/DECRETO-295-DE-2017.pdf"
+import de604 from "assets/docs/laboral/DECRETO-604-DE-2013.pdf"
+import de2616 from "assets/docs/laboral/DECRETO-2616-DE-2013.pdf"
+import ley100 from "assets/docs/laboral/LEY-100-DE-1993.pdf"
+
 
 
 function createData(titulo, cuerpo, documento) {
@@ -18,13 +16,10 @@ function createData(titulo, cuerpo, documento) {
 }
 
 const rows = [
-    createData('Resolución 16379 de 2003', "Por la cual se reglamenta el control metrológico y del contenido de producto en pre-empacados. (más…)", re16379),
-    createData('Resolución 5109 de 2005', "Por el cual se establece el reglamento técnico sobre los requisitos de rotulado o etiquetado que deben cumplir los alimentos envasados y materias primas de alimentos para consumo humano. (más…)", re5109),
-    createData('Resolución 333 de 2011', "Por la cual se establece el reglamento técnico sobre los requisitos de rotulado o etiquetado nutricional que deben cumplir los alimentos envasados para consumo humano. (más…)", re333),
-    createData('Resolución 779 de 2006', "Por la cual se establece el reglamento técnico sobre los requisitos sanitarios que se deben cumplir en la producción y comercialización de la panela para consumo humano y se dictan otras disposiciones. (más…)", re779),
-    createData('Resolución 3462 de 2008', "Por el cual se modifica el artículo 9 de las condiciones sanitarias de los trapiches y el artículo 15 sobre requisitos para la exportación de panela de la Resolución 779 de 2006 y se dictan otras disposiciones. (más…)", re3462),
-    createData('Resolución 3544 de 2009', "Por el cual se modifica el artículo 11 y el artículo 13 de la Resolución 779 de 2006, sobre envase y rotulado respectivamente. (más…)", re3544),
-    createData('Resolución 4121 de 2011', "Por el cual se modifica parcialmente la Resolución 779 de 2006, modificadas por las Resoluciones 3462 de 2008 y 3544 de 2009. (más…)", re4121),
+    createData('Decreto 295 de 2017', "Por el cual se adiciona un Capítulo al Título 13 de la Parte 2 del Libro 2 del Decreto 1833 de 2016, a efectos de reglamentar la contribución de terceros…", de295),
+    createData('Decreto 604 de 2013', "Por el cual se reglamenta el acceso y operación del Servicio Social Complementario de Beneficios Económicos Periódicos –BEPS. (más…)", de604),
+    createData('Decreto 2616', "Por medio del cual se regula la cotización a seguridad social para trabajadores dependientes que laboran por períodos inferiores a un mes, se desarrolla el mecanismo financiero y operativo de…", de2616),
+    createData('Ley 100 de 1993', "Por la cual se crea el sistema de seguridad social integral y se dictan otras disposiciones. (más…)", ley100),
 
 ];
 

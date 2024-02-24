@@ -108,49 +108,48 @@ function NavigationBar() {
 
                 <NavDropdown.Item href="/NuestraFederacion/quienessomos">Quiénes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/PlanEstrategico">Plan Estratégico</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Estructura Fedepanela</NavDropdown.Item>
+                <NavDropdown.Item href="/NuestraFederacion/EstructuraFedepanela">Estructura Fedepanela</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/directorio">Directorio</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/estatutos">Estatutos</NavDropdown.Item>
 
               </NavDropdown>
               <NavDropdown title="Fondo de Fomento" id="navbarScrollingDropdown">
 
-                <NavDropdown.Item href="#action3">Quiénes Somos</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Estructura Orgánica</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/QuienesSomos">Quiénes Somos</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/EstructuraOrganica">Estructura Orgánica</NavDropdown.Item>
                 <NavDropdown.Item href="/FondodeFomento/Servicios">Servicios</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Programas</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/Programas">Programas</NavDropdown.Item>
                 <NavDropdown.Item href="/FondodeFomento/Normatividad">Normatividad</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Procesos de recaudo</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Atención al ciudadano</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Calendario de eventos</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Directorio</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/ProcesosRecaudo">Procesos de recaudo</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/AtencionCiudadano">Atención al ciudadano</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/CalendarioEventos">Calendario de eventos</NavDropdown.Item>
+                <NavDropdown.Item href="/NuestraFederacion/directorio">Directorio</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Convocatorias</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Ofertas de empleo</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Quejas y reclamos</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/QuejasReclamos">Quejas y reclamos</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Preguntas frecuentes</NavDropdown.Item>
 
               </NavDropdown>
               <NavDropdown title="Normatividad" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Estatutos</NavDropdown.Item>
+                <NavDropdown.Item href="/NuestraFederacion/estatutos">Estatutos</NavDropdown.Item>
                 <NavDropdown.Item href="/Normatividad/Comercial">Comercial</NavDropdown.Item>
                 <NavDropdown.Item href="/Normatividad/Ambiental">Ambiental</NavDropdown.Item>
                 <NavDropdown.Item href="/Normatividad/Sanitarias">Sanitarias</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Laboral</NavDropdown.Item>
+                <NavDropdown.Item href="/Normatividad/Laboral">Laboral</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Ley de transparencia" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
+              <NavDropdown title="Ley de Transparencia" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="/LeyTransparencia/MecanismosContacto">Mecanismos de contacto</NavDropdown.Item>
+                <NavDropdown.Item href="/">Información de interés</NavDropdown.Item>
+                <NavDropdown.Item href="/">Estructura Orgánica y talento humano</NavDropdown.Item>
+                <NavDropdown.Item href="/">Normatividad</NavDropdown.Item>
+                <NavDropdown.Item href="/">Presupuesto</NavDropdown.Item>
+                <NavDropdown.Item href="/">Planeación</NavDropdown.Item>
               </NavDropdown>
 
 
 
 
+              {/*
               <NavDropdown title="Áreas" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
@@ -161,8 +160,7 @@ function NavigationBar() {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-
-
+              */}
               <NavDropdown title="Convenios" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Gestión</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">

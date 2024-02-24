@@ -11,7 +11,8 @@ import img1 from "assets/img/Img1.png"
 function Contacto() {
     return (
 
-        <> <div className="container-flex " style={{ backgroundImage: `url(${img1})`, marginBottom: "100px", backgroundAttachment: "fixed" }}>
+        <> 
+        <div className="container-flex " style={{ backgroundImage: `url(${img1})`, marginBottom: "100px", backgroundAttachment: "fixed" }}>
             <h1 className="text-center text-white py-5">Contacto</h1>
         </div>
 
