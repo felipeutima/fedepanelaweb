@@ -22,7 +22,10 @@ import CalendarioEventosFDF from 'containers/pages/Fondo de fomento/CalendarioEv
 import QuejasReclamos from 'containers/pages/Fondo de fomento/QuejasReclamos';
 import Laboral from 'containers/pages/Normatividad/Laboral';
 import MecanismoContacto from 'containers/pages/Ley de Transparencia/MecanismosContacto';
+import Informaciondeinteres from 'containers/pages/Ley de Transparencia/InformaciondeInteres';
 import Planeacion from 'containers/pages/Ley de Transparencia/Planeacion';
+import Estructuraorgánicaytalentohumano from 'containers/pages/Ley de Transparencia/Estructuraorgánicaytalentohumano';
+import Normatividad from 'containers/pages/Ley de Transparencia/Normatividad';
 
 function App() {
   return (
@@ -81,7 +84,14 @@ function App() {
 
           {/*Ley Transparecia*/}
           <Route path="/LeyTransparencia/MecanismosContacto" element={<MecanismoContacto />} />
+          <Route path="/LeyTransparencia/Informaciondeinteres" element={<Informaciondeinteres/>} />
+          <Route path="/LeyTransparencia/Estructuraorgánicaytalentohumano" element={<Estructuraorgánicaytalentohumano/>} />
+          <Route path="/LeyTransparencia/Normatividad" element={<Normatividad/>} />
           <Route path="/LeyTransparencia/Planeacion" element={<Planeacion />} />
+
+
+
+          
 
 
 
