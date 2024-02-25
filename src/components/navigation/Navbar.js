@@ -143,7 +143,7 @@ function NavigationBar() {
                 <NavDropdown.Item href="/">Estructura Orgánica y talento humano</NavDropdown.Item>
                 <NavDropdown.Item href="/">Normatividad</NavDropdown.Item>
                 <NavDropdown.Item href="/">Presupuesto</NavDropdown.Item>
-                <NavDropdown.Item href="/">Planeación</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Planeacion">Planeación</NavDropdown.Item>
               </NavDropdown>
 
 

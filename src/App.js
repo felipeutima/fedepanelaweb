@@ -22,7 +22,7 @@ import CalendarioEventosFDF from 'containers/pages/Fondo de fomento/CalendarioEv
 import QuejasReclamos from 'containers/pages/Fondo de fomento/QuejasReclamos';
 import Laboral from 'containers/pages/Normatividad/Laboral';
 import MecanismoContacto from 'containers/pages/Ley de Transparencia/MecanismosContacto';
-
+import Planeacion from 'containers/pages/Ley de Transparencia/Planeacion';
 
 function App() {
   return (
@@ -81,6 +81,7 @@ function App() {
 
           {/*Ley Transparecia*/}
           <Route path="/LeyTransparencia/MecanismosContacto" element={<MecanismoContacto />} />
+          <Route path="/LeyTransparencia/Planeacion" element={<Planeacion />} />
 
 
 

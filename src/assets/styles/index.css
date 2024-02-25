@@ -3,11 +3,29 @@
 }
 
 .h2-title {
-  color: #005B24;
+  color: #005B24 ;
 }
 
 p {
   color: white;
+}
+
+.h2-title-header {
+  color: #000000 ;
+  font-size: 21px;
+
+}
+.a-accordion{
+ 
+  color:#007e33; /* Cambia el color del texto */
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  font-weight: bold; 
+  
+}
+.a-accordion:hover{
+ 
+  color: #34b768; 
+  
 }
 
 

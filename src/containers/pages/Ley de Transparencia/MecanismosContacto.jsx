@@ -24,42 +24,99 @@ function MecanismoContacto() {
                             animate={{ opacity: 1, x: 0 }} // Anima a opacidad 1 y posición x 100
                             transition={{ duration: 0.9, ease: "easeOut" }}
                         >
-                            <Accordion defaultActiveKey="0">
+                            <Accordion>
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header className="h2-title">
-                                        1.1. Sección particular</Accordion.Header>
+                                    <Accordion.Header >
+                                        <h2 className="h2-title-header">1.1. Sección particular</h2>
+                                    </Accordion.Header>
+
                                     <Accordion.Body>
-                                        Estimado ciudadano: La Federación Nacional de Productores de Panela actuando como administrador del Fondo de Fomento Panelero y
-                                        dando cumplimiento a la ley 1712 de 6 de marzo de 2014, deja a disposición de la ciudadanía la siguiente información.
+                                        <div className="container">
+                                            <span className="fw-bold">Estimado ciudadano: La Federación Nacional de Productores de Panela </span>
+                                            actuando como administrador del <span className="fw-bold">Fondo de Fomento Panelero</span>  y
+                                            dando cumplimiento a la ley 1712 de 6 de marzo de 2014, deja a disposición de la ciudadanía la siguiente información.
+
+                                        </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
-                                    <Accordion.Header>1.2. Mecanismos para la atención al ciudadano</Accordion.Header>
+                                    <Accordion.Header> <h2 className="h2-title-header"> 1.2. Mecanismos para la atención al ciudadano</h2></Accordion.Header>
                                     <Accordion.Body>
                                         <div className="container">
-                                            <a href="">a. Espacios físicos destinados para el contacto con la entidad.</a>
-                                            <a href="">b. Teléfonos fijos y móviles, líneas gratuitas y
-                                                fax, incluyendo el indicativo nacional e internacional, en el formato (57+Número del área respectiva).
-                                            </a>
-                                            <a href="">c. Correo electrónico institucional</a>
-                                            <a href="">d. Correo físico o postal</a>
-                                            <a href="">e. Link al formulario electrónico de solicitudes, peticiones, quejas, reclamos y denuncias</a>
+                                            <div>
+                                                <a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">a. Espacios físicos destinados para el contacto con la entidad.</a>
+                                            </div>
+                                            <div>
+                                                <a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">b. Teléfonos fijos y móviles, líneas gratuitas y
+                                                    fax, incluyendo el indicativo nacional e internacional, en el formato (57+Número del área respectiva).
+                                                </a>
+                                            </div>
+
+                                            <div>
+
+                                                <a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">c. Correo electrónico institucional</a>
+                                            </div>
+                                            <div>
+                                                <a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">d. Correo físico o postal</a>
+                                            </div>
+
+                                            <div>
+                                                <a className="a-accordion" href="/FondodeFomento/QuejasReclamos">e. Link al formulario electrónico de solicitudes, peticiones, quejas, reclamos y denuncias</a>
+                                            </div>
                                         </div>
 
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
-                                    <Accordion.Header>1.2. Mecanismos para la atención al ciudadano</Accordion.Header>
+                                    <Accordion.Header> <h2 className="h2-title-header">1.3. Localización física, sucursales o regionales, horarios y días de atención al público</h2></Accordion.Header>
                                     <Accordion.Body>
                                         <div className="container">
-                                            <a href="">a. Espacios físicos destinados para el contacto con la entidad.</a>
-                                            <a href="">b. Teléfonos fijos y móviles, líneas gratuitas y
-                                                fax, incluyendo el indicativo nacional e internacional, en el formato (57+Número del área respectiva).
-                                            </a>
-                                            <a href="">c. Correo electrónico institucional</a>
-                                            <a href="">d. Correo físico o postal</a>
-                                            <a href="">e. Link al formulario electrónico de solicitudes, peticiones, quejas, reclamos y denuncias</a>
+                                            <div><a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">a. Mecanismos para atención al usuario.</a></div>
+                                            <div><a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">b. Ubicación fisica de sedes, áreas, regionale, etc.</a></div>
+                                            <div><a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">c. Horarios y días de atención al público. </a></div>
+                                            <div><a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">d. Enlace a los datos de contacto de las sucursales y regionales. </a></div>
+
+                                            <ul>
+                                                <li className="mt-1">Antioquia</li>
+                                                <li className="mt-1">Boyacá</li>
+                                                <li className="mt-1">Caldas</li>
+                                                <li className="mt-1">Caquetá</li>
+                                                <li className="mt-1">Cauca</li>
+                                                <li className="mt-1">Cundinamarca</li>
+                                                <li className="mt-1">Huila</li>
+                                                <li className="mt-1">Nariño</li>
+                                                <li className="mt-1">Norte de santander</li>
+                                                <li className="mt-1">Quindio</li>
+                                                <li className="mt-1">Risaralda</li>
+                                                <li className="mt-1">Santander</li>
+                                                <li className="mt-1">Tolima</li>
+                                                <li className="mt-1">Valle</li>
+
+                                            </ul>
+
                                         </div>
+
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="3">
+
+                                    <Accordion.Header> <h2 className="h2-title-header">1.4. Correo electrónico para notificaciones judiciales - <a href="mailto:juridica@fedepanela.org.co" className="a-accordion">juridica@fedepanela.org.co</a> </h2></Accordion.Header>
+
+                                    <Accordion.Body>
+
+                                        <div className="container">
+                                            Las peticiones, consultas, quejas, reclamos, solicitudes, denuncias o felicitaciones deben realizarse diligenciando el formulario correspondiente, a través de la Sede Electrónica.
+                                        </div>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="4">
+                                    <Accordion.Header> <h2 className="h2-title-header">1.5. Políticas de seguridad de la información del sitio web y protección de datos personales</h2></Accordion.Header>
+
+                                    <Accordion.Body>
+
+                                        <ul>
+                                            <li className="mt-"> <a href="" className="a-accordion">Políticas de seguridad de la información, sitio web</a> </li>
+                                        </ul>
 
                                     </Accordion.Body>
                                 </Accordion.Item>
