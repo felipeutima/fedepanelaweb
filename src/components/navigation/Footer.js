@@ -19,7 +19,7 @@ function Footer() {
 
         <div className="container" >
           <footer className="row  py-5  border-top" >
-            <div className="col mb-6">
+            <div className="col-md-6 mb-6">
               <a href="/" className="d-flex align-items-center mb-3 link-dark text-decoration-none">
                 <img
                   src={fedepng}
@@ -53,24 +53,24 @@ function Footer() {
 
 
             <div className="col mb-3">
-              <h5>Section</h5>
+              <h5 className="text-white">Nuestra Federación</h5>
               <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Home</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Features</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Pricing</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">FAQs</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">About</a></li>
+                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Quienes Somos</a></li>
+                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Plan Estrategico</a></li>
+                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Estructura</a></li>
+                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Directorio</a></li>
+                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Estatutos</a></li>
               </ul>
             </div>
 
             <div className="col mb-3">
-              <h5>Section</h5>
+              <h5 className="text-white">Fondo de Fomento</h5>
               <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Home</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Features</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Pricing</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">FAQs</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">About</a></li>
+                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Quienes Somos</a></li>
+                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Estructura</a></li>
+                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Servicios</a></li>
+                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Programa</a></li>
+                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Normatividad</a></li>
               </ul>
             </div>
 
@@ -78,31 +78,31 @@ function Footer() {
               <p>© 2024 Fedepanela,Todos los derechos reservados.</p>
               <ul class="list-unstyled d-flex">
 
-                <div class="card-social">
-                  <a  class="socialContainer containerOne">
+                
+                  <a  class="socialContainer containerOne" href="https://web.facebook.com/fedepanelacol?_rdc=1&_rdr" target="blank">
                     <Facebook color="white" size={20} />
                   </a>
 
-                  <a  class="socialContainer containerTwo">
+                  <a  class="socialContainer containerTwo"  target="blank" href="https://twitter.com/fedepanelacol"> 
                     <X color="white" size={40} />
                   </a>
 
-                  <a  class="socialContainer containerThree">
+                  <a  class="socialContainer containerThree" target="blank" href="https://www.youtube.com/channel/UC3tY10hE6Dgrd6iQMunSHoA">
                     <Youtube color="white" size={20} />
                   </a>
 
-                  <a  class="socialContainer containerFour">
+                  <a  class="socialContainer containerFour" target="blank" href="https://www.instagram.com/fedepanelacol/">
                     <Instagram color="white" size={20} />
 
                   </a>
-                  <a  class="socialContainer containerFive">
+                  <a  class="socialContainer containerFive" target="blank" href="https://www.tiktok.com/@fedepanelacol">
                     <Tiktok color="white" size={20} />
 
                   </a>
 
 
 
-                </div>
+             
               </ul>
             </div>
 
