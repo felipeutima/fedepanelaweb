@@ -26,6 +26,8 @@ import Informaciondeinteres from 'containers/pages/Ley de Transparencia/Informac
 import Planeacion from 'containers/pages/Ley de Transparencia/Planeacion';
 import Estructuraorgánicaytalentohumano from 'containers/pages/Ley de Transparencia/Estructuraorgánicaytalentohumano';
 import Normatividad from 'containers/pages/Ley de Transparencia/Normatividad';
+import Presupuesto from 'containers/pages/Ley de Transparencia/Presupuesto';
+import Contratacion from 'containers/pages/Ley de Transparencia/Contratacion';
 
 function App() {
   return (
@@ -87,8 +89,9 @@ function App() {
           <Route path="/LeyTransparencia/Informaciondeinteres" element={<Informaciondeinteres/>} />
           <Route path="/LeyTransparencia/Estructuraorgánicaytalentohumano" element={<Estructuraorgánicaytalentohumano/>} />
           <Route path="/LeyTransparencia/Normatividad" element={<Normatividad/>} />
+          <Route path="/LeyTransparencia/Presupuesto" element={<Presupuesto/>} />
           <Route path="/LeyTransparencia/Planeacion" element={<Planeacion />} />
-
+          <Route path="/LeyTransparencia/Contratacion" element={<Contratacion />} />
 
 
           
