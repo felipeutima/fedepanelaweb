@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a6e2935c.css",
-    "main.js": "/static/js/main.388aa174.js",
+    "main.js": "/static/js/main.29661569.js",
     "static/media/DECRETO-295-DE-2017.pdf": "/static/media/DECRETO-295-DE-2017.e3fc0eb6dca6dfddb268.pdf",
     "static/media/BIOSEGURIDAD.pdf": "/static/media/BIOSEGURIDAD.b57ff7b8b4d957185532.pdf",
     "static/media/plan.png": "/static/media/plan.9b38bda9200ec4723455.png",
@@ -19,6 +19,7 @@
     "static/media/banner1.png": "/static/media/banner1.d5dda3edf97bed5257ee.png",
     "static/media/jovenespa.png": "/static/media/jovenespa.8712670fce527ac3fe3b.png",
     "static/media/cedulapa.png": "/static/media/cedulapa.618701670bfeafccfa51.png",
+    "static/media/estructuraOrganica.png": "/static/media/estructuraOrganica.d0a61b6af702a9af9d55.png",
     "static/media/banner2.png": "/static/media/banner2.2eb85e8aba9435156f32.png",
     "static/media/DECRETO_948_DE_1995.pdf": "/static/media/DECRETO_948_DE_1995.efa9b5e0a80488611849.pdf",
     "static/media/banner3.png": "/static/media/banner3.5e4945edbd2ca4cd6f80.png",
@@ -52,13 +53,13 @@
     "static/media/RESOLUCIN_3544_DE_2009.pdf": "/static/media/RESOLUCIN_3544_DE_2009.f030a7de9194fa048bba.pdf",
     "static/media/p3.jpg": "/static/media/p3.9d28d231674faa89e478.jpg",
     "static/media/p4.jpg": "/static/media/p4.f5132bae67c7c2808160.jpg",
-    "static/media/iconley.jpg": "/static/media/iconley.01482e12e6e0866c006c.jpg",
     "static/media/p1.jpg": "/static/media/p1.6d66f800261f0dcef49b.jpg",
     "static/media/p5.jpg": "/static/media/p5.27d929607ffdb85a720c.jpg",
     "static/media/fomento.jpg": "/static/media/fomento.222b936eda372cd5d935.jpg",
     "static/media/p2.jpg": "/static/media/p2.2f1bbdf7cdea04a1bebd.jpg",
     "static/media/ejemplo.jpeg": "/static/media/ejemplo.57f4e01b2efa9732a338.jpeg",
     "static/media/ejemplo2.jpg": "/static/media/ejemplo2.87920d1f93be6e90bb87.jpg",
+    "static/media/iconley.jpg": "/static/media/iconley.9fc85917dab0c7167d58.jpg",
     "static/media/RESOLUCIN_3462_DE_2008.pdf": "/static/media/RESOLUCIN_3462_DE_2008.d77d63f1861a62f43223.pdf",
     "static/media/pselogo1.png": "/static/media/pselogo1.1f488000e804910cc7fc.png",
     "static/media/Fedepanela-Gerente.jpg": "/static/media/Fedepanela-Gerente.6b62e027edcf12823d1a.jpg",
@@ -67,10 +68,10 @@
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.f8eaf1284656d474bb89142bbebd66bd.svg",
     "index.html": "/index.html",
     "main.a6e2935c.css.map": "/static/css/main.a6e2935c.css.map",
-    "main.388aa174.js.map": "/static/js/main.388aa174.js.map"
+    "main.29661569.js.map": "/static/js/main.29661569.js.map"
   },
   "entrypoints": [
     "static/css/main.a6e2935c.css",
-    "static/js/main.388aa174.js"
+    "static/js/main.29661569.js"
   ]
 }
