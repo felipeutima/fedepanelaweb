@@ -145,7 +145,7 @@ function Directorio() {
 
                 <h1 className="text-center h1-title mt-5">Directorio</h1>
                 
-                <h2 style={{marginLeft:"200px"}} className="h2-title mt-3">UBICACIÓN DE SEDES Y AREAS / HORARIOS DE ATENCIÓN</h2>
+                <h2 style={{marginLeft:"100px"}} className="h2-title mt-3">Directorio Oficina Central Fedepanela - Bogotá</h2>
                 <TableContainer className="table-responsive" sx={{  maxWidth: 900, margin:"0 auto" }} component={Paper}>
                 
                     <Table className="mt-3"  aria-label="customized table">
@@ -175,7 +175,7 @@ function Directorio() {
 
             <div className="container " style={{ marginTop: "100px" }}>
 
-                <h2 style={{marginLeft:"200px"}} className="h2-title mb-4">Directorio Recaudo</h2>
+                <h2 style={{marginLeft:"100px"}} className="h2-title mb-4">Directorio Recaudo</h2>
 
                 <TableContainer sx={{ maxWidth: 900, margin:"0 auto" }} component={Paper}>
                     <Table  aria-label="customized table">
@@ -205,7 +205,7 @@ function Directorio() {
 
             <div className="container" style={{ marginTop: "100px" }}>
 
-                <h2 style={{marginLeft:"200px"}} className="h2-title mb-3">Área Técnica</h2>
+                <h2 style={{marginLeft:"100px"}} className="h2-title mb-3">Área Técnica</h2>
 
                 <TableContainer sx={{ minWidth: 700, maxWidth: 900, margin:"0 auto" }} component={Paper}>
                     <Table sx={{ minWidth: 700 }} aria-label="customized table">

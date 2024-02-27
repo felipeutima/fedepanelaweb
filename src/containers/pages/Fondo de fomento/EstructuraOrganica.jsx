@@ -33,7 +33,7 @@ function EstructuraOrganica() {
             <div className="" style={{ marginTop: "100px", marginBottom: "50px" }}>
 
                 <div className="container">
-                    <h1 className="text-center h1-title mt-5">Estructura Orgánica</h1>
+                    <h1 className="text-center h1-title mt-5">Estructura Orgánica- Fondo de Fomento</h1>
 
 
                     <div className="row ">

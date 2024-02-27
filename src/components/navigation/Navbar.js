@@ -139,6 +139,7 @@ function NavigationBar() {
               </NavDropdown>
               <NavDropdown title="Ley de Transparencia" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/LeyTransparencia/MecanismosContacto">Mecanismos de contacto</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Control">Control</NavDropdown.Item>
                 <NavDropdown.Item href="/">Información de interés</NavDropdown.Item>
                 <NavDropdown.Item href="/">Estructura Orgánica y talento humano</NavDropdown.Item>
                 <NavDropdown.Item href="/">Normatividad</NavDropdown.Item>

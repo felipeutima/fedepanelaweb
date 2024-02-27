@@ -11,9 +11,10 @@ function CardAbout({ titulo, cuerpo, imagen }) {
         <>
             <div class="card_about mx-auto">
                 <div class="face face1">
-                    <div class="content">
+                <h3 className="">{titulo}</h3>
+                    <div class="content py-4">
                         <img class="image" src={imagen}/>
-                            <h3>{titulo}</h3>
+                            
                     </div>
                 </div>
                 <div class="face face2">

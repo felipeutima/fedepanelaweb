@@ -24,8 +24,12 @@ import Laboral from 'containers/pages/Normatividad/Laboral';
 import MecanismoContacto from 'containers/pages/Ley de Transparencia/MecanismosContacto';
 import Informaciondeinteres from 'containers/pages/Ley de Transparencia/InformaciondeInteres';
 import Planeacion from 'containers/pages/Ley de Transparencia/Planeacion';
+
 import Estructuraorgánicaytalentohumano from 'containers/pages/Ley de Transparencia/Estructuraorgánicaytalentohumano';
 import Normatividad from 'containers/pages/Ley de Transparencia/Normatividad';
+
+import Control from 'containers/pages/Ley de Transparencia/Control';
+
 
 function App() {
   return (
@@ -88,6 +92,7 @@ function App() {
           <Route path="/LeyTransparencia/Estructuraorgánicaytalentohumano" element={<Estructuraorgánicaytalentohumano/>} />
           <Route path="/LeyTransparencia/Normatividad" element={<Normatividad/>} />
           <Route path="/LeyTransparencia/Planeacion" element={<Planeacion />} />
+          <Route path="/LeyTransparencia/Control" element={<Control />} />
 
 
 

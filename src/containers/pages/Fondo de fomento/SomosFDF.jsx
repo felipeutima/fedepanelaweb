@@ -9,7 +9,52 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { People, FileEarmarkCheck, FileEarmarkText, Eye, FileEarmarkBarGraph } from "react-bootstrap-icons"
 import img1 from "assets/img/Img1.png"
-import entidades from "assets/img/entidades.jpg"
+import { Check } from "react-bootstrap-icons"
+import { styled } from '@mui/material/styles';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    [`&.${tableCellClasses.head}`]: {
+        backgroundColor: "#85380F",
+        color: theme.palette.common.white,
+    },
+    [`&.${tableCellClasses.body}`]: {
+        fontSize: 14,
+    },
+}));
+
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    '&:nth-of-type(odd)': {
+        backgroundColor: theme.palette.action.hover,
+    },
+    // hide last border
+    '&:last-child td, &:last-child th': {
+        border: 0,
+    },
+}));
+
+function createData(name, calories, fat, carbs, protein) {
+    return { name, calories, fat, carbs, protein };
+}
+const recaudoData = [
+    createData('Director(a) de Cadenas Agrícolas y Forestales', 'OSCAR MAURICIO BERNAL VARGAS', 'Oscar.bernal@minagricultura.gov.co', 'yerli.bernal@minagricultura.gov.co'),
+    createData('Director (a) de Innovación Desarrollo Tecnológico y Protección Sanitaria', 'CESAR AUGUSTO CORREDOR VELANDIA', 'cesar.corredor@minagricultura.gov.co', 'ginna.cobos@minagricultura.gov.co'),
+    createData('Director de Financiamiento y Riesgos Agropecuarios', 'PAULA ANDREA ZULETA GIL', 'paula.zuleta@minagricultura.gov.co', '@minagricultura.gov.co'),
+    createData('Director de Capacidades Productivas y Emprendimiento', 'ANDREA CAMPUZANO BECERRA', 'andrea.campuzano@minagricultura.gov.co', '@minagricultura.gov.co'),
+
+];
+const recaudoData1 = [
+    createData('Delegado de Nariño', 'VICTOR HUGO ZAMBRANO MONTENEGRO', 'victorzambrano15@hotmail.com'),
+    createData('Delegado del Valle del Cauca', 'SANTIAGO FERNANDEZ VALLEJO', 'saccharumsa@hotmail.com / biobando@hotmail.com'),
+    createData('Delegado de Santander', 'TOMAS AUGUSTO MARTINEZ MARTINEZ', 'tommeson@yahoo.es'),
+   
+];
+
 function SomosFDF() {
 
     const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +73,7 @@ function SomosFDF() {
             <div className="" style={{ marginTop: "100px", marginBottom: "50px" }}>
 
                 <div className="container">
-                    <h1 className="text-center h1-title mt-5">Quiénes Somos</h1>
+                    <h1 className="text-center h1-title mt-5">Quiénes Somos-Fondo de Fomento</h1>
 
 
                     <div className="row ">
@@ -63,6 +108,49 @@ function SomosFDF() {
                     </div>
                 </div>
 
+                <div className="container">
+
+                    <h2 className="lead fw-small my-4 mx-3 text-center">De acuerdo con lo establecido en la ley 40 de 1990, los recursos del Fondo de Fomento Panelero se invierten en planes y proyectos que beneficien el sector panelero, en las siguientes actividades:</h2>
+                    <div className="row px-5">
+
+                        <div className="d-flex justify-content-center px-5">
+                            <ul className="list-unstyled align-items-center">
+                                <li className="mb-2 mt-1">
+                                    <Check color="#005B24" />
+                                    Gastos de funcionamiento de la Federación Nacional de Productores de Panela, FEDEPANELA, y sus seccionales, o de otras asociaciones sin ánimo de lucro, representativas de la actividad panelera, incluyendo las cooperativas de producción o comercialización de la panela (hasta un 10%)
+                                </li>
+                                <li className="mb-2">
+                                    <Check color="#005B24" />
+                                    Actividades de investigación y extensión vinculadas con producción de semillas mejoradas de caña de panela; utilización de energéticos alternativos en la producción de la panela; técnicas de conservación, empaque y comercialización de la panela y otros productos de los trapiches y programas de diversificación de la producción.
+                                </li>
+
+                                <li className="mb-2 mt-1">
+                                    <Check color="#005B24" />
+                                    La promoción del consumo de la panela, dentro y fuera del país.
+                                </li>
+                                <li className="mb-2 mt-1">
+                                    <Check color="#005B24" />
+                                    Campañas educativas sobre las características nutricionales de la panela.
+                                </li>
+                                <li className="mb-2 mt-1">
+                                    <Check color="#005B24" />
+                                    Actividades de comercialización de la panela, dentro y fuera del país.
+                                </li>
+                                <li className="mb-2 mt-1">
+                                    <Check color="#005B24" />
+                                    Programas de diversificación de la producción de las unidades paneleras.
+                                </li>
+                                <li className="mb-2 mt-1">
+                                    <Check color="#005B24" />
+                                    Programas de conservación de las cuencas hidrográficas y el entorno ambiental en las zonas paneleras.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
                 <div className="container-flex mt-5 " style={{ backgroundImage: `url(${img1})`, marginBottom: "100px", backgroundAttachment: "fixed" }}>
                     <h1 className="text-center text-white py-5">Entidades de Control</h1>
                 </div>
@@ -73,7 +161,7 @@ function SomosFDF() {
                             <div class="container px-5 ">
                                 <div className="row">
 
-                                <div class="col  mb-md-0 h-100">
+                                    <div class="col  mb-md-0 h-100">
                                         <div class="feature bg-success bg-gradient text-white rounded-3 mb-1"><FileEarmarkBarGraph /></div>
                                         <h2 class="h5">Informe a la Contaduría Nacional General</h2>
                                         <p class="text-muted">Se envían informes trimestrales de los estados financieros a la Contaduría Nacional General de la Nación.</p>
@@ -117,6 +205,64 @@ function SomosFDF() {
                     </div>
 
 
+                </div>
+                <div className="container " style={{ marginTop: "100px" }}>
+
+                    <h2 style={{ marginLeft: "100px", borderBottom:"2px solid #005B24", display: "inline-block" }} className="fw-bolder h2-title mb-4">Junta Directiva</h2>
+                    <h2 style={{ marginLeft: "120px" }}className="h2-title ">Ministerio de Agricultura Y Desarrollo Rural</h2>
+                    <TableContainer sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
+                        <Table aria-label="customized table">
+                            <TableHead>
+                                <TableRow>
+                                    <StyledTableCell>Área </StyledTableCell>
+                                    <StyledTableCell align="left">Nombre</StyledTableCell>
+                                    <StyledTableCell align="left">Correo</StyledTableCell>
+                                    <StyledTableCell align="left">Contacto Asistente</StyledTableCell>
+
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {recaudoData.map((row) => (
+                                    <StyledTableRow key={row.name}>
+                                        <StyledTableCell component="th" scope="row">
+                                            {row.name}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="left">{row.calories}</StyledTableCell>
+                                        <StyledTableCell align="left">{row.fat}</StyledTableCell>
+                                        <StyledTableCell align="left">{row.carbs}</StyledTableCell>
+                                    </StyledTableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+                </div>
+                <div className="container " style={{ marginTop: "100px" }}>
+
+                    <h2 style={{ marginLeft: "120px" }}className="h2-title ">Delegados de la Junta directiva</h2>
+                    <TableContainer sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
+                        <Table aria-label="customized table">
+                            <TableHead>
+                                <TableRow>
+                                    <StyledTableCell>Área </StyledTableCell>
+                                    <StyledTableCell align="left">Nombre</StyledTableCell>
+                                    <StyledTableCell align="left">Correo</StyledTableCell>
+
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {recaudoData1.map((row) => (
+                                    <StyledTableRow key={row.name}>
+                                        <StyledTableCell component="th" scope="row">
+                                            {row.name}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="left">{row.calories}</StyledTableCell>
+                                        <StyledTableCell align="left">{row.fat}</StyledTableCell>
+                                      
+                                    </StyledTableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
                 </div>
             </div >
 

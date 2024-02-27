@@ -6,12 +6,22 @@ import CardPerson from "components/Nuestra Fede/CardPerson"
 import gerente from "assets/img/Fedepanela-Gerente.jpg"
 import presidente from "assets/img/presidente-junta.jpg"
 import { motion } from 'framer-motion';
-
-import Button from 'react-bootstrap/Button';
+import { Button } from "react-bootstrap"
+import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
+import estructura from "assets/img/organigrama.png"
+import gremial from "assets/img/gremial.jpg"
 
 function EstructuraFede() {
 
-
+    const [show, setShow] = useState(false);
+    const handleClose1 = () => setShow(false);
+    
+    
+  
+    const [lgShow, setLgShow] = useState(false);
+    const handleClose = () => setLgShow(false);
+  
     return (
         <Layout>
 
@@ -19,7 +29,66 @@ function EstructuraFede() {
 
             <div className="container" style={{ marginTop: "100px", marginBottom: "50px" }}>
 
-                <h1 className="text-center h1-title mt-5">EstructuraFede</h1>
+            <h1 className="text-center h1-title mt-5">Estructura Fedepanela</h1>
+
+                <div className="row mt-4">
+
+                    <div className="col-md-6">
+                    <motion.div
+                            initial={{ opacity: 0, x: -100 }} // Inicia con opacidad 0 y posición x -100
+                            animate={{ opacity: 1, x: 0 }} // Anima a opacidad 1 y posición x 100
+                            transition={{ duration: 0.9, ease: "easeOut" }}
+                        >
+                        <p className=" fw-normal text-muted text-center lead mx-5 ">La estructura organizativa de FEDEPANELA se representa por medio de un mapa que muestra la jerarquía y los diferentes departamentos dentro de la organización. Es interesante para comprender su diseño funcional y cómo se distribuyen las responsabilidades y funciones en la institución.</p>
+                        <div className="d-flex justify-content-center">
+                            <Button onClick={() => setLgShow(true)} className="mx-auto" variant="success">Ver Mapa</Button>{' '}
+                        </div>
+                        <Modal  size="lg"
+                            show={lgShow}
+                            onHide={() => setLgShow(false)}
+                            aria-labelledby="example-modal-sizes-title-lg"  onHide={handleClose} dialogClassName="modal-estructura">
+                            <Modal.Header closeButton>
+                                <Modal.Title>Estructura Organizacional</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body> <img style={{width:"100%"}} src={estructura}  alt="estructura" /> </Modal.Body>
+                            <Modal.Footer>
+                                <Button variant="success" onClick={handleClose}>
+                                    Cerrar
+                                </Button>
+
+                            </Modal.Footer>
+                        </Modal>
+                        </motion.div>
+                    </div>
+                 
+                    <div className="col-md-6">
+                    <p className=" fw-normal text-muted text-center lead mx-5 ">La estructura organizativa de FEDEPANELA se representa por medio de un mapa que muestra la jerarquía y los diferentes departamentos dentro de la organización. Es interesante para comprender su diseño funcional y cómo se distribuyen las responsabilidades y funciones en la institución.</p>
+                        <div className="d-flex justify-content-center">
+                            <Button onClick={() => setShow(true)} className="mx-auto" variant="success">Ver Mapa</Button>{' '}
+                        </div>
+                        <Modal  show={show} onHide={handleClose1}>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Estructura Gremial</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body> <img style={{width:"100%"}} src={gremial}  alt="estructura" /> </Modal.Body>
+                            <Modal.Footer>
+                            <Button variant="primary" >
+                                    <a href="https://sigfedepanela.github.io/CEDULYCOMIT/" style={{color: "white", textDecoration:"none"}} target="blank">Ver mapa interactivo</a> 
+                                </Button>
+
+                                <Button variant="success" onClick={handleClose1}>
+                                    Cerrar
+                                </Button>
+
+                            </Modal.Footer>
+                        </Modal>
+
+
+                        
+                    </div>
+
+                
+                </div>
                 <div className="row mt-5">
                     <div className="col-md-6">
                         <motion.div
