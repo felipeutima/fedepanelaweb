@@ -140,9 +140,9 @@ function NavigationBar() {
               <NavDropdown title="Ley de Transparencia" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/LeyTransparencia/MecanismosContacto">Mecanismos de contacto</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Control">Control</NavDropdown.Item>
-                <NavDropdown.Item href="/">Información de interés</NavDropdown.Item>
-                <NavDropdown.Item href="/">Estructura Orgánica y talento humano</NavDropdown.Item>
-                <NavDropdown.Item href="/">Normatividad</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Informaciondeinteres">Información de interés</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Estructuraorgánicaytalentohumano">Estructura Orgánica y talento humano</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Normatividad">Normatividad</NavDropdown.Item>
                 <NavDropdown.Item href="/">Presupuesto</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Planeacion">Planeación</NavDropdown.Item>
               </NavDropdown>
@@ -163,14 +163,10 @@ function NavigationBar() {
               </NavDropdown>
               */}
               <NavDropdown title="Convenios" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Gestión</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
+                <NavDropdown.Item href="#action3">AEXCID y La FHRE</NavDropdown.Item>
+                <NavDropdown.Item href="#action3">Finagro</NavDropdown.Item>
+                <NavDropdown.Item href="#action3">Nama Panela</NavDropdown.Item>
+
               </NavDropdown>
 
             </Nav>

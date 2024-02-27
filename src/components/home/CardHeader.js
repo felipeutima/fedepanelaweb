@@ -5,19 +5,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-function CardHeader({ img }) {
+function CardHeader({ img, link }) {
     return (
-        <>
+        <><a href={link} target="blank">
             <div class="card-head">
+
                 <div class="container">
-                <img className="img-fluid"
-                        src={img}
-                        
+
+                    <img className="img-fluid my-auto"
+                        src={img} 
+
+
                     />
 
+
                 </div>
-        
+
+
             </div>
+        </a>
         </>
 
     );

@@ -11,7 +11,9 @@ p {
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Mantiene el color predeterminado del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
 }
 
 .h2-title-header {
@@ -380,6 +382,11 @@ navbar .fixed-top {
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  
+}
+.cardzoom img {
+  margin: 10px auto;
+  
 }
 
 .cardzoom > * {

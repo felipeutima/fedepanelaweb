@@ -12,6 +12,7 @@ import pselogo1 from "assets/img/pselogo1.png"
 import CardHeader from "./CardHeader";
 import Logosipa from "assets/img/logo_sipa.png"
 import webmail from "assets/img/webmail-logo.svg"
+import ley from "assets/img/iconley.jpg"
 
 
 function Header() {
@@ -59,16 +60,16 @@ function Header() {
         <div className="container" style={{ paddingLeft: "170px", paddingRight: "170px" }}>
           <div className="row my-3">
             <div className="col-md-3 d-flex justify-content-center">
-              <CardHeader img={pselogo1} />
+              <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10691"/>
             </div>
             <div className="col-md-3 d-flex justify-content-center">
-              <CardHeader img={Logosipa} />
+              <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
             </div>
             <div className="col-md-3 d-flex justify-content-center">
-              <CardHeader img={webmail} />
+              <CardHeader img={webmail} link="https://www.fedepanela.org.co:2096/" />
             </div>
             <div className="col-md-3 d-flex justify-content-center">
-              <CardHeader img={webmail} />
+              <CardHeader img={ley} />
             </div>
 
 
