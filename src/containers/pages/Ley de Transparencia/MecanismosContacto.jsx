@@ -2,9 +2,6 @@
 import Layout from "hocs/layouts/Layout"
 import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
-import CardDownload from "components/Nuestra Fede/CardDownload"
-import re2023 from "assets/docs/Reforma-Estatutaria-2023.pdf"
-import re003 from "assets/docs/Resolucion-003-Reglamento-Elecciones-2023.pdf"
 import { motion } from 'framer-motion';
 import Accordion from 'react-bootstrap/Accordion';
 function MecanismoContacto() {

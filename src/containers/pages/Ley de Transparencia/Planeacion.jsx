@@ -200,26 +200,70 @@ function Planeacion() {
                                     <Accordion.Header> <h2 className="h2-title-header">6.3. Programas y proyectos en ejecución</h2></Accordion.Header>
                                     <Accordion.Body>
                                         <div className="container">
-                                            <div><a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">a. Mecanismos para atención al usuario.</a></div>
-                                            <div><a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">b. Ubicación fisica de sedes, áreas, regionale, etc.</a></div>
-                                            <div><a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">c. Horarios y días de atención al público. </a></div>
-                                            <div><a className="a-accordion" href="/FondodeFomento/AtencionCiudadano">d. Enlace a los datos de contacto de las sucursales y regionales. </a></div>
+                                            <div className="fw-bold">a. Proyectos de inversión o programas que se ejecuten en cada vigencia. Los proyectos de inversión deben ordenarse según la fecha de inscripción en el Banco de Programas y Proyectos de Inversión nacional, departamental, municipal o distrital, según sea el caso, de acuerdo a lo establecido en el artículo 77 de la Ley 1474 de 2011.</div>
 
-                                            <ul>
-                                                <li className="mt-1">Antioquia</li>
-                                                <li className="mt-1">Boyacá</li>
-                                                <li className="mt-1">Caldas</li>
-                                                <li className="mt-1">Caquetá</li>
-                                                <li className="mt-1">Cauca</li>
-                                                <li className="mt-1">Cundinamarca</li>
-                                                <li className="mt-1">Huila</li>
-                                                <li className="mt-1">Nariño</li>
-                                                <li className="mt-1">Norte de santander</li>
-                                                <li className="mt-1">Quindio</li>
-                                                <li className="mt-1">Risaralda</li>
-                                                <li className="mt-1">Santander</li>
-                                                <li className="mt-1">Tolima</li>
-                                                <li className="mt-1">Valle</li>
+                                            <ul className="mt-2">
+                                                <div className="fw-bold mx-1">Fichas Asistencia Técnica</div>
+
+
+                                                <li>  <a href="" className="a-accordion">  2016</a></li>
+                                                <li>  <a href="" className="a-accordion">  2017</a></li>
+                                                <li>  <a href="" className="a-accordion">  2018</a></li>
+                                                <li>  <a href="" className="a-accordion">  2019</a></li>
+                                                <li>  <a href="" className="a-accordion">  2020</a></li>
+                                                <li>  <a href="" className="a-accordion">  2021</a></li>
+
+
+                                            </ul>
+                                            <ul className="mt-2">
+                                                <div className="fw-bold mx-1">Fichas programa comercial</div>
+
+
+                                                <li>  <a href="" className="a-accordion">  2015</a></li>
+                                                <li>  <a href="" className="a-accordion">  2016</a></li>
+                                                <li>  <a href="" className="a-accordion">  2017</a></li>
+                                                <li>  <a href="" className="a-accordion">  2018</a></li>
+                                                <li>  <a href="" className="a-accordion">  2019</a></li>
+                                                <li>  <a href="" className="a-accordion">  2020</a></li>
+                                                <li>  <a href="" className="a-accordion">  2021</a></li>
+
+
+                                            </ul>
+                                            <ul className="mt-2">
+                                                <div className="fw-bold mx-1">Fichas programa control a evasión</div>
+
+
+                                                <li>  <a href="" className="a-accordion">  2015</a></li>
+                                                <li>  <a href="" className="a-accordion">  2016</a></li>
+                                                <li>  <a href="" className="a-accordion">  2017</a></li>
+                                                <li>  <a href="" className="a-accordion">  2018</a></li>
+                                                <li>  <a href="" className="a-accordion">  2019</a></li>
+                                                <li>  <a href="" className="a-accordion">  2020</a></li>
+                                                <li>  <a href="" className="a-accordion">  2021</a></li>
+
+
+                                            </ul>
+                                            <ul className="mt-2">
+                                                <div className="fw-bold mx-1">Fichas promoción al consumo</div>
+
+
+                                                <li>  <a href="" className="a-accordion">  2016</a></li>
+                                                <li>  <a href="" className="a-accordion">  2017</a></li>
+                                                <li>  <a href="" className="a-accordion">  2018</a></li>
+                                                <li>  <a href="" className="a-accordion">  2019</a></li>
+                                                <li>  <a href="" className="a-accordion">  2020</a></li>
+
+
+                                            </ul>
+                                            <ul className="mt-2">
+                                                <div className="fw-bold mx-1">Fichas programa sistema de información</div>
+
+
+                                                <li>  <a href="" className="a-accordion">  2018</a></li>
+                                                <li>  <a href="" className="a-accordion">  2019</a></li>
+                                                <li>  <a href="" className="a-accordion">  2020</a></li>
+                                                <li>  <a href="" className="a-accordion">  2021</a></li>
+
 
                                             </ul>
 
@@ -229,7 +273,7 @@ function Planeacion() {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
 
-                                    <Accordion.Header> <h2 className="h2-title-header">1.4. Correo electrónico para notificaciones judiciales - <a href="mailto:juridica@fedepanela.org.co" className="a-accordion">juridica@fedepanela.org.co</a> </h2></Accordion.Header>
+                                    <Accordion.Header> <h2 className="h2-title-header"> 6.4. Metas, objetivos e indicadores de gestión y/ó desempeño  </h2></Accordion.Header>
 
                                     <Accordion.Body>
 
@@ -238,17 +282,7 @@ function Planeacion() {
                                         </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
-                                <Accordion.Item eventKey="4">
-                                    <Accordion.Header> <h2 className="h2-title-header">1.5. Políticas de seguridad de la información del sitio web y protección de datos personales</h2></Accordion.Header>
 
-                                    <Accordion.Body>
-
-                                        <ul>
-                                            <li className="mt-"> <a href="" className="a-accordion">Políticas de seguridad de la información, sitio web</a> </li>
-                                        </ul>
-
-                                    </Accordion.Body>
-                                </Accordion.Item>
                             </Accordion>
                         </motion.div>
 
