@@ -6,13 +6,13 @@ import Carousel from 'react-bootstrap/Carousel';
 import banner1 from "assets/img/banner1.png"
 import banner2 from "assets/img/banner2.png"
 import banner3 from "assets/img/banner3.png"
-import fhre from "assets/img/fhre.png"
 import finagro from "assets/img/finagro.png"
 import aexcid from "assets/img/aexcid.png"
-import pselogo from "assets/img/pselogo.png"
+import pselogo1 from "assets/img/pselogo1.png"
+import CardHeader from "./CardHeader";
+import Logosipa from "assets/img/logo_sipa.png"
+import webmail from "assets/img/webmail-logo.svg"
 
-import CardsSocial from "./CardsSocial";
-import CardsSquare from "./CardsSquare";
 
 function Header() {
   return (
@@ -55,21 +55,22 @@ function Header() {
 
 
 
+
         <div className="container" style={{ paddingLeft: "170px", paddingRight: "170px" }}>
           <div className="row my-3">
             <div className="col-md-3 d-flex justify-content-center">
-              <CardsSquare titulo="" cuerpo="Conoce más " imagen={pselogo} />
+              <CardHeader img={pselogo1} />
             </div>
             <div className="col-md-3 d-flex justify-content-center">
-              <CardsSquare titulo="" cuerpo="Conoce más " imagen={aexcid} />
+              <CardHeader img={Logosipa} />
             </div>
             <div className="col-md-3 d-flex justify-content-center">
-              <CardsSquare titulo="" cuerpo="Conoce más " imagen={aexcid} />
+              <CardHeader img={webmail} />
+            </div>
+            <div className="col-md-3 d-flex justify-content-center">
+              <CardHeader img={webmail} />
             </div>
 
-            <div className="col-md-3 d-flex justify-content-center">
-              <CardsSquare titulo="" cuerpo="Conoce más " imagen={finagro} />
-            </div>
 
 
           </div>

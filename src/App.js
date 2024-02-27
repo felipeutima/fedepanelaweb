@@ -9,7 +9,21 @@ import Estatutos from 'containers/pages/Nuestra Federación/Estatutos';
 import EstructuraFede from 'containers/pages/Nuestra Federación/EstructuraFede';
 import PlanEstrategico from 'containers/pages/Nuestra Federación/PlanEstrategico';
 import NormatividadFDF from 'containers/pages/Fondo de fomento/NormatividadFDF';
-import ServiciosFDF from 'containers/pages/Fondo de fomento/ServiciosFDF'
+import ServiciosFDF from 'containers/pages/Fondo de fomento/ServiciosFDF';
+import Comercial from 'containers/pages/Normatividad/Comercial';
+import Ambiental from 'containers/pages/Normatividad/Ambiental';
+import Sanitarias from 'containers/pages/Normatividad/Sanitarias';
+import SomosFDF from 'containers/pages/Fondo de fomento/SomosFDF';
+import ProgramasFDF from 'containers/pages/Fondo de fomento/ProgramasFDF';
+import AtencionFDF from 'containers/pages/Fondo de fomento/AtencionFDF';
+import EstructuraOrganica from 'containers/pages/Fondo de fomento/EstructuraOrganica';
+import ProcesosRecaudoFDF from 'containers/pages/Fondo de fomento/ProcesosRecaudoFDF';
+import CalendarioEventosFDF from 'containers/pages/Fondo de fomento/CalendarioEventosFDF';
+import QuejasReclamos from 'containers/pages/Fondo de fomento/QuejasReclamos';
+import Laboral from 'containers/pages/Normatividad/Laboral';
+import MecanismoContacto from 'containers/pages/Ley de Transparencia/MecanismosContacto';
+import Planeacion from 'containers/pages/Ley de Transparencia/Planeacion';
+import Control from 'containers/pages/Ley de Transparencia/Control';
 
 function App() {
   return (
@@ -32,7 +46,7 @@ function App() {
           <Route path="/NuestraFederacion/estatutos" element={<Estatutos />} />
 
           {/*EstructuraFede Display */}
-          <Route path="/NuestraFederacion/EstructuraFede" element={<EstructuraFede />} />
+          <Route path="/NuestraFederacion/EstructuraFedepanela" element={<EstructuraFede />} />
 
           {/*PlanEstrategico Display */}
           <Route path="/NuestraFederacion/PlanEstrategico" element={<PlanEstrategico />} />
@@ -45,6 +59,35 @@ function App() {
           <Route path="/FondodeFomento/Normatividad" element={<NormatividadFDF />} />
           {/*PlanEstrategico Display */}
           <Route path="/FondodeFomento/Servicios" element={<ServiciosFDF />} />
+          <Route path="/FondodeFomento/QuienesSomos" element={<SomosFDF />} />
+          <Route path="/FondodeFomento/Programas" element={<ProgramasFDF />} />
+          <Route path="/FondodeFomento/AtencionCiudadano" element={<AtencionFDF />} />
+          <Route path="/FondodeFomento/EstructuraOrganica" element={<EstructuraOrganica />} />
+          <Route path="/FondodeFomento/ProcesosRecaudo" element={<ProcesosRecaudoFDF />} />
+          <Route path="/FondodeFomento/CalendarioEventos" element={<CalendarioEventosFDF />} />
+          <Route path="/FondodeFomento/QuejasReclamos" element={<QuejasReclamos />} />
+
+
+
+
+
+
+          {/*Normatividad*/}
+          <Route path="/Normatividad/Comercial" element={<Comercial />} />
+          <Route path="/Normatividad/Ambiental" element={<Ambiental />} />
+          <Route path="/Normatividad/Sanitarias" element={<Sanitarias />} />
+          <Route path="/Normatividad/Laboral" element={<Laboral />} />
+
+
+
+          {/*Ley Transparecia*/}
+          <Route path="/LeyTransparencia/MecanismosContacto" element={<MecanismoContacto />} />
+          <Route path="/LeyTransparencia/Planeacion" element={<Planeacion />} />
+          <Route path="/LeyTransparencia/Control" element={<Control />} />
+
+
+
+
 
 
 

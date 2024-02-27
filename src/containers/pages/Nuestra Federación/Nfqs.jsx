@@ -3,10 +3,16 @@ import Layout from "hocs/layouts/Layout"
 import AccordionComponent from "components/Nuestra Fede/AccordionComponent"
 import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
-import quienessomos from "assets/img/Fedepanela-quienes-somos.jpg"
+import quienessomos from "assets/img/somos.png"
 import { motion } from 'framer-motion';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useState } from 'react';
+import ns1 from "assets/img/ns1.png"
+import ns2 from "assets/img/ns2.png"
+import ns3 from "assets/img/ns3.png"
+import ns4 from "assets/img/ns4.png"
+import ns5 from "assets/img/ns5.png"
+
 
 function Nfqs() {
 
@@ -66,7 +72,7 @@ function Nfqs() {
                             </div>
                             <ul class="timeline">
                                 <li>
-                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src={ns1} alt="..." /></div>
                                     <div class="timeline-panel">
                                         <VisibilitySensor onChange={handleVisibilityChange} partialVisibility>
                                             <motion.div
@@ -89,7 +95,7 @@ function Nfqs() {
                                     </div>
                                 </li>
                                 <li class="timeline-inverted">
-                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src={ns2} alt="..." /></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
                                             <h4>1978-1986</h4>
@@ -101,36 +107,44 @@ function Nfqs() {
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src={ns3} alt="..." /></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4>December 2015</h4>
-                                            <h4 class="subheading">Transition to Full Service</h4>
+                                            <h4>1987-2008</h4>
+                                            <h4 class="subheading">Consolidación gremial y desarrollo normativo </h4>
                                         </div>
-                                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                                        <div class="timeline-body"><p class="text-muted">Se retoma el modelo de ente nacional, se realizan avances en el campo legislativo y se definen los mecanismos que garanticen mayor estabilidad y proyección de largo plazo del gremio, hata la creación oficial de FEDEPANELA en el Quinto Congreso Panelero, el 4 de noviembre de 1988 en Villeta Cundinamarca. De esta época se destaca el movimiento que adelantaron los paneleros del Valle del Cauca por la reivindicación del sector amenazado por la producción de panela con azúcar, hasta lograr un pacto con el gremio azucarero donde se prohibió esta práctica.
+
+Otro hecho a destacar es la aprobación en el Congreso de la Ley 40 de 1990, mediante la cual se brindó protección y desarrollo a la industria se creó el Fondo de Fomento Panelero y se estableció la cuota de fomento que permite desarrollar actividades de investigación y extensión relacionadas con cultivo, proceso, empaque y comercialización; promoción al subsector panelero en convenio con el Ministerio de Agricultura y Desarrollo Rural, como estrategia de apoyo técnico a todos los componentes de la cadena productiva de la panela.</p></div>
                                     </div>
                                 </li>
                                 <li class="timeline-inverted">
-                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src={ns4} alt="..." /></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4>July 2020</h4>
-                                            <h4 class="subheading">Phase Two Expansion</h4>
+                                            <h4>2009-2016</h4>
+                                            <h4 class="subheading">Hacia la Competitividad con sentido social</h4>
                                         </div>
-                                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                                        <div class="timeline-body"><p class="text-muted">Un paso más en la consolidación, reconocimiento y representatividad del gremio panelero y como respuesta a las necesidades de los productores, la Gerencia General y la Junta Directiva de FEDEPANELA pusieron en marcha el Plan Estratégico para el Desarrollo del Subsector Panelero 2009-2016, con el objetivo de lograr el mejoramiento y la eficiencia de la agroindustria panelera del país y contribuir al mejoramiento de la calidad de vida de todas las personas a esta actividad.
+
+                                            El Plan Estratégico contempló programas y actividades para la reconversión tecnológica (mejoramiento de la infraestructura panelera), promoción al consumo nacional e internacional; apoyo a la asistencia técnica gremial; diversificación de proyectos productivos en zonas paneleras; apoyo a la comercialización en mercados nacionales e internacionales, entre los mas destacados. El reto fue lograr Competitividad en Sentido Social, con productos de calidad y nuevas presentaciones que respondieran a los requerimientos y exigencias de los mercados nacionales e internacionales, que tradujeron en beneficios efectivos para los productores paneleros y sus familias.</p></div>
                                     </div>
                                 </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-image">
-                                        <h4>
-                                            Be Part
-                                            <br />
-                                            Of Our
-                                            <br />
-                                            Story!
-                                        </h4>
+                                <li>
+                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src={ns5} alt="..." /></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>2017-Actualidad</h4>
+                                            <h4 class="subheading">Hacia la sostenibilidad y modernización gremial y sectorial</h4>
+                                        </div>
+                                        <div class="timeline-body"><p class="text-muted">Época caracterizada por desarrollos autónomos en algunos departamentos en torno al sistema cooperativo, con enfoque hacia la provisión de insumos y mercadeo del producto, motivados por la situación caótica que atravesaban los paneleros de la época, suscitada por variaciones de precios fijados por intermediarios mayoristas que dominaban el mercado.
+
+                                            En 1976 comienza la funcionar la Federación Nacional de Paneleros (FENALPA), una de cuyas funciones fue divulgar entre sus afiliados la información para el mejoramiento de la industria panelera.
+
+                                            Se destaca de esta época la inicitiva para crear el Fondo Nacional del Azúcar y la Panela, como un foro de concertación y mecanismo de estabilización de precios.</p></div>
                                     </div>
                                 </li>
+
                             </ul>
                         </div>
                     </section>
