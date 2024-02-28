@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6e2935c.css",
-    "main.js": "/static/js/main.29661569.js",
+    "main.css": "/static/css/main.01cfebf3.css",
+    "main.js": "/static/js/main.02f71256.js",
     "static/media/DECRETO-295-DE-2017.pdf": "/static/media/DECRETO-295-DE-2017.e3fc0eb6dca6dfddb268.pdf",
     "static/media/BIOSEGURIDAD.pdf": "/static/media/BIOSEGURIDAD.b57ff7b8b4d957185532.pdf",
     "static/media/plan.png": "/static/media/plan.9b38bda9200ec4723455.png",
@@ -35,6 +35,7 @@
     "static/media/bgfooter.png": "/static/media/bgfooter.06bdd0d623aae126a472.png",
     "static/media/plan-estrategico3.jpg": "/static/media/plan-estrategico3.3d09eb7e1cdd6ed6cf27.jpg",
     "static/media/Resolucion-003-Reglamento-Elecciones-2023.pdf": "/static/media/Resolucion-003-Reglamento-Elecciones-2023.ebc434f63bece45653f9.pdf",
+    "static/media/FEDEPANELALOGO-04.png": "/static/media/FEDEPANELALOGO-04.55f0a46bd65f12f7f34e.png",
     "static/media/ns1.png": "/static/media/ns1.9f3526b7d3473e6db8b5.png",
     "static/media/entidades.jpg": "/static/media/entidades.88a46c6be8b462bd5414.jpg",
     "static/media/vision.png": "/static/media/vision.f378cba75f45ccb6e51d.png",
@@ -62,16 +63,17 @@
     "static/media/iconley.jpg": "/static/media/iconley.9fc85917dab0c7167d58.jpg",
     "static/media/RESOLUCIN_3462_DE_2008.pdf": "/static/media/RESOLUCIN_3462_DE_2008.d77d63f1861a62f43223.pdf",
     "static/media/pselogo1.png": "/static/media/pselogo1.1f488000e804910cc7fc.png",
+    "static/media/section-cut-05.png": "/static/media/section-cut-05.d82b25acd1173e510ca5.png",
     "static/media/Fedepanela-Gerente.jpg": "/static/media/Fedepanela-Gerente.6b62e027edcf12823d1a.jpg",
     "static/media/presidente-junta.jpg": "/static/media/presidente-junta.e22f15466dda1f3cdafb.jpg",
     "static/media/aexcid.png": "/static/media/aexcid.1fa54fc2a22921ed8bfe.png",
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.f8eaf1284656d474bb89142bbebd66bd.svg",
     "index.html": "/index.html",
-    "main.a6e2935c.css.map": "/static/css/main.a6e2935c.css.map",
-    "main.29661569.js.map": "/static/js/main.29661569.js.map"
+    "main.01cfebf3.css.map": "/static/css/main.01cfebf3.css.map",
+    "main.02f71256.js.map": "/static/js/main.02f71256.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6e2935c.css",
-    "static/js/main.29661569.js"
+    "static/css/main.01cfebf3.css",
+    "static/js/main.02f71256.js"
   ]
 }
