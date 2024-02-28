@@ -15,7 +15,8 @@ class PostSerializer(serializers.ModelSerializer):
             'time_read',
             'published',
             'status',
-            'get_status'
+            'get_status',
+            "category"
         ]
 
 class PostListSerializer(serializers.ModelSerializer):
@@ -29,5 +30,6 @@ class PostListSerializer(serializers.ModelSerializer):
             'description',
             'time_read',
             'published',
-            'status'
+            'status',
+            "category"
         ]
