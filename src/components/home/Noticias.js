@@ -2,90 +2,177 @@ import { connect } from "react-redux"
 //import { useState } from 'react'
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
 import CardsNews from "./CardsNews";
 
 import ejemplo from "assets/img/ejemplo.jpeg"
 import ejemplo1 from "assets/img/ejemplo2.png"
 import ejemplo2 from "assets/img/ejemplo2.jpg"
-
-
-
+import fedecut from "assets/img/section-cut-05.png"
+import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import CardDate from "./CardDate";
+import CardSpotify from "./CardSpotify";
 function Noticias() {
 
 
     return (
-        <>
-            <div className="container-flex " style={{
-        
-
-            }} >
-
-                <h1 className="text-center mt-5 h1-title">Últimas Noticias</h1>
-                <>
-                
-
-                        <Carousel data-bs-theme="dark" className="mt-3">
-                            <Carousel.Item>
-                                <div className="container" style={{ padding: "0px 60px"  }}>
 
 
-                                    <div className="row px-5" >
-                                        <div className="col-md-4">
-                                            <CardsNews titulo="Mesa sectorial Agroindustria" cuerpo="Desde la Mesa Sectorial Agroindustria de la Panela, queremos extender la invitación a todos y cada uno de ustedes a vincularse a esta mesa. Queremos contarles que para el periodo 2024 – 2025 tenemos como presidente del consejo ejecutivo al Sr. Hugo García a quién agradecemos su labor y el apoyo en esta invitación." img={ejemplo}></CardsNews>
+        <> <div className="container">
+            <div className="row">
+
+                <div className="col-md-8">
+
+
+                    <div class="about-text bg-white px-5 my-lg-5">
+                        <h6 class="text-success text-uppercase" >Noticias</h6>
+
+                        <div className="row mb-3">
+                            <Carousel>
+                                <Carousel.Item>
+                                    <div className="row">
+                                        <div class="col-7 pe-0">
+                                            <img class="img-fluid" width="100%" src={ejemplo} alt="" />
                                         </div>
-                                        <div className="col-md-4">
-                                            <CardsNews titulo="ADENDA CRONOGRAMA CONVOCATORIA ELECCION DE MIEMBROS DE JUNTA DIRECTIVA DEL FFP" cuerpo="Convocatoria para la inscripción de candidatos a la elección de miembros de la junta directiva del fondo de fomento panelero 2024 a 2026." img={ejemplo1}></CardsNews>
-                                        </div>
+                                        <div class="col-5 ps-0 " data-bs-theme="dark">
+                                            <div className="panel-dark ">
+                                                <h3 className="fw-bold text-white">
+                                                    Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
+                                                <div className="d-flex align-items-center">
+                                                    <p className="m-0 me-2">Febrero 16, 2024</p>
 
-                                        <div className="col-md-4">
-                                            <CardsNews titulo="
-Efectiva intervención de Fedepanela hace desistir a empresa de solicitud de patente sobre la producción de melao de panela" cuerpo="Gracias a la firme postura de la Federación Nacional de Productores de Panela FEDEPANELA, que se opuso a las pretensiones de la empresa Sweet Melao Llc., registrada en Estados Unidos de solicitar patente para los procesos de producción del melao..." img={ejemplo2}></CardsNews>
-                                        </div>
+                                                </div>
 
+                                            </div>
+
+
+                                        </div>
                                     </div>
 
-
-
-                                </div>
-                                <Carousel.Caption>
-
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <div className="container">
-
-
-                                    <div className="row px-5" >
-                                        <div className="col-md-4">
-                                            <CardsNews titulo="Mesa sectorial Agroindustria" cuerpo="Desde la Mesa Sectorial Agroindustria de la Panela, queremos extender la invitación a todos y cada uno de ustedes a vincularse a esta mesa. Queremos contarles que para el periodo 2024 – 2025 tenemos como presidente del consejo ejecutivo al Sr. Hugo García a quién agradecemos su labor y el apoyo en esta invitación." img={ejemplo}></CardsNews>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="row">
+                                        <div class="col-7 pe-0">
+                                            <img class="img-fluid" width="100%" src={ejemplo} alt="" />
                                         </div>
-                                        <div className="col-md-4">
-                                            <CardsNews titulo="ADENDA CRONOGRAMA CONVOCATORIA ELECCION DE MIEMBROS DE JUNTA DIRECTIVA DEL FFP" cuerpo="Convocatoria para la inscripción de candidatos a la elección de miembros de la junta directiva del fondo de fomento panelero 2024 a 2026." img={ejemplo1}></CardsNews>
-                                        </div>
+                                        <div class="col-5 ps-0 " data-bs-theme="dark">
+                                            <div className="panel-dark ">
+                                                <h3 className="fw-bold text-white">
+                                                    Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
+                                                <div className="d-flex align-items-center">
+                                                    <p className="m-0 me-2">Febrero 16, 2024</p>
 
-                                        <div className="col-md-4">
-                                            <CardsNews titulo="
-Efectiva intervención de Fedepanela hace desistir a empresa de solicitud de patente sobre la producción de melao de panela" cuerpo="Gracias a la firme postura de la Federación Nacional de Productores de Panela FEDEPANELA, que se opuso a las pretensiones de la empresa Sweet Melao Llc., registrada en Estados Unidos de solicitar patente para los procesos de producción del melao..." img={ejemplo2}></CardsNews>
-                                        </div>
+                                                </div>
 
+                                            </div>
+
+
+                                        </div>
                                     </div>
 
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <div className="row ">
+                                        <div class="col-7 pe-0">
+                                            <img class="img-fluid" width="100%" src={ejemplo} alt="" />
+                                        </div>
+                                        <div class="col-5 ps-0 " data-bs-theme="dark">
+                                            <div className="panel-dark ">
+                                                <h3 className="fw-bold text-white">
+                                                    Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
+                                                <div className="d-flex align-items-center">
+                                                    <p className="m-0 me-2">Febrero 16, 2024</p>
+
+                                                </div>
+
+                                            </div>
 
 
-                                </div>
-                                <Carousel.Caption>
+                                        </div>
+                                    </div>
 
-                                </Carousel.Caption>
-                            </Carousel.Item>
+                                </Carousel.Item>
 
-                            
-                        </Carousel>
-                   
 
-                </>
+                            </Carousel>
+
+
+
+
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-4 ">
+                                <Card >
+                                    <img class="img-fluid" src={ejemplo} alt="" />
+                                    <Card.Body>
+                                        <Card.Title>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                    </Card.Body>
+                                </Card>
+
+                            </div>
+                            <div class="col-4">
+                                <Card >
+                                    <img class="img-fluid" src={ejemplo2} alt="" />
+                                    <Card.Body>
+                                        <Card.Title>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div class="col-4">
+                                <Card >
+                                    <img class="img-fluid" src={ejemplo2} alt="" />
+                                    <Card.Body>
+                                        <Card.Title>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="col-md-4">
+
+
+
+                    <div className="row">
+                        <div class="about-text   mt-5">
+
+                            <h6 class="text-success text-uppercase" >Eventos</h6>
+
+
+                            <CardDate titulo="Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM (5pm)" />
+                            <CardDate titulo="Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM (5pm)" />
+                            <CardDate titulo="Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM (5pm)" />
+                            <CardDate titulo="Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM (5pm)" />
+
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div className="row">
+                    <h6 class="text-success text-uppercase mt-2" >Nuestro Podcast</h6>
+                        <CardSpotify/>
+
+
+                    </div>
+                </div>
             </div>
+
+
+
+        </div>
         </>
+
 
     );
 }

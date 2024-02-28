@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import basenav from "assets/img/basenav.png"
-import fedepng from "assets/img/fedepng.png"
+import fedepng from "assets/img/FEDEPANELALOGO-04.png"
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
 
@@ -16,82 +16,31 @@ function NavigationBar() {
   const { scrollYProgress } = useScroll();
 
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 60) { // Cambia 100 al valor deseado de desplazamiento
-        setIsNavbarFixed(true);
-      } else {
-        setIsNavbarFixed(false);
-      }
-    };
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
-    
+
     <>
-    
-      <header style={{ position: 'fixed', top: 0, left: -10, zIndex: 2 }}>
+       
 
-
-        ${isNavbarFixed ?
-          <motion.div
-            animate={{ y: -100 }}
-            transition={{ duration:0.2, ease: "easeOut" }}
-          >
-            <img
-              src={basenav}
-              width={"400px"}
-              height={"150px"}
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
-          </motion.div> :
-          <img
-            src={basenav}
-            width={"400px"}
-            height={"150px"}
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-            style={{ position: 'fixed', top: 0, left: -10, zIndex: 2 }}
-          />}
-
-
-
-      </header>
-      <Navbar    bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary shadow-lg">
-
-        <div className="container">
-
-          <Navbar.Brand style={{ zIndex: 3, marginLeft: "110px", marginRight: "180px" }} href="/" >
-            <img
-              src={fedepng}
-              width={120}
-              style={{ marginTop: "-8px", position: "fixed"  }}
-              className=""
-              alt="Fedepanela"
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-
-
-        </div>
-      </Navbar>
-      
+   
 
 
 
 
-    
 
-      <Navbar className="fixed-top py-4 "
+   
+       <div class="line"style={{borderTop:"#FFCC28"}}> #</div>  
+       
+        <img src={fedepng} className=" img-footer"></img>  
+
+     
+
+
+
+      <Navbar className=" "
         expand="lg"
-        style={{ zIndex: 1, background:  'white', borderBottom: "solid 1px #C3460F" }}    >
+        style={{ borderTop: "solid 15px #FFCC28"  }}    >
 
         <div className="container">
 
@@ -104,7 +53,7 @@ function NavigationBar() {
             >
 
 
-              <NavDropdown style={{ marginLeft: "320px"}}  title="Nuestra Federación" id="navbarScrollingDropdown">
+              <NavDropdown style={{ marginLeft: "320px" }} title="Nuestra Federación" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="/NuestraFederacion/quienessomos">Quiénes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/PlanEstrategico">Plan Estratégico</NavDropdown.Item>
@@ -176,7 +125,7 @@ function NavigationBar() {
         </div>
       </Navbar>
 
-  </>
+    </>
   );
 }
 

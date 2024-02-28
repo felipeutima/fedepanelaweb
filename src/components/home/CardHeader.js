@@ -7,8 +7,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function CardHeader({ img, link }) {
     return (
-        <><a href={link} target="blank">
+        <>
             <div class="card-head">
+            <a href={link} target="blank">
 
                 <div class="container">
 
@@ -21,9 +22,9 @@ function CardHeader({ img, link }) {
 
                 </div>
 
-
+                </a>
             </div>
-        </a>
+        
         </>
 
     );

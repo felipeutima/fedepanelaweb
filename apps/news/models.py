@@ -5,7 +5,7 @@ from django.conf import settings
 User = settings.AUTH_USER_MODEL
 from ckeditor.fields import RichTextField
 # Create your models here.
-
+from apps.category.models import Category
 def news_thumbnail_directory(instance, filename):
     return 'news/{0}/{1}'.format(instance.title, filename)
 
@@ -31,6 +31,7 @@ class Post(models.Model):
     content =       RichTextField(blank=True, null=True)
 
     time_read =     models.IntegerField(blank=True, null=True)
+    category =      models.ForeignKey(Category, on_delete=models.PROTECT)
 
     published =     models.DateTimeField(default=timezone.now)
 
