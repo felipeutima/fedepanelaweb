@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.01cfebf3.css",
-    "main.js": "/static/js/main.02f71256.js",
+    "main.css": "/static/css/main.4736344c.css",
+    "main.js": "/static/js/main.da3ab160.js",
     "static/media/DECRETO-295-DE-2017.pdf": "/static/media/DECRETO-295-DE-2017.e3fc0eb6dca6dfddb268.pdf",
     "static/media/BIOSEGURIDAD.pdf": "/static/media/BIOSEGURIDAD.b57ff7b8b4d957185532.pdf",
     "static/media/plan.png": "/static/media/plan.9b38bda9200ec4723455.png",
@@ -69,11 +69,11 @@
     "static/media/aexcid.png": "/static/media/aexcid.1fa54fc2a22921ed8bfe.png",
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.f8eaf1284656d474bb89142bbebd66bd.svg",
     "index.html": "/index.html",
-    "main.01cfebf3.css.map": "/static/css/main.01cfebf3.css.map",
-    "main.02f71256.js.map": "/static/js/main.02f71256.js.map"
+    "main.4736344c.css.map": "/static/css/main.4736344c.css.map",
+    "main.da3ab160.js.map": "/static/js/main.da3ab160.js.map"
   },
   "entrypoints": [
-    "static/css/main.01cfebf3.css",
-    "static/js/main.02f71256.js"
+    "static/css/main.4736344c.css",
+    "static/js/main.da3ab160.js"
   ]
 }

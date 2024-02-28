@@ -1782,6 +1782,13 @@ navbar .fixed-top {
   background-color: lightgray;
 }
 
+.a-news{
+  color: white;
+  text-decoration: none;
+}
+.a-news:hover{
+  text-decoration: underline;
+}
 .currentplaying {
   display: flex;
   margin: 1em;

@@ -37,7 +37,7 @@ function Noticias() {
                                         </div>
                                         <div class="col-5 ps-0 " data-bs-theme="dark">
                                             <div className="panel-dark ">
-                                                <h3 className="fw-bold text-white">
+                                                <h3 className="fw-bold a-news ">
                                                     Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
                                                 <div className="d-flex align-items-center">
                                                     <p className="m-0 me-2">Febrero 16, 2024</p>
@@ -58,7 +58,7 @@ function Noticias() {
                                         </div>
                                         <div class="col-5 ps-0 " data-bs-theme="dark">
                                             <div className="panel-dark ">
-                                                <h3 className="fw-bold text-white">
+                                                <h3 className="fw-bold a-news">
                                                     Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
                                                 <div className="d-flex align-items-center">
                                                     <p className="m-0 me-2">Febrero 16, 2024</p>
@@ -79,7 +79,7 @@ function Noticias() {
                                         </div>
                                         <div class="col-5 ps-0 " data-bs-theme="dark">
                                             <div className="panel-dark ">
-                                                <h3 className="fw-bold text-white">
+                                                <h3 className="fw-bold a-news">
                                                     Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
                                                 <div className="d-flex align-items-center">
                                                     <p className="m-0 me-2">Febrero 16, 2024</p>
@@ -106,7 +106,7 @@ function Noticias() {
                                 <Card >
                                     <img class="img-fluid" src={ejemplo} alt="" />
                                     <Card.Body>
-                                        <Card.Title>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+                                        <Card.Title  className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
                                     </Card.Body>
@@ -117,7 +117,7 @@ function Noticias() {
                                 <Card >
                                     <img class="img-fluid" src={ejemplo2} alt="" />
                                     <Card.Body>
-                                        <Card.Title>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+                                        <Card.Title  className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
                                     </Card.Body>
@@ -127,7 +127,7 @@ function Noticias() {
                                 <Card >
                                     <img class="img-fluid" src={ejemplo2} alt="" />
                                     <Card.Body>
-                                        <Card.Title>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+                                        <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
                                     </Card.Body>
