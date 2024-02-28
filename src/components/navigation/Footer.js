@@ -18,7 +18,7 @@ function Footer() {
       }}>
 
         <div className="container" >
-          <footer className="row  py-5  border-top" >
+          <footer className="row mt-3 pt-5  border-top" >
             <div className="col-md-6 mb-6">
               <a href="/" className="d-flex align-items-center mb-3 link-dark text-decoration-none">
                 <img
