@@ -19,12 +19,13 @@ a {
   /* Cambia el cursor al pasar sobre el enlace */
 }
 
-.img-footer {
+.img-navbar {
 
   position: absolute;
   width: 120px;
   top: 0;
   left: 10%;
+  z-index: 3 ;
 
 }
 

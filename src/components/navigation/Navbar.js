@@ -22,25 +22,15 @@ function NavigationBar() {
 
     <>
        
-
-   
-
-
-
-
-
-   
-       <div class="line"style={{borderTop:"#FFCC28"}}> #</div>  
+  
        
-        <img src={fedepng} className=" img-footer"></img>  
-
-     
-
+       
+        <a href="/"> <img src={fedepng} className="img-navbar"></img>  </a>
 
 
-      <Navbar className=" "
+      <Navbar className="navbar-transparent position-absolute navbar-dark"
         expand="lg"
-        style={{ borderTop: "solid 15px #FFCC28"  }}    >
+        style={{ borderTop: "solid 15px #FFCC28", zIndex:2, width:"100%", backgroundColor: 'rgba(49, 49, 54, 0.9)'    }}    >
 
         <div className="container">
 
@@ -98,19 +88,6 @@ function NavigationBar() {
 
 
 
-
-              {/*
-              <NavDropdown title="Áreas" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
-              */}
               <NavDropdown title="Convenios" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">AEXCID y La FHRE</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Finagro</NavDropdown.Item>
