@@ -23,7 +23,7 @@ function Header() {
   return (
     <>
       <div className="container-flex" style={{
-        marginTop:"0px",
+        marginTop: "0px",
         backgroundColor: "rgba(0, 0, 0, .1)", border: "solid rgba(0, 0, 0, .15)",
         boxShadow: "inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15)", borderWidth: "1px 0"
       }}>
@@ -56,17 +56,17 @@ function Header() {
             </Carousel.Caption>
           </Carousel.Item>
 
-          
+
         </Carousel>
 
 
 
 
 
-        <div className="container" >
+        <div className="container " >
           <div className="row my-3">
             <div className="col-md-3  col-sm-12  d-flex justify-content-center">
-              <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10391"/>
+              <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10391" />
             </div>
             <div className="col-md-3 col-sm-12  d-flex justify-content-center">
               <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
