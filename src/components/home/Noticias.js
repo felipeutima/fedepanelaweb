@@ -13,6 +13,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardDate from "./CardDate";
 import CardSpotify from "./CardSpotify";
+
+
+
 function Noticias() {
 
 
@@ -25,7 +28,7 @@ function Noticias() {
                 <div className="col-md-8">
 
 
-                    <div class="about-text bg-white px-5 my-lg-5">
+                    <div class="about-text  px-5 my-lg-5" >
                         <h6 class="text-success text-uppercase" >Noticias</h6>
 
                         <div className="row mb-3">
@@ -101,7 +104,9 @@ function Noticias() {
 
 
                         </div>
-                        <div class="row mb-4">
+                        <div class="row mb-4" >
+
+                            
                             <div class="col-4 ">
                                 <Card >
                                     <img class="img-fluid" src={ejemplo} alt="" />
