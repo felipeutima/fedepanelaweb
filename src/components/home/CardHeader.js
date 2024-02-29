@@ -8,22 +8,22 @@ import Carousel from 'react-bootstrap/Carousel';
 function CardHeader({ img, link }) {
     return (
         <>
-            <div class="card-head">
+            
             <a href={link} target="blank">
 
-                <div class="container">
+                
 
-                    <img className="img-fluid my-auto"
+                    <img className="img-fluid "
                         src={img} 
 
 
                     />
 
 
-                </div>
+                
 
                 </a>
-            </div>
+            
         
         </>
 

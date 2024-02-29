@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.51dbba4e.css",
-    "main.js": "/static/js/main.214f2afa.js",
+    "main.css": "/static/css/main.c0e78b85.css",
+    "main.js": "/static/js/main.4803dd28.js",
     "static/media/cedulapa.png": "/static/media/cedulapa.aab0fa2ca04ed0d6d7f1.png",
     "static/media/banner2.png": "/static/media/banner2.4dc6751e6277b2fc9e83.png",
     "static/media/jovenespa.png": "/static/media/jovenespa.52be46e882ee8e2b037b.png",
@@ -25,6 +25,7 @@
     "static/media/LEY-100-DE-1993.pdf": "/static/media/LEY-100-DE-1993.e317e475007b5b166e81.pdf",
     "static/media/estructuraOrganica.png": "/static/media/estructuraOrganica.d0a61b6af702a9af9d55.png",
     "static/media/DECRETO_948_DE_1995.pdf": "/static/media/DECRETO_948_DE_1995.efa9b5e0a80488611849.pdf",
+    "static/media/textura.png": "/static/media/textura.3094fa45471033c5f79f.png",
     "static/media/Reforma-Estatutaria-2023.pdf": "/static/media/Reforma-Estatutaria-2023.78ee8e19ba409a501a32.pdf",
     "static/media/DECRETO_1594_DE_1984.pdf": "/static/media/DECRETO_1594_DE_1984.d6b1d8b4f12f5db51cf5.pdf",
     "static/media/RESOLUCIN_16379_DE_2003.pdf": "/static/media/RESOLUCIN_16379_DE_2003.6a8c2c64a39effc1d89d.pdf",
@@ -67,13 +68,14 @@
     "static/media/Fedepanela-Gerente.jpg": "/static/media/Fedepanela-Gerente.6b62e027edcf12823d1a.jpg",
     "static/media/presidente-junta.jpg": "/static/media/presidente-junta.e22f15466dda1f3cdafb.jpg",
     "static/media/aexcid.png": "/static/media/aexcid.1fa54fc2a22921ed8bfe.png",
+    "static/media/logo_sipa.png": "/static/media/logo_sipa.b0067528a26651f1ec32.png",
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.f8eaf1284656d474bb89142bbebd66bd.svg",
     "index.html": "/index.html",
-    "main.51dbba4e.css.map": "/static/css/main.51dbba4e.css.map",
-    "main.214f2afa.js.map": "/static/js/main.214f2afa.js.map"
+    "main.c0e78b85.css.map": "/static/css/main.c0e78b85.css.map",
+    "main.4803dd28.js.map": "/static/js/main.4803dd28.js.map"
   },
   "entrypoints": [
-    "static/css/main.51dbba4e.css",
-    "static/js/main.214f2afa.js"
+    "static/css/main.c0e78b85.css",
+    "static/js/main.4803dd28.js"
   ]
 }

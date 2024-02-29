@@ -27,7 +27,7 @@ function CardEvents({ fecha, titulo }) {
                 <div class="card_data">
                     <div class="data">
                         <div class="text">
-                            <label class="text_m"><a className="a-news" >{titulo}</a></label> 
+                            <label class="text_m"><a className="a-events" >{titulo}</a></label> 
                             
 
                         </div>
