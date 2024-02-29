@@ -121,7 +121,7 @@ function Conexionfd() {
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "5%" }}>
+                            <div className="col-md-6" style={{ marginTop: "8%" }}>
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
@@ -143,7 +143,7 @@ function Conexionfd() {
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "-2%" }}>
+                            <div className="col-md-6" style={{ marginTop: "0" }}>
 
                                 <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
@@ -166,7 +166,7 @@ function Conexionfd() {
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "2%" }}>
+                            <div className="col-md-6" style={{ marginTop: "8%" }}>
 
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
