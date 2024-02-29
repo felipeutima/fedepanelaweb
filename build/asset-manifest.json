@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6e2935c.css",
-    "main.js": "/static/js/main.29661569.js",
+    "main.css": "/static/css/main.8312923c.css",
+    "main.js": "/static/js/main.dbdf1785.js",
+    "static/media/cedulapa.png": "/static/media/cedulapa.aab0fa2ca04ed0d6d7f1.png",
+    "static/media/jovenespa.png": "/static/media/jovenespa.52be46e882ee8e2b037b.png",
+    "static/media/asociasionespa.png": "/static/media/asociasionespa.80a51af9701de51b2607.png",
+    "static/media/mujerespa.png": "/static/media/mujerespa.112581ada6d7cc6a13f3.png",
     "static/media/DECRETO-295-DE-2017.pdf": "/static/media/DECRETO-295-DE-2017.e3fc0eb6dca6dfddb268.pdf",
     "static/media/BIOSEGURIDAD.pdf": "/static/media/BIOSEGURIDAD.b57ff7b8b4d957185532.pdf",
     "static/media/plan.png": "/static/media/plan.9b38bda9200ec4723455.png",
@@ -17,15 +21,11 @@
     "static/media/organigrama.png": "/static/media/organigrama.33402d94f231c51ea36e.png",
     "static/media/LEY-100-DE-1993.pdf": "/static/media/LEY-100-DE-1993.e317e475007b5b166e81.pdf",
     "static/media/banner1.png": "/static/media/banner1.d5dda3edf97bed5257ee.png",
-    "static/media/jovenespa.png": "/static/media/jovenespa.8712670fce527ac3fe3b.png",
-    "static/media/cedulapa.png": "/static/media/cedulapa.618701670bfeafccfa51.png",
     "static/media/estructuraOrganica.png": "/static/media/estructuraOrganica.d0a61b6af702a9af9d55.png",
     "static/media/banner2.png": "/static/media/banner2.2eb85e8aba9435156f32.png",
     "static/media/DECRETO_948_DE_1995.pdf": "/static/media/DECRETO_948_DE_1995.efa9b5e0a80488611849.pdf",
     "static/media/banner3.png": "/static/media/banner3.5e4945edbd2ca4cd6f80.png",
-    "static/media/asociasionespa.png": "/static/media/asociasionespa.65fe7a90bfe34a6e9358.png",
     "static/media/Reforma-Estatutaria-2023.pdf": "/static/media/Reforma-Estatutaria-2023.78ee8e19ba409a501a32.pdf",
-    "static/media/mujerespa.png": "/static/media/mujerespa.456bb037f2998e14bee4.png",
     "static/media/DECRETO_1594_DE_1984.pdf": "/static/media/DECRETO_1594_DE_1984.d6b1d8b4f12f5db51cf5.pdf",
     "static/media/RESOLUCIN_16379_DE_2003.pdf": "/static/media/RESOLUCIN_16379_DE_2003.6a8c2c64a39effc1d89d.pdf",
     "static/media/res163792023.pdf": "/static/media/res163792023.6a8c2c64a39effc1d89d.pdf",
@@ -35,6 +35,7 @@
     "static/media/bgfooter.png": "/static/media/bgfooter.06bdd0d623aae126a472.png",
     "static/media/plan-estrategico3.jpg": "/static/media/plan-estrategico3.3d09eb7e1cdd6ed6cf27.jpg",
     "static/media/Resolucion-003-Reglamento-Elecciones-2023.pdf": "/static/media/Resolucion-003-Reglamento-Elecciones-2023.ebc434f63bece45653f9.pdf",
+    "static/media/FEDEPANELALOGO-04.png": "/static/media/FEDEPANELALOGO-04.55f0a46bd65f12f7f34e.png",
     "static/media/ns1.png": "/static/media/ns1.9f3526b7d3473e6db8b5.png",
     "static/media/entidades.jpg": "/static/media/entidades.88a46c6be8b462bd5414.jpg",
     "static/media/vision.png": "/static/media/vision.f378cba75f45ccb6e51d.png",
@@ -62,16 +63,17 @@
     "static/media/iconley.jpg": "/static/media/iconley.9fc85917dab0c7167d58.jpg",
     "static/media/RESOLUCIN_3462_DE_2008.pdf": "/static/media/RESOLUCIN_3462_DE_2008.d77d63f1861a62f43223.pdf",
     "static/media/pselogo1.png": "/static/media/pselogo1.1f488000e804910cc7fc.png",
+    "static/media/section-cut-05.png": "/static/media/section-cut-05.d82b25acd1173e510ca5.png",
     "static/media/Fedepanela-Gerente.jpg": "/static/media/Fedepanela-Gerente.6b62e027edcf12823d1a.jpg",
     "static/media/presidente-junta.jpg": "/static/media/presidente-junta.e22f15466dda1f3cdafb.jpg",
     "static/media/aexcid.png": "/static/media/aexcid.1fa54fc2a22921ed8bfe.png",
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.f8eaf1284656d474bb89142bbebd66bd.svg",
     "index.html": "/index.html",
-    "main.a6e2935c.css.map": "/static/css/main.a6e2935c.css.map",
-    "main.29661569.js.map": "/static/js/main.29661569.js.map"
+    "main.8312923c.css.map": "/static/css/main.8312923c.css.map",
+    "main.dbdf1785.js.map": "/static/js/main.dbdf1785.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6e2935c.css",
-    "static/js/main.29661569.js"
+    "static/css/main.8312923c.css",
+    "static/js/main.dbdf1785.js"
   ]
 }
