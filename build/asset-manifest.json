@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0e78b85.css",
-    "main.js": "/static/js/main.4803dd28.js",
+    "main.css": "/static/css/main.b5aba6d3.css",
+    "main.js": "/static/js/main.835af152.js",
     "static/media/cedulapa.png": "/static/media/cedulapa.aab0fa2ca04ed0d6d7f1.png",
     "static/media/banner2.png": "/static/media/banner2.4dc6751e6277b2fc9e83.png",
     "static/media/jovenespa.png": "/static/media/jovenespa.52be46e882ee8e2b037b.png",
@@ -71,11 +71,11 @@
     "static/media/logo_sipa.png": "/static/media/logo_sipa.b0067528a26651f1ec32.png",
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.f8eaf1284656d474bb89142bbebd66bd.svg",
     "index.html": "/index.html",
-    "main.c0e78b85.css.map": "/static/css/main.c0e78b85.css.map",
-    "main.4803dd28.js.map": "/static/js/main.4803dd28.js.map"
+    "main.b5aba6d3.css.map": "/static/css/main.b5aba6d3.css.map",
+    "main.835af152.js.map": "/static/js/main.835af152.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0e78b85.css",
-    "static/js/main.4803dd28.js"
+    "static/css/main.b5aba6d3.css",
+    "static/js/main.835af152.js"
   ]
 }
