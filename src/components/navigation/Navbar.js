@@ -30,7 +30,8 @@ function NavigationBar() {
 
       <Navbar className="navbar-transparent position-absolute navbar-dark"
         expand="lg"
-        style={{ borderTop: "solid 15px #FFCC28", zIndex:2, width:"100%", backgroundColor: 'rgba(49, 49, 54, 0.9)'    }}    >
+        style={{ borderTop: "solid 15px #FFCC28", zIndex:2, width:"100%",
+         backgroundColor: 'rgba(49, 49, 54, 0.9)'    }}    >
 
         <div className="container">
 

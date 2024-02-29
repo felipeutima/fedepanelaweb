@@ -25,7 +25,7 @@ a {
   width: 120px;
   top: 0;
   left: 10%;
-  z-index: 3 ;
+  z-index: 3;
 
 }
 
@@ -54,7 +54,7 @@ a {
 
 
 .panel-dark {
-  background: #2E3136;
+  background: rgb(255, 204, 40);
   padding: 15px;
   height: 100%;
 }
@@ -1670,19 +1670,33 @@ navbar .fixed-top {
 }
 
 
+
+.card-news{
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 204, 40, 0.6);
+  border-radius: 6px;
+  gap: 0.5rem;
+  height: max-content;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 /*CARD DATE */
+
 
 .card-date {
   position: relative;
   display: flex;
   width: 100%;
-  background-color: #2E3136;
-  ;
+  background-color: #fff;
   padding: 10px;
   border-radius: 6px;
   gap: 0.5rem;
   height: max-content;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
+
 
 .card-date .bar {
   width: 5px;
@@ -1719,7 +1733,7 @@ navbar .fixed-top {
   justify-content: center;
   flex-direction: column;
   margin-left: 0.5em;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .card-date .text_m {
@@ -1763,7 +1777,7 @@ navbar .fixed-top {
   border-radius: 5px;
   width: 100%;
   padding-bottom: 2px;
-  
+
 }
 
 .loader {
@@ -1783,13 +1797,26 @@ navbar .fixed-top {
   background-color: lightgray;
 }
 
-.a-news{
-  color: white;
+.a-news {
+  font-weight: bold ;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
-.a-news:hover{
+
+.a-news:hover {
   text-decoration: underline;
 }
+
+.a-events{
+  
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  
+}
+.a-events:hover {
+  text-decoration: underline;
+}
+
 .currentplaying {
   display: flex;
   margin: 1em;
@@ -1885,7 +1912,7 @@ navbar .fixed-top {
 
 /* triangular section*/
 
-.triangular-section h1  {
+.triangular-section h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1893,7 +1920,7 @@ navbar .fixed-top {
   color: white;
 }
 
-.triangular-section p  {
+.triangular-section p {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -1903,9 +1930,12 @@ navbar .fixed-top {
 
 /* carta conexion panelera*/
 
-.carta{
-  background-color: #fff; /* Color de fondo de la carta */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombreado */
-  margin-bottom: 1rem; /* Margen inferior para separar de otros elementos */
+.carta {
+  background-color: #fff;
+  /* Color de fondo de la carta */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /* Sombreado */
+  margin-bottom: 1rem;
+  /* Margen inferior para separar de otros elementos */
   width: 90%;
 }

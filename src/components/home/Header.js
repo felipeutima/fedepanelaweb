@@ -22,67 +22,78 @@ function Header() {
 
   return (
     <>
-      <div className="container-flex" style={{
-        marginTop: "0px",
-        backgroundColor: "rgba(0, 0, 0, .1)", border: "solid rgba(0, 0, 0, .15)",
-        boxShadow: "inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15)", borderWidth: "1px 0"
+      <div className="container-flex position-relative" style={{
+        marginTop: "0px"
+
       }}>
-        <Carousel>
-          <Carousel.Item>
-            <img
-              src={banner1}
-              className="img-fluid"
-            />
-            <Carousel.Caption>
 
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src={banner2}
-              className="img-fluid"
-            />
-            <Carousel.Caption>
+   
+          <Carousel>
+            <Carousel.Item>
+              <img
+                src={banner1}
+                className="img-fluid"
+              />
+              <Carousel.Caption>
 
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src={banner3}
-              className="img-fluid"
-            />
-            <Carousel.Caption>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={banner2}
+                className="img-fluid"
+              />
+              <Carousel.Caption>
 
-            </Carousel.Caption>
-          </Carousel.Item>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={banner3}
+                className="img-fluid"
+              />
+              <Carousel.Caption>
 
-
-        </Carousel>
-
+              </Carousel.Caption>
+            </Carousel.Item>
 
 
+          </Carousel>
+
+     
 
 
-        <div className="container " >
-          <div className="row my-3">
-            <div className="col-md-3  col-sm-12  d-flex justify-content-center">
-              <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10391" />
+
+        <div className="container-flex servicios pb-5 pt-2" style={{
+          backgroundColor: 'rgba(49, 49, 54, 0.9)',
+          position: "absolute",
+          bottom: "0",
+          width: "100%",
+
+        }} >
+
+          <div className="container">
+            <div className="row">
+              <div className="col-md-3  col-sm-12  d-flex justify-content-center">
+                <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10391" />
+              </div>
+              <div className="col-md-3 col-sm-12  d-flex justify-content-center">
+                <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
+              </div>
+              <div className="col-md-3  col-sm-12 d-flex justify-content-center">
+                <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
+              </div>
+              <div className="col-md-3 col-sm-12  d-flex justify-content-center">
+                <CardHeader img={ley} />
+              </div>
+
             </div>
-            <div className="col-md-3 col-sm-12  d-flex justify-content-center">
-              <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
-            </div>
-            <div className="col-md-3  col-sm-12 d-flex justify-content-center">
-              <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
-            </div>
-            <div className="col-md-3 col-sm-12  d-flex justify-content-center">
-              <CardHeader img={ley} />
-            </div>
-
-
 
           </div>
 
         </div>
+
+
       </div>
     </>
 

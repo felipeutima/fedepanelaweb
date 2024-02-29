@@ -25,29 +25,55 @@ function Conexionfd() {
     }, []);
 
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+            // Reemplaza 300 con el píxel determinado en el que quieres que aparezca el componente
+            setIsVisible(window.scrollY >= 1300);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
 
 
     return (
         <>
-            <div className="container-flex">
-                <div className="triangular-section" style={{
-                    backgroundColor: "rgb(255, 204, 40)", backgroundAttachment: "fixed", position: "relative", clipPath: "polygon(0 20%, 100% 0, 100% 100%, 0% 100%)",
-                    backgroundSize: "cover",
-                    height: "300px",
-                    width: "100%",
-                    marginTop: "-4%",
-                    zIndex: -1
-                }}>
 
-                    <h1 className="text-center text-white ">CONEXIÓN PANELERA</h1>
-                    <p className="text-center text-black">      {copPrice !== null ? (
-                        <p>Precio del dólar en COP: {copPrice}</p>
-                    ) : (
-                        <p>Cargando...</p>
-                    )}</p>
+            <div className="container-flex" >
+                <motion.div
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                    transition={{ duration: 0.6 }} >
+                    <div className="triangular-section" style={{
+                        backgroundColor: "rgb(255, 204, 40)", backgroundAttachment: "fixed", position: "relative", clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0% 100%)",
+                        backgroundSize: "cover",
+                        height: "300px",
+                        width: "100%",
+                        marginTop: "-4%",
+                        zIndex: -1,
+                      
+                        
+                    }}>
 
-                </div>
+                        <h1 className="text-center text-white ">CONEXIÓN PANELERA</h1>
+                        <p className="text-center text-black">      {copPrice !== null ? (
+                            <p>Precio del dólar en COP: {copPrice}</p>
+                        ) : (
+                            <p>Cargando...</p>
+                        )}</p>
+
+                    </div>
+                </motion.div>
             </div>
+
+
             <div className="container-flex my-5 py-2" >
 
                 <div className="container">
