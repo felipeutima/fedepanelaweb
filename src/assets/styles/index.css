@@ -1675,7 +1675,7 @@ navbar .fixed-top {
   position: relative;
   display: flex;
   width: 100%;
-  background-color: rgb(255, 204, 40, 0.6);
+  background-color: rgb(255, 204, 40, 0.9);
   border-radius: 6px;
   gap: 0.5rem;
   height: max-content;

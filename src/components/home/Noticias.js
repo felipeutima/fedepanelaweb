@@ -21,12 +21,12 @@ import React, { useEffect, useState } from 'react';
 
 function Noticias() {
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [backgroundColor, setBackgroundColor] = useState('rgb(255, 204, 40)');
+    const [backgroundColor, setBackgroundColor] = useState('rgba(49, 49, 54, 0.95)');
 
     useEffect(() => {
         const handleScroll = () => {
             setScrollPosition(window.scrollY);
-            setBackgroundColor(scrollPosition >= 1600 ? 'rgb(0, 91, 36)' : 'rgb(255, 204, 40)');
+            setBackgroundColor(scrollPosition >= 1600 ? 'rgb(255, 204, 40)' : 'rgba(49, 49, 54, 0.95)');
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -136,7 +136,7 @@ function Noticias() {
 
 
                                     <div class="col-4 ">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.6)" }} >
+                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.9)" }} >
                                             <img class="img-fluid" src={ejemplo} alt="" />
                                             <Card.Body>
                                                 <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
@@ -147,7 +147,7 @@ function Noticias() {
 
                                     </div>
                                     <div class="col-4">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.6)" }}>
+                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.9)" }}>
                                             <img class="img-fluid" src={ejemplo2} alt="" />
                                             <Card.Body>
                                                 <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
@@ -157,7 +157,7 @@ function Noticias() {
                                         </Card>
                                     </div>
                                     <div class="col-4">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.6)" }}>
+                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.9)" }}>
                                             <img class="img-fluid" src={ejemplo2} alt="" />
                                             <Card.Body>
                                                 <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
