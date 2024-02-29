@@ -77,7 +77,6 @@ function Conexionfd() {
 
 
 
-
             <div className="container-flex my-5 py-2" >
 
                 <div className="container">
@@ -172,6 +171,7 @@ function Conexionfd() {
                                     </div>
                                 </div>
                             </motion.div>
+
 
 
                         </div>
