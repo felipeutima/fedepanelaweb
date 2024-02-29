@@ -87,7 +87,7 @@ function Conexionfd() {
 
 
                 <div className="container-flex py-2" style={{
-                    backgroundImage:  {/* `url(${bgfooter})`*/},
+                    backgroundImage: {/* `url(${bgfooter})`*/ },
                     backgroundSize: 'cover',
                     backgroundRepeat: 'repeat',
                     width: "100%",
@@ -104,7 +104,7 @@ function Conexionfd() {
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
                                             <img className="card-img-top" src={mujeres} alt="Card image cap" />
-                                            <h5 className="card-title" style={{
+                                            <h5 className="card-title text-center" style={{
                                                 position: "absolute", bottom: "0", left: "50%",
                                                 transform: "translateX(-50%)",
                                                 backgroundColor: "rgba(255,255,255,0.8)",
@@ -114,7 +114,10 @@ function Conexionfd() {
                                         </div>
                                         <div className="card-body">
 
-                                            <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país.</p>
+                                            <p className="fw-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div className="mb-2 text-center">
+                                            <button className="btn btn-warning text-white fw-bold">Conoce más</button>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -125,18 +128,21 @@ function Conexionfd() {
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
-                                            <img className="card-img-top" src={jovenes} alt="Card image cap" />
-                                            <h5 className="card-title" style={{
+                                            <img className="card-img-top" src={asociacion} alt="Card image cap" />
+                                            <h5 className="card-title text-center" style={{
                                                 position: "absolute", bottom: "0", left: "50%",
                                                 transform: "translateX(-50%)",
                                                 backgroundColor: "rgba(255,255,255,0.8)",
                                                 padding: "5px 10px",
                                                 borderRadius: "5px"
-                                            }}>Red de mujeres paneleras</h5>
+                                            }}>Red de asociaciones paneleras</h5>
                                         </div>
                                         <div className="card-body">
 
-                                            <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país.</p>
+                                            <p className="fw-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div className="mb-2 text-center">
+                                            <button className="btn btn-warning text-white fw-bold">Conoce más</button>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -148,18 +154,23 @@ function Conexionfd() {
                                 <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
-                                            <img className="card-img-top" src={mujeres} alt="Card image cap" />
-                                            <h5 className="card-title" style={{
+                                            <img className="card-img-top" src={jovenes} alt="Card image cap" />
+
+
+                                            <h5 className="card-title text-center" style={{
                                                 position: "absolute", bottom: "0", left: "50%",
                                                 transform: "translateX(-50%)",
                                                 backgroundColor: "rgba(255,255,255,0.8)",
                                                 padding: "5px 10px",
                                                 borderRadius: "5px"
-                                            }}>Red de mujeres paneleras</h5>
+                                            }}>Red de Jovenes paneleros</h5>
                                         </div>
                                         <div className="card-body">
 
-                                            <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país.</p>
+                                            <p className="fw-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div className="mb-2 text-center">
+                                            <button className="btn btn-warning text-white fw-bold">Conoce más</button>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -172,17 +183,20 @@ function Conexionfd() {
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
                                             <img className="card-img-top" src={cedula} alt="Card image cap" />
-                                            <h5 className="card-title" style={{
+                                            <h5 className="card-title text-center" style={{
                                                 position: "absolute", bottom: "0", left: "50%",
                                                 transform: "translateX(-50%)",
                                                 backgroundColor: "rgba(255,255,255,0.8)",
                                                 padding: "5px 10px",
                                                 borderRadius: "5px"
-                                            }}>Red de mujeres paneleras</h5>
+                                            }}>Cedula Panelera Fedepanela</h5>
                                         </div>
                                         <div className="card-body">
 
-                                            <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país.</p>
+                                            <p className="fw-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div className="mb-2 text-center">
+                                            <button className="btn btn-warning text-white fw-bold">Conoce más</button>
                                         </div>
                                     </div>
                                 </motion.div>
