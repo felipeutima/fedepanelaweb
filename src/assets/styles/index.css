@@ -1874,3 +1874,30 @@ navbar .fixed-top {
     height: 0.2em;
   }
 }
+
+/* triangular section*/
+
+.triangular-section h1  {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.triangular-section p  {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* carta conexion panelera*/
+
+.carta{
+  background-color: #fff; /* Color de fondo de la carta */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombreado */
+  margin-bottom: 1rem; /* Margen inferior para separar de otros elementos */
+  width: 90%;
+}

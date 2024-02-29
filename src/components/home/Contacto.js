@@ -12,10 +12,21 @@ function Contacto() {
     return (
 
         <> 
-        <div className="container-flex " style={{ backgroundImage: `url(${img1})`, marginBottom: "100px", backgroundAttachment: "fixed" }}>
-            <h1 className="text-center text-white py-5">Contacto</h1>
-        </div>
+            <div className="container-flex mb-2">
+                <div className="triangular-section" style={{
+                    backgroundColor: "#005B24", backgroundAttachment: "fixed", position: "relative", clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0% 100%)",
+                    backgroundSize: "cover",
+                    height: "300px",
+                    width: "100%",
+                    marginTop: "-7%",
+                    zIndex: -1
+                }}>
 
+                    <h1 className="text-center text-white ">Contacta con nosotros</h1>
+               
+
+                </div>
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
