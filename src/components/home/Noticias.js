@@ -212,6 +212,8 @@ function Noticias() {
 
             </div>
 
+
+{/*
             <div className="container-flex" >
                 <div
                     className=""
@@ -231,7 +233,7 @@ function Noticias() {
 
                 </div>
             </div>
-
+                */}
 
         </>
 
