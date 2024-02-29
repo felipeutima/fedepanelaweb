@@ -48,28 +48,7 @@ function Conexionfd() {
 
                 </div>
             </div>
-<<<<<<< HEAD
-            <div className="container my-5 py-2">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <CardZoom img={mujeres} link="https://forms.office.com/pages/responsepage.aspx?id=KKko1qEmvECpLcN4dXuXzEeK-qtIAxREkqxLsBBFI6BUQjBNSzBCVUVMMFJBQzBPR0tQOVcwNTBBQSQlQCN0PWcu" titulo="Red de mujeres paneleras" descripcion="La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país. "/>
-                                                        
 
-                        </div>
-                        <div className="col-md-6">
-                            <CardZoom img={jovenes} link="https://forms.office.com/pages/responsepage.aspx?id=KKko1qEmvECpLcN4dXuXzEeK-qtIAxREkqxLsBBFI6BUNFNBSE1LOVhSVldGV1ZDSFlYSVJNNEs6VCQlQCN0PWcu" titulo="Red de jovenes paneleros" descripcion="INSCRIPCIÓN A RED NACIONAL DE JUVENTUD EMPRENDEDORA PANELERA DE FEDEPANELA - FAS 007"/>
-                                                        
-
-                        </div>
-                        <div className="col-md-6">
-                            <CardZoom img={asociacion} link="https://forms.office.com/pages/responsepage.aspx?id=KKko1qEmvECpLcN4dXuXzEeK-qtIAxREkqxLsBBFI6BUNzJLRVRRRjg4N0paQVlURkFNNjQwTUJTRCQlQCN0PWcu" titulo="Red de asociaciones paneleras" descripcion="RED DE AGROEMPRESAS PANELERAS"/>
-                                                        
-
-                        </div>
-                        <div className="col-md-6">
-                            <CardZoom img={cedula} descripcion="Sobre los Beneficios de los afiliados a Fedepanela"titulo="Cedula Panelera-Fedepanela"/>
-                                                        
-=======
             <div className="container-flex my-5 py-2" >
 
                 <div className="container">
@@ -165,7 +144,7 @@ function Conexionfd() {
                                 </div>
                             </motion.div>
 
->>>>>>> 15ff6f8830b9f4bbf27b98d31879bab69773cd0e
+
 
                         </div>
 
