@@ -74,6 +74,8 @@ function Header() {
 
           <div className="container">
             <div className="row">
+
+              {/* 
               <div className="col-md-3  col-sm-12  d-flex justify-content-center">
                 <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10391" />
               </div>
@@ -86,6 +88,7 @@ function Header() {
               <div className="col-md-3 col-sm-12  d-flex justify-content-center">
                 <CardHeader img={ley} />
               </div>
+              */}
 
             </div>
 
