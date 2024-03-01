@@ -20,7 +20,7 @@ function Layout({ children }) {
             style={{
                 position: "absolute", zIndex: -1, top: 0, left: 0,
                 width: "100%", height: "100%",
-                backgroundColor: "rgba(255, 255, 255, 0.5)"
+                backgroundColor: "rgba(49, 49, 54, 0.1)"
             }}>
 
             </div>

@@ -70,7 +70,7 @@ function Header() {
 
 
 
-        <div className="container-flex servicios pb-5 pt-2" style={{
+        <div className= {`container-flex servicios ${isSmallScreen? "py-2" :"pb-5 pt-2"}`} style={{
           backgroundColor: 'rgba(49, 49, 54, 0.9)',
           position:  isSmallScreen ? "" : "absolute",
           bottom: "0",
@@ -85,15 +85,15 @@ function Header() {
               <div className="col-md-6">
                 <div className="row">
 
-                  <div className="col-md-4  col-sm-12  d-flex justify-content-center">
+                  <div className="col-md-4  col-4  d-flex justify-content-center">
                     <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10491" />
                   </div>
 
 
-                  <div className="col-md-4 col-sm-12  d-flex justify-content-center">
+                  <div className="col-md-4 col-4  d-flex justify-content-center">
                     <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
                   </div>
-                  <div className="col-md-4  col-sm-12 d-flex justify-content-center">
+                  <div className="col-md-4  col-4 d-flex justify-content-center">
                     <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
                   </div>
               

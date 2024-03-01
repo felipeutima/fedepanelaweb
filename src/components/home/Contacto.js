@@ -19,12 +19,12 @@ function Contacto() {
                     transition={{ duration: 1 }} >
                     <div className="triangular-section" style={{
                         backgroundColor: "#005B24", backgroundAttachment: "fixed", position: "relative"
-                        , clipPath: "polygon(0 0%, 100% 0, 100% 100%, 0% 80%, 0% 80% )",
+                        , clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0% 100%)",
                         backgroundSize: "cover",
                         height: "300px",
                         width: "100%",
                         marginTop: "-4%",
-                        zIndex: 0,
+                        zIndex: -1,
                         boxShadow: `
                             0px 20px 20px -20px rgba(0, 0, 0, 0.5) inset, 
                             20px 0px 20px -20px rgba(0, 0, 0, 0.5) inset, 
@@ -43,61 +43,73 @@ function Contacto() {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6">
-                        <div className="row">
-                            <div class="info">
-                                <div class="address">
-                                    <i class="bi bi-geo-alt "><GeoAltFill /></i>
-                                    <h4 class="d-inline">Federacion Nacional de Productores de Panela
-                                        "FEDEPANELA"</h4>
-                                    <p class="direccion">Carrera 49B No. 91 - 48
-                                        Barrio La Castellana
-                                        Bogotá – Colombia</p>
-                                    <a href="https://wa.me/573164651419 "> </a>
-                                </div>
 
-                                <div class="phone">
-                                    <a href="tel:+573164651419"> <i class="bi bi-phone "> <TelephoneFill /></i> </a>
-                                    <h4 class="d-inline">Celular:</h4>
-                                    <p> +57 3164651419</p>
+                    <div className="col-md-6">
+                        <motion.div
+                            initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1 }} >
+                            <div className="row">
+                                <div class="info">
+                                    <div class="address">
+                                        <i class="bi bi-geo-alt "><GeoAltFill /></i>
+                                        <h4 class="d-inline">Federacion Nacional de Productores de Panela
+                                            </h4>
+                                        <p class="direccion">Carrera 49B No. 91 - 48
+                                            Barrio La Castellana
+                                            Bogotá – Colombia</p>
+                                        <a href="https://wa.me/573164651419 "> </a>
+                                    </div>
+
+                                    <div class="phone">
+                                        <a href="tel:+573164651419"> <i class="bi bi-phone "> <TelephoneFill /></i> </a>
+                                        <h4 class="d-inline">Telefono:</h4>
+                                        <p> 6222066 </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="row mt-2">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.061506702177!2d-74.063003!3d4.680106000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aec00dd5713%3A0x2d5fb2032d63c1f2!2sFedepanela!5e0!3m2!1ses-419!2sco!4v1708419526644!5m2!1ses-419!2sco" width="600" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                            <div className="row mt-5 mb-3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.061506702177!2d-74.063003!3d4.680106000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aec00dd5713%3A0x2d5fb2032d63c1f2!2sFedepanela!5e0!3m2!1ses-419!2sco!4v1708419526644!5m2!1ses-419!2sco" width="600" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </motion.div>
+
                     </div>
                     <div className="col-md-6">
+                        <motion.div
+                            initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1 }} >
+
+                            <Form className="form_container ">
+                                <Form.Group className="mb-3 " controlId="formBasicEmail">
+                                    <Form.Label>Nombre y Apellido*</Form.Label>
+                                    <Form.Control type="text" placeholder="Digita tu Nombre" />
+
+                                </Form.Group>
+
+                                <Form.Group className="mb-3" controlId="formBasicPassword">
+                                    <Form.Label>Email</Form.Label>
+                                    <Form.Control type="email" placeholder="Digita tu email" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicPassword">
+                                    <Form.Label>Telefono/Celular</Form.Label>
+                                    <Form.Control type="int" placeholder="Digita tu numero de contacto" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicPassword">
+                                    <Form.Label>Asunto</Form.Label>
+                                    <Form.Control type="text" placeholder="Describe el asunto" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicPassword">
+                                    <Form.Label>Descripción</Form.Label>
+                                    <Form.Control as="textarea" rows={3} placeholder="Ingrese la descripción" />
+                                </Form.Group>
+
+                                <Button className="sign-in_btn btn-success " type="submit" >
+                                    Enviar
+                                </Button>
+                            </Form>
+                        </motion.div>
 
 
-                        <Form className="form_container">
-                            <Form.Group className="mb-3 " controlId="formBasicEmail">
-                                <Form.Label>Nombre y Apellido*</Form.Label>
-                                <Form.Control type="text" placeholder="Digita tu Nombre" />
 
-                            </Form.Group>
-
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control type="email" placeholder="Digita tu email" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Telefono/Celular</Form.Label>
-                                <Form.Control type="int" placeholder="Digita tu numero de contacto" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Asunto</Form.Label>
-                                <Form.Control type="text" placeholder="Describe el asunto" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Descripción</Form.Label>
-                                <Form.Control as="textarea" rows={3} placeholder="Ingrese la descripción" />
-                            </Form.Group>
-
-                            <Button className="sign-in_btn btn-success " type="submit" >
-                                Enviar
-                            </Button>
-                        </Form>
                     </div>
                 </div>
 

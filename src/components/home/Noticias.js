@@ -55,10 +55,10 @@ function Noticias() {
                                     <Carousel>
                                         <Carousel.Item>
                                             <div className="row">
-                                                <div class="col-7 pe-0">
+                                                <div class="col-md-7 col-12 pe-0">
                                                     <img class="img-fluid" width="100%" src={ejemplo} alt="" />
                                                 </div>
-                                                <div class="col-5 ps-0 " data-bs-theme="dark">
+                                                <div class="col-md-5 col-12 ps-0 " data-bs-theme="dark">
                                                     <div className="panel-dark ">
                                                         <h3 className="fw-bold a-news ">
                                                             Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
@@ -76,10 +76,10 @@ function Noticias() {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <div className="row">
-                                                <div class="col-7 pe-0">
+                                                <div class="col-md-7 col-12 pe-0">
                                                     <img class="img-fluid" width="100%" src={ejemplo} alt="" />
                                                 </div>
-                                                <div class="col-5 ps-0 " data-bs-theme="dark">
+                                                <div class="col-md-5 col-12 ps-0 " data-bs-theme="dark">
                                                     <div className="panel-dark ">
                                                         <h3 className="fw-bold a-news">
                                                             Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
@@ -96,11 +96,11 @@ function Noticias() {
 
                                         </Carousel.Item>
                                         <Carousel.Item>
-                                            <div className="row ">
-                                                <div class="col-7 pe-0">
+                                            <div className="row">
+                                                <div class="col-md-7 col-12 pe-0">
                                                     <img class="img-fluid" width="100%" src={ejemplo} alt="" />
                                                 </div>
-                                                <div class="col-5 ps-0 " data-bs-theme="dark">
+                                                <div class="col-md-5 col-12 ps-0 " data-bs-theme="dark">
                                                     <div className="panel-dark ">
                                                         <h3 className="fw-bold a-news">
                                                             Te invitamos a participar de la Mesa Sectorial Agroindutria de la Panela | Periodo 2024 – 2025</h3>
@@ -116,6 +116,7 @@ function Noticias() {
                                             </div>
 
                                         </Carousel.Item>
+              
 
 
                                     </Carousel>
@@ -136,7 +137,7 @@ function Noticias() {
 
 
                                     <div class="col-4 ">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.9)" }} >
+                                        <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
                                             <img class="img-fluid" src={ejemplo} alt="" />
                                             <Card.Body>
                                                 <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
@@ -147,7 +148,7 @@ function Noticias() {
 
                                     </div>
                                     <div class="col-4">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.9)" }}>
+                                        <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
                                             <img class="img-fluid" src={ejemplo2} alt="" />
                                             <Card.Body>
                                                 <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
@@ -157,7 +158,7 @@ function Noticias() {
                                         </Card>
                                     </div>
                                     <div class="col-4">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255, 204, 40, 0.9)" }}>
+                                        <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
                                             <img class="img-fluid" src={ejemplo2} alt="" />
                                             <Card.Body>
                                                 <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>

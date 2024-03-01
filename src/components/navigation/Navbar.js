@@ -10,6 +10,7 @@ import basenav from "assets/img/basenav.png"
 import fedepng from "assets/img/FEDEPANELALOGO-04.png"
 import { useState, useEffect } from 'react';
 
+import { BrowserRouter as Router, NavLink, useLocation } from 'react-router-dom';
 
 function NavigationBar() {
 
@@ -25,6 +26,10 @@ function NavigationBar() {
   }, []);
 
 
+  const location = useLocation();
+  const isNotHome = location.pathname !== '/';
+
+
   return (
 
     <>
@@ -35,7 +40,7 @@ function NavigationBar() {
         <a href="/"> <img src={fedepng} className="img-navbar" ></img>  </a>
 
 
-      <Navbar className={`navbar-transparent   navbar-dark ${isSmallScreen ? " " : "position-absolute"}`} 
+      <Navbar className={`navbar-transparent   navbar-dark ${isNotHome ||  isSmallScreen ? " " : "position-absolute"}`} 
         expand="lg"
         style={{ borderTop: "solid 15px #FFCC28", zIndex:2, width:"100%",
          backgroundColor: 'rgba(49, 49, 54, 0.9)'    }}    >
