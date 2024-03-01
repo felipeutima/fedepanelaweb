@@ -8,14 +8,21 @@ import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import basenav from "assets/img/basenav.png"
 import fedepng from "assets/img/FEDEPANELALOGO-04.png"
-import React, { useState, useEffect } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { useState, useEffect } from 'react';
+
 
 function NavigationBar() {
 
-  const { scrollYProgress } = useScroll();
 
-  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+      function handleResize() {
+          setIsSmallScreen(window.innerWidth < 768);
+      }
+      handleResize();
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 
   return (
@@ -25,10 +32,10 @@ function NavigationBar() {
   
        
        
-        <a href="/"> <img src={fedepng} className="img-navbar"></img>  </a>
+        <a href="/"> <img src={fedepng} className="img-navbar" ></img>  </a>
 
 
-      <Navbar className="navbar-transparent position-absolute navbar-dark"
+      <Navbar className={`navbar-transparent   navbar-dark ${isSmallScreen ? " " : "position-absolute"}`} 
         expand="lg"
         style={{ borderTop: "solid 15px #FFCC28", zIndex:2, width:"100%",
          backgroundColor: 'rgba(49, 49, 54, 0.9)'    }}    >
@@ -44,7 +51,7 @@ function NavigationBar() {
             >
 
 
-              <NavDropdown style={{ marginLeft: "320px" }} title="Nuestra Federación" id="navbarScrollingDropdown">
+              <NavDropdown style={{ marginLeft: isSmallScreen ? "" : "320px" }} title="Nuestra Federación" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="/NuestraFederacion/quienessomos">Quiénes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/PlanEstrategico">Plan Estratégico</NavDropdown.Item>

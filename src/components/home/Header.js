@@ -1,5 +1,4 @@
 import { connect } from "react-redux"
-import { useState } from 'react'
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -12,11 +11,18 @@ import pselogo1 from "assets/img/pselogo1.png"
 import CardHeader from "./CardHeader";
 import Logosipa from "assets/img/logo_sipa.png"
 import webmail from "assets/img/webmail-logo.svg"
-import ley from "assets/img/iconley.jpg"
-
+import { useState, useEffect } from "react";
 
 function Header() {
-
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+      function handleResize() {
+          setIsSmallScreen(window.innerWidth < 768);
+      }
+      handleResize();
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 
 
@@ -27,68 +33,74 @@ function Header() {
 
       }}>
 
-   
-          <Carousel>
-            <Carousel.Item>
-              <img
-                src={banner1}
-                className="img-fluid"
-              />
-              <Carousel.Caption>
 
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src={banner2}
-                className="img-fluid"
-              />
-              <Carousel.Caption>
+        <Carousel>
+          <Carousel.Item>
+            <img
+              src={banner1}
+              className="img-fluid"
+            />
+            <Carousel.Caption>
 
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src={banner3}
-                className="img-fluid"
-              />
-              <Carousel.Caption>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src={banner2}
+              className="img-fluid"
+            />
+            <Carousel.Caption>
 
-              </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src={banner3}
+              className="img-fluid"
+            />
+            <Carousel.Caption>
+
+            </Carousel.Caption>
+          </Carousel.Item>
 
 
-          </Carousel>
+        </Carousel>
 
-     
+
 
 
 
         <div className="container-flex servicios pb-5 pt-2" style={{
           backgroundColor: 'rgba(49, 49, 54, 0.9)',
-          position: "absolute",
+          position:  isSmallScreen ? "" : "absolute",
           bottom: "0",
           width: "100%",
 
         }} >
 
-          <div className="container">
+          <div className="container pt-2 ">
             <div className="row">
+              <div className="col-md-3"></div>
 
-              {/* 
-              <div className="col-md-3  col-sm-12  d-flex justify-content-center">
-                <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10391" />
+              <div className="col-md-6">
+                <div className="row">
+
+                  <div className="col-md-4  col-sm-12  d-flex justify-content-center">
+                    <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10491" />
+                  </div>
+
+
+                  <div className="col-md-4 col-sm-12  d-flex justify-content-center">
+                    <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
+                  </div>
+                  <div className="col-md-4  col-sm-12 d-flex justify-content-center">
+                    <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
+                  </div>
+              
+                </div>
               </div>
-              <div className="col-md-3 col-sm-12  d-flex justify-content-center">
-                <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
-              </div>
-              <div className="col-md-3  col-sm-12 d-flex justify-content-center">
-                <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
-              </div>
-              <div className="col-md-3 col-sm-12  d-flex justify-content-center">
-                <CardHeader img={ley} />
-              </div>
-              */}
+              <div className="col-md-3"></div>
+
 
             </div>
 

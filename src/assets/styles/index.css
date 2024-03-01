@@ -134,7 +134,7 @@ navbar .fixed-top {
 .socialContainer {
   width: 52px;
   height: 52px;
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(44, 44, 44,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1799,7 +1799,7 @@ navbar .fixed-top {
 
 .a-news {
   font-weight: bold ;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -1873,9 +1873,9 @@ navbar .fixed-top {
 .albumcover {
   position: relative;
   margin-right: 1em;
-  height: 40px;
-  width: 40px;
-  background-color: rgb(233, 232, 232);
+  width: 15%;
+  transform: rotate(180deg);
+  
   align-self: center;
   border-radius: 5px;
 }
@@ -1938,4 +1938,20 @@ navbar .fixed-top {
   margin-bottom: 1rem;
   /* Margen inferior para separar de otros elementos */
   width: 90%;
+}
+
+
+/*img head*/
+
+.img-head{
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  width: 80%;
+  display: block;
+  margin: auto;
+ 
+}
+
+.img-head:hover {
+  filter: grayscale(0%);
 }

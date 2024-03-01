@@ -5,27 +5,41 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { GeoAltFill, TelephoneFill } from "react-bootstrap-icons";
-
+import { motion } from "framer-motion"
 import img1 from "assets/img/Img1.png"
 
 function Contacto() {
     return (
 
-        <> 
+        <>
             <div className="container-flex mb-2">
-                <div className="triangular-section" style={{
-                    backgroundColor: "#005B24", backgroundAttachment: "fixed", position: "relative", clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0% 100%)",
-                    backgroundSize: "cover",
-                    height: "300px",
-                    width: "100%",
-                    marginTop: "-7%",
-                    zIndex: -1
-                }}>
 
-                    <h1 className="text-center text-white ">Contacta con nosotros</h1>
-               
+                <motion.div
+                    initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1 }} >
+                    <div className="triangular-section" style={{
+                        backgroundColor: "#005B24", backgroundAttachment: "fixed", position: "relative"
+                        , clipPath: "polygon(0 0%, 100% 0, 100% 100%, 0% 80%, 0% 80% )",
+                        backgroundSize: "cover",
+                        height: "300px",
+                        width: "100%",
+                        marginTop: "-4%",
+                        zIndex: 0,
+                        boxShadow: `
+                            0px 20px 20px -20px rgba(0, 0, 0, 0.5) inset, 
+                            20px 0px 20px -20px rgba(0, 0, 0, 0.5) inset, 
+                            -20px 0px 20px -20px rgba(0, 0, 0, 0.5) inset, 
+                            0px -20px 20px -20px rgba(0, 0, 0, 0.5) inset`
 
-                </div>
+
+                    }}>
+
+                        <h1 className="text-center text-white ">Contacta con nosotros</h1>
+
+
+                    </div>
+                </motion.div>
+
             </div>
             <div className="container">
                 <div className="row">

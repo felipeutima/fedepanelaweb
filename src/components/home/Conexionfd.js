@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-
+import axios from 'axios';
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from "assets/img/Img2.png"
@@ -12,17 +12,20 @@ import bgfooter from "assets/img/mazeyellow.svg"
 import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion"
 function Conexionfd() {
-
     const [copPrice, setCopPrice] = useState(null);
 
     useEffect(() => {
-        fetch('https://api.exchangeratesapi.io/latest?base=USD')
-            .then(response => response.json())
-            .then(data => {
-                const copPrice = data.rates.COP;
-                setCopPrice(copPrice);
-            })
-            .catch(error => console.error('Error al obtener el precio del dólar:', error));
+        const fetchCopPrice = async () => {
+            try {
+                const response = await axios.get('https://open.er-api.com/v6/latest/USD');
+                const exchangeRate = response.data.rates.COP;
+                setCopPrice(exchangeRate.toFixed(2)); // Redondear a 2 decimales
+            } catch (error) {
+                console.error('Error fetching COP price:', error);
+            }
+        };
+
+        fetchCopPrice();
     }, []);
 
 
@@ -72,12 +75,11 @@ function Conexionfd() {
                         }}>
 
                             <h1 className="text-center text-white ">CONEXIÓN PANELERA</h1>
-                            <p className="text-center text-black">      {copPrice !== null ? (
-                                <p>Precio del dólar en COP: {copPrice}</p>
+                                            {copPrice !== null ? (
+                                <p className="text-center text-white">Precio del dólar en COP: {copPrice}</p>
                             ) : (
                                 <p>Cargando...</p>
-                            )}</p>
-
+                            )}
 
                         </div>
                     </motion.div>
@@ -85,42 +87,10 @@ function Conexionfd() {
 
 
 
-            <div className="container-flex" >
-                <motion.div
-                    initial={{ x: -100, opacity: 0 }}
-                    animate={isVisible ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.6 }} >
-                    <div className="triangular-section" style={{
-                        backgroundColor: "rgb(255, 204, 40)", backgroundAttachment: "fixed", position: "relative", clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0% 100%)",
-                        backgroundSize: "cover",
-                        height: "300px",
-                        width: "100%",
-                        marginTop: "-4%",
-                        zIndex: -1,
-                      
-                        
-                    }}>
-
-                        <h1 className="text-center text-white ">CONEXIÓN PANELERA</h1>
-                        <p className="text-center text-black">      {copPrice !== null ? (
-                            <p>Precio del dólar en COP: {copPrice}</p>
-                        ) : (
-                            <p>Cargando...</p>
-                        )}</p>
-
-                    </div>
-                </motion.div>
-            </div>
-
-
-
-            <div className="container-flex my-5 py-2" >
-
-
 
 
                 <div className="container-flex py-2" style={{
-                    backgroundImage:  {/* `url(${bgfooter})`*/},
+                    backgroundImage: {/* `url(${bgfooter})`*/ },
                     backgroundSize: 'cover',
                     backgroundRepeat: 'repeat',
                     width: "100%",
@@ -137,7 +107,7 @@ function Conexionfd() {
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
                                             <img className="card-img-top" src={mujeres} alt="Card image cap" />
-                                            <h5 className="card-title" style={{
+                                            <h5 className="card-title text-center" style={{
                                                 position: "absolute", bottom: "0", left: "50%",
                                                 transform: "translateX(-50%)",
                                                 backgroundColor: "rgba(255,255,255,0.8)",
@@ -147,75 +117,89 @@ function Conexionfd() {
                                         </div>
                                         <div className="card-body">
 
-                                            <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país.</p>
+                                            <p className="fw-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div className="mb-2 text-center">
+                                            <button className="btn btn-warning text-white fw-bold">Conoce más</button>
                                         </div>
                                     </div>
                                 </motion.div>
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "5%" }}>
+                            <div className="col-md-6" style={{ marginTop: "8%" }}>
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
-                                            <img className="card-img-top" src={jovenes} alt="Card image cap" />
-                                            <h5 className="card-title" style={{
+                                            <img className="card-img-top" src={asociacion} alt="Card image cap" />
+                                            <h5 className="card-title text-center" style={{
                                                 position: "absolute", bottom: "0", left: "50%",
                                                 transform: "translateX(-50%)",
                                                 backgroundColor: "rgba(255,255,255,0.8)",
                                                 padding: "5px 10px",
                                                 borderRadius: "5px"
-                                            }}>Red de mujeres paneleras</h5>
+                                            }}>Red de asociaciones paneleras</h5>
                                         </div>
                                         <div className="card-body">
 
-                                            <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país.</p>
+                                            <p className="fw-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div className="mb-2 text-center">
+                                            <button className="btn btn-warning text-white fw-bold">Conoce más</button>
                                         </div>
                                     </div>
                                 </motion.div>
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "-2%" }}>
+                            <div className="col-md-6" style={{ marginTop: "0" }}>
 
                                 <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
-                                            <img className="card-img-top" src={mujeres} alt="Card image cap" />
-                                            <h5 className="card-title" style={{
+                                            <img className="card-img-top" src={jovenes} alt="Card image cap" />
+
+
+                                            <h5 className="card-title text-center" style={{
                                                 position: "absolute", bottom: "0", left: "50%",
                                                 transform: "translateX(-50%)",
                                                 backgroundColor: "rgba(255,255,255,0.8)",
                                                 padding: "5px 10px",
                                                 borderRadius: "5px"
-                                            }}>Red de mujeres paneleras</h5>
+                                            }}>Red de Jovenes paneleros</h5>
                                         </div>
                                         <div className="card-body">
 
-                                            <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país.</p>
+                                            <p className="fw-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div className="mb-2 text-center">
+                                            <button className="btn btn-warning text-white fw-bold">Conoce más</button>
                                         </div>
                                     </div>
                                 </motion.div>
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "2%" }}>
+                            <div className="col-md-6" style={{ marginTop: "8%" }}>
 
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
                                             <img className="card-img-top" src={cedula} alt="Card image cap" />
-                                            <h5 className="card-title" style={{
+                                            <h5 className="card-title text-center" style={{
                                                 position: "absolute", bottom: "0", left: "50%",
                                                 transform: "translateX(-50%)",
                                                 backgroundColor: "rgba(255,255,255,0.8)",
                                                 padding: "5px 10px",
                                                 borderRadius: "5px"
-                                            }}>Red de mujeres paneleras</h5>
+                                            }}>Cedula Panelera Fedepanela</h5>
                                         </div>
                                         <div className="card-body">
 
-                                            <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país.</p>
+                                            <p className="fw-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div className="mb-2 text-center">
+                                            <button className="btn btn-warning text-white fw-bold">Conoce más</button>
                                         </div>
                                     </div>
                                 </motion.div>
