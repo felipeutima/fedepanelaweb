@@ -13,7 +13,7 @@ function CardHeader({ img, link }) {
 
                 
 
-                    <img className="img-fluid "
+                    <img className="img-fluid img-head"
                         src={img} 
 
 

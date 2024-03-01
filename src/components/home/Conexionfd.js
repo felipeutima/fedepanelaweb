@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-
+import axios from 'axios';
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from "assets/img/Img2.png"
@@ -12,17 +12,20 @@ import bgfooter from "assets/img/mazeyellow.svg"
 import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion"
 function Conexionfd() {
-
     const [copPrice, setCopPrice] = useState(null);
 
     useEffect(() => {
-        fetch('https://api.exchangeratesapi.io/latest?base=USD')
-            .then(response => response.json())
-            .then(data => {
-                const copPrice = data.rates.COP;
-                setCopPrice(copPrice);
-            })
-            .catch(error => console.error('Error al obtener el precio del dólar:', error));
+        const fetchCopPrice = async () => {
+            try {
+                const response = await axios.get('https://open.er-api.com/v6/latest/USD');
+                const exchangeRate = response.data.rates.COP;
+                setCopPrice(exchangeRate.toFixed(2)); // Redondear a 2 decimales
+            } catch (error) {
+                console.error('Error fetching COP price:', error);
+            }
+        };
+
+        fetchCopPrice();
     }, []);
 
 
@@ -72,11 +75,11 @@ function Conexionfd() {
                         }}>
 
                             <h1 className="text-center text-white ">CONEXIÓN PANELERA</h1>
-                            <p className="text-center text-black">      {copPrice !== null ? (
-                                <p>Precio del dólar en COP: {copPrice}</p>
+                                            {copPrice !== null ? (
+                                <p className="text-center text-white">Precio del dólar en COP: {copPrice}</p>
                             ) : (
                                 <p>Cargando...</p>
-                            )}</p>
+                            )}
 
                         </div>
                     </motion.div>
