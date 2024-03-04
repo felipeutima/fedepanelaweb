@@ -24,7 +24,7 @@ import Laboral from 'containers/pages/Normatividad/Laboral';
 import MecanismoContacto from 'containers/pages/Ley de Transparencia/MecanismosContacto';
 import Informaciondeinteres from 'containers/pages/Ley de Transparencia/InformaciondeInteres';
 import Planeacion from 'containers/pages/Ley de Transparencia/Planeacion';
-import Estructuraorgánicaytalentohumano from 'containers/pages/Ley de Transparencia/Estructuraorgánicaytalentohumano';
+import Estructuraorgánicaytalentohumano from 'containers/pages/Ley de Transparencia/Estructuraorganicaytalentohumano';
 import Normatividad from 'containers/pages/Ley de Transparencia/Normatividad';
 import Presupuesto from 'containers/pages/Ley de Transparencia/Presupuesto';
 import Contratacion from 'containers/pages/Ley de Transparencia/Contratacion';
