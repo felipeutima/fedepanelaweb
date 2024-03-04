@@ -5,6 +5,7 @@ import Noticias from "components/home/Noticias"
 import Contacto from "components/home/Contacto"
 import Layout from "hocs/layouts/Layout"
 import Conexionfd from "components/home/Conexionfd"
+import Services from "components/home/Services"
 
 function Home(){
 
@@ -13,7 +14,9 @@ function Home(){
             <Navbar/>
             <Header/>
             <Noticias/>
+            <Services/>
             <Conexionfd/>
+        
             <Contacto/>
             <Footer/>
         </Layout>
