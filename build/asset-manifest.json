@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc589aca.css",
-    "main.js": "/static/js/main.4391f2ea.js",
+    "main.css": "/static/css/main.ab8b294b.css",
+    "main.js": "/static/js/main.6e526438.js",
     "static/media/cedulapa.png": "/static/media/cedulapa.aab0fa2ca04ed0d6d7f1.png",
     "static/media/jovenespa.png": "/static/media/jovenespa.52be46e882ee8e2b037b.png",
     "static/media/asociasionespa.png": "/static/media/asociasionespa.80a51af9701de51b2607.png",
@@ -27,7 +27,6 @@
     "static/media/LEY-100-DE-1993.pdf": "/static/media/LEY-100-DE-1993.e317e475007b5b166e81.pdf",
     "static/media/estructuraOrganica.png": "/static/media/estructuraOrganica.d0a61b6af702a9af9d55.png",
     "static/media/DECRETO_948_DE_1995.pdf": "/static/media/DECRETO_948_DE_1995.efa9b5e0a80488611849.pdf",
-    "static/media/textura.png": "/static/media/textura.3094fa45471033c5f79f.png",
     "static/media/Reforma-Estatutaria-2023.pdf": "/static/media/Reforma-Estatutaria-2023.78ee8e19ba409a501a32.pdf",
     "static/media/DECRETO_1594_DE_1984.pdf": "/static/media/DECRETO_1594_DE_1984.d6b1d8b4f12f5db51cf5.pdf",
     "static/media/RESOLUCIN_16379_DE_2003.pdf": "/static/media/RESOLUCIN_16379_DE_2003.6a8c2c64a39effc1d89d.pdf",
@@ -73,11 +72,11 @@
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.67b634f550afa9ab6722c8fb1e3d12b3.svg",
     "static/media/mazeyellow.svg": "/static/media/mazeyellow.10ea730ce497b1ef6852b25db6b54441.svg",
     "index.html": "/index.html",
-    "main.bc589aca.css.map": "/static/css/main.bc589aca.css.map",
-    "main.4391f2ea.js.map": "/static/js/main.4391f2ea.js.map"
+    "main.ab8b294b.css.map": "/static/css/main.ab8b294b.css.map",
+    "main.6e526438.js.map": "/static/js/main.6e526438.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc589aca.css",
-    "static/js/main.4391f2ea.js"
+    "static/css/main.ab8b294b.css",
+    "static/js/main.6e526438.js"
   ]
 }
