@@ -2,13 +2,12 @@ import { connect } from "react-redux"
 //import { useState } from 'react'
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CardsNews from "./CardsNews";
+
+import Accordion from 'react-bootstrap/Accordion';
 
 import ejemplo from "assets/img/ejemplo.jpeg"
 import ejemplo1 from "assets/img/ejemplo2.png"
 import ejemplo2 from "assets/img/ejemplo2.jpg"
-import textura from "assets/img/textura.png"
-
 import { motion } from "framer-motion"
 import fedecut from "assets/img/section-cut-05.png"
 import Carousel from 'react-bootstrap/Carousel';
@@ -34,6 +33,17 @@ function Noticias() {
         };
     }, [scrollPosition]);
 
+
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+    useEffect(() => {
+        function handleResize() {
+            setIsSmallScreen(window.innerWidth < 768);
+        }
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
 
 
@@ -45,7 +55,7 @@ function Noticias() {
                     <div className="col-md-8">
 
 
-                        <div class="about-text  px-5 my-lg-5" >
+                        <div class="about-text mt-3  my-lg-5" >
                             <h6 class="text-success text-uppercase" >Noticias</h6>
 
                             <div className="row mb-3">
@@ -116,7 +126,7 @@ function Noticias() {
                                             </div>
 
                                         </Carousel.Item>
-              
+
 
 
                                     </Carousel>
@@ -131,42 +141,93 @@ function Noticias() {
                             <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                 <div class="row mb-4" >
 
+                                    {isSmallScreen ?
+                                        <>
+
+                                            <Accordion >
+                                                <Accordion.Item eventKey="0">
+                                                    <Accordion.Header>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Accordion.Header>
+                                                    <Accordion.Body>
+                                                    <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
+                                                    <img class="img-fluid" src={ejemplo} alt="" />
+                                                    <Card.Body>
+                                                        <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                                    </Card.Body>
+                                                </Card>
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                                <Accordion.Item eventKey="1">
+                                                    <Accordion.Header>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Accordion.Header>
+                                                    <Accordion.Body>
+                                                    <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
+                                                    <img class="img-fluid" src={ejemplo2} alt="" />
+                                                    <Card.Body>
+                                                        <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                                    </Card.Body>
+                                                </Card>
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                                <Accordion.Item eventKey="2">
+                                                    <Accordion.Header>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Accordion.Header>
+                                                    <Accordion.Body>
+                                                    <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
+                                                    <img class="img-fluid" src={ejemplo1} alt="" />
+                                                    <Card.Body>
+                                                        <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                                    </Card.Body>
+                                                </Card>
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                       
+                                            </Accordion>
+                                        </>
+
+                                        : <>
+                                            <div class="col-md-4 ">
+                                                <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
+                                                    <img class="img-fluid" src={ejemplo} alt="" />
+                                                    <Card.Body>
+                                                        <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                                    </Card.Body>
+                                                </Card>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
+                                                    <img class="img-fluid" src={ejemplo2} alt="" />
+                                                    <Card.Body>
+                                                        <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                                    </Card.Body>
+                                                </Card>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
+                                                    <img class="img-fluid" src={ejemplo2} alt="" />
+                                                    <Card.Body>
+                                                        <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+
+
+                                                    </Card.Body>
+                                                </Card>
+                                            </div>
+                                        </>}
 
 
 
 
 
-                                    <div class="col-4 ">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
-                                            <img class="img-fluid" src={ejemplo} alt="" />
-                                            <Card.Body>
-                                                <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
-                                            </Card.Body>
-                                        </Card>
-
-                                    </div>
-                                    <div class="col-4">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
-                                            <img class="img-fluid" src={ejemplo2} alt="" />
-                                            <Card.Body>
-                                                <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
-
-
-                                            </Card.Body>
-                                        </Card>
-                                    </div>
-                                    <div class="col-4">
-                                        <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
-                                            <img class="img-fluid" src={ejemplo2} alt="" />
-                                            <Card.Body>
-                                                <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
-
-
-                                            </Card.Body>
-                                        </Card>
-                                    </div>
                                 </div>
                             </motion.div>
 
@@ -195,7 +256,7 @@ function Noticias() {
 
                             </div>
                         </motion.div>
-     
+
                         <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                             <div className="row">
                                 <h6 class="text-success text-uppercase mt-2" >Nuestro Podcast</h6>
@@ -214,7 +275,7 @@ function Noticias() {
             </div>
 
 
-{/*
+            {/*
             <div className="container-flex" >
                 <div
                     className=""

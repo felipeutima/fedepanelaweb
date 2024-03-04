@@ -79,7 +79,7 @@ function Conexionfd() {
 
                             <h1 className="text-center text-white ">CONEXIÓN PANELERA</h1>
                             {copPrice !== null ? (
-                                <p className="text-center text-black lead">Precio del dólar hoy en COP: {copPrice} $</p>
+                                <p className="text-center text-black lead mt-2">Precio del dólar hoy en COP: {copPrice} $</p>
                             ) : (
                                 <p>Cargando...</p>
                             )}
