@@ -60,7 +60,7 @@ function Services() {
                             <div class=" col-md-4 col-12 mb-4">
                                 <div class="service-item bg-white text-center mb-2 py-5 px-4">
                                     <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"><QuestionCircle size={30} /></i>
-                                    <h5 class="mb-2">Preguntas frencuentes</h5>
+                                    <h5 class="mb-2">Preguntas frecuentes</h5>
 
                                 </div>
                             </div>
