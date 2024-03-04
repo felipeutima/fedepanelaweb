@@ -229,9 +229,8 @@ function Directorio() {
                         </TableBody>
                     </Table>
                 </TableContainer>   
+                
             </div>
-
-
 
 
 
