@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fc13e6bf.css",
-    "main.js": "/static/js/main.f49a0a67.js",
+    "main.js": "/static/js/main.6be8af03.js",
     "static/media/muro.jpg": "/static/media/muro.8334707e02479f2859d2.jpg",
     "static/media/DECRETO-295-DE-2017.pdf": "/static/media/DECRETO-295-DE-2017.e3fc0eb6dca6dfddb268.pdf",
     "static/media/BIOSEGURIDAD.pdf": "/static/media/BIOSEGURIDAD.b57ff7b8b4d957185532.pdf",
@@ -73,10 +73,10 @@
     "static/media/mazeyellow.svg": "/static/media/mazeyellow.10ea730ce497b1ef6852b25db6b54441.svg",
     "index.html": "/index.html",
     "main.fc13e6bf.css.map": "/static/css/main.fc13e6bf.css.map",
-    "main.f49a0a67.js.map": "/static/js/main.f49a0a67.js.map"
+    "main.6be8af03.js.map": "/static/js/main.6be8af03.js.map"
   },
   "entrypoints": [
     "static/css/main.fc13e6bf.css",
-    "static/js/main.f49a0a67.js"
+    "static/js/main.6be8af03.js"
   ]
 }
