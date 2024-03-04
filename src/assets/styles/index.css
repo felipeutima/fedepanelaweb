@@ -1938,6 +1938,18 @@ navbar .fixed-top {
     padding: 5px 10px;
     border-radius: 5px;
 }
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas, como celulares */
+  .triangular-section h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+ 
+    color: white;
+  }
+  
+}
+
 
 /* carta conexion panelera*/
 
