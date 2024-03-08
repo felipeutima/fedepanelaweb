@@ -18,17 +18,9 @@ function Footer() {
         position: 'relative',
       }}>
 
-        <div className="overlay" style={{
-
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.1)', // Color oscuro con opacidad
-        }}></div>
 
         <div className="container" style={{ zIndex: 2 }} >
-          <footer className="row mt-3 pt-5  border-top" >
+          <footer className="row  pt-5  border-top" >
             <div className="col-md-6 mb-6">
               <a href="/" className="d-flex align-items-center mb-3 link-dark text-decoration-none">
                 <img
@@ -41,7 +33,7 @@ function Footer() {
 
 
               </a>
-              <div className="conatiner" style={{ backgroundColor: "rgb(0,0,0,0.3)", width: "70%" }}>
+              <div className="r" style={{ backgroundColor: "rgb(0,0,0,0.3)", width: "70%" }}>
 
                 <div className="row align-items-center" >
                   <div className="col-auto">
@@ -56,38 +48,17 @@ function Footer() {
                     <TelephoneFill color="white" size={20} />
                   </div>
                   <div className="col">
-                    <p className="mb-0">6222066 - 6222655 - 6222788</p>                </div>
+                    <p className="mb-0">6222066 - 6222655 - 6222788</p>
+                  </div>
+
+
+
+
+
                 </div>
+
               </div>
-
-            </div>
-
-
-            <div className="col mb-3" style={{ backgroundColor: "rgb(0,0,0,0.3)" }}>
-              <h5 className="text-white">Nuestra Federación</h5>
-              <ul className="nav flex-column">
-                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Quienes Somos</a></li>
-                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Plan Estrategico</a></li>
-                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Estructura</a></li>
-                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Directorio</a></li>
-                <li className="nav-item mb-2 "><a className="nav-link p-0 text-white ">Estatutos</a></li>
-              </ul>
-            </div>
-
-            <div className="col mb-3" style={{ backgroundColor: "rgb(0,0,0,0.3)" }}>
-              <h5 className="text-white">Fondo de Fomento</h5>
-              <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Quienes Somos</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Estructura</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Servicios</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Programa</a></li>
-                <li className="nav-item mb-2"><a className="nav-link p-0 text-white ">Normatividad</a></li>
-              </ul>
-            </div>
-
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-              <p className=" my-auto" style={{backgroundColor:"rgb(0,0,0,0.3)"}}>© 2024 Fedepanela,Todos los derechos reservados.</p>
-              <ul class="list-unstyled d-flex">
+              <ul class="list-unstyled d-flex mt-2">
 
 
                 <a class="socialContainer containerOne" href="https://web.facebook.com/fedepanelacol?_rdc=1&_rdr" target="blank">
@@ -115,7 +86,24 @@ function Footer() {
 
 
               </ul>
+
+
             </div>
+
+
+            <div className="col-12 col-md-6 mb-3" >
+              
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.061506702177!2d-74.063003!3d4.680106000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aec00dd5713%3A0x2d5fb2032d63c1f2!2sFedepanela!5e0!3m2!1ses-419!2sco!4v1708419526644!5m2!1ses-419!2sco" width="100%" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p className=" my-auto" style={{ backgroundColor: "rgb(0,0,0,0.3)" }}>© 2024 Fedepanela,Todos los derechos reservados.</p>
+
+            </div>
+
+
 
 
 

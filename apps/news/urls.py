@@ -1,6 +1,8 @@
 from django.urls import path
 from .views import *
 
+APP_NAME= "news"
+
 urlpatterns=[
     path('create',CreateNewPostView.as_view()),
     path('list',NewsListView.as_view()), 

@@ -14,8 +14,8 @@ function CardAtention({ titulo, cuerpo, cuerpo2 , i}) {
                 <div class="header">
 
                     <div class="div_image_v">
-                        <div class="image">
-                            <svg viewBox="0 0 24 24" >{i}</svg>
+                        <div class="image align-self-center">
+                            {i}
                         </div>
                     </div>
                     <div class="content">
