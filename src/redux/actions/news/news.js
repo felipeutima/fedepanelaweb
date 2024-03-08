@@ -6,9 +6,9 @@ import {
     GET_NEWS_LIST_FAIL
 
 }from "./types"
-import { Displayport } from "react-bootstrap-icons";
 
-export const get_news_list =()=> async dispatch => {
+
+export const get_news =()=> async dispatch => {
     const config= {
         Headers: {
             'Accept':" application/json"
@@ -17,7 +17,7 @@ export const get_news_list =()=> async dispatch => {
 
     };
     try{
-        const res= await axios.get( `${process.env.REACT_APP_API_URL}/api/noticias/list`, config)
+        const res= await axios.get( `${process.env.REACT_APP_API_URL}/api/news/list`, config)
 
         if (res.status === 200) {
             dispatch({

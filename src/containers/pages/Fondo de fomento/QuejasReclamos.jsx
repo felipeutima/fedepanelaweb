@@ -20,7 +20,7 @@ function QuejasReclamos() {
                 <h1 className="text-center h1-title my-5">Quejas y reclamos</h1>
                 <div className="row">
                     <div class="col-lg-6"><div ><h2 class="fw-bolder h2-title">A través del formato de quejas y reclamos se atenderán inquietudes, sugerencias, preguntas o reclamos del público en general.</h2>
-                        <div className="col-md-6">
+                        <div className="col-md-6 mx-auto my-4">
                             <CardAtention titulo="Fedepanela"
                                 cuerpo="Carrera 49B No. 91 - 48
                                 Barrio La Castellana
@@ -30,13 +30,13 @@ function QuejasReclamos() {
                                 Telefonos (57-1) 6 22 20 66" />
 
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 mx-auto my-4">
                             <CardAtention titulo="Horarios de atención al público:"
                                 cuerpo="Lunes a viernes de 8:30 am a 5:00 pm, jornada continua"
                                 i={<ClockFill className="mx-auto" />}
                                />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 mx-auto my-4">
                             <CardAtention titulo="Correo para notificaciones judiciales"
                                 cuerpo="juridica@fedepanela.org.co"
                                 i={<EnvelopeFill />}

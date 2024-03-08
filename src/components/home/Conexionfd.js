@@ -1,33 +1,20 @@
 import { connect } from "react-redux"
-import axios from 'axios';
+
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import img1 from "assets/img/Img2.png"
-import CardZoom from "./CardZoom";
+
 import jovenes from "assets/img/jovenespa.png"
 import mujeres from "assets/img/mujerespa.png"
 import asociacion from "assets/img/asociasionespa.png"
 import cedula from "assets/img/cedulapa.png"
-import bgfooter from "assets/img/mazeyellow.svg"
+import bg1 from "assets/img/bg1.jpg"
 import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion"
+
 
 function Conexionfd() {
     const [copPrice, setCopPrice] = useState(null);
 
-    useEffect(() => {
-        const fetchCopPrice = async () => {
-            try {
-                const response = await axios.get('https://open.er-api.com/v6/latest/USD');
-                const exchangeRate = response.data.rates.COP;
-                setCopPrice(exchangeRate.toFixed(2)); // Redondear a 2 decimales
-            } catch (error) {
-                console.error('Error fetching COP price:', error);
-            }
-        };
-
-        fetchCopPrice();
-    }, []);
 
 
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -45,7 +32,7 @@ function Conexionfd() {
         };
     }, []);
 
-    
+
 
 
 
@@ -55,17 +42,25 @@ function Conexionfd() {
 
     return (
         <>
-            <div className="color "  >
+            <div className="container-flex " style={{
+                backgroundImage: `url(${bg1})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                position: 'relative',
+                padding: '100px auto'
+            }} >
 
 
-                <div className="container-flex" >
+                <div className="container-flex"  >
                     <motion.div
                         initial={{ x: -100, opacity: 0 }}
                         animate={isVisible ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.6 }} >
                         <div className="triangular-section" style={{
-                            backgroundColor: "rgb(255, 204, 40)", backgroundAttachment: "fixed", position: "relative"
-                            , clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0% 100%)",
+                            backgroundColor: "rgb(255, 204, 40)", backgroundAttachment: "fixed", position: "relative",
+                            
+                            
+                            /*clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0% 100%)"*/
                             backgroundSize: "cover",
                             height: "300px",
                             width: "100%",
@@ -81,11 +76,7 @@ function Conexionfd() {
                         }}>
 
                             <h1 className="text-center text-white ">CONEXIÓN PANELERA</h1>
-                            {copPrice !== null ? (
-                                <p className="text-center fw-small text-black lead ">Precio del dólar hoy en COP: {copPrice} $</p>
-                            ) : (
-                                <p>Cargando...</p>
-                            )}
+
 
                         </div>
                     </motion.div>
@@ -95,19 +86,13 @@ function Conexionfd() {
 
 
 
-                <div className="container-flex py-2" style={{
-                    backgroundImage: {/* `url(${bgfooter})`*/ },
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'repeat',
-                    width: "100%",
-                    marginTop: "-4%"
-                }}>
+                <div className="container-flex py-2" >
 
                     <div className="container">
                         <div className="row  px-5">
 
 
-                            <div className="col-md-6" style={{ marginTop: "0%" }}>
+                            <div className="col-md-6" >
 
                                 <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
@@ -133,7 +118,7 @@ function Conexionfd() {
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "8%" }}>
+                            <div className="col-md-6" >
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
@@ -158,7 +143,7 @@ function Conexionfd() {
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "0" }}>
+                            <div className="col-md-6" >
 
                                 <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
@@ -186,11 +171,11 @@ function Conexionfd() {
 
 
                             </div>
-                            <div className="col-md-6" style={{ marginTop: "8%" }}>
+                            <div className="col-md-6" >
 
-                                <motion.div style={{zIndex:"0"}}
-                                 initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }}
-                                  transition={{ delay: 0.1, duration: 1 }}  >
+                                <motion.div style={{ zIndex: "0" }}
+                                    initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="card carta mx-auto" >
                                         <div style={{ position: "relative" }}>
                                             <img className="card-img-top" src={cedula} alt="Card image cap" />
@@ -205,13 +190,12 @@ function Conexionfd() {
                                         <div className="card-body">
 
                                             <p className="fw-small text-muted mb-0">
-                                                <h3 className="text-center">Beneficios de los afiliados a Fedepanela</h3>
-                                                <ul>
-                                                    <li>Georreferenciación y cálculos de productividad por área en las fincas.</li>
-                                                    <li>Toma de muestras de suelos y gestión de las recomendaciones específicas para el cultivo.</li>
-                                                    <li>Monitoreo de Diatraea (Barrenador de la caña) y enlace con laboratorios de control biológico.</li>
-                                                    <li>Recomendaciones de manejo.</li>
-                                                </ul>
+                                                FEDEPANELA, Banco agrario y Husqvarna se unen para que tu proyecto panelero aumente en productividad, eficacio y tecnificacion.
+                                            </p>
+                                            <p className="fw-small text-muted mb-0">
+                                                Si eres productor productor panelero afiliado a Fedepanela, acercate a cualquiera de las oficinas del Banco
+                                                agrario. Presenta tu cedula panelera
+
                                             </p>
                                             <div className="mb-2 text-center">
                                                 <button className="btn btn-warning text-white fw-bold">Ir a formulario</button>

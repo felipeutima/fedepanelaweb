@@ -22,10 +22,12 @@ a {
 .img-navbar {
 
   position: absolute;
-  width: 120px;
+  width: 90px;
   top: 0;
   left: 10%;
   z-index: 3;
+  top:-35px;
+  left: 21%;
 
 }
 
@@ -1493,7 +1495,6 @@ navbar .fixed-top {
   border-bottom: none;
   position: relative;
   text-align: center;
-  margin: -20px -20px 0;
   border-radius: 5px 5px 0 0;
   padding: 35px;
 }
@@ -1544,10 +1545,9 @@ navbar .fixed-top {
 
 .card-atention .image svg {
   color: #066e29;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 auto;
-  display: block;
+  width: 20px;
+  
+
   /* Añade esta línea */
 }
 
@@ -1938,17 +1938,7 @@ navbar .fixed-top {
     padding: 5px 10px;
     border-radius: 5px;
 }
-@media (max-width: 768px) {
-  /* Estilos para pantallas más pequeñas, como celulares */
-  .triangular-section h1 {
-    position: absolute;
-    top: 35%;
-    left: 50%;
- 
-    color: white;
-  }
-  
-}
+
 
 
 /* carta conexion panelera*/
@@ -1967,18 +1957,14 @@ navbar .fixed-top {
 /*img head*/
 
 .img-head{
-  filter: grayscale(100%);
+  
   transition: filter 0.3s ease;
   width: 80%;
   display: block;
   margin: auto;
  
 }
-.img-head:hover{
-  filter: grayscale(0%);
-  transition: filter 0.3s ease;
 
-}
 
 
 
@@ -1986,17 +1972,10 @@ navbar .fixed-top {
   /* Estilos para pantallas más pequeñas, como celulares */
   .img-navbar {
     left: 70%;
-    width: 60px;
+    width: 84px;
   }
 
-  .img-head{
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-    width: 100%;
-    display: block;
   
-   
-  }
 }
 
 
@@ -2026,3 +2005,25 @@ navbar .fixed-top {
   color: #FFFFFF;
 }
 
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+
+.img-container {
+  position: relative;
+  width: 200px; /* ajusta el tamaño según sea necesario */
+  height: 200px; /* ajusta el tamaño según sea necesario */
+  overflow: hidden;
+}
+
+.img-container:hover img {
+  transform: translateY(-10px); /* ajusta la distancia del salto */
+  transition: transform 0.3s ease; /* controla la velocidad y el efecto de la transición */
+}
+
+.rounded-gray-bg {
+  background-color: rgba(46, 49, 54, 0.5); /* color de fondo gris */
+  border-radius: 5px; /* esquinas redondeadas */
+  padding: 10px 15px; /* espaciado interno */
+  display: inline-block; /* para que el fondo se ajuste al contenido */
+}

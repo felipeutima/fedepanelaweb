@@ -24,12 +24,16 @@ import Laboral from 'containers/pages/Normatividad/Laboral';
 import MecanismoContacto from 'containers/pages/Ley de Transparencia/MecanismosContacto';
 import Informaciondeinteres from 'containers/pages/Ley de Transparencia/InformaciondeInteres';
 import Planeacion from 'containers/pages/Ley de Transparencia/Planeacion';
-
+import OportunidadesComerciales from 'containers/pages/Area comercial/OportunidadesComerciales';
 import Estructuraorgánicaytalentohumano from 'containers/pages/Ley de Transparencia/Estructuraorgánicaytalentohumano';
 import Normatividad from 'containers/pages/Ley de Transparencia/Normatividad';
-
+import ProyeccionNegocio from 'containers/pages/Area comercial/ProyecciónNegocio';
 import Control from 'containers/pages/Ley de Transparencia/Control';
-
+import Aexcid from 'containers/pages/Convenios/Aexid';
+import Finagro from 'containers/pages/Convenios/Finagro';
+import NamaPanela from 'containers/pages/Convenios/NamaPanela';
+import PreguntasFrecuentes from 'containers/pages/Fondo de fomento/PreguntasFrecuentes';
+import HerramientesInter from 'containers/pages/Area comercial/HerramientasInter';
 
 function App() {
   return (
@@ -72,6 +76,7 @@ function App() {
           <Route path="/FondodeFomento/ProcesosRecaudo" element={<ProcesosRecaudoFDF />} />
           <Route path="/FondodeFomento/CalendarioEventos" element={<CalendarioEventosFDF />} />
           <Route path="/FondodeFomento/QuejasReclamos" element={<QuejasReclamos />} />
+          <Route path="/FondodeFomento/PreguntasFrecuentes" element={<PreguntasFrecuentes />} />
 
 
 
@@ -96,7 +101,19 @@ function App() {
 
 
 
-          
+          {/*Convenios*/}
+
+          <Route path="/Convenios/AexidyFHRE" element={<Aexcid />} />
+          <Route path="/Convenios/Finagro" element={<Finagro />} />
+          <Route path="/Convenios/NamaPanela" element={<NamaPanela />} />
+
+          {/*Area comercial*/}
+
+          <Route path="/AreaComercial/OportunidadesComerciales" element={<OportunidadesComerciales />} />
+          <Route path="/AreaComercial/Herramientas" element={<HerramientesInter />} />
+          <Route path="/AreaComercial/ProyeccionNegocio" element={<ProyeccionNegocio />} />
+
+
 
 
 

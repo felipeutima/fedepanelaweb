@@ -6,20 +6,38 @@ import Contacto from "components/home/Contacto"
 import Layout from "hocs/layouts/Layout"
 import Conexionfd from "components/home/Conexionfd"
 import Services from "components/home/Services"
+import { connect } from "react-redux";
+import { useEffect } from "react"
+import { get_news } from "redux/actions/news/news"
 
-function Home(){
+function Home({ get_news }) {
 
-    return(
+    useEffect(() => {
+        get_news()
+
+    }, [])
+
+    return (
         <Layout>
-            <Navbar/>
-            <Header/>
-            <Noticias/>
-            <Services/>
-            <Conexionfd/>
-        
-            <Contacto/>
-            <Footer/>
+            <Navbar />
+            <Header />
+            <Noticias />
+            <Services />
+            <Conexionfd />
+
+            <Footer />
         </Layout>
     )
 }
-export default Home
+const mapStateToProps = state => ({
+
+    news: state.news
+
+
+})
+
+export default connect(mapStateToProps, {
+
+    get_news
+
+})(Home)

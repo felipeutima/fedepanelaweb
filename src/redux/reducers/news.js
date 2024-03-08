@@ -2,29 +2,29 @@ import {
     GET_NEWS_LIST_SUCCESS,
     GET_NEWS_LIST_FAIL,
 
-} from '../actions/contacts/types'
+} from '../actions/news/types'
 
 const initialState = {
-    contacts: null
+    news: null
 }
 
-export default function contacts(state = initialState, action) {
+export default function news(state = initialState, action) {
     const { type, payload } = action;
 
     switch (type) {
         case GET_NEWS_LIST_SUCCESS:
             return {
                 ...state,
-                count: payload.count,
+            
                 next: payload.next,
                 previous: payload.previous,
-                contacts: payload.results.contacts
+                news: payload.results.posts
             }
         case GET_NEWS_LIST_FAIL:
             return {
                 ...state,
-                contacts: null,
-                count: null,
+                news: null,
+         
                 next: null,
                 previous: null,
             }

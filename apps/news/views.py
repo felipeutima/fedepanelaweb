@@ -105,7 +105,6 @@ class NewsListView(APIView):
         if Post.postobjects.all().exists():
 
             posts = Post.postobjects.all()
-
             paginator = SmallSetPagination()
             results = paginator.paginate_queryset(posts, request)
             serializer = PostListSerializer(results, many=True)
