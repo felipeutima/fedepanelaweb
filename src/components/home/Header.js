@@ -39,6 +39,7 @@ function Header() {
             <img
               src={banner1}
               className="img-fluid"
+              width={"100%"}
             />
             <Carousel.Caption>
 
@@ -48,6 +49,7 @@ function Header() {
             <img
               src={banner2}
               className="img-fluid"
+              width={"100%"}
             />
             <Carousel.Caption>
 
@@ -57,6 +59,7 @@ function Header() {
             <img
               src={banner3}
               className="img-fluid"
+              width={"100%"}
             />
             <Carousel.Caption>
 
@@ -71,7 +74,7 @@ function Header() {
 
 
         <div className= {`container-flex servicios b-example-divider   ${isSmallScreen? "py-2" :""}`} style={{
-          backgroundColor: 'rgba(365, 365, 365, 1)',
+          backgroundColor: '#2b342e',
           position:  "",
           bottom: "0",
           width: "100%",

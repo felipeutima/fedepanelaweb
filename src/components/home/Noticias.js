@@ -22,6 +22,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import CardSpotify from "./CardSpotify";
 import React, { useEffect, useState } from 'react';
+import { Filter } from "react-bootstrap-icons";
 
 
 function Noticias() {
@@ -54,13 +55,32 @@ function Noticias() {
 
 
         <>
-            <div className="container-flex " style={{
-                backgroundImage: `url(${bg1})`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                position: 'relative',
-                padding: '100px auto'
+            <div className="container-flex  " style={{
+         
             }} >
+                <div className="" style={{
+                  
+                    backgroundImage: `url(${bg1})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    position: 'relative',
+                    padding: '100px auto',
+                    zIndex: 0
+                }}>
+
+
+
+                <div className="overlay"
+                    style={{
+                        position: "absolute", top: 0, left: 0,
+                        width: "100%", height: "100%",
+                        backgroundColor: "rgba(355, 355, 355, 0.45)",
+                        zIndex:-2,
+                        filter: "blur(20px)"
+
+                    }} />
+
+
                 <div className="container">
                     <div className="row">
 
@@ -69,8 +89,8 @@ function Noticias() {
 
 
                             <div class="about-text mt-3  my-lg-5" >
-                                <div class="rounded-gray-bg my-2">
-                                    <h6 class="text-white text-uppercase" >Noticias Gremio</h6>
+                                <div class="rounded-gray-bg my-3">
+                                    <h6 class="text-white text-uppercase text-center" >Noticias Gremio</h6>
                                 </div>
                                 <div className="row mb-3">
 
@@ -80,7 +100,7 @@ function Noticias() {
                                             <Carousel.Item>
                                                 <div className="row">
                                                     <div class="col-md-7 col-12 pe-0">
-                                                        <img class="img-fluid" width="100%" src={ejemplo} alt="" />
+                                                        <img class="img-fluid" width="100%" src={ejemplo6} alt="" />
                                                     </div>
                                                     <div class="col-md-5 col-12 ps-0 " data-bs-theme="dark">
                                                         <div className="panel-dark ">
@@ -101,7 +121,7 @@ function Noticias() {
                                             <Carousel.Item>
                                                 <div className="row">
                                                     <div class="col-md-7 col-12 pe-0">
-                                                        <img class="img-fluid" width="100%" src={ejemplo1} alt="" />
+                                                        <img class="img-fluid" width="100%" src={ejemplo6} alt="" />
                                                     </div>
                                                     <div class="col-md-5 col-12 ps-0 " data-bs-theme="dark">
                                                         <div className="panel-dark ">
@@ -125,7 +145,7 @@ function Noticias() {
                                             <Carousel.Item>
                                                 <div className="row">
                                                     <div class="col-md-7 col-12 pe-0">
-                                                        <img class="img-fluid" width="100%" src={ejemplo2} alt="" />
+                                                        <img class="img-fluid" width="100%" src={ejemplo6} alt="" />
                                                     </div>
                                                     <div class="col-md-5 col-12 ps-0 " data-bs-theme="dark">
                                                         <div className="panel-dark ">
@@ -166,10 +186,10 @@ function Noticias() {
                                                     <Accordion.Item eventKey="0">
                                                         <Accordion.Header>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Accordion.Header>
                                                         <Accordion.Body>
-                                                            <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
-                                                                <img class="img-fluid" src={ejemplo4} alt="" />
+                                                            <Card className="card-news text-white" style={{ backgroundColor: "#2b342e" }} >
+                                                                <img class="img-fluid" src={ejemplo6} alt="" />
                                                                 <Card.Body>
-                                                                    <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+                                                                    <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
                                                                 </Card.Body>
@@ -179,10 +199,10 @@ function Noticias() {
                                                     <Accordion.Item eventKey="1">
                                                         <Accordion.Header>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Accordion.Header>
                                                         <Accordion.Body>
-                                                            <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
-                                                                <img class="img-fluid" src={ejemplo5} alt="" />
+                                                            <Card className="card-news text-white" style={{ backgroundColor: "#2b342e" }} >
+                                                                <img class="img-fluid" src={ejemplo6} alt="" />
                                                                 <Card.Body>
-                                                                    <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+                                                                    <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
                                                                 </Card.Body>
@@ -192,10 +212,10 @@ function Noticias() {
                                                     <Accordion.Item eventKey="2">
                                                         <Accordion.Header>Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Accordion.Header>
                                                         <Accordion.Body>
-                                                            <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
+                                                            <Card className="card-news text-white" style={{ backgroundColor: "#2b342e" }} >
                                                                 <img class="img-fluid" src={ejemplo6} alt="" />
                                                                 <Card.Body>
-                                                                    <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+                                                                    <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
                                                                 </Card.Body>
@@ -208,10 +228,10 @@ function Noticias() {
 
                                             : <>
                                                 <div class="col-md-4 ">
-                                                    <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }} >
+                                                    <Card className="card-news text-white" style={{ backgroundColor: "#2b342e" }} >
                                                         <img class="img-fluid" src={ejemplo4} alt="" />
                                                         <Card.Body>
-                                                            <Card.Title className="a-news">
+                                                            <Card.Title className="a-news ">
                                                                 AVISO ACLARATORIO CONVOCATORIA AUDITORÍA FONDO DE FOMENTO PANELERO No. 001 DE 2024</Card.Title>
 
 
@@ -219,21 +239,22 @@ function Noticias() {
                                                     </Card>
 
                                                 </div>
+                     
                                                 <div class="col-md-4">
-                                                    <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
-                                                        <img class="img-fluid" src={ejemplo5} alt="" />
+                                                    <Card className="card-news text-white" style={{ backgroundColor: "#2b342e" }}>
+                                                        <img class="img-fluid" src={ejemplo6} alt="" />
                                                         <Card.Body>
-                                                            <Card.Title className="a-news">Pliego de condiciones convocatoria auditoría</Card.Title>
+                                                            <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
                                                         </Card.Body>
                                                     </Card>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <Card className="card-news" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
+                                                    <Card className="card-news text-white" style={{ backgroundColor: "#2b342e" }}>
                                                         <img class="img-fluid" src={ejemplo6} alt="" />
                                                         <Card.Body>
-                                                            <Card.Title className="a-news">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
+                                                            <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
 
 
                                                         </Card.Body>
@@ -260,9 +281,9 @@ function Noticias() {
                             <div className="row">
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                     <div className="row mt-3 mt-lg-5">
-                                    <div class="rounded-gray-bg my-2">
-                                    <h6 class="text-white text-uppercase" >Radio</h6>
-                                </div>
+                                        <div class="rounded-green-bg mb-3">
+                                            <h6 class="text-white text-uppercase text-center" >Radio</h6>
+                                        </div>
                                         <CardSpotify />
 
 
@@ -270,9 +291,9 @@ function Noticias() {
                                 </motion.div>
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
 
-                                <div class="rounded-gray-bg my-2">
-                                    <h6 class="text-white text-uppercase " >Tendencias</h6>
-                                </div>
+                                    <div class="rounded-white-bg my-2">
+                                        <h6 class="text-success text-center text-uppercase " >Tendencias (TO DO Fedenews)</h6>
+                                    </div>
                                     <div class="card-date mt-2">
                                         <div class="bar"></div>
                                         <img src={ejemplptend} className="img-fluid" width={"25%"} />
@@ -383,6 +404,7 @@ function Noticias() {
             </div>
                 */}
 
+            </div>
             </div>
         </>
 

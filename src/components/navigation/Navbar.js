@@ -10,39 +10,61 @@ import fedepng from "assets/img/FEDEPANELALOGO-04.png"
 import { useState, useEffect } from 'react';
 
 import { BrowserRouter as Router, NavLink, useLocation } from 'react-router-dom';
+import axios from 'axios';
+import colombia from "assets/img/colombia.png"
+import estadosunidos from "assets/img/estadosunidos.png"
+
 
 function NavigationBar() {
 
 
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   useEffect(() => {
-      function handleResize() {
-          setIsSmallScreen(window.innerWidth < 768);
-      }
-      handleResize();
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
+    function handleResize() {
+      setIsSmallScreen(window.innerWidth < 768);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
 
   const location = useLocation();
   const isNotHome = location.pathname !== '/';
 
+  const [copPrice, setCopPrice] = useState(null);
+
+
+  useEffect(() => {
+      const fetchCopPrice = async () => {
+          try {
+              const response = await axios.get('https://open.er-api.com/v6/latest/USD');
+              const exchangeRate = response.data.rates.COP;
+              setCopPrice(exchangeRate.toFixed(2)); // Redondear a 2 decimales
+          } catch (error) {
+              console.error('Error fetching COP price:', error);
+          }
+      };
+
+      fetchCopPrice();
+  }, []);
 
   return (
 
     <>
-       
-  
-       
-       
-        <a href="/"> <img src={fedepng} className="img-navbar" ></img>  </a>
 
 
-      <Navbar className={`navbar-transparent py-3  navbar-dark ${isNotHome ||  isSmallScreen ? " " : "position-absolute"}`} 
+
+
+      <a href="/"> <img src={fedepng} className="img-navbar" ></img>  </a>
+
+
+      <Navbar className={`navbar-transparent py-3  navbar-dark ${isNotHome || isSmallScreen ? " " : "position-absolute"}`}
         expand="lg"
-        style={{ borderTop: "solid 8px #FFCC28", zIndex:2, width:"100%",
-         backgroundColor: 'rgba(49, 49, 54, 0.5)'    }}    >
+        style={{
+          borderTop: "solid 8px #FFCC28", zIndex: 2, width: "100%",
+          backgroundColor: 'rgba(49, 49, 54, 0.5)'
+        }}    >
 
         <div className="container">
 
@@ -55,7 +77,7 @@ function NavigationBar() {
             >
 
 
-              <NavDropdown style={{ marginLeft: isSmallScreen ? "" : "320px" }} title="Nuestra Federación" id="navbarScrollingDropdown">
+              <NavDropdown color="#fff" style={{ marginLeft: isSmallScreen ? "" : "270px" }} title="Nuestra Federación" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="/NuestraFederacion/quienessomos">Quiénes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/PlanEstrategico">Plan Estratégico</NavDropdown.Item>
@@ -122,6 +144,20 @@ function NavigationBar() {
                 <NavDropdown.Item href="/Convenios/NamaPanela">Nama Panela</NavDropdown.Item>
 
               </NavDropdown>
+          
+                <div className="scrolling-text-container">
+                  <div className="scrolling-text">
+                    {copPrice !== null ? (
+
+                      <p className="my-2 mx-auto text-white ">Tasa de cambio: $1 USD = ${copPrice} COP </p>
+                    ) : (
+                      <p>Cargando...</p>
+                    )}
+                  </div>
+                </div>
+       
+
+
 
             </Nav>
 

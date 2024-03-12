@@ -1,13 +1,29 @@
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('assets/fonts/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Brandon Grotesque';
+}
+
+
+
 .h1-title {
   color: #C3460F;
+
 }
 
 .h2-title {
   color: #005B24;
+
 }
 
 p {
   color: white;
+  font-family: 'Brandon Grotesque', sans-serif
 }
 
 a {
@@ -17,6 +33,7 @@ a {
   /* Mantiene el color predeterminado del texto */
   cursor: pointer;
   /* Cambia el cursor al pasar sobre el enlace */
+
 }
 
 .img-navbar {
@@ -27,7 +44,7 @@ a {
   left: 10%;
   z-index: 3;
   top:-35px;
-  left: 21%;
+
 
 }
 
@@ -64,7 +81,13 @@ a {
 
 
 .panel-dark {
-  background: rgb(255, 204, 40);
+  background: #2b342e;
+  padding: 15px;
+  height: 100%;
+}
+
+.panel-white {
+  background: #fff;
   padding: 15px;
   height: 100%;
 }
@@ -79,6 +102,7 @@ Navbar {
   position: relative;
   transition: top 0.3s;
   /* Agregar una transición para suavizar el efecto */
+
 }
 
 navbar .fixed-top {
@@ -89,6 +113,8 @@ navbar .fixed-top {
   background-color: #333;
   /* Ajusta el índice z según sea necesario para que el navbar aparezca encima de otros elementos */
 }
+
+
 
 
 .line {
@@ -137,14 +163,14 @@ navbar .fixed-top {
   justify-content: center;
   padding: 25px 25px;
   gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 
 .socialContainer {
   width: 52px;
   height: 52px;
-  background-color: rgb(44, 44, 44,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1683,7 +1709,7 @@ navbar .fixed-top {
   position: relative;
   display: flex;
   width: 100%;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #05601F;
   border-radius: 6px;
   gap: 0.5rem;
   height: max-content;
@@ -1697,7 +1723,7 @@ navbar .fixed-top {
   position: relative;
   display: flex;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 6px;
   gap: 0.5rem;
@@ -1707,10 +1733,10 @@ navbar .fixed-top {
 
 
 .card-date .bar {
-  width: 5px;
+  width: 7px;
   border-radius: 5px;
-  background-color: rgb(255, 204, 40);
-  transition: all 0.5s ease-in-out;
+  background-color: #25de59;
+
 }
 
 .card-date .card:hover .bar {
@@ -1781,10 +1807,11 @@ navbar .fixed-top {
 /*SPOTIFY*/
 
 .main {
-  background-color: #2E3136;
+  background-color: #05601f;
   border-radius: 5px;
   width: 100%;
   padding-bottom: 2px;
+  z-index: 2;
 
 }
 
@@ -1847,7 +1874,7 @@ navbar .fixed-top {
 .load {
   width: 2px;
   height: 33px;
-  background-color: limegreen;
+  background-color: rgb(255, 255, 255);
   animation: 1s move6 infinite;
   border-radius: 5px;
   margin: 0.1em;
@@ -2011,8 +2038,7 @@ navbar .fixed-top {
 
 .img-container {
   position: relative;
-  width: 200px; /* ajusta el tamaño según sea necesario */
-  height: 200px; /* ajusta el tamaño según sea necesario */
+
   overflow: hidden;
 }
 
@@ -2021,9 +2047,60 @@ navbar .fixed-top {
   transition: transform 0.3s ease; /* controla la velocidad y el efecto de la transición */
 }
 
-.rounded-gray-bg {
-  background-color: rgba(46, 49, 54, 0.5); /* color de fondo gris */
+.rounded-white-bg {
+  background-color: #fff; /* color de fondo gris */
   border-radius: 5px; /* esquinas redondeadas */
   padding: 10px 15px; /* espaciado interno */
-  display: inline-block; /* para que el fondo se ajuste al contenido */
+
+}
+.rounded-gray-bg {
+  background-color: #2b342e; /* color de fondo gris */
+  border-radius: 5px; /* esquinas redondeadas */
+  padding: 10px 15px; /* espaciado interno */
+
+}
+.rounded-green-bg {
+  background-color: #05601f; /* color de fondo gris */
+  border-radius: 5px; /* esquinas redondeadas */
+  padding: 10px 15px; /* espaciado interno */
+
+}
+.rounded-green2-bg {
+  background-color: #448958; /* color de fondo gris */
+  border-radius: 5px; /* esquinas redondeadas */
+  padding: 10px 15px; /* espaciado interno */
+
+}
+
+.blur-background::before {
+  content: '';
+  background: inherit;
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text {
+  display: inline-block;
+  animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
