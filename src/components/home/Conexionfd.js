@@ -65,7 +65,7 @@ function Conexionfd() {
                         animate={isVisible ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.6 }} >
                         <div className="triangular-section" style={{
-                            backgroundColor: "#05601f", backgroundAttachment: "fixed", position: "relative",
+                            backgroundColor: "rgba(5, 96, 31,0.7)", backgroundAttachment: "fixed", position: "relative",
 
 
                             /*clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0% 100%)"*/
