@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3da2514.css",
-    "main.js": "/static/js/main.22805965.js",
+    "main.css": "/static/css/main.e997bf6c.css",
+    "main.js": "/static/js/main.87d40224.js",
     "static/media/muro.jpg": "/static/media/muro.8334707e02479f2859d2.jpg",
     "static/media/Cap8.png": "/static/media/Cap8.b45a8f0edde811b24159.png",
     "static/media/Cap7.png": "/static/media/Cap7.4195d7c41ae666f1fe5f.png",
@@ -98,16 +98,20 @@
     "static/media/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO.pdf": "/static/media/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO.a2317ee664da0e37f367.pdf",
     "static/media/ns2.png": "/static/media/ns2.eb0ad1fc5c1b1aaf0902.png",
     "static/media/gremial.jpg": "/static/media/gremial.b432699b1c8ee8c78f4a.jpg",
+    "static/media/boton7.png": "/static/media/boton7.abe1e57ab178568285cc.png",
     "static/media/fhre.png": "/static/media/fhre.ee19fe9e5cc9d9dbc734.png",
     "static/media/fedepng.png": "/static/media/fedepng.ef138e3347ab6d62ccac.png",
+    "static/media/boton1.png": "/static/media/boton1.2947001aaf932e8832a5.png",
     "static/media/RESOLUCIN_3544_DE_2009.pdf": "/static/media/RESOLUCIN_3544_DE_2009.f030a7de9194fa048bba.pdf",
+    "static/media/boton6.png": "/static/media/boton6.b27ce501478e49104e8b.png",
+    "static/media/boton3.png": "/static/media/boton3.6cd3b3f6a06358a94755.png",
     "static/media/p3.jpg": "/static/media/p3.9d28d231674faa89e478.jpg",
     "static/media/p4.jpg": "/static/media/p4.f5132bae67c7c2808160.jpg",
     "static/media/Circular-13-de-2022-Finagro.pdf": "/static/media/Circular-13-de-2022-Finagro.754d9f5679d3f8514706.pdf",
+    "static/media/boton8.png": "/static/media/boton8.f44bda09a9a6bf763421.png",
+    "static/media/boton4.png": "/static/media/boton4.ddd79ad76f94bd4f2825.png",
     "static/media/convenio1.jpeg": "/static/media/convenio1.0d7002de874737b16229.jpeg",
-    "static/media/boton7.png": "/static/media/boton7.781d05d0ada9d9a18ff5.png",
     "static/media/convenio7.jpeg": "/static/media/convenio7.a507fc043a898ffd5944.jpeg",
-    "static/media/boton1.png": "/static/media/boton1.9da07d3fc53b023f23e1.png",
     "static/media/p1.jpg": "/static/media/p1.6d66f800261f0dcef49b.jpg",
     "static/media/p5.jpg": "/static/media/p5.27d929607ffdb85a720c.jpg",
     "static/media/convenio2.jpeg": "/static/media/convenio2.492042d8033588a69f18.jpeg",
@@ -117,16 +121,13 @@
     "static/media/ejem5.jpeg": "/static/media/ejem5.b336ae5dc2b4bc6e0ef6.jpeg",
     "static/media/convenio5.jpeg": "/static/media/convenio5.f8b3d3e9b24fe7887a72.jpeg",
     "static/media/boton5.png": "/static/media/boton5.306fa60ab9346f9a4a57.png",
-    "static/media/boton6.png": "/static/media/boton6.f270dd8ba482c88eb845.png",
-    "static/media/boton3.png": "/static/media/boton3.b0dc8cc36359141b3f36.png",
     "static/media/RESOLUCIN_3462_DE_2008.pdf": "/static/media/RESOLUCIN_3462_DE_2008.d77d63f1861a62f43223.pdf",
     "static/media/convenio8.jpeg": "/static/media/convenio8.e1e17179552cad489a80.jpeg",
     "static/media/Links-registro-productores-compras-publicas-Ley-2046.xlsx": "/static/media/Links-registro-productores-compras-publicas-Ley-2046.cba4db7ebe8e1e1f4dad.xlsx",
     "static/media/convenio4.jpeg": "/static/media/convenio4.cc5422fdd9a64f04fdd4.jpeg",
     "static/media/convenio3.jpeg": "/static/media/convenio3.b623f4d46d986b7bddab.jpeg",
     "static/media/ejem4.png": "/static/media/ejem4.e3a98e0cb997b80c4d7c.png",
-    "static/media/boton4.png": "/static/media/boton4.bd579132592e2acf8757.png",
-    "static/media/boton8.png": "/static/media/boton8.2fb2e4977eb1fca673fc.png",
+    "static/media/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf": "/static/media/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.922992580a2fc142eb9a.otf",
     "static/media/noticia2.png": "/static/media/noticia2.e83bb3d61ef565068df7.png",
     "static/media/pselogo1.png": "/static/media/pselogo1.1f488000e804910cc7fc.png",
     "static/media/ejemplo.jpeg": "/static/media/ejemplo.7e3b2151fd2dd605d169.jpeg",
@@ -140,11 +141,11 @@
     "static/media/logo_sipa.png": "/static/media/logo_sipa.b0067528a26651f1ec32.png",
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.67b634f550afa9ab6722c8fb1e3d12b3.svg",
     "index.html": "/index.html",
-    "main.d3da2514.css.map": "/static/css/main.d3da2514.css.map",
-    "main.22805965.js.map": "/static/js/main.22805965.js.map"
+    "main.e997bf6c.css.map": "/static/css/main.e997bf6c.css.map",
+    "main.87d40224.js.map": "/static/js/main.87d40224.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3da2514.css",
-    "static/js/main.22805965.js"
+    "static/css/main.e997bf6c.css",
+    "static/js/main.87d40224.js"
   ]
 }

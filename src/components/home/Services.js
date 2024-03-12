@@ -23,7 +23,7 @@ import estadosunidos from "assets/img/estadosunidos.png"
 
 function Services() {
     const [copPrice, setCopPrice] = useState(null);
-   
+
 
     useEffect(() => {
         const fetchCopPrice = async () => {
@@ -49,119 +49,149 @@ function Services() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+
+    const [embedData, setEmbedData] = useState(null);
+
+    const [videos, setVideos] = useState([]);
+
+    useEffect(() => {
+        const fetchVideos = async () => {
+            try {
+                const response = await fetch('https://www.tiktok.com/oembed?url=https://www.tiktok.com/@scout2015/video/6718335390845095173');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                setVideos(prevVideos => [...prevVideos, data]);
+
+                // Aquí puedes realizar solicitudes adicionales para obtener más videos
+                // Por ejemplo, podrías iterar sobre un array de URLs de videos
+                // y realizar una solicitud para cada una
+            } catch (error) {
+                console.error('Error fetching videos:', error);
+            }
+        };
+
+        // Realizamos la solicitud inicial para obtener un video
+        fetchVideos();
+    }, []);
+
+
     return (
 
         <>
-            <div class="container-fluid py-5" style={{
+            <div class="container-fluid " style={{
                 backgroundImage: `url(${bg1})`,
+
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 position: 'relative',
                 padding: '100px auto'
             }}>
-                <div class="container pt-5 pb-3">
+                <div className="overlay"
+                    style={{
+                        position: "absolute", top: 0, left: 0,
+                        width: "100%", height: "100%",
+                        backgroundColor: "rgba(355, 355, 355, 0.3)",
+                        zIndex:0
+                    }} />
+
+                <div class="container-flex" style={{zIndex:3}}>
                     <div className="row">
 
-                        <div className="col-md-6">
+                        <div className="col-md-7 container-flex ps-5" style={{
+                            background: "rgba(355, 355, 355, 0.4)", backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                        }}>
                             <div className="container">
 
 
-                                <div className="row justify-content-center my-2">
-                                    <div class="rounded-gray-bg mb-4">
-                                        <h6 class="text-white text-uppercase ">Nuestros programas</h6>
+                                <div className="row justify-content-center my-4">
+                                    <div class="rounded-white-bg mb-4">
+                                        <h6 style={{color:"#05601f"}} class=" fw-bold text-center text-uppercase ">Nuestros programas</h6>
                                     </div>
-                                    <div className="col-md-3 col-6 img-container">
+                                    <div className="col-md-4 col-6 img-container">
                                         <a href="https://www.youtube.com/watch?v=OS4wVgvr6eY&list=PLU8D9c2LVu38Htz9ofWzF_Rykro8N2ff6">
 
-                                            <img src={boton1} className="img-fluid mx-auto d-block" />
+                                            <img src={boton1} width={"70%"} className="my-2 img-fluid mx-auto d-block" />
                                         </a>
                                     </div>
-                                    <div className="col-md-3 col-6 img-container">
-                                    <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
-
-
-                                            <img src={boton2} className="img-fluid mx-auto d-block" />
-                                        </a>
-                                    </div>
-                                    <div className="col-md-3 col-6 img-container">
+                                    <div className="col-md-4 col-6 img-container">
                                         <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
 
-                                            <img src={boton3} className="img-fluid mx-auto d-block" />
+
+                                            <img src={boton2} width={"70%"} className="my-2 img-fluid mx-auto d-block" />
                                         </a>
                                     </div>
-                                    <div className="col-md-3 col-6 img-container">
+                                    <div className="col-md-4 col-6 img-container">
+                                        <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
+
+                                            <img src={boton3} width={"70%"} className="my-2 img-fluid mx-auto d-block" />
+                                        </a>
+                                    </div>
+                                    <div className="col-md-4 col-6 img-container">
                                         <a href="https://open.spotify.com/show/4JcuAOF4NrNRgw4uOQtIIf">
 
-                                            <img src={boton4} className="img-fluid mx-auto d-block" />
+                                            <img src={boton4} width={"70%"} className="my-2 img-fluid mx-auto d-block" />
                                         </a>
                                     </div>
-                                    <div className="col-md-3 col-6 img-container">
-                                    <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
+                                    <div className="col-md-4 col-6 img-container">
+                                        <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
 
 
-                                            <img src={boton5} className="img-fluid mx-auto d-block" />
+                                            <img src={boton5} width={"70%"} className="my-2 img-fluid mx-auto d-block" />
                                         </a>
                                     </div>
-                                    <div className="col-md-3 col-6 img-container">
-                                    <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
+                                    <div className="col-md-4 col-6 img-container">
+                                        <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
 
 
-                                            <img src={boton6} className="img-fluid mx-auto d-block" />
+                                            <img src={boton6} width={"70%"} className="my-2 img-fluid mx-auto d-block" />
                                         </a>
                                     </div>
-                                    <div className="col-md-3 col-6 img-container">
-                                    <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
+                                    <div className="col-md-4 col-6 img-container">
+                                        <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
 
 
-                                            <img src={boton7} className="img-fluid mx-auto d-block" />
+                                            <img src={boton7} width={"70%"} className="my-2 img-fluid mx-auto d-block" />
                                         </a>
                                     </div>
-                                    <div className="col-md-3 col-6 img-container">
-                                    <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
+                                    <div className="col-md-4 col-6 img-container">
+                                        <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
 
 
-                                            <img src={boton8} className="img-fluid mx-auto d-block" />
+                                            <img src={boton8} width={"70%"} className="my-2 img-fluid mx-auto d-block" />
                                         </a>
                                     </div>
 
 
 
                                 </div>
-                                <div className="row mx-auto my-4">
-                                    <div className="card-date text-center mx-auto " >
-
-                                        {copPrice !== null ? (
-
-                                            <p className="text-center fw-bold text-black lead my-2 mx-auto "><img src={estadosunidos} className="img-fluid mx-2" />1 USD = <img src={colombia} className="img-fluid" /> {copPrice} COP </p>
-                                        ) : (
-                                            <p>Cargando...</p>
-                                        )}
-                                    </div>
+                         
+                             
 
 
 
-                                </div>
+                            
 
                             </div>
 
                         </div>
-                        <div className="col-md-6 container ">
+                        <div className="col-md-5 container ">
 
 
                             <div className="row">
 
-                                <div className="mx-auto">
-                                    <TikTokEmbed className="mx-auto" 
+                                <div className="mx-auto my-4">
+                                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                        <TikTokEmbed url="https://www.tiktok.com/@fedepanelacol/video/7342979848387710213"
+                                            width={325}
+                                        />
+                                    </div>
 
 
-                                        url="https://www.tiktok.com/@fedepanelacol/video/7342979848387710213"
-                                        embedId="fedepanelacol"
-                                        type="creator"
 
 
-                                        width={ isSmallScreen? "100%":"60%"}
-                                       
-                                    />
                                 </div>
 
                             </div>
