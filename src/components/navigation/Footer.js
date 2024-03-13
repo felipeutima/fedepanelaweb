@@ -68,7 +68,7 @@ function Footer() {
                     <GeoAltFill color="white" size={20} />
                   </div>
                   <div className="col">
-                    <p className="mb-0">Cra 49B #91-48, La Castellana, Bogotá DC</p>
+                    <p className="mb-0 text-white">Cra 49B #91-48, La Castellana, Bogotá DC</p>
                   </div>
                 </div>
                 <div className="row align-items-center">
@@ -76,7 +76,7 @@ function Footer() {
                     <TelephoneFill color="white" size={20} />
                   </div>
                   <div className="col">
-                    <p className="mb-0">6222066 - 6222655 - 6222788</p>
+                    <p className="mb-0 text-white">6222066 - 6222655 - 6222788</p>
                   </div>
 
 
@@ -99,7 +99,7 @@ function Footer() {
             </div>
 
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-              <p className=" my-auto" style={{ backgroundColor: "rgb(0,0,0,0.3)" }}>© 2024 Fedepanela,Todos los derechos reservados.</p>
+              <p className=" my-auto text-white" style={{ backgroundColor: "rgb(0,0,0,0.3)" }}>© 2024 Fedepanela,Todos los derechos reservados.</p>
 
             </div>
 

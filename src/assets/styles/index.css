@@ -9,6 +9,35 @@ body {
   font-family: 'Brandon Grotesque';
 }
 
+.dropdown-menu {
+  background-color: rgb(212, 235, 38); /* Cambia el color de fondo de los submenús */
+  color: rgb(0, 0, 0); /* Cambia el color del texto de los submenús */
+}
+
+/* Cambia el color de fondo de los submenús cuando se les hace hover */
+.dropdown-menu a:hover {
+  background-color: rgb(48, 97, 67); /* Color de fondo al hacer hover sobre las opciones del submenú */
+}
+
+/* Cambia el color de fondo de los submenús desplegados hacia la derecha */
+.dropdown-menu-end {
+  left: 100%;
+  right: 0;
+} 
+
+
+.nav-link{
+  display: none;
+  text-decoration: none;
+}
+
+.custom-dropdown > .nav-link::after {
+  display: none !important; /* Oculta la flecha indicadora */
+}
+
+a{
+  text-decoration: none;
+}
 
 
 .h1-title {
@@ -22,8 +51,15 @@ body {
 }
 
 p {
+
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-align: justify;
+  
+}
+.name {
   color: white;
   font-family: 'Brandon Grotesque', sans-serif
+  
 }
 
 a {

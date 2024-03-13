@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e997bf6c.css",
-    "main.js": "/static/js/main.6f4f03e3.js",
+    "main.css": "/static/css/main.73f18d9a.css",
+    "main.js": "/static/js/main.5f05f99f.js",
     "static/media/muro.jpg": "/static/media/muro.8334707e02479f2859d2.jpg",
     "static/media/Cap8.png": "/static/media/Cap8.b45a8f0edde811b24159.png",
     "static/media/Cap7.png": "/static/media/Cap7.4195d7c41ae666f1fe5f.png",
@@ -9,7 +9,9 @@
     "static/media/ejemplotendencia4.png": "/static/media/ejemplotendencia4.35070804deb4e81a69fb.png",
     "static/media/DECRETO-295-DE-2017.pdf": "/static/media/DECRETO-295-DE-2017.e3fc0eb6dca6dfddb268.pdf",
     "static/media/Boletín de consumo II - Importaciones de endulzantes en el mundo.pdf": "/static/media/Boletín de consumo II - Importaciones de endulzantes en el mundo.ca8a15b107e2cb499c8a.pdf",
+    "static/media/bg22.png": "/static/media/bg22.3fb051a269c0618589bb.png",
     "static/media/Boletín de consumo III - Endulzantes no tradicionales.pdf": "/static/media/Boletín de consumo III - Endulzantes no tradicionales.e664a4715c6bd9a9a246.pdf",
+    "static/media/bg33.png": "/static/media/bg33.2d9a5f4d312c4480dddc.png",
     "static/media/BIOSEGURIDAD.pdf": "/static/media/BIOSEGURIDAD.b57ff7b8b4d957185532.pdf",
     "static/media/plan.png": "/static/media/plan.9b38bda9200ec4723455.png",
     "static/media/Boletín IV - Certificaciones de Valor Agregado.pdf": "/static/media/Boletín IV - Certificaciones de Valor Agregado.47ebaa9159ba3d8d66bd.pdf",
@@ -29,8 +31,6 @@
     "static/media/Informe Inteligencia de mercados 2023 I.pdf": "/static/media/Informe Inteligencia de mercados 2023 I.dd0d21265cc1eaf6f934.pdf",
     "static/media/DECRETO-2616-DE-2013.pdf": "/static/media/DECRETO-2616-DE-2013.e9bb3ba5d05486df8504.pdf",
     "static/media/DECRETO-604-DE-2013.pdf": "/static/media/DECRETO-604-DE-2013.688adc06a2c7eae388dc.pdf",
-    "static/media/bg2.jpg": "/static/media/bg2.97ffae6ef14e8e3c3dd6.jpg",
-    "static/media/bg3.jpg": "/static/media/bg3.7a50e50e761a6edbcd3d.jpg",
     "static/media/Informe Inteligencia de mercados 2023 II.pdf": "/static/media/Informe Inteligencia de mercados 2023 II.a8d8c376989aa6019b21.pdf",
     "static/media/ejemplotendencia.jpeg": "/static/media/ejemplotendencia.a27d234e2fa4e24cd6c4.jpeg",
     "static/media/RESOLUCIN_333_DE_2011.pdf": "/static/media/RESOLUCIN_333_DE_2011.2deef8d30f0682b650f6.pdf",
@@ -97,6 +97,7 @@
     "static/media/ns3.png": "/static/media/ns3.d94be74688b5b3b68f4a.png",
     "static/media/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO.pdf": "/static/media/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO.a2317ee664da0e37f367.pdf",
     "static/media/ns2.png": "/static/media/ns2.eb0ad1fc5c1b1aaf0902.png",
+    "static/media/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf": "/static/media/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.cac94907833ae55f0a4c.otf",
     "static/media/gremial.jpg": "/static/media/gremial.b432699b1c8ee8c78f4a.jpg",
     "static/media/boton7.png": "/static/media/boton7.abe1e57ab178568285cc.png",
     "static/media/fhre.png": "/static/media/fhre.ee19fe9e5cc9d9dbc734.png",
@@ -127,7 +128,6 @@
     "static/media/convenio4.jpeg": "/static/media/convenio4.cc5422fdd9a64f04fdd4.jpeg",
     "static/media/convenio3.jpeg": "/static/media/convenio3.b623f4d46d986b7bddab.jpeg",
     "static/media/ejem4.png": "/static/media/ejem4.e3a98e0cb997b80c4d7c.png",
-    "static/media/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf": "/static/media/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.922992580a2fc142eb9a.otf",
     "static/media/noticia2.png": "/static/media/noticia2.e83bb3d61ef565068df7.png",
     "static/media/pselogo1.png": "/static/media/pselogo1.1f488000e804910cc7fc.png",
     "static/media/ejemplo.jpeg": "/static/media/ejemplo.7e3b2151fd2dd605d169.jpeg",
@@ -141,11 +141,11 @@
     "static/media/logo_sipa.png": "/static/media/logo_sipa.b0067528a26651f1ec32.png",
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.67b634f550afa9ab6722c8fb1e3d12b3.svg",
     "index.html": "/index.html",
-    "main.e997bf6c.css.map": "/static/css/main.e997bf6c.css.map",
-    "main.6f4f03e3.js.map": "/static/js/main.6f4f03e3.js.map"
+    "main.73f18d9a.css.map": "/static/css/main.73f18d9a.css.map",
+    "main.5f05f99f.js.map": "/static/js/main.5f05f99f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e997bf6c.css",
-    "static/js/main.6f4f03e3.js"
+    "static/css/main.73f18d9a.css",
+    "static/js/main.5f05f99f.js"
   ]
 }
