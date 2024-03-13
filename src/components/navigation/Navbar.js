@@ -36,17 +36,17 @@ function NavigationBar() {
 
 
   useEffect(() => {
-      const fetchCopPrice = async () => {
-          try {
-              const response = await axios.get('https://open.er-api.com/v6/latest/USD');
-              const exchangeRate = response.data.rates.COP;
-              setCopPrice(exchangeRate.toFixed(2)); // Redondear a 2 decimales
-          } catch (error) {
-              console.error('Error fetching COP price:', error);
-          }
-      };
+    const fetchCopPrice = async () => {
+      try {
+        const response = await axios.get('https://open.er-api.com/v6/latest/USD');
+        const exchangeRate = response.data.rates.COP;
+        setCopPrice(exchangeRate.toFixed(2)); // Redondear a 2 decimales
+      } catch (error) {
+        console.error('Error fetching COP price:', error);
+      }
+    };
 
-      fetchCopPrice();
+    fetchCopPrice();
   }, []);
 
   return (
@@ -63,7 +63,7 @@ function NavigationBar() {
         expand="lg"
         style={{
           borderTop: "solid 8px #FFCC28", zIndex: 2, width: "100%",
-          backgroundColor: 'rgba(49, 49, 54, 0.5)'
+          backgroundColor: 'rgba(49, 49, 54, 0.8)'
         }}    >
 
         <div className="container">
@@ -72,7 +72,6 @@ function NavigationBar() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
               navbarScroll
             >
 
@@ -119,6 +118,10 @@ function NavigationBar() {
                 <NavDropdown.Item href="/AreaComercial/ProyeccionNegocio">Proyección del negocio panelero</NavDropdown.Item>
 
               </NavDropdown>
+
+     
+
+
               <NavDropdown title="Ley de Transparencia" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/LeyTransparencia/MecanismosContacto">1. Mecanismos de contacto con el sujeto obligado</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Informaciondeinteres">2.Información de interés</NavDropdown.Item>
@@ -144,18 +147,18 @@ function NavigationBar() {
                 <NavDropdown.Item href="/Convenios/NamaPanela">Nama Panela</NavDropdown.Item>
 
               </NavDropdown>
-          
-                <div className="scrolling-text-container">
-                  <div className="scrolling-text">
-                    {copPrice !== null ? (
 
-                      <p className="my-2 mx-auto text-white ">Tasa de cambio: $1 USD = ${copPrice} COP </p>
-                    ) : (
-                      <p>Cargando...</p>
-                    )}
-                  </div>
+              <div className="scrolling-text-container">
+                <div className="scrolling-text">
+                  {copPrice !== null ? (
+
+                    <p className="my-2 mx-auto text-white ">Tasa de cambio: $1 USD = ${copPrice} COP </p>
+                  ) : (
+                    <p>Cargando...</p>
+                  )}
                 </div>
-       
+              </div>
+
 
 
 

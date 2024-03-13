@@ -14,7 +14,7 @@ function CardSpotify({ fecha, titulo }) {
             <div class="main ">
                 <div class="currentplaying">
                     <Spotify color="white" size="8%"/>
-                    <p class="mx-4 fw-bold">La vida sabe a panela radio</p>
+                    <p class="mx-4 fw-bold text-white">La vida sabe a panela radio</p>
                 </div>
                 <a className="text-white loader" style={{textDecoration:"none"}} href="https://open.spotify.com/episode/1nFvb5IMovb1BOcNNTooK7" class="loader mt-2 ">
                     <div class="song">

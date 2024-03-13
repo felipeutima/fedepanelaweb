@@ -4,7 +4,7 @@ import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Accordion from 'react-bootstrap/Accordion';
-import bg1 from "assets/img/bg2.jpg"
+import bg1 from "assets/img/bg22.png"
 import ejemplo from "assets/img/ejemplo.jpeg"
 import ejemplo1 from "assets/img/noticia2.png"
 import ejemplo2 from "assets/img/noticia3.jpeg"

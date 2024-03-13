@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Search, Folder, Book, PersonFill, Briefcase, QuestionCircle } from "react-bootstrap-icons";
 import React, { useEffect, useState } from 'react';
 import { TikTokEmbed } from 'react-social-media-embed';
-import bg1 from "assets/img/bg3.jpg"
+import bg1 from "assets/img/bg33.png"
 import boton1 from "assets/img/boton1.png"
 import boton2 from "assets/img/boton2.png"
 import boton3 from "assets/img/boton3.png"
