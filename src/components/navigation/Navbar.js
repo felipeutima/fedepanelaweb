@@ -59,14 +59,14 @@ function NavigationBar() {
       <a href="/"> <img src={fedepng} className="img-navbar" ></img>  </a>
 
 
-      <Navbar className={`navbar-transparent py-3  navbar-dark ${isNotHome || isSmallScreen ? " " : "position-absolute"}`}
+      <Navbar className={`bg-body-tertiary py-3   ${isNotHome || isSmallScreen ? " " : "position-absolute"}`}
         expand="lg"
         style={{
           borderTop: "solid 8px #FFCC28", zIndex: 2, width: "100%",
-          backgroundColor: 'rgba(49, 49, 54, 0.8)'
+          backgroundColor: 'rgba(355, 355, 355, 1)'
         }}    >
 
-        <div className="container">
+        <div className="container ">
 
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

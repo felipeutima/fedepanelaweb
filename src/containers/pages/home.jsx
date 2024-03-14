@@ -6,9 +6,12 @@ import Contacto from "components/home/Contacto"
 import Layout from "hocs/layouts/Layout"
 import Conexionfd from "components/home/Conexionfd"
 import Services from "components/home/Services"
+import Trends from "components/home/Trends"
 import { connect } from "react-redux";
 import { useEffect } from "react"
 import { get_news } from "redux/actions/news/news"
+
+
 
 function Home({ get_news }) {
 
@@ -22,9 +25,11 @@ function Home({ get_news }) {
             <Navbar />
             <Header />
             <Noticias />
+          
+            <Trends /> 
             <Services />
+       
             <Conexionfd />
-
             <Footer />
         </Layout>
     )

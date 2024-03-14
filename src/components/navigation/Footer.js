@@ -4,7 +4,7 @@ import { connect } from "react-redux"
 import bgfooter from "assets/img/bgfooter.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import fedepng from "assets/img/fedepng.png"
-import { Facebook, X, Youtube, Instagram, Tiktok, GeoAltFill, TelephoneFill } from "react-bootstrap-icons";
+import { Facebook, X, Youtube, Instagram, Tiktok, GeoAltFill, TelephoneFill, Linkedin, PinMapFill } from "react-bootstrap-icons";
 import zIndex from "@mui/material/styles/zIndex";
 function Footer() {
 
@@ -17,7 +17,7 @@ function Footer() {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         position: 'relative',
-     
+
 
       }}>
         <div className="overlay" style={{
@@ -25,10 +25,10 @@ function Footer() {
           width: "100%", height: "100%",
           backgroundColor: "rgba(5, 96, 31,0.7)",
           zIndex: 1
-        }}/>
+        }} />
 
 
-        <div className="container"  style={{ zIndex: 5, position: "relative"}}  >
+        <div className="container" style={{ zIndex: 5, position: "relative" }}  >
           <footer className="row  pt-5  border-top"  >
 
             <div className="col-md-4">
@@ -59,24 +59,28 @@ function Footer() {
                 <a className="socialContainer containerFive" target="blank" href="https://www.tiktok.com/@fedepanelacol">
                   <Tiktok color="white" size={20} />
                 </a>
+                <a className="socialContainer containerFive" target="blank" href="https://www.linkedin.com/company/fedepanela-federaci%C3%B3n-nacional-de-productores/?originalSubdomain=co">
+                  <Linkedin color="white" size={20} />
+                </a>
+                <a className="socialContainer containerFive" target="blank" href="https://www.google.com/maps/place/Fedepanela/@4.6801112,-74.0655784,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9aec00dd5713:0x2d5fb2032d63c1f2!8m2!3d4.6801059!4d-74.0630035!16s%2Fg%2F11bxjlb6zc?entry=ttu">
+                  <PinMapFill color="white" size={20} />
+                </a>
               </ul>
 
               <div className="justify-content-center mx-auto" style={{ backgroundColor: "rgb(0,0,0,0.5)", width: "100%" }}>
 
                 <div className="row align-items-center" >
                   <div className="col-auto">
-                    <GeoAltFill color="white" size={20} />
+
                   </div>
                   <div className="col">
-                    <p className="mb-0 text-white">Cra 49B #91-48, La Castellana, Bogotá DC</p>
+                    <p className="mb-0 text-white text-center"> <GeoAltFill color="white" className="mx-3" size={20} /> Cra 49B #91-48, La Castellana, Bogotá DC</p>
                   </div>
                 </div>
-                <div className="row align-items-center">
-                  <div className="col-auto">
-                    <TelephoneFill color="white" size={20} />
-                  </div>
+                <div classNax-2e="row align-items-center">
+
                   <div className="col">
-                    <p className="mb-0 text-white">6222066 - 6222655 - 6222788</p>
+                    <p className="mb-0 text-white text-center"><TelephoneFill color="white" className="mx-3" size={20} />6222066 - 6222655 - 6222788</p>
                   </div>
 
 
@@ -93,14 +97,13 @@ function Footer() {
             <div className="col-12 col-md-4 mb-3" >
 
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.061506702177!2d-74.063003!3d4.680106000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aec00dd5713%3A0x2d5fb2032d63c1f2!2sFedepanela!5e0!3m2!1ses-419!2sco!4v1708419526644!5m2!1ses-419!2sco"
-                width="70%" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-              <p className=" my-auto text-white" style={{ backgroundColor: "rgb(0,0,0,0.3)" }}>© 2024 Fedepanela,Todos los derechos reservados.</p>
-
+            <div className="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+              <p className="my-auto text-white d-flex justify-content-center" style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
+                © 2024 Fedepanela, Todos los derechos reservados.
+              </p>
             </div>
 
 
