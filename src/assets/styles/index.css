@@ -1206,6 +1206,7 @@ navbar .fixed-top {
   text-align: center;
   font-size: 1.5em;
   position: absolute;
+  z-index: 2;
 
 
 }
@@ -1745,6 +1746,19 @@ navbar .fixed-top {
   position: relative;
   display: flex;
   width: 100%;
+  border-radius: 6px;
+  gap: 0.5rem;
+  height: max-content;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.card-news:hover{
+
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+}
+.card-body-news{
+  position: relative;
+  display: flex;
+  width: 100%;
   background-color: #05601F;
   border-radius: 6px;
   gap: 0.5rem;
@@ -2019,17 +2033,24 @@ navbar .fixed-top {
 
 /*img head*/
 
-.img-head{
-  
-  transition: filter 0.3s ease;
-  width: 80%;
+.img-head {
+  width: 80%; /* Tamaño inicial */
   display: block;
   margin: auto;
- 
+  animation: grow-shrink 2s infinite alternate; /* Aplica la animación */
 }
 
-
-
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1); /* Tamaño original */
+  }
+  50% {
+    transform: scale(1.1); /* Escala al 110% a la mitad de la animación */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño original al final de la animación */
+  }
+}
 
 @media (max-width: 768px) {
   /* Estilos para pantallas más pequeñas, como celulares */
@@ -2140,3 +2161,43 @@ navbar .fixed-top {
       transform: translateX(-100%);
   }
 }
+
+
+
+/*Button News */
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #05601f;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color:#fff;
+  border-radius: 50px; 
+  
+  
+}
+
+button:hover {
+  background: #3f5e48;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
