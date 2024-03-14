@@ -112,7 +112,7 @@ function NavigationBar() {
                 <NavDropdown.Item href="/Normatividad/Sanitarias">Sanitarias</NavDropdown.Item>
                 <NavDropdown.Item href="/Normatividad/Laboral">Laboral</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Área Comercial" id="navbarScrollingDropdown">
+              <NavDropdown title="Áreas" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/AreaComercial/Herramientas">Herramientas para la internacionalización</NavDropdown.Item>
                 <NavDropdown.Item href="/AreaComercial/OportunidadesComerciales">Oportunidades comerciales</NavDropdown.Item>
                 <NavDropdown.Item href="/AreaComercial/ProyeccionNegocio">Proyección del negocio panelero</NavDropdown.Item>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bbcac26c.css",
-    "main.js": "/static/js/main.090b843f.js",
+    "main.js": "/static/js/main.2b17245c.js",
     "static/media/muro.jpg": "/static/media/muro.8334707e02479f2859d2.jpg",
     "static/media/ejemplotendencia4.png": "/static/media/ejemplotendencia4.35070804deb4e81a69fb.png",
     "static/media/DECRETO-295-DE-2017.pdf": "/static/media/DECRETO-295-DE-2017.e3fc0eb6dca6dfddb268.pdf",
@@ -132,10 +132,10 @@
     "static/media/aexcid.png": "/static/media/aexcid.1fa54fc2a22921ed8bfe.png",
     "index.html": "/index.html",
     "main.bbcac26c.css.map": "/static/css/main.bbcac26c.css.map",
-    "main.090b843f.js.map": "/static/js/main.090b843f.js.map"
+    "main.2b17245c.js.map": "/static/js/main.2b17245c.js.map"
   },
   "entrypoints": [
     "static/css/main.bbcac26c.css",
-    "static/js/main.090b843f.js"
+    "static/js/main.2b17245c.js"
   ]
 }
