@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bbcac26c.css",
-    "main.js": "/static/js/main.2b17245c.js",
+    "main.js": "/static/js/main.2c7a1136.js",
     "static/media/muro.jpg": "/static/media/muro.8334707e02479f2859d2.jpg",
     "static/media/ejemplotendencia4.png": "/static/media/ejemplotendencia4.35070804deb4e81a69fb.png",
     "static/media/DECRETO-295-DE-2017.pdf": "/static/media/DECRETO-295-DE-2017.e3fc0eb6dca6dfddb268.pdf",
@@ -51,7 +51,6 @@
     "static/media/s8.png": "/static/media/s8.0700d3ce738c12b84455.png",
     "static/media/DECRETO_948_DE_1995.pdf": "/static/media/DECRETO_948_DE_1995.efa9b5e0a80488611849.pdf",
     "static/media/s5.png": "/static/media/s5.eedfc3fa369dbb916036.png",
-    "static/media/boletin.jpeg": "/static/media/boletin.548ba0c7805ef59a3df8.jpeg",
     "static/media/Reforma-Estatutaria-2023.pdf": "/static/media/Reforma-Estatutaria-2023.78ee8e19ba409a501a32.pdf",
     "static/media/s3.png": "/static/media/s3.750f419c66fa96908468.png",
     "static/media/DECRETO_1594_DE_1984.pdf": "/static/media/DECRETO_1594_DE_1984.d6b1d8b4f12f5db51cf5.pdf",
@@ -80,16 +79,17 @@
     "static/media/Circular-11-de-2022-Finagro.pdf": "/static/media/Circular-11-de-2022-Finagro.31cc4450fe9cecb51460.pdf",
     "static/media/Resolucion-003-Reglamento-Elecciones-2023.pdf": "/static/media/Resolucion-003-Reglamento-Elecciones-2023.ebc434f63bece45653f9.pdf",
     "static/media/ADENDA-1-TdR-013-Caracterizacion.pdf": "/static/media/ADENDA-1-TdR-013-Caracterizacion.c93a06409bd2cbe1a332.pdf",
+    "static/media/fedenews.png": "/static/media/fedenews.b19d752e66b077b716f6.png",
     "static/media/FEDEPANELALOGO-04.png": "/static/media/FEDEPANELALOGO-04.55f0a46bd65f12f7f34e.png",
     "static/media/ADENDA-1-TdR-014-MRV.pdf": "/static/media/ADENDA-1-TdR-014-MRV.616d904837c78277ab53.pdf",
     "static/media/ejem6.png": "/static/media/ejem6.0f6f850a0e9da54a2b8e.png",
     "static/media/ns1.png": "/static/media/ns1.9f3526b7d3473e6db8b5.png",
-    "static/media/fedenews.png": "/static/media/fedenews.56c4a5bf5b622a48e21e.png",
     "static/media/entidades.jpg": "/static/media/entidades.88a46c6be8b462bd5414.jpg",
     "static/media/vision.png": "/static/media/vision.f378cba75f45ccb6e51d.png",
     "static/media/somos.png": "/static/media/somos.824c66105f139c93b85a.png",
     "static/media/finagro-lg.png": "/static/media/finagro-lg.9c306e2dd423aaf1209a.png",
     "static/media/ns5.png": "/static/media/ns5.61ecce8173ae2ff97b57.png",
+    "static/media/boletin.jpeg": "/static/media/boletin.fcfb81d8f1aee1e745ba.jpeg",
     "static/media/ns4.png": "/static/media/ns4.18fdf18c22cde946512a.png",
     "static/media/mision.png": "/static/media/mision.4a203f407749258e4f0d.png",
     "static/media/quienes2.png": "/static/media/quienes2.1944fb9bb53a912ad322.png",
@@ -132,10 +132,10 @@
     "static/media/aexcid.png": "/static/media/aexcid.1fa54fc2a22921ed8bfe.png",
     "index.html": "/index.html",
     "main.bbcac26c.css.map": "/static/css/main.bbcac26c.css.map",
-    "main.2b17245c.js.map": "/static/js/main.2b17245c.js.map"
+    "main.2c7a1136.js.map": "/static/js/main.2c7a1136.js.map"
   },
   "entrypoints": [
     "static/css/main.bbcac26c.css",
-    "static/js/main.2b17245c.js"
+    "static/js/main.2c7a1136.js"
   ]
 }

@@ -59,8 +59,8 @@ function Trends() {
 
                         <div className="row">
                             <div className="col-md-6 d-flex flex-column align-items-center">
-                                <h2  className="h2-title">Fedepanela News</h2>
-                                <img src={fedenews  } className="img-fluid my-2" style={{ width: "70%" }} alt="Boletin"></img>
+                                <h2  className="h2-title">Boletines Fedepanela En Ación</h2>
+                                <img src={boletin  } className="img-fluid my-2" style={{ width: "70%" }} alt="Boletin"></img>
                                 <button>
                                             <span>Ver más</span>
                                             <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +71,8 @@ function Trends() {
                             
                             </div>
                             <div className="col-md-6 d-flex flex-column align-items-center">
-                                <h2 className="h2-title">Fedepanela En acción</h2>
-                                <img src={boletin} className="img-fluid my-2" style={{ width: "70%" }} alt="Boletin"></img>
+                                <h2 className="h2-title">Tendencias Fedepanela News</h2>
+                                <img src={fedenews} className="img-fluid my-2" style={{ width: "70%" }} alt="Boletin"></img>
                                 <button>
                                             <span>Ver más</span>
                                             <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
