@@ -132,7 +132,9 @@ a {
 header.banner.red-line {
   border-top: 1rem solid #a10f2a;
 }
-
+.dropdown-menu {
+  margin-left: "100%";
+}
 
 Navbar {
   position: relative;

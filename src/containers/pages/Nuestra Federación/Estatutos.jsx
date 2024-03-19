@@ -18,10 +18,10 @@ function Estatutos() {
 
                 <h1 className="text-center h1-title mt-5">Estatutos</h1>
                 <div className="row mt-5">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-12 my-2">
                         <motion.div
                             initial={{ opacity: 0, x: -100 }} // Inicia con opacidad 0 y posición x -100
-                            animate={{ opacity: 1, x: 100 }} // Anima a opacidad 1 y posición x 100
+                            animate={{ opacity: 1, x: 0 }} // Anima a opacidad 1 y posición x 100
                             transition={{ duration: 0.9, ease: "easeOut" }}
                         >
                             <CardDownload titulo="Reforma tributaria 2023" doc={re2023} />
@@ -30,10 +30,10 @@ function Estatutos() {
 
 
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-12 my-2">
                         <motion.div
                             initial={{ opacity: 0, x: 100 }} // Inicia con opacidad 0 y posición x -100
-                            animate={{ opacity: 1, x: -100 }} // Anima a opacidad 1 y posición x 100
+                            animate={{ opacity: 1, x: 0 }} // Anima a opacidad 1 y posición x 100
                             transition={{ duration: 0.9, ease: "easeOut" }}
                         >
                             <CardDownload titulo="Resolución 003 Reglamento Elecciones 2023" doc={re003} />

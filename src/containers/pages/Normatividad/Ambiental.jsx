@@ -30,7 +30,8 @@ function Ambiental() {
             <div className="container" style={{ marginTop: "100px", marginBottom: "50px" }}>
 
                 <h1 className="text-center h1-title mt-5">Normatividad Ambiental</h1>
-                <div className="row mt-5">
+                <div className="row mt-5 px-5">
+                  
 
                     {rows.map((row) => (
                         <div className="col-md-4">

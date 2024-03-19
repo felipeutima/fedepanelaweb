@@ -119,7 +119,9 @@ function Conexionfd() {
                                             <p className="fw-small text-muted mb-0">La Red de Mujeres Emprendedoras Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país. El objetivo de esta red es crear espacios para que el trabajo y liderazgo de las mujeres en la cadena productiva y en el gremio sea reconocido y valorado. </p>
                                         </div>
                                         <div className="mb-2 text-center">
-                                            <button className="btn btn-success text-white fw-bold">Ir a formulario</button>
+                                            <a href="https://forms.office.com/pages/responsepage.aspx?id=KKko1qEmvECpLcN4dXuXzEeK-qtIAxREkqxLsBBFI6BUQjBNSzBCVUVMMFJBQzBPR0tQOVcwNTBBQSQlQCN0PWcu" target="blank">
+                                                <button className="btn btn-success text-white fw-bold">Ir a formulario</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -144,7 +146,9 @@ function Conexionfd() {
                                             <p className="fw-small text-muted mb-0">La Red de Empresas Paneleras es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país. El objetivo de esta red es fortalecer la asociatividad y promover espacios comerciales y productivos para las mismas, con el fin de mejorar la economía de las familias paneleras. </p>
                                         </div>
                                         <div className="mb-2 text-center">
-                                            <button className="btn btn-success text-white fw-bold">Ir a formulario</button>
+                                            <a href="https://forms.office.com/pages/responsepage.aspx?id=KKko1qEmvECpLcN4dXuXzEeK-qtIAxREkqxLsBBFI6BUNzJLRVRRRjg4N0paQVlURkFNNjQwTUJTRCQlQCN0PWcu" target="blank">
+                                                <button className="btn btn-success text-white fw-bold">Ir a formulario</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -172,7 +176,9 @@ function Conexionfd() {
                                             <p className="fw-small text-muted mb-0">La Red de Juventud Emprendedora Panelera es un espacio de FEDEPANELA y el Fondo de Fomento Panelero, que se encuentra a nivel municipal, departamental y nacional en 14 departamentos del país. El objetivo de esta red es crear espacios fortalecer el relevo generacional y el trabajo intergeneracional en la cadena productiva y en el gremio panelero. </p>
                                         </div>
                                         <div className="mb-2 text-center">
-                                            <button className="btn btn-success text-white fw-bold">Ir a formulario</button>
+                                            <a href="https://forms.office.com/pages/responsepage.aspx?id=KKko1qEmvECpLcN4dXuXzEeK-qtIAxREkqxLsBBFI6BUNFNBSE1LOVhSVldGV1ZDSFlYSVJNNEs3VCQlQCN0PWcu" target="blank">
+                                                <button className="btn btn-success text-white fw-bold">Ir a formulario</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -206,7 +212,9 @@ function Conexionfd() {
 
                                             </p>
                                             <div className="mb-2 text-center">
-                                                <button className="btn btn-success text-white fw-bold">Ir a formulario</button>
+                                                <a href="" target="blank">
+                                                    <button className="btn btn-success text-white fw-bold">Ir a formulario</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

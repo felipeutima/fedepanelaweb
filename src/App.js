@@ -34,6 +34,19 @@ import Finagro from 'containers/pages/Convenios/Finagro';
 import NamaPanela from 'containers/pages/Convenios/NamaPanela';
 import PreguntasFrecuentes from 'containers/pages/Fondo de fomento/PreguntasFrecuentes';
 import HerramientesInter from 'containers/pages/Area comercial/HerramientasInter';
+import ObjetivoTecnica from 'containers/pages/Area tecnica/ObjetivoTecnica';
+import AsistenciaTecnica from 'containers/pages/Area tecnica/AsistenciaTecnica';
+import SeguridadSocial from 'containers/pages/Area tecnica/SeguridadSocial';
+import CapitalSocial from 'containers/pages/Area tecnica/CapitalSocial';
+import BibliografiaTecnica from 'containers/pages/Area tecnica/BibliografiaTecnica';
+import ObjetivoComunicaciones from 'containers/pages/Area comunicaciones/ObjetivoComunicaciones';
+import PromocionConsumo from 'containers/pages/Area comunicaciones/PromocionConsumo';
+import PanelaKids from 'containers/pages/Area comunicaciones/PanelaKids';
+import ObjetivoSocio from 'containers/pages/Area socioempresarial/ObjetivoSocio';
+import ConstruccionCapital from 'containers/pages/Area socioempresarial/ConstruccionCapital';
+import SeguridadySalud from 'containers/pages/Area socioempresarial/SeguridadySalud';
+import NormatividadSocio from 'containers/pages/Area socioempresarial/NormatividadSocio';
+
 
 function App() {
   return (
@@ -107,11 +120,36 @@ function App() {
           <Route path="/Convenios/Finagro" element={<Finagro />} />
           <Route path="/Convenios/NamaPanela" element={<NamaPanela />} />
 
+          {/*Area Tecnica*/}
+
+          <Route path="/AreaTecnica/Objetivo" element={<ObjetivoTecnica />} />
+          <Route path="/AreaTecnica/AsistenciaTecnica" element={<AsistenciaTecnica />} />
+          <Route path="/AreaTecnica/SeguridadSocial" element={<SeguridadSocial />} />
+          <Route path="/AreaTecnica/CapitalSocial" element={<CapitalSocial />} />
+          <Route path="/AreaTecnica/BibliografiaTecnica" element={<BibliografiaTecnica />} />
+
+
           {/*Area comercial*/}
 
           <Route path="/AreaComercial/OportunidadesComerciales" element={<OportunidadesComerciales />} />
           <Route path="/AreaComercial/Herramientas" element={<HerramientesInter />} />
           <Route path="/AreaComercial/ProyeccionNegocio" element={<ProyeccionNegocio />} />
+
+          {/*Area Comunicaciones*/}
+
+          <Route path="/AreaComunicaciones/Objetivo" element={<ObjetivoComunicaciones />} />
+          <Route path="/AreaComunicaciones/PromocionConsumo" element={<PromocionConsumo />} />
+          <Route path="/AreaComunicaciones/PanelaKids" element={<PanelaKids />} />
+          {/*Area Socio Empresarial*/}
+
+          <Route path="/AreaSocioEmpresarial/Objetivo" element={<ObjetivoSocio />} />
+          <Route path="/AreaSocioEmpresarial/ConstruccionCapital" element={<ConstruccionCapital/>} />
+          <Route path="/AreaSocioEmpresarial/SeguridadySalud" element={<SeguridadySalud/>} />
+          <Route path="/AreaSocioEmpresarial/NormatividadSocio" element={<NormatividadSocio/>} />
+ 
+
+
+
 
 
 

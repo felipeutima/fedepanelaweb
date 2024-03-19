@@ -90,10 +90,10 @@ function EstructuraFede() {
                 
                 </div>
                 <div className="row mt-5">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-12">
                         <motion.div
                             initial={{ opacity: 0, x: -100 }} // Inicia con opacidad 0 y posición x -100
-                            animate={{ opacity: 1, x: 100 }} // Anima a opacidad 1 y posición x 100
+                            animate={{ opacity: 1, x: 0 }} // Anima a opacidad 1 y posición x 100
                             transition={{ duration: 0.9, ease: "easeOut" }}
                         >
                             <CardPerson nombre="Carlos Fernando Mayorga" desripcion="Gerente General Fedepanela"
@@ -108,10 +108,10 @@ function EstructuraFede() {
 
 
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-12 my-3">
                         <motion.div
                             initial={{ opacity: 0, x: 100 }} // Inicia con opacidad 0 y posición x -100
-                            animate={{ opacity: 1, x: -100 }} // Anima a opacidad 1 y posición x 100
+                            animate={{ opacity: 1, x: 0 }} // Anima a opacidad 1 y posición x 100
                             transition={{ duration: 0.9, ease: "easeOut" }}
                         >
                             <CardPerson nombre="Ricardo Palacio Velázquez" desripcion="Presidente Junta directiva Nacional"

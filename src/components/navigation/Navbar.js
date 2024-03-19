@@ -112,14 +112,50 @@ function NavigationBar() {
                 <NavDropdown.Item href="/Normatividad/Sanitarias">Sanitarias</NavDropdown.Item>
                 <NavDropdown.Item href="/Normatividad/Laboral">Laboral</NavDropdown.Item>
               </NavDropdown>
+
+
               <NavDropdown title="Áreas" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/AreaComercial/Herramientas">Herramientas para la internacionalización</NavDropdown.Item>
-                <NavDropdown.Item href="/AreaComercial/OportunidadesComerciales">Oportunidades comerciales</NavDropdown.Item>
-                <NavDropdown.Item href="/AreaComercial/ProyeccionNegocio">Proyección del negocio panelero</NavDropdown.Item>
+                <NavDropdown title="Técnica" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="/AreaTecnica/Objetivo">Objetivos</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaTecnica/AsistenciaTecnica">Asistencia Técnica y Extensión Rural</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaTecnica/SeguridadSocial">Seguridad Social y Salud Laboral</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaTecnica/CapitalSocial">Capital Social y Fortalecimiento Organizacional</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaTecnica/BibliografiaTecnica">Bibliografía Técnica</NavDropdown.Item>
+                  <NavDropdown.Item href="/Convenios/NamaPanela">Nama Panela</NavDropdown.Item>
+
+                </NavDropdown>
+                <NavDropdown title="Comercial" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="/AreaComercial/Herramientas">Herramientas para la internacionalización</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaComercial/OportunidadesComerciales">Oportunidades comerciales</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaComercial/ProyeccionNegocio">Proyección del negocio panelero</NavDropdown.Item>
+
+                </NavDropdown>
+                <NavDropdown title="Comunicaciones" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="/AreaComunicaciones/Objetivo">Objetivos</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaComunicaciones/PromocionConsumo">Promoción al Consumo</NavDropdown.Item>
+                  <NavDropdown.Item href="">Notas de prensa</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaComunicaciones/PanelaKids">PanelaKids-Inscripciones</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Socio Empresarial" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="/AreaSocioEmpresarial/Objetivo">Objetivos</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaSocioEmpresarial/ConstruccionCapital">Construcción de capital Social</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaSocioEmpresarial/SeguridadySalud">Seguridad y Salud en el Trabajo</NavDropdown.Item>
+                  <NavDropdown.Item href="">Galería</NavDropdown.Item>
+                  <NavDropdown.Item href="/AreaSocioEmpresarial/NormatividadSocio">Normatividad</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Sistemas de información" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Oferta Panelera</NavDropdown.Item>
+                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Precios y Mercados</NavDropdown.Item>
+                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">SIG (Mapas)</NavDropdown.Item>
+                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Tips Paneleros</NavDropdown.Item>
+                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Glosario Panelero</NavDropdown.Item>
+                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Biblioteca</NavDropdown.Item>
+
+                </NavDropdown>
 
               </NavDropdown>
 
-     
+
 
 
               <NavDropdown title="Ley de Transparencia" id="navbarScrollingDropdown">
@@ -147,7 +183,7 @@ function NavigationBar() {
                 <NavDropdown.Item href="/Convenios/NamaPanela">Nama Panela</NavDropdown.Item>
 
               </NavDropdown>
-
+{/*
               <div className="scrolling-text-container">
                 <div className="scrolling-text">
                   {copPrice !== null ? (
@@ -158,7 +194,7 @@ function NavigationBar() {
                   )}
                 </div>
               </div>
-
+*/}
 
 
 

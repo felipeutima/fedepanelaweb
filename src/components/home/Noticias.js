@@ -161,7 +161,7 @@ function Noticias() {
                             <div className="col-md-12">
 
 
-                                <div class="about-text mt-3  my-lg-5" >
+                                <div class="about-text my-3  my-lg-5" >
                               
 
                                     <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
@@ -171,8 +171,8 @@ function Noticias() {
 
 
                                           
-                                                    <div class="col-md-3 ">
-                                                        <Card className="card-news text-black" style={{ background: "whitesmoke", height: "100%" }}>
+                                                    <div class="col-md-3 col-12 my-2 ">
+                                                        <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
                                                             <img class="img-fluid" src={ejemplo4} alt="" />
                                                             <Card.Body>
                                                                 <Card.Title className="a-news  ">
@@ -184,8 +184,8 @@ function Noticias() {
 
                                                     </div>
 
-                                                    <div class="col-md-3">
-                                                        <Card className="card-news text-black" style={{ background: "whitesmoke", height: "100%" }} >
+                                                    <div class="col-md-3 col-12 my-2">
+                                                        <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }} >
                                                             <img class="img-fluid" src={ejemplo3} alt="" />
                                                             <Card.Body>
                                                                 <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
@@ -194,8 +194,8 @@ function Noticias() {
                                                             </Card.Body>
                                                         </Card>
                                                     </div>
-                                                    <div class="col-md-3">
-                                                        <Card className="card-news text-black" style={{ background: "whitesmoke", height: "100%" }}>
+                                                    <div class="col-md-3 col-12 my-2">
+                                                        <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
                                                             <img class="img-fluid" src={ejemplo6} alt="" />
                                                             <Card.Body>
                                                                 <Card.Title className="a-news  ">“Pan con Fé” la nueva campaña de Levapan y Fedepanela para potenciar la industria panelera y panificadora en Colombia</Card.Title>
@@ -204,8 +204,8 @@ function Noticias() {
                                                             </Card.Body>
                                                         </Card>
                                                     </div>
-                                                    <div class="col-md-3">
-                                                        <Card className="card-news text-black" style={{ background: "whitesmoke", height: "100%" }}>
+                                                    <div class="col-md-3 col-12 my-2">
+                                                        <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
                                                             <img class="img-fluid" src={ejemplo5} alt="" />
                                                             <Card.Body>
                                                                 <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>

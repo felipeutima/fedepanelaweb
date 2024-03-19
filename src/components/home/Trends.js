@@ -53,33 +53,47 @@ function Trends() {
                         zIndex: 0
                     }} />
 
-                <div class="container" style={{ zIndex: 3, position: "relative", padding: "100px 100px" }}>
+                <div className="container py-5" style={{ zIndex: 3, position: "relative", padding: isSmallScreen ? "0" : "100px 100px" }}>
 
                     <div className="row">
 
                         <div className="row">
-                            <div className="col-md-6 d-flex flex-column align-items-center">
-                                <h2  className="h2-title">Boletines Fedepanela En Ación</h2>
-                                <img src={boletin  } className="img-fluid my-2" style={{ width: "70%" }} alt="Boletin"></img>
-                                <button>
+
+                            <div className="col-md-6 col-12">
+                                <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
+
+                                    <div className=" d-flex flex-column align-items-center">
+                                        <h2 className="h2-title text-center">Boletines de Noticias</h2>
+                                        <img src={fedenews} className="img-fluid my-2" style={{ width: isSmallScreen ? "100%" : "70%" }} alt="Boletin"></img>
+                                        <button>
                                             <span>Ver más</span>
                                             <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                                 <ArrowRightCircle color="white" size={"100%"} />
                                             </svg>
                                         </button>
-                            
+
+                                    </div>
+                                </motion.div>
                             </div>
-                            <div className="col-md-6 d-flex flex-column align-items-center">
-                                <h2 className="h2-title">Tendencias Fedepanela News</h2>
-                                <img src={fedenews} className="img-fluid my-2" style={{ width: "70%" }} alt="Boletin"></img>
-                                <button>
+
+                            <div className="col-md-6 col-12 ">
+                                <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
+                                    <div className=" my-3 d-flex flex-column align-items-center">
+
+
+                                        <h2 className="h2-title text-center">Boletin de Tendencias</h2>
+                                        <img src={boletin} className="img-fluid my-2" style={{ width: isSmallScreen ? "100%" : "70%" }} alt="Boletin"></img>
+                                        <button>
                                             <span>Ver más</span>
                                             <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                                 <ArrowRightCircle color="white" size={"100%"} />
                                             </svg>
                                         </button>
+
+                                    </div>
+                                </motion.div>
                             </div>
                         </div>
 

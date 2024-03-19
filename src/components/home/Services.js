@@ -104,13 +104,13 @@ function Services() {
                                 </a>
                             </div>
                             <div className="col-md-2 col-6 img-container">
-                                <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
+                                <a href="https://www.instagram.com/fedepanelacol/reels/ ">
 
                                     <img src={boton3} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
                                 </a>
                             </div>
                             <div className="col-md-2 col-6 img-container">
-                                <a href="https://open.spotify.com/show/4JcuAOF4NrNRgw4uOQtIIf">
+                                <a href="https://open.spotify.com/show/4JcuAOF4NrNRgw4uOQtIIf?si=872d0593f3eb4a33">
 
                                     <img src={boton4} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
                                 </a>
@@ -125,7 +125,7 @@ function Services() {
 
 
                             <div className="col-md-2 col-6 img-container">
-                                <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
+                                <a href="https://www.youtube.com/playlist?list=PLU8D9c2LVu39WK19wE7rXqQp5xcW8x38E">
 
 
                                     <img src={boton8} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
