@@ -25,7 +25,7 @@ import MecanismoContacto from 'containers/pages/Ley de Transparencia/MecanismosC
 import Informaciondeinteres from 'containers/pages/Ley de Transparencia/InformaciondeInteres';
 import Planeacion from 'containers/pages/Ley de Transparencia/Planeacion';
 import OportunidadesComerciales from 'containers/pages/Area comercial/OportunidadesComerciales';
-import Estructuraorgánicaytalentohumano from 'containers/pages/Ley de Transparencia/Estructuraorgánicaytalentohumano';
+import Estructuraorgánicaytalentohumano from 'containers/pages/Ley de Transparencia/Estructuraorganicaytalentohumano';
 import Normatividad from 'containers/pages/Ley de Transparencia/Normatividad';
 import ProyeccionNegocio from 'containers/pages/Area comercial/ProyecciónNegocio';
 import Control from 'containers/pages/Ley de Transparencia/Control';
@@ -46,8 +46,14 @@ import ObjetivoSocio from 'containers/pages/Area socioempresarial/ObjetivoSocio'
 import ConstruccionCapital from 'containers/pages/Area socioempresarial/ConstruccionCapital';
 import SeguridadySalud from 'containers/pages/Area socioempresarial/SeguridadySalud';
 import NormatividadSocio from 'containers/pages/Area socioempresarial/NormatividadSocio';
-
-
+import Contratacion from 'containers/pages/Ley de Transparencia/Contratacion';
+import Presupuesto from 'containers/pages/Ley de Transparencia/Presupuesto';
+import TramitesyServicios from 'containers/pages/Ley de Transparencia/TramitesyServicios';
+import InstrumentosDeGestion from 'containers/pages/Ley de Transparencia/InstrumentosDeGestion';
+import TransparenciaPasiva from 'containers/pages/Ley de Transparencia/TransparenciaPasiva';
+import AccesibilidadWeb from 'containers/pages/Ley de Transparencia/AccesibilidadWeb';
+import HabeasData from 'containers/pages/Ley de Transparencia/HabeasData';
+import NoticiasBlog from 'containers/pages/NoticiasBlog';
 function App() {
   return (
     <Provider store={store}>
@@ -58,6 +64,8 @@ function App() {
 
           {/*Home Display */}
           <Route path="/" element={<Home />} />
+          {/*Home Display */}
+          <Route path="/noticias" element={<NoticiasBlog />} />
 
           {/*nfqa Display */}
           <Route path="/NuestraFederacion/quienessomos" element={<Nfqs />} />
@@ -111,6 +119,13 @@ function App() {
           <Route path="/LeyTransparencia/Normatividad" element={<Normatividad/>} />
           <Route path="/LeyTransparencia/Planeacion" element={<Planeacion />} />
           <Route path="/LeyTransparencia/Control" element={<Control />} />
+          <Route path="/LeyTransparencia/Contratacion" element={<Contratacion />} />
+          <Route path="/LeyTransparencia/Presupuesto" element={<Presupuesto />} />
+          <Route path="/LeyTransparencia/TramitesyServicios" element={<TramitesyServicios />} />
+          <Route path="/LeyTransparencia/InstrumentosDeGestion" element={<InstrumentosDeGestion />} />
+          <Route path="/LeyTransparencia/TransparenciaPasiva" element={<TransparenciaPasiva />} />
+          <Route path="/LeyTransparencia/AccesibilidadWeb" element={<AccesibilidadWeb />} />
+          <Route path="/LeyTransparencia/HabeasData" element={<HabeasData />} />
 
 
 

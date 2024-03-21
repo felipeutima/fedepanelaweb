@@ -8,7 +8,7 @@ urlpatterns = [
     #path('auth/', include('djoser.urls.jwt')),
     #path('auth/', include('djoser.social.urls')),
     path('api/news/', include('apps.news.urls')),
-    path('api/categories/', include('apps.category.urls')),
+    path('api/category/', include('apps.category.urls')),
 
     path('admin/', admin.site.urls),
     #path('api/contacts/', include('apps.contacts.urls'))
