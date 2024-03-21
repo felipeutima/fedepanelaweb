@@ -25,7 +25,7 @@ import React, { useEffect, useState } from 'react';
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
 
-function Noticias() {
+function NewsList() {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [backgroundColor, setBackgroundColor] = useState('rgba(49, 49, 54, 0.95)');
 
@@ -92,7 +92,7 @@ function Noticias() {
 
                             }}>
 
-                                <h1 className="text-center text-white ">NOTICIAS</h1>
+                                <h1 className="text-center text-white ">NewsList</h1>
 
 
                             </div>
@@ -100,47 +100,8 @@ function Noticias() {
                     </div>
 
 
-                    {/* 
+                  
 
-                    <div className={`container-flex servicios b-example-divider   ${isSmallScreen ? "py-2" : ""}`} style={{
-                        backgroundColor: ' rgba(43,52,46,0.5)',
-                        position: "",
-                        bottom: "0",
-                        width: "100%",
-
-                    }} >
-
-                        <div className="container py-2 ">
-                            <div className="row">
-                                <div className="col-md-3"></div>
-
-                                <div className="col-md-6">
-                                    <div className="row">
-
-                                        <div className="col-md-4  col-4  d-flex justify-content-center">
-                                            <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=1001" />
-                                        </div>
-
-
-                                        <div className="col-md-4 col-4  d-flex justify-content-center">
-                                            <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
-                                        </div>
-                                        <div className="col-md-4  col-4 d-flex justify-content-center">
-                                            <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="col-md-3"></div>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-*/}
 
                     <div className="overlay"
                         style={{
@@ -221,7 +182,7 @@ function Noticias() {
 
                                         </div>
 
-                                        <a href="/noticias">
+                                        <a href="/NewsList">
                                             <button>
                                                 <span>Ver más</span>
                                                 <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -284,4 +245,4 @@ const mapStateToProps = state => ({
 })
 export default connect(mapStateToProps, {
 
-})(Noticias)
+})(NewsList)

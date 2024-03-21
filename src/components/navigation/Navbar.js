@@ -163,16 +163,16 @@ function NavigationBar() {
                 <NavDropdown.Item href="/LeyTransparencia/Informaciondeinteres">2.Información de interés</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Estructuraorgánicaytalentohumano">3.Estructura Orgánica y talento humano</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Normatividad">4.Normatividad</NavDropdown.Item>
-                <NavDropdown.Item href="/">5.Presupuesto</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Presupuesto">5.Presupuesto</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Planeacion">6.Planeación</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Control">7.Control</NavDropdown.Item>
-
-                {/*                <NavDropdown.Item href="/">8.Contratación</NavDropdown.Item>
-                <NavDropdown.Item href="/">9.Trámites y servicios</NavDropdown.Item>
-                <NavDropdown.Item href="/">10.Trámites y servicios</NavDropdown.Item>
-                <NavDropdown.Item href="/">11.Transparecia Pasiva</NavDropdown.Item>
-                <NavDropdown.Item href="/">12.Accesibilidad web</NavDropdown.Item>
-                <NavDropdown.Item href="/">13.Habeas Data</NavDropdown.Item> */}
+                <NavDropdown.Item href="/LeyTransparencia/Contratacion">8.Contratación</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/TramitesyServicios">9.Tramites Y Servicios</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/InstrumentosDeGestion">10.Instrumentos de Gestión</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/TransparenciaPasiva">11.Transparencia Pasiva</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/AccesibilidadWeb">12.Accesibilidad Web</NavDropdown.Item>
+                <NavDropdown.Item className="dropdown-item-habeas" href="/LeyTransparencia/HabeasData">13.Habeas Data</NavDropdown.Item>
+          
               </NavDropdown>
 
 

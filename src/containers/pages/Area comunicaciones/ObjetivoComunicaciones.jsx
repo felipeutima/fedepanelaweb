@@ -50,7 +50,7 @@ function ObjetivoComunicaciones() {
                                         transition={{ duration: 0.9, ease: "easeOut" }}
                                     >
 
-                                        <p class="lead fw-normal text-muted mb-2"> La Oficina de Comunicaciones de Fedepanela se enfoca en el desarrollo de planes y actividades comunicativas para difundir los avances en el logro de los objetivos del gremio y el sector panelero. Nuestra labor también incluye fortalecer la imagen corporativa, siguiendo los lineamientos del Plan Estratégico, y llevar a cabo actividades de relaciones públicas para una mayor integración con nuestro entorno de trabajo.
+                                        <p class="lead fw-normal text-muted mb-2">La Oficina de Comunicaciones de Fedepanela se enfoca en el desarrollo de planes y actividades comunicativas para difundir los avances en el logro de los objetivos del gremio y el sector panelero. Nuestra labor también incluye fortalecer la imagen corporativa, siguiendo los lineamientos del plan estratégico, y llevando a cabo actividades de relaciones públicas para una mayor integración con nuestros stakeholders. 
                                         
                                         <br />
 
