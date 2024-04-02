@@ -112,3 +112,33 @@ class NewsListView(APIView):
             return paginator.get_paginated_response({'posts': serializer.data})
         else:
             return Response({'error':'No posts found'}, status=status.HTTP_404_NOT_FOUND)
+        
+class NewsHomeView(APIView):
+    permission_classes = (permissions.AllowAny,)
+    
+    def get(self, request, format=None):
+        # Obtener todos los posts y ordenarlos por fecha de creación de forma descendente
+        posts = Post.postobjects.all().order_by('-published')
+        
+        # Tomar solo los últimos 4 elementos
+        latest_posts = posts[:4]
+        
+        # Serializar los posts
+        serializer = PostListSerializer(latest_posts, many=True)
+        
+        return Response({'posts': serializer.data})
+    
+
+class NewsDetailView(APIView):
+    permission_classes = (permissions.AllowAny,)
+    def get(self, request, slug, format=None):
+        if Post.objects.filter(slug=slug).exists():
+            
+            post = Post.objects.get(slug=slug)
+            serializer = PostSerializer(post)
+
+            return Response({'post':serializer.data})
+        else:
+            return Response({'error':'Post doesnt exist'}, status=status.HTTP_404_NOT_FOUND)
+
+

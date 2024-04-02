@@ -11,6 +11,11 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { connect } from "react-redux";
+import { useEffect, useState } from "react"
+import { get_directorio } from "redux/actions/tablas/tablas"
+import XLSX from 'xlsx';
+import { read, utils } from 'xlsx';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -71,10 +76,10 @@ const rows = [
     createData('Profesional agronegocios y desarrollo de modelos de negocio', "DANIEL CRUZ", "dcruz@fedepanela.org.co", 1010),
     createData('Profesional agronegocios y desarrollo de modelos de negocio', "OSCAR MARTINEZ", "omartinez@fedepanela.org.co", 1010),
     createData('Arquitecto', "ADRIAN ARCOS", "vivienda@fedepanela.org.co", 1022)
-  ];
+];
 
 
-  const recaudoData = [
+const recaudoData = [
     createData('ANTIOQUIA', 'DIANA CARVAJAL', '321-638 22 58', 'antioquia@fedepanela.org.co'),
     createData('BOYACA', 'GINA ALEJANDRA CRISTANCHO', '312-397 37 46', 'boyaca@fedepanela.org.co'),
     createData('CALDAS', 'MARIO GIL DÍAZ', '317-439 93 11', 'caldas@fedepanela.org.co'),
@@ -88,9 +93,9 @@ const rows = [
     createData('VILLETA', 'SANDRA MILENA MARTÍNEZ ÁVILA', '320-485 83 76', 'recaudovilleta@fedepanela.org.co'),
     createData('SANTANDER', 'HUBERTO RUIZ FAJARDO', '311-803 98 25', 'socorro@fedepanela.org.co'),
     createData('CAUCA', 'CRISTINA BOLAÑOS MANQUILLO', '318-347 68 22', 'cauca@fedepanela.org.co')
-  ];
+];
 
-  const areaTecnicaData = [
+const areaTecnicaData = [
     createData('Cristián Marín', 'Director', 'cmarin@fedepanela.org.co'),
     createData('Angela Martinez', 'Profesional Especializado de Calidad', 'amartinez@fedepanela.org.co'),
     createData('Nestor Triana', 'Profesional de Calidad', 'ntriana@fedepanela.org.co'),
@@ -129,26 +134,109 @@ const rows = [
     createData('Jiseth Yulieth Castellanos Misar', 'Auxiliar Administrativo Nivel Central', 'gestionhumana@fedepanel.org.co'),
     createData('Beatriz Rondon', 'Auxiliar Administrativo Nivel Central', 'brondon@fedepanela.org.co'),
     createData('Nancy Perenguez', 'Auxiliar Administrativo Nariño', 'nperenguez@fedepanela.org.co')
-  ];
+];
 
 
 
 
-function Directorio() {
+function Directorio({
+
+
+    get_directorio,
+    directorio
+
+}) {
+
+    useEffect(() => {
+        get_directorio()
+
+
+    }, [])
+
+    const [data, setData] = useState(null);
+
+    const handleDescargar = async () => {
+        try {
+            const response = await fetch(`http://https://fedepanelaweb.onrender.com//${directorio.archivo}`);
+            const blob = await response.blob();
+
+            const reader = new FileReader();
+            reader.onload = () => {
+                const workbook = read(reader.result, { type: 'binary' });
+                const sheetName = workbook.SheetNames[0];
+                const sheet = workbook.Sheets[sheetName];
+                const jsonData = utils.sheet_to_json(sheet, { header: 1 });
+                setData(jsonData);
+            };
+            reader.readAsBinaryString(blob);
+        } catch (error) {
+            console.error('Error al descargar el archivo:', error);
+        }
+    };
+    handleDescargar();
 
     return (
         <Layout>
 
             <Navbar />
 
-            <div className="container" style={{ marginTop: "100px"}}>
 
+
+            <div className="container" style={{ marginTop: "100px" }}>
+
+                {data && (
+
+
+                    <TableContainer>
+                        <Table className="mt-3" aria-label="customized table">
+                            <TableHead>
+                                <TableRow>
+                                    <StyledTableCell>            {Object.keys(data[0]).map(key => (
+                                        <th key={key}>{key}</th>
+                                    ))} </StyledTableCell>
+
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {rows.map((row) => (
+                                    <StyledTableRow key={row.name}>
+
+                                        <StyledTableCell align="left"> {data.map((item, index) => (
+                                            <tr key={index}>
+                                                {Object.values(item).map((value, index) => (
+                                                    <td key={index}>{value}</td>
+                                                ))}
+                                            </tr>
+                                        ))}</StyledTableCell>
+
+                                    </StyledTableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                        <thead>
+                            <tr>
+                                {Object.keys(data[0]).map(key => (
+                                    <th key={key}>{key}</th>
+                                ))}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {data.map((item, index) => (
+                                <tr key={index}>
+                                    {Object.values(item).map((value, index) => (
+                                        <td key={index}>{value}</td>
+                                    ))}
+                                </tr>
+                            ))}
+                        </tbody>
+                    </TableContainer>
+                )}
                 <h1 className="text-center h1-title mt-5">Directorio</h1>
-                
-                <h2 style={{marginLeft:"100px"}} className="h2-title mt-3">Directorio Oficina Central Fedepanela - Bogotá</h2>
-                <TableContainer className="table-responsive" sx={{  maxWidth: 900, margin:"0 auto" }} component={Paper}>
-                
-                    <Table className="mt-3"  aria-label="customized table">
+
+                <h2 style={{ marginLeft: "100px" }} className="h2-title mt-3">Directorio Oficina Central Fedepanela - Bogotá</h2>
+                <TableContainer className="table-responsive" sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
+
+                    <Table className="mt-3" aria-label="customized table">
                         <TableHead>
                             <TableRow>
                                 <StyledTableCell>Área </StyledTableCell>
@@ -170,15 +258,15 @@ function Directorio() {
                             ))}
                         </TableBody>
                     </Table>
-                </TableContainer>   
+                </TableContainer>
             </div>
 
             <div className="container " style={{ marginTop: "100px" }}>
 
-                <h2 style={{marginLeft:"100px"}} className="h2-title mb-4">Directorio Recaudo</h2>
+                <h2 style={{ marginLeft: "100px" }} className="h2-title mb-4">Directorio Recaudo</h2>
 
-                <TableContainer sx={{ maxWidth: 900, margin:"0 auto" }} component={Paper}>
-                    <Table  aria-label="customized table">
+                <TableContainer sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
+                    <Table aria-label="customized table">
                         <TableHead>
                             <TableRow>
                                 <StyledTableCell>Departamento </StyledTableCell>
@@ -200,14 +288,14 @@ function Directorio() {
                             ))}
                         </TableBody>
                     </Table>
-                </TableContainer>   
+                </TableContainer>
             </div>
 
             <div className="container" style={{ marginTop: "100px" }}>
 
-                <h2 style={{marginLeft:"100px"}} className="h2-title mb-3">Área Técnica</h2>
+                <h2 style={{ marginLeft: "100px" }} className="h2-title mb-3">Área Técnica</h2>
 
-                <TableContainer sx={{ minWidth: 700, maxWidth: 900, margin:"0 auto" }} component={Paper}>
+                <TableContainer sx={{ minWidth: 700, maxWidth: 900, margin: "0 auto" }} component={Paper}>
                     <Table sx={{ minWidth: 700 }} aria-label="customized table">
                         <TableHead>
                             <TableRow>
@@ -228,7 +316,7 @@ function Directorio() {
                             ))}
                         </TableBody>
                     </Table>
-                </TableContainer>   
+                </TableContainer>
             </div>
 
 
@@ -241,4 +329,15 @@ function Directorio() {
         </Layout>
     )
 }
-export default Directorio
+
+const mapStateToProps = state => ({
+
+    directorio: state.tablas.directorio
+
+
+})
+export default connect(mapStateToProps, {
+
+    get_directorio
+
+})(Directorio)

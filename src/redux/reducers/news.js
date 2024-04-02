@@ -1,6 +1,10 @@
 import {
     GET_NEWS_LIST_SUCCESS,
     GET_NEWS_LIST_FAIL,
+    GET_NEWS_HOME_SUCCESS,
+    GET_NEWS_HOME_FAIL,
+    GET_NEW_DETAIL_SUCCESS,
+    GET_NEW_DETAIL_FAIL,
 
 } from '../actions/news/types'
 
@@ -15,7 +19,7 @@ export default function news(state = initialState, action) {
         case GET_NEWS_LIST_SUCCESS:
             return {
                 ...state,
-            
+
                 next: payload.next,
                 previous: payload.previous,
                 news: payload.results.posts
@@ -23,12 +27,38 @@ export default function news(state = initialState, action) {
         case GET_NEWS_LIST_FAIL:
             return {
                 ...state,
-                news: null,
-         
+                newshome: null,
+
                 next: null,
                 previous: null,
             }
-        
+
+
+        case GET_NEWS_HOME_SUCCESS:
+            return {
+                ...state,
+
+                newshome: payload.posts
+            }
+        case GET_NEWS_HOME_FAIL:
+            return {
+                ...state,
+                newshome: null,
+
+
+            }
+
+        case GET_NEW_DETAIL_SUCCESS:
+            return {
+                ...state,
+                post: payload.post
+            }
+        case GET_NEW_DETAIL_FAIL:
+            return {
+                ...state,
+                post: null
+            }
+
         default:
             return state
     }
