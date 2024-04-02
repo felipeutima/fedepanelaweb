@@ -35,7 +35,9 @@ DJANGO_APPS = [
 
 PROJECT_APPS=[
     "apps.news",
-    "apps.category"
+    "apps.category",
+    "apps.boletines",
+    "apps.tablas"
 
     
 

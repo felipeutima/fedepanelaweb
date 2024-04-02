@@ -6,6 +6,8 @@ APP_NAME= "news"
 urlpatterns=[
     path('create',CreateNewPostView.as_view()),
     path('list',NewsListView.as_view()), 
+    path('listHome',NewsHomeView.as_view()), 
+    path('detail/<slug>',NewsDetailView.as_view()),
     #path('publish',PublishBlogPostView.as_view()),
     #path('delete/<slug>',DeleteBlogPostView.as_view()),
     #path('edit',EditBlogPostView.as_view()),

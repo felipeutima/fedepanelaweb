@@ -9,6 +9,8 @@ body {
   font-family: 'Brandon Grotesque';
 }
 
+
+
 .dropdown-menu {
   background-color: rgb(212, 235, 38); /* Cambia el color de fondo de los submenús */
   color: rgb(0, 0, 0); /* Cambia el color del texto de los submenús */
@@ -2202,4 +2204,17 @@ button:hover svg {
 button:active {
   transform: scale(0.95);
 }
+
+.image-container {
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+  transition: transform 0.3s ease; /* Transición suave de 0.3 segundos con función de temporización 'ease' */
+  display: flex; /* Usar flexbox para centrar la imagen */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Escala la imagen al 110% al pasar el cursor por encima */
+}
+
 

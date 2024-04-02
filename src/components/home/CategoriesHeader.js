@@ -28,16 +28,15 @@ function CategoriesHeader({ categories }) {
                 <ul
                     role="list"
 
-                    className="mx-5 inline-flex space-x-6 sm:mx-6 "
+                    className="mx-5 inline-flex "
                 >
                     {
                         categories && categories.map((category, index) => (
 
 
-                            <div
-                                className=" bg-white rounded p-2 mx-2 d-inline justify-content-between align-items-center" >
+                            <div className=" bg-white rounded p-2 mx-2 d-inline justify-content-between align-items-center" >
 
-                                <a>
+                                <a style={{fontSize:"20px"}}>
                                     <ArrowRightShort color="#05601f" />
                                     {category.name}
                                 </a>

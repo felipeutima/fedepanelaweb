@@ -3,29 +3,20 @@ import { connect } from "react-redux"
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Accordion from 'react-bootstrap/Accordion';
+
 import bg1 from "assets/img/bg3.jpg"
 
-import ejemplo6 from "assets/img/ejem6.png"
-import ejemplo4 from "assets/img/ejem4.png"
-import ejemplo3 from "assets/img/ejem3.jpg"
-
-import ejemplo5 from "assets/img/ejem5.jpeg"
-
-import ejemplptend from "assets/img/ejemplotendencia.jpeg"
-import ejemplptendencia2 from "assets/img/ejemplotendencia2.jpeg"
-import ejemplptendencia3 from "assets/img/ejemplotendencia3.jpeg"
-import ejemplptendencia4 from "assets/img/ejemplotendencia4.png"
 import { motion } from "framer-motion"
 
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom"
 
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
 
-function Noticias() {
+function Noticias({ newshome }) {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [backgroundColor, setBackgroundColor] = useState('rgba(49, 49, 54, 0.95)');
 
@@ -166,62 +157,30 @@ function Noticias() {
 
                                     <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, duration: 1 }}  >
                                         <div class="row mb-4" >
+                                            {newshome && newshome.map((post, index) => (
 
 
+                                                <div class="col-md-3 col-12 my-2 ">
+                                                    <Link to={`/noticias/${post.slug}`} style={{textDecoration:"none"}} >
+                                                        <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
+                                                            <img class="img-fluid" src={post.thumbnail} alt="" />
+                                                            <Card.Body>
+                                                                <Card.Title className="a-news  ">
+
+                                                                    {post.title}
+                                                                </Card.Title>
 
 
+                                                            </Card.Body>
+                                                        </Card>
+                                                    </Link>
 
-                                            <div class="col-md-3 col-12 my-2 ">
-                                                <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
-                                                    <img class="img-fluid" src={ejemplo4} alt="" />
-                                                    <Card.Body>
-                                                        <Card.Title className="a-news  ">
-                                                            AVISO ACLARATORIO CONVOCATORIA AUDITORÍA FONDO DE FOMENTO PANELERO No. 001 DE 2024</Card.Title>
-
-
-                                                    </Card.Body>
-                                                </Card>
-
-                                            </div>
-
-                                            <div class="col-md-3 col-12 my-2">
-                                                <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }} >
-                                                    <img class="img-fluid" src={ejemplo3} alt="" />
-                                                    <Card.Body>
-                                                        <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
-
-
-                                                    </Card.Body>
-                                                </Card>
-                                            </div>
-                                            <div class="col-md-3 col-12 my-2">
-                                                <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
-                                                    <img class="img-fluid" src={ejemplo6} alt="" />
-                                                    <Card.Body>
-                                                        <Card.Title className="a-news  ">“Pan con Fé” la nueva campaña de Levapan y Fedepanela para potenciar la industria panelera y panificadora en Colombia</Card.Title>
-
-
-                                                    </Card.Body>
-                                                </Card>
-                                            </div>
-                                            <div class="col-md-3 col-12 my-2">
-                                                <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
-                                                    <img class="img-fluid" src={ejemplo5} alt="" />
-                                                    <Card.Body>
-                                                        <Card.Title className="a-news ">Participe en la Reunión Nacional de Productores de Licores Artesanales | Lunes 26 de Febrero 2024 | Vía ZOOM</Card.Title>
-
-
-                                                    </Card.Body>
-                                                </Card>
-                                            </div>
-
-
-
-
+                                                </div>
+                                            ))}
 
                                         </div>
 
-                                        <a href="/noticias">
+                                        <a href="/noticias" style={{textDecoration:"none"}}>
                                             <button>
                                                 <span>Ver más</span>
                                                 <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
