@@ -4,5 +4,5 @@ from .models import *
 
 class PostListSerializer(serializers.ModelSerializer):
     class Meta: 
-        model=DirectorioExcel
+        model=DirectorioCentral
         fields="__all__"
