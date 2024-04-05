@@ -7,12 +7,16 @@ urlpatterns = [
     #path('auth/', include('djoser.urls')),
     #path('auth/', include('djoser.urls.jwt')),
     #path('auth/', include('djoser.social.urls')),
+    path('admin/', admin.site.urls),
     path('api/news/', include('apps.news.urls')),
     path('api/category/', include('apps.category.urls')),
     path('api/boletines/', include('apps.boletines.urls')),
     path('api/tablas/', include('apps.tablas.urls')),
+    path('api/programas/', include('apps.programas.urls')),
+    path('api/slides/', include('apps.slides.urls')),
+    path('api/conexion/', include('apps.conexionp.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 
-    path('admin/', admin.site.urls),
     #path('api/contacts/', include('apps.contacts.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

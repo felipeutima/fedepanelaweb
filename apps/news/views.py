@@ -10,7 +10,20 @@ from .permissions import IsPostAuthorOrReadOnly,AuthorPermission
 from rest_framework import status
 from rest_framework import permissions
 from .serializers import PostSerializer, PostListSerializer
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
+
+class UploadImg(APIView):
+    parser_classes = (MultiPartParser, FormParser)
+
+    def post(self, request, format=None):
+        image = request.data.get('image')
+        if image:
+            post = Post.objects.create(author=request.user, image=image)
+            return JsonResponse({'url': 'URL_DE_LA_IMAGEN_GUARDADA'})
+        else:
+            return Response({'error': 'No image found in request'}, status=400)
 class CreateNewPostView(APIView):
     permission_classes = (AuthorPermission, )
     def post(self, request, format=None):

@@ -25,6 +25,7 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS_DEV')
 # Application definition
 
 DJANGO_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,9 +38,10 @@ PROJECT_APPS=[
     "apps.news",
     "apps.category",
     "apps.boletines",
-    "apps.tablas"
-
-    
+    "apps.tablas",
+    "apps.programas",
+    "apps.conexionp",
+    "apps.slides",
 
 ]
 
@@ -53,29 +55,24 @@ THIRD_PARTY_APPS=[
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'storages'
+    
 ]
 
 INSTALLED_APPS=DJANGO_APPS+PROJECT_APPS+THIRD_PARTY_APPS
 
 
-#CKEDITOR
 CKEDITOR_CONFIGS = {
-    # 'default': {
-    #     'toolbar': 'Custom',
-    #     'toolbar_Custom': [
-    #         ['Bold', 'Italic', 'Underline'],
-    #         ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-    #         ['Link', 'Unlink'],
-    #         ['RemoveFormat', 'Source']
-    #     ],
-    #     'autoParagraph': False
-    # }
+
     'default': {
         'toolbar': 'full',
-        'autoParagraph': False
+        'autoParagraph': False,
+        'filebrowserBrowseUrl': '/ckeditor/browse/',
     }
 }
-CKEDITOR_UPLOAD_PATH="/media/"
+
+CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'media')
+
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',

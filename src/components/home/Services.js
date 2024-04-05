@@ -18,7 +18,7 @@ import { motion } from "framer-motion"
 
 
 
-function Services() {
+function Services({ programas }) {
 
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     useEffect(() => {
@@ -52,7 +52,7 @@ function Services() {
                         backgroundColor: "rgba(355, 355, 355, 0)",
                         zIndex: 0
                     }} />
-                                    <div className="container-flex"   >
+                <div className="container-flex"   >
                     <motion.div
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -84,68 +84,35 @@ function Services() {
                 </div>
 
                 <div class="container" style={{ zIndex: 3 }}>
-         
-
-                        <div className="row justify-content-center my-4">
-                   
-                        
-                      
-                            <div className="col-md-2 col-6 img-container">
-                                <a href="https://www.youtube.com/watch?v=OS4wVgvr6eY&list=PLU8D9c2LVu38Htz9ofWzF_Rykro8N2ff6">
-
-                                    <img src={boton1} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
-                                </a>
-                            </div>
-                            <div className="col-md-2 col-6 img-container">
-                                <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
 
 
-                                    <img src={boton2} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
-                                </a>
-                            </div>
-                            <div className="col-md-2 col-6 img-container">
-                                <a href="https://www.instagram.com/fedepanelacol/reels/ ">
-
-                                    <img src={boton3} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
-                                </a>
-                            </div>
-                            <div className="col-md-2 col-6 img-container">
-                                <a href="https://open.spotify.com/show/4JcuAOF4NrNRgw4uOQtIIf?si=872d0593f3eb4a33">
-
-                                    <img src={boton4} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
-                                </a>
-                            </div>
-                            <div className="col-md-2 col-6 img-container">
-                                <a href="https://www.youtube.com/watch?v=UBHhCGDA9rk&list=PLU8D9c2LVu3-y2O1J6fA18UsB0zDU2nzG">
+                    <div className="row justify-content-center my-4">
 
 
-                                    <img src={boton5} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
-                                </a>
-                            </div>
+                        {programas && programas.map((post, index) => (
 
 
                             <div className="col-md-2 col-6 img-container">
-                                <a href="https://www.youtube.com/playlist?list=PLU8D9c2LVu39WK19wE7rXqQp5xcW8x38E">
+                                <a href={post.url}>
 
-
-                                    <img src={boton8} className="my-2 img-fluid mx-auto d-block" width={"90%"}/>
+                                    <img src={post.thumbnail} className="my-2 img-fluid mx-auto d-block" width={"90%"} />
                                 </a>
                             </div>
-
-                        </div>
-
-                        <div className="col-md-5 container ">
-
-
-                            <div className="row">
-
-                                <div className="mx-auto my-4">
+                        ))}
 
 
 
 
+                    </div>
 
-                                </div>
+                    <div className="col-md-5 container ">
+
+
+                        <div className="row">
+
+                            <div className="mx-auto my-4">
+
+                            </div>
 
 
                         </div>

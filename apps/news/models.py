@@ -4,13 +4,21 @@ import uuid
 from django.conf import settings
 User = settings.AUTH_USER_MODEL
 from ckeditor.fields import RichTextField
+
 # Create your models here.
 from apps.category.models import Category
+
+
 def news_thumbnail_directory(instance, filename):
     return 'news/{0}/{1}'.format(instance.title, filename)
 
 
+
 class Post(models.Model):
+    class Meta:
+        verbose_name = 'Noticia'
+        verbose_name_plural = 'Noticias'
+
 
     class PostObjects(models.Manager):
         def get_queryset(self):
@@ -27,8 +35,8 @@ class Post(models.Model):
 
     author =        models.ForeignKey(User, on_delete=models.CASCADE)
     
-    description =   models.TextField(max_length=255, blank=True, null=True)
-    content =       RichTextField(blank=True, null=True)
+    content =       RichTextField()
+  
 
     time_read =     models.IntegerField(blank=True, null=True)
     category =      models.ForeignKey(Category, on_delete=models.PROTECT)
@@ -50,5 +58,3 @@ class Post(models.Model):
     def get_status(self):
         status = self.status
         return status
-
-
