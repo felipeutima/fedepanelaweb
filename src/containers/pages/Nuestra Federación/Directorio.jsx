@@ -1,6 +1,5 @@
 
 import Layout from "hocs/layouts/Layout"
-import AccordionComponent from "components/Nuestra Fede/AccordionComponent"
 import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
 import { styled } from '@mui/material/styles';
@@ -13,9 +12,9 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { connect } from "react-redux";
 import { useEffect, useState } from "react"
-import { get_directorio } from "redux/actions/tablas/tablas"
-import XLSX from 'xlsx';
+import { get_directorio, get_recaudo, get_tecnica } from "redux/actions/tablas/tablas"
 import { read, utils } from 'xlsx';
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -40,6 +39,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 function createData(name, calories, fat, carbs, protein) {
     return { name, calories, fat, carbs, protein };
 }
+
+
 
 const rows = [
     createData('Gerente General', "CARLOS MAYORGA", "gerencia@fedepanela.org.co", 1004),
@@ -143,21 +144,30 @@ function Directorio({
 
 
     get_directorio,
-    directorio
+    directorio,
+    get_recaudo,
+    recaudo,
+    get_tecnica,
+    tecnica
 
 }) {
 
+    const [jsonData, setJsonData] = useState(null);
     useEffect(() => {
         get_directorio()
+        get_recaudo()
+        get_tecnica()
+    }, []);
 
-
-    }, [])
-
+    const baseUrl = process.env.REACT_APP_API_URL;
     const [data, setData] = useState(null);
+    const [data1, setData1] = useState(null);
+    const [data2, setData2] = useState(null);
+    const [data3, setData3] = useState(null);
 
     const handleDescargar = async () => {
         try {
-            const response = await fetch(`http://https://fedepanelaweb.onrender.com//${directorio.archivo}`);
+            const response = await fetch(`${baseUrl}/${directorio.archivo}`);
             const blob = await response.blob();
 
             const reader = new FileReader();
@@ -166,6 +176,7 @@ function Directorio({
                 const sheetName = workbook.SheetNames[0];
                 const sheet = workbook.Sheets[sheetName];
                 const jsonData = utils.sheet_to_json(sheet, { header: 1 });
+                console.log(jsonData)
                 setData(jsonData);
             };
             reader.readAsBinaryString(blob);
@@ -175,6 +186,54 @@ function Directorio({
     };
     handleDescargar();
 
+    const handleDescargarTecnica = async () => {
+        try {
+            const response = await fetch(`${baseUrl}/${tecnica.archivo}`);
+            const blob = await response.blob();
+
+            const reader = new FileReader();
+            reader.onload = () => {
+                const workbook = read(reader.result, { type: 'binary' });
+                const sheetName = workbook.SheetNames[0];
+                const sheet = workbook.Sheets[sheetName];
+                const jsonData = utils.sheet_to_json(sheet, { header: 1 });
+                console.log(jsonData)
+                setData1(jsonData);
+            };
+            reader.readAsBinaryString(blob);
+        } catch (error) {
+            console.error('Error al descargar el archivo:', error);
+        }
+    };
+    handleDescargarTecnica();
+
+    const handleDescargarRecaudo = async () => {
+        try {
+            const response = await fetch(`${baseUrl}/${recaudo.archivo}`);
+            const blob = await response.blob();
+
+            const reader = new FileReader();
+            reader.onload = () => {
+                const workbook = read(reader.result, { type: 'binary' });
+                const sheetName = workbook.SheetNames[0];
+                const sheet = workbook.Sheets[sheetName];
+                const jsonData = utils.sheet_to_json(sheet, { header: 1 });
+                console.log(jsonData)
+                setData2(jsonData);
+            };
+            reader.readAsBinaryString(blob);
+        } catch (error) {
+            console.error('Error al descargar el archivo:', error);
+        }
+    };
+    handleDescargarRecaudo();
+
+
+
+
+
+
+
     return (
         <Layout>
 
@@ -182,140 +241,120 @@ function Directorio({
 
 
 
+
             <div className="container" style={{ marginTop: "100px" }}>
 
-                {data && (
 
 
-                    <TableContainer>
-                        <Table className="mt-3" aria-label="customized table">
-                            <TableHead>
-                                <TableRow>
-                                    <StyledTableCell>            {Object.keys(data[0]).map(key => (
-                                        <th key={key}>{key}</th>
-                                    ))} </StyledTableCell>
-
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {rows.map((row) => (
-                                    <StyledTableRow key={row.name}>
-
-                                        <StyledTableCell align="left"> {data.map((item, index) => (
-                                            <tr key={index}>
-                                                {Object.values(item).map((value, index) => (
-                                                    <td key={index}>{value}</td>
-                                                ))}
-                                            </tr>
-                                        ))}</StyledTableCell>
-
-                                    </StyledTableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
-                        <thead>
-                            <tr>
-                                {Object.keys(data[0]).map(key => (
-                                    <th key={key}>{key}</th>
-                                ))}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {data.map((item, index) => (
-                                <tr key={index}>
-                                    {Object.values(item).map((value, index) => (
-                                        <td key={index}>{value}</td>
-                                    ))}
-                                </tr>
-                            ))}
-                        </tbody>
-                    </TableContainer>
-                )}
                 <h1 className="text-center h1-title mt-5">Directorio</h1>
 
-                <h2 style={{ marginLeft: "100px" }} className="h2-title mt-3">Directorio Oficina Central Fedepanela - Bogotá</h2>
+                <h2 className="h2-title mt-3 text-center">{directorio?.title}</h2>
                 <TableContainer className="table-responsive" sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
 
-                    <Table className="mt-3" aria-label="customized table">
-                        <TableHead>
-                            <TableRow>
-                                <StyledTableCell>Área </StyledTableCell>
-                                <StyledTableCell align="left">Funcionario</StyledTableCell>
-                                <StyledTableCell align="left">Correo</StyledTableCell>
-                                <StyledTableCell align="left">Extensión</StyledTableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {rows.map((row) => (
-                                <StyledTableRow key={row.name}>
-                                    <StyledTableCell component="th" scope="row">
-                                        {row.name}
-                                    </StyledTableCell>
-                                    <StyledTableCell align="left">{row.calories}</StyledTableCell>
-                                    <StyledTableCell align="left">{row.fat}</StyledTableCell>
-                                    <StyledTableCell align="left">{row.carbs}</StyledTableCell>
-                                </StyledTableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
+                    {data && (
+
+
+                        <TableContainer className="table-responsive" sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
+                            <Table className="" aria-label="customized table">
+                                <TableHead>
+                                    <TableRow>
+
+                                        {Object.values(data[0]).map(key => (
+                                            <StyledTableCell key={key}>{key}</StyledTableCell>
+                                        ))}
+
+
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {data.slice(1).map((item, index) => (
+                                        <TableRow key={index}>
+                                            {Object.values(item).map((value, index) => (
+                                                <StyledTableCell key={index}>{value}</StyledTableCell>
+                                            ))}
+                                        </TableRow>
+                                    ))}
+
+                                </TableBody>
+                            </Table>
+
+                        </TableContainer>
+                    )}
                 </TableContainer>
             </div>
 
             <div className="container " style={{ marginTop: "100px" }}>
 
-                <h2 style={{ marginLeft: "100px" }} className="h2-title mb-4">Directorio Recaudo</h2>
+                <h2 className="h2-title mt-3 text-center">{tecnica?.title}</h2>
 
                 <TableContainer sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
-                    <Table aria-label="customized table">
-                        <TableHead>
-                            <TableRow>
-                                <StyledTableCell>Departamento </StyledTableCell>
-                                <StyledTableCell align="left">Nombre</StyledTableCell>
-                                <StyledTableCell align="left">Contacto</StyledTableCell>
-                                <StyledTableCell align="left">Correo</StyledTableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {recaudoData.map((row) => (
-                                <StyledTableRow key={row.name}>
-                                    <StyledTableCell component="th" scope="row">
-                                        {row.name}
-                                    </StyledTableCell>
-                                    <StyledTableCell align="left">{row.calories}</StyledTableCell>
-                                    <StyledTableCell align="left">{row.fat}</StyledTableCell>
-                                    <StyledTableCell align="left">{row.carbs}</StyledTableCell>
-                                </StyledTableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
+
+                    {data1 && (
+
+
+                        <TableContainer className="table-responsive" sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
+                            <Table className="" aria-label="customized table">
+                                <TableHead>
+                                    <TableRow>
+
+                                        {Object.values(data[0]).map(key => (
+                                            <StyledTableCell key={key}>{key}</StyledTableCell>
+                                        ))}
+
+
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {data.slice(1).map((item, index) => (
+                                        <TableRow key={index}>
+                                            {Object.values(item).map((value, index) => (
+                                                <StyledTableCell key={index}>{value}</StyledTableCell>
+                                            ))}
+                                        </TableRow>
+                                    ))}
+
+                                </TableBody>
+                            </Table>
+
+                        </TableContainer>
+                    )}
                 </TableContainer>
             </div>
 
             <div className="container" style={{ marginTop: "100px" }}>
 
-                <h2 style={{ marginLeft: "100px" }} className="h2-title mb-3">Área Técnica</h2>
+                <h2 className="h2-title mt-3 text-center">{recaudo?.title}</h2>
 
-                <TableContainer sx={{ minWidth: 700, maxWidth: 900, margin: "0 auto" }} component={Paper}>
-                    <Table sx={{ minWidth: 700 }} aria-label="customized table">
-                        <TableHead>
-                            <TableRow>
-                                <StyledTableCell>Funcionario </StyledTableCell>
-                                <StyledTableCell align="left">Cargo</StyledTableCell>
-                                <StyledTableCell align="left">Correo</StyledTableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {areaTecnicaData.map((row) => (
-                                <StyledTableRow key={row.name}>
-                                    <StyledTableCell component="th" scope="row">
-                                        {row.name}
-                                    </StyledTableCell>
-                                    <StyledTableCell align="left">{row.calories}</StyledTableCell>
-                                    <StyledTableCell align="left">{row.fat}</StyledTableCell>
-                                </StyledTableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
+                <TableContainer sx={{ minWidth: 700, maxWidth: 900, margin: "0 auto" }} className="mb-3" component={Paper}>
+                    {data2 && (
+
+
+                        <TableContainer className="table-responsive" sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
+                            <Table className="" aria-label="customized table">
+                                <TableHead>
+                                    <TableRow>
+
+                                        {Object.values(data[0]).map(key => (
+                                            <StyledTableCell key={key}>{key}</StyledTableCell>
+                                        ))}
+
+
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {data.slice(1).map((item, index) => (
+                                        <TableRow key={index}>
+                                            {Object.values(item).map((value, index) => (
+                                                <StyledTableCell key={index}>{value}</StyledTableCell>
+                                            ))}
+                                        </TableRow>
+                                    ))}
+
+                                </TableBody>
+                            </Table>
+
+                        </TableContainer>
+                    )}
                 </TableContainer>
             </div>
 
@@ -332,12 +371,14 @@ function Directorio({
 
 const mapStateToProps = state => ({
 
-    directorio: state.tablas.directorio
+    directorio: state.tablas.directorio,
+    tecnica: state.tablas.tecnica,
+    recaudo: state.tablas.recaudo
 
 
 })
 export default connect(mapStateToProps, {
 
-    get_directorio
+    get_directorio, get_recaudo, get_tecnica
 
 })(Directorio)
