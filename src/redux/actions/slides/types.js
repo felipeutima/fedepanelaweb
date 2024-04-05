@@ -1,0 +1,3 @@
+export const GET_SLIDES_SUCCESS = 'GET_SLIDES_SUCCESS';
+export const GET_SLIDES_FAIL = 'GET_SLIDES_FAIL';
+

@@ -8,15 +8,15 @@ import banner3 from "assets/img/banner3.png"
 
 import { useState, useEffect } from "react";
 
-function Header() {
+function Header({ slides }) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   useEffect(() => {
-      function handleResize() {
-          setIsSmallScreen(window.innerWidth < 768);
-      }
-      handleResize();
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
+    function handleResize() {
+      setIsSmallScreen(window.innerWidth < 768);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
 
@@ -30,36 +30,23 @@ function Header() {
 
 
         <Carousel>
-          <Carousel.Item>
-            <img
-              src={banner1}
-              className="img-fluid"
-              width={"100%"}
-            />
-            <Carousel.Caption>
+          {slides && slides.map((post, index) => (
+            <Carousel.Item>
+              <a href={post.url}>
+                <img
+                  src={post.thumbnail}
+                  className="img-fluid"
+                  width={"100%"}
+                />
+              </a>
+              <Carousel.Caption>
 
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src={banner2}
-              className="img-fluid"
-              width={"100%"}
-            />
-            <Carousel.Caption>
+              </Carousel.Caption>
+            </Carousel.Item>
 
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src={banner3}
-              className="img-fluid"
-              width={"100%"}
-            />
-            <Carousel.Caption>
 
-            </Carousel.Caption>
-          </Carousel.Item>
+          ))}
+
 
 
         </Carousel>
@@ -68,7 +55,7 @@ function Header() {
 
 
 
-      
+
 
 
       </div>
