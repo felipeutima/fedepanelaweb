@@ -11,11 +11,11 @@ class PostSerializer(serializers.ModelSerializer):
             'slug',
             'thumbnail',
             'content',
-            'time_read',
             'published',
             'status',
             'get_status',
-            "category"
+            "category",
+            "attachments"
         ]
 
 class PostListSerializer(serializers.ModelSerializer):
@@ -26,8 +26,8 @@ class PostListSerializer(serializers.ModelSerializer):
             'title',
             'slug',
             'thumbnail',
-            'time_read',
             'published',
             'status',
-            "category"
+            "category",
+            "attachments"
         ]

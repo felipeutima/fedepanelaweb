@@ -7,7 +7,9 @@ import {
     GET_NEWS_HOME_SUCCESS,
     GET_NEWS_HOME_FAIL,
     GET_NEW_DETAIL_SUCCESS,
-    GET_NEW_DETAIL_FAIL
+    GET_NEW_DETAIL_FAIL,
+    GET_FILTERED_SUCCESS,
+    GET_FILTERED_FAIL
 
 
 } from "./types"
@@ -102,3 +104,32 @@ export const get_new = (slug) => async dispatch => {
         });
     }
 }
+
+export const get_filtered= (search_term) => async dispatch => {
+
+    const config = {
+        headers: {
+            'Accept': 'application/json'
+        }
+    };
+
+    try {
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/news/filter?s=${search_term}`, config);
+
+        if (res.status === 200) {
+            dispatch({
+                type: GET_FILTERED_SUCCESS,
+                payload: res.data
+            });
+        } else {
+            dispatch({
+                type: GET_FILTERED_FAIL
+            });
+        }
+    } catch (err) {
+        dispatch({
+            type: GET_FILTERED_FAIL
+        });
+    }
+};
+

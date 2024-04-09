@@ -5,6 +5,8 @@ import {
     GET_NEWS_HOME_FAIL,
     GET_NEW_DETAIL_SUCCESS,
     GET_NEW_DETAIL_FAIL,
+    GET_FILTERED_SUCCESS,
+    GET_FILTERED_FAIL,
 
 } from '../actions/news/types'
 
@@ -57,6 +59,17 @@ export default function news(state = initialState, action) {
             return {
                 ...state,
                 post: null
+            }
+
+        case GET_FILTERED_SUCCESS:
+            return {
+                ...state,
+                filtered: payload.results
+            }
+        case GET_FILTERED_FAIL:
+            return {
+                ...state,
+                filtered: null
             }
 
         default:

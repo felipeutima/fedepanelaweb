@@ -12,7 +12,7 @@ from rest_framework import permissions
 from .serializers import PostSerializer, PostListSerializer
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-
+from django.db.models.query_utils import Q
 
 class UploadImg(APIView):
     parser_classes = (MultiPartParser, FormParser)
@@ -154,4 +154,20 @@ class NewsDetailView(APIView):
         else:
             return Response({'error':'Post doesnt exist'}, status=status.HTTP_404_NOT_FOUND)
 
+
+class SearchNewsView(APIView):
+    permission_classes = (permissions.AllowAny,)
+    def get(self,request, format=None):
+        search_term = request.query_params.get('s')
+        matches = Post.postobjects.filter(
+            Q(title__icontains=search_term) |
+            Q(content__icontains=search_term) |
+            Q(category__name__icontains=search_term)
+        )
+
+        paginator = SmallSetPagination()
+        results = paginator.paginate_queryset(matches, request)
+
+        serializer = PostListSerializer(results, many=True)
+        return paginator.get_paginated_response({'filtered_posts': serializer.data})
 

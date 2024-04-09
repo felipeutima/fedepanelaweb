@@ -4,7 +4,6 @@ import uuid
 from django.conf import settings
 User = settings.AUTH_USER_MODEL
 from ckeditor.fields import RichTextField
-
 # Create your models here.
 from apps.category.models import Category
 
@@ -38,7 +37,6 @@ class Post(models.Model):
     content =       RichTextField()
   
 
-    time_read =     models.IntegerField(blank=True, null=True)
     category =      models.ForeignKey(Category, on_delete=models.PROTECT)
 
     published =     models.DateTimeField(default=timezone.now)
@@ -47,6 +45,7 @@ class Post(models.Model):
 
     objects =           models.Manager()  # default manager
     postobjects =       PostObjects()  # custom manager
+    attachments = models.FileField(upload_to=news_thumbnail_directory, max_length=500, blank=True, null=True)
 
     class Meta:
         ordering = ('-published',)
@@ -58,3 +57,17 @@ class Post(models.Model):
     def get_status(self):
         status = self.status
         return status
+
+class Multimedia(models.Model):
+
+    title=models.CharField(max_length=255, blank=True, null=True)
+    image = models.ImageField(upload_to=news_thumbnail_directory, max_length=500,  null=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+
+    def __str__(self):
+        return self.title
+    
+class ImgMultimedia(models.Model):
+    title=models.CharField(max_length=255, blank=True, null=True)
+    image = models.ImageField(upload_to=news_thumbnail_directory, max_length=500,  null=True)
+    multimedia=models.ForeignKey(Multimedia, on_delete=models.CASCADE)
