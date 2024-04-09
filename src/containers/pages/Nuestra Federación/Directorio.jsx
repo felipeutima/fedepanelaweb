@@ -42,104 +42,6 @@ function createData(name, calories, fat, carbs, protein) {
 
 
 
-const rows = [
-    createData('Gerente General', "CARLOS MAYORGA", "gerencia@fedepanela.org.co", 1004),
-    createData('Asistente Gerencia', "ILEN ALTAMIRANDA", "asistentegerencia@fedepanela.org.co", 1003),
-    createData('Directora de Recaudo', "JACKELINE ALVARADO", "jalvarado@fedepanela.org.co", 1017),
-    createData('Coordinadora de Recaudo', "VIVIANA CALVO", "coordinadoraderecaudo@fedepanela.org.co", 1016),
-    createData('Director Jurídico', "SANTIAGO DAVILA", "juridica@fedepanela.org.co", 1013),
-    createData('Polizas y Contratación', "SANDRA RODRIGUEZ", "srodriguez@fedepanela.org.con", 1014),
-    createData('Director Financiero', "JUAN MANUEL LASSO", "jlasso@fedepanela.org.co", 1001),
-    createData('Administrativa Fedepanela', "TATIANA GARCIA", "tgarcia@fedepanela.org.co", 1021),
-    createData('Exportaciones', "PAOLA JARAMILLO", "exportaciones@fedepanela.org.co", 1021),
-    createData('Tesoreria', "ANDREA FIGUEROA", "tesoreria@fedepanela.org.co", 1020),
-    createData('Contadora', "LEYDI BELTRAN", "contabilidad@fedepanela.org.co", 1024),
-    createData('Recursos Humanos', "JISETH CASTELLANOS", "gestionhumana@fedepanela.org.co", 1027),
-    createData('Presupuesto', "HEIDY MALDONADO", "presupuesto@fedepanela.org.co", 1023),
-    createData('Recepcion', "CAMILA CASTAÑEDA", "recepcion@fedepanela.org.co", 1000),
-    createData('Director Técnico', "CRISTIÁN MARIN", "cmarin@fedepanela.org.co", 1005),
-    createData('Profesional de apoyo', "EMIL CELYS", "ecelys@fedepanela.org.co", 1007),
-    createData('Profesional de apoyo', "BEATRIZ RONDON", "brondon@fedepanela.org.co", 1006),
-    createData('Profesional de apoyo', "NIDIA VARELA", "nvarela@fedepanela.org.co", 1006),
-    createData('Profesional especializado en calidad', "ANGELA MARTINEZ", "amartinez@fedepanela.org.co", 1011),
-    createData('Profesional de cumplimiento', "MÓNICA QUINTERO", "lquintero@fedepanela.org.co", 1011),
-    createData('Dirección Socio-empresarial', "SANDRA SANCHEZ", "ssanchez@fedepanela.org.co", 1025),
-    createData('Director sistemas de información', "MAURICIO ANGEL", "mangel@fedepanela.org.co", 1002),
-    createData('Soporte Técnico', "WILMER CRUZ", "wcruz@fedepanela.org.co", 1026),
-    createData('Profesional sistemas de información', "LAURA AGUDELO", "lagudelo@fedepanela.org.co", 1008),
-    createData('Cedulación', "CARLOS RÍOS", "crios@fedepanela.org.co", 1028),
-    createData('Dirección de Comunicaciones', "ERIKA GARRIDO", "comunicaciones@fedepanela.org.co", 1015),
-    createData('Profesional Comunicaciones', "NICOLAS TORREJANO", "ntorrejano@fedepanela.org.co", 1015),
-    createData('Profesional Comunicaciones Gráficas', "LIZETH FRAILES", "lfrailes@fedepanela.org.co", 1019),
-    createData('Dirección Comercial', "YULIETH OLARTE", "yolarte@fedepanela.org.co", 1009),
-    createData('Profesional exportaciones', "CAROLINA OSORIO", "caosorio@fedepanela.org.co", 1010),
-    createData('Profesional encadenamientos productivos', "MARIBEL MARIN", "mmarin@fedepanela.org.co", 1010),
-    createData('Profesional agronegocios y desarrollo de modelos de negocio', "DANIEL CRUZ", "dcruz@fedepanela.org.co", 1010),
-    createData('Profesional agronegocios y desarrollo de modelos de negocio', "OSCAR MARTINEZ", "omartinez@fedepanela.org.co", 1010),
-    createData('Arquitecto', "ADRIAN ARCOS", "vivienda@fedepanela.org.co", 1022)
-];
-
-
-const recaudoData = [
-    createData('ANTIOQUIA', 'DIANA CARVAJAL', '321-638 22 58', 'antioquia@fedepanela.org.co'),
-    createData('BOYACA', 'GINA ALEJANDRA CRISTANCHO', '312-397 37 46', 'boyaca@fedepanela.org.co'),
-    createData('CALDAS', 'MARIO GIL DÍAZ', '317-439 93 11', 'caldas@fedepanela.org.co'),
-    createData('CUNDINAMARCA', 'RODOLFO VELASCO', '320-462 56 49', 'cundinamarca@fedepanela.org.co'),
-    createData('HUILA', 'LINDA LUCIA ROJAS GOMEZ', '313-397 12 48', 'huila@fedepanela.org.co'),
-    createData('NARIÑO', 'ANGELA JURADO ROSERO', '315-396 35 18', 'narino@fedepanela.org.co'),
-    createData('RISARALDA-QUINDIO', 'ALEJANDRA PALACIO VELASQUEZ', '316-577 34 28', 'risaralda@fedepanela.org.co'),
-    createData('SANTANDER', 'ANDREA CAROLINA RODRIGUEZ BURGOS', '318-708 20 89', 'crodriguez@fedepanela.org.co'),
-    createData('TOLIMA', 'GERARDO GUZMAN', '312-343 81 64', 'geguzman@fedepanela.org.co'),
-    createData('VALLE', 'MARIA CRISTINA ROLDAN BEDOYA', '315-396 78 39', 'valle@fedepanela.org.co'),
-    createData('VILLETA', 'SANDRA MILENA MARTÍNEZ ÁVILA', '320-485 83 76', 'recaudovilleta@fedepanela.org.co'),
-    createData('SANTANDER', 'HUBERTO RUIZ FAJARDO', '311-803 98 25', 'socorro@fedepanela.org.co'),
-    createData('CAUCA', 'CRISTINA BOLAÑOS MANQUILLO', '318-347 68 22', 'cauca@fedepanela.org.co')
-];
-
-const areaTecnicaData = [
-    createData('Cristián Marín', 'Director', 'cmarin@fedepanela.org.co'),
-    createData('Angela Martinez', 'Profesional Especializado de Calidad', 'amartinez@fedepanela.org.co'),
-    createData('Nestor Triana', 'Profesional de Calidad', 'ntriana@fedepanela.org.co'),
-    createData('Nidia Catherine Varela', 'Profesional de Apoyo', 'nvarela@fedepanela.org.co'),
-    createData('Emil Celys López', 'Profesional de Apoyo', 'ecelys@fedepanela.org.co'),
-    createData('Dinora Patricia Bedoya Vergara', 'Coordinadora Departamental Antioquia', 'dbedoya@fedepanela.org.co'),
-    createData('Diana Montenegro', 'Coordinadora Departamental Caldas', 'dmontenegro@fedepanela.org.co'),
-    createData('Alba Ruby Rodriguez Bolaños', 'Coordinadora Departamental Cauca', 'arodriguez@fedepanela.org.co'),
-    createData('Edwin Hernandez', 'Coordinador Departamental Cundinamarca', 'ehernandez@fedepanela.org.co'),
-    createData('German Silva Santander', 'Coordinador Departamental Nariño', 'gsilva@fedepanela.org.co'),
-    createData('Sandra Milena Barrera Vargas', 'Coordinadora Departamental Quindío-Risaralda', 'sbarrera@fedepanela.org.co'),
-    createData('Wilman Efrén Molina López', 'Coordinador Departamental Santander', 'wemolina@fedepanela.org.co'),
-    createData('Alvaro Hernan Quintero Bedoya', 'Coordinador Departamental Valle del Cauca', 'aquintero@fedepanela.org.co'),
-    createData('Martha Quintero', 'Coordinadora Departamental Boyacá', 'mquintero@fedepanela.org.co'),
-    createData('Jair Rojas Barrera', 'Profesional Departamental Tolima', 'jrojas@fedepanela.org.co'),
-    createData('Edgar Esaú Realpe', 'Profesional Departamental Huila', 'erealpe@fedepanela.org.co'),
-    createData('Luis Manuel Fajardo Montezuma', 'Profesional Departamental Nariño', 'lfajardo@fedepanela.org.co'),
-    createData('Elcira Llanos', 'Profesional Departamental Caquetá', 'ellanos@fedepanela.org.co'),
-    createData('David Mauricio Ibáñez Duran', 'Profesional Departamental Norte de Santander', 'dibanez@fedepanela.org.co'),
-    createData('Maria Fernanda Casallas', 'Profesional Departamental Boyacá-Santander', 'mcasallas@fedepanela.org.co'),
-    createData('Joaquin Emilio Valencia Tuberquia', 'Técnico Agrícola Antioquia', 'jvalencia@fedepanela.org.co'),
-    createData('Nancy Carolina Londoño Muñoz', 'Técnico Agrícola Antioquia', 'nlondono@fedepanela.org.co'),
-    createData('Jhon Henry Noguera Hernandez', 'Técnico Agrícola Boyacá', 'jnoguera@fedepanela.org.co'),
-    createData('Solanyi Esmeralda Villalobos Peña', 'Técnico Agrícola Boyacá', 'svillalobos@fedepanela.org.co'),
-    createData('Roger Vergara', 'Técnico Agrícola Cauca', 'rvergara@fedepanela.org.co'),
-    createData('Alexander Zarate Espinosa', 'Técnico Agrícola Cundinamarca', 'azarate@fedepanela.org.co'),
-    createData('Amparo Ramos', 'Técnico Agrícola Cundinamarca', 'aramos@fedepanela.org.co'),
-    createData('Carlos Faiver Argote Calvache', 'Técnico Agrícola Huila', 'cargote@fedepanela.org.co'),
-    createData('Luis Hernando Narvaez Morales', 'Técnico Agrícola Nariño', 'lnarvaez@fedepanela.org.co'),
-    createData('Yeison Estiben Mateus Ariza', 'Técnico Agrícola Santander', 'ymateus@fedepanela.org.co'),
-    createData('Brayan Ferney Naranjo Vesga', 'Técnico Agrícola Santander', 'bnaranjo@fedepanela.org.co'),
-    createData('Cesar Augusto Gutierrez', 'Técnico Agrícola Valle del Cauca', 'cgutierrez@fedepanela.org.co'),
-    createData('Carlos Alberto Ríos Díaz', 'Auxiliar Administrativo Nivel Central', 'crios@fedepanela.org.co'),
-    createData('Leidy Tatiana Garcia Loaiza', 'Auxiliar Administrativo Nivel Central', 'tgarcia@fedepanela.org.co'),
-    createData('Heidy Viviana Maldonado Cristancho', 'Auxiliar Administrativo Nivel Central', 'presupuesto@fedepanela.org.co'),
-    createData('Jiseth Yulieth Castellanos Misar', 'Auxiliar Administrativo Nivel Central', 'gestionhumana@fedepanel.org.co'),
-    createData('Beatriz Rondon', 'Auxiliar Administrativo Nivel Central', 'brondon@fedepanela.org.co'),
-    createData('Nancy Perenguez', 'Auxiliar Administrativo Nariño', 'nperenguez@fedepanela.org.co')
-];
-
-
-
-
 function Directorio({
 
 
@@ -167,7 +69,7 @@ function Directorio({
 
     const handleDescargar = async () => {
         try {
-            const response = await fetch(`${baseUrl}/${directorio.archivo}`);
+            const response = await fetch(directorio.archivo);
             const blob = await response.blob();
 
             const reader = new FileReader();
@@ -188,7 +90,7 @@ function Directorio({
 
     const handleDescargarTecnica = async () => {
         try {
-            const response = await fetch(`${baseUrl}/${tecnica.archivo}`);
+            const response = await fetch(tecnica.archivo);
             const blob = await response.blob();
 
             const reader = new FileReader();
@@ -209,7 +111,7 @@ function Directorio({
 
     const handleDescargarRecaudo = async () => {
         try {
-            const response = await fetch(`${baseUrl}/${recaudo.archivo}`);
+            const response = await fetch(recaudo.archivo);
             const blob = await response.blob();
 
             const reader = new FileReader();
@@ -297,7 +199,7 @@ function Directorio({
                                 <TableHead>
                                     <TableRow>
 
-                                        {Object.values(data[0]).map(key => (
+                                        {Object.values(data1[0]).map(key => (
                                             <StyledTableCell key={key}>{key}</StyledTableCell>
                                         ))}
 
@@ -305,7 +207,7 @@ function Directorio({
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {data.slice(1).map((item, index) => (
+                                    {data1.slice(1).map((item, index) => (
                                         <TableRow key={index}>
                                             {Object.values(item).map((value, index) => (
                                                 <StyledTableCell key={index}>{value}</StyledTableCell>
@@ -334,7 +236,7 @@ function Directorio({
                                 <TableHead>
                                     <TableRow>
 
-                                        {Object.values(data[0]).map(key => (
+                                        {Object.values(data2[0]).map(key => (
                                             <StyledTableCell key={key}>{key}</StyledTableCell>
                                         ))}
 
@@ -342,7 +244,7 @@ function Directorio({
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {data.slice(1).map((item, index) => (
+                                    {data2.slice(1).map((item, index) => (
                                         <TableRow key={index}>
                                             {Object.values(item).map((value, index) => (
                                                 <StyledTableCell key={index}>{value}</StyledTableCell>
