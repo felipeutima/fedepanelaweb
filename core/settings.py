@@ -42,6 +42,7 @@ PROJECT_APPS=[
     "apps.programas",
     "apps.conexionp",
     "apps.slides",
+    "apps.events"
 
 ]
 

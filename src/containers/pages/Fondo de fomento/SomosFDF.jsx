@@ -52,7 +52,7 @@ const recaudoData1 = [
     createData('Delegado de Nariño', 'VICTOR HUGO ZAMBRANO MONTENEGRO', 'victorzambrano15@hotmail.com'),
     createData('Delegado del Valle del Cauca', 'SANTIAGO FERNANDEZ VALLEJO', 'saccharumsa@hotmail.com / biobando@hotmail.com'),
     createData('Delegado de Santander', 'TOMAS AUGUSTO MARTINEZ MARTINEZ', 'tommeson@yahoo.es'),
-   
+
 ];
 
 function SomosFDF() {
@@ -97,9 +97,24 @@ function SomosFDF() {
                                         transition={{ duration: 0.9, ease: "easeOut" }}
                                     >
 
-                                        <h2 class="fw-bolder h2-title">Fondo de Fomento</h2>
-                                        <p class="lead fw-normal text-muted mb-0">La experiencia de este Ingeniero Agrícola en planes de Desarrollo Territorial con énfasis en Gestión Ambiental Urbana y en el desarrollo de infraestructura para el manejo de procesos de elaboración de la panela unida a su dominio del sector agroindustrial, son los elementos fundamentales para garantizar una gestión de asistencia técnica gremial con miras a aumentar el desarrollo de la comercialización de los mercados nacionales e internacionales.</p>
+                                        <p class="fw-normal text-muted mb-0 lead"> De acuerdo con lo establecido en la ley 40 de 1990, los recursos del Fondo de Fomento Panelero se invierten en planes y proyectos que beneficien el sector panelero, en las siguientes actividades: </p>
+                                        <ul className="list-unstyled align-items-center">
+                                            <li className="mb-2 mt-1">
+                                                <p className="text-muted my-0"><Check color="#005B24" />                                                Gastos de funcionamiento de la Federación Nacional de Productores de Panela, FEDEPANELA, y sus seccionales, o de otras asociaciones sin ánimo de lucro, representativas de la actividad panelera, incluyendo las cooperativas de producción o comercialización de la panela (hasta un 10%)
+                                                </p>
 
+                                            </li>
+                                            <li className="mb-2">
+                                                <p className="text-muted my-0"><Check color="#005B24" />                                                Actividades de investigación y extensión vinculadas con producción de semillas mejoradas de caña de panela; utilización de energéticos alternativos en la producción de la panela; técnicas de conservación, empaque y comercialización de la panela y otros productos de los trapiches y programas de diversificación de la producción.
+                                                </p>
+                                            </li>
+
+                                            <li className="mb-2 mt-1">
+                                                <p className="text-muted my-0"><Check color="#005B24" />         La promoción del consumo de la panela, dentro y fuera del país.</p>
+
+                                            </li>
+
+                                        </ul>
                                     </motion.div>
                                 </div>
 
@@ -110,39 +125,47 @@ function SomosFDF() {
 
                 <div className="container">
 
-                    <h2 className="lead fw-small my-4 mx-3 text-center">De acuerdo con lo establecido en la ley 40 de 1990, los recursos del Fondo de Fomento Panelero se invierten en planes y proyectos que beneficien el sector panelero, en las siguientes actividades:</h2>
+
                     <div className="row px-5">
 
                         <div className="d-flex justify-content-center px-5">
                             <ul className="list-unstyled align-items-center">
-                                <li className="mb-2 mt-1">
+                                <li className="mb-2 mt-1"> <p className="text-muted my-0">
                                     <Check color="#005B24" />
                                     Gastos de funcionamiento de la Federación Nacional de Productores de Panela, FEDEPANELA, y sus seccionales, o de otras asociaciones sin ánimo de lucro, representativas de la actividad panelera, incluyendo las cooperativas de producción o comercialización de la panela (hasta un 10%)
+                                </p>
                                 </li>
                                 <li className="mb-2">
-                                    <Check color="#005B24" />
-                                    Actividades de investigación y extensión vinculadas con producción de semillas mejoradas de caña de panela; utilización de energéticos alternativos en la producción de la panela; técnicas de conservación, empaque y comercialización de la panela y otros productos de los trapiches y programas de diversificación de la producción.
+                                    <p className="text-muted my-0">
+                                        <Check color="#005B24" />
+                                        Actividades de investigación y extensión vinculadas con producción de semillas mejoradas de caña de panela; utilización de energéticos alternativos en la producción de la panela; técnicas de conservación, empaque y comercialización de la panela y otros productos de los trapiches y programas de diversificación de la producción.
+                                    </p>
                                 </li>
 
-                                <li className="mb-2 mt-1">
+                                <li className="mb-2 mt-1"> <p className="text-muted my-0">
                                     <Check color="#005B24" />
                                     La promoción del consumo de la panela, dentro y fuera del país.
+                                </p>
                                 </li>
-                                <li className="mb-2 mt-1">
+                                <li className="mb-2 mt-1"> <p className="text-muted my-0">
                                     <Check color="#005B24" />
                                     Campañas educativas sobre las características nutricionales de la panela.
+                                </p>
                                 </li>
-                                <li className="mb-2 mt-1">
+                                <li className="mb-2 mt-1"> <p className="text-muted my-0">
                                     <Check color="#005B24" />
                                     Actividades de comercialización de la panela, dentro y fuera del país.
+                                </p>
                                 </li>
-                                <li className="mb-2 mt-1">
+                                <li className="mb-2 mt-1"> <p className="text-muted my-0">
                                     <Check color="#005B24" />
                                     Programas de diversificación de la producción de las unidades paneleras.
+                                </p>
                                 </li>
-                                <li className="mb-2 mt-1">
+                                <li className="mb-2 mt-1"> <p className="text-muted my-0">
                                     <Check color="#005B24" />
                                     Programas de conservación de las cuencas hidrográficas y el entorno ambiental en las zonas paneleras.
+                                </p>
                                 </li>
 
                             </ul>
@@ -160,42 +183,27 @@ function SomosFDF() {
                         <section class="py-2" id="features">
                             <div class="container px-5 ">
                                 <div className="row">
-
-                                    <div class="col  mb-md-0 h-100">
-                                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-1"><FileEarmarkBarGraph /></div>
-                                        <h2 class="h5">Informe a la Contaduría Nacional General</h2>
-                                        <p class="text-muted">Se envían informes trimestrales de los estados financieros a la Contaduría Nacional General de la Nación.</p>
+                                    <div className="col mb-md-0 h-100">
+                                        <ol>
+                                            <li>
+                                                <p className="text-muted">El Fondo de Fomento Panelero tiene una Junta Directiva conformada por 4 representantes del Ministerio de Agricultura y Desarrollo Rural y 3 representantes del sector panelero, la cual se reúne trimestralmente con el fin de revisar y aprobar las inversiones y ejecución del presupuesto del periodo.</p>
+                                            </li>
+                                            <li>
+                                                <p className="text-muted">La Junta del Fondo de Fomento Panelero nombra a una firma auditora externa con el fin de que le realice auditoría permanente al Fondo de Fomento Panelero y rinda sus informes en las reuniones de Junta Directivas trimestrales o en los periodos que se solicite.</p>
+                                            </li>
+                                            <li>
+                                                <p className="text-muted">El Ministerio de Agricultura Desarrollo Rural efectúa revisión periódica a los programas del Fondo, procedimientos administrativos, procedimiento de recaudo y Estados Financieros.</p>
+                                            </li>
+                                            <li>
+                                                <p className="text-muted">La Contraloría General de la República vigila al Fondo de Fomento Panelero, estados financieros, inversiones y administración de la Cuota de Fomento Panelero. Se le envía informes trimestrales.</p>
+                                            </li>
+                                            <li>
+                                                <p className="text-muted">Así mismo, se envían informes de los Estados Financieros a la Contaduría Nacional General de la Nación.</p>
+                                            </li>
+                                        </ol>
                                     </div>
-
-
-
-                                    <div class="col  mb-md-0 h-100">
-                                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-1"><FileEarmarkCheck /></div>
-                                        <h2 class="h5">Auditoría Externa</h2>
-                                        <p class="text-muted">La Junta nombra a una firma auditora externa para realizar auditorías permanentes al Fondo y presentar informes en las reuniones trimestrales.</p>
-                                    </div>
-                                    <div class="col h-100">
-                                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-1"><FileEarmarkText /></div>
-                                        <h2 class="h5">Revisión Ministerial</h2>
-                                        <p class="text-muted"> El Ministerio de Agricultura y Desarrollo Rural realiza revisiones periódicas a los programas, procedimientos administrativos, de recaudo y estados financieros del Fondo.</p>
-                                    </div>
-
                                 </div>
-                                <div className="row">
-                                    <div class="col-md-6">
-                                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-1"><Eye /></div>
-                                        <h2 class="h5">Vigilancia de la Contraloría General</h2>
-                                        <p class="text-muted">La Contraloría General de la República vigila los estados financieros, inversiones y administración de la Cuota de Fomento Panelero, recibiendo informes trimestrales.</p>
-                                    </div>
 
-
-                                    <div class="col h-100">
-                                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-1"> < People /></div>
-                                        <h2 class="h5">Junta Directiva del Fondo de Fomento Panelero</h2>
-                                        <p class="text-muted"> Conformada por representantes del Ministerio de Agricultura y Desarrollo Rural y del sector panelero, se reúne trimestralmente para revisar y aprobar inversiones y presupuestos.</p>
-                                    </div>
-
-                                </div>
 
 
 
@@ -208,8 +216,8 @@ function SomosFDF() {
                 </div>
                 <div className="container " style={{ marginTop: "100px" }}>
 
-                    <h2 style={{ marginLeft: "100px", borderBottom:"2px solid #005B24", display: "inline-block" }} className="fw-bolder h2-title mb-4">Junta Directiva</h2>
-                    <h2 style={{ marginLeft: "120px" }}className="h2-title ">Ministerio de Agricultura Y Desarrollo Rural</h2>
+                    <h2 style={{ marginLeft: "100px", borderBottom: "2px solid #005B24", display: "inline-block" }} className="fw-bolder h2-title mb-4">Junta Directiva</h2>
+                    <h2 style={{ marginLeft: "120px" }} className="h2-title ">Ministerio de Agricultura Y Desarrollo Rural</h2>
                     <TableContainer sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
                         <Table aria-label="customized table">
                             <TableHead>
@@ -238,7 +246,7 @@ function SomosFDF() {
                 </div>
                 <div className="container " style={{ marginTop: "100px" }}>
 
-                    <h2 style={{ marginLeft: "120px" }}className="h2-title ">Delegados de la Junta directiva</h2>
+                    <h2 style={{ marginLeft: "120px" }} className="h2-title ">Delegados de la Junta directiva</h2>
                     <TableContainer sx={{ maxWidth: 900, margin: "0 auto" }} component={Paper}>
                         <Table aria-label="customized table">
                             <TableHead>
@@ -257,7 +265,7 @@ function SomosFDF() {
                                         </StyledTableCell>
                                         <StyledTableCell align="left">{row.calories}</StyledTableCell>
                                         <StyledTableCell align="left">{row.fat}</StyledTableCell>
-                                      
+
                                     </StyledTableRow>
                                 ))}
                             </TableBody>

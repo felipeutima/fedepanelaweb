@@ -57,8 +57,9 @@ import NoticiasBlog from 'containers/pages/NoticiasBlog';
 import NoticiasDetail from 'containers/pages/NoticiasDetail';
 import BoletinTendencias from 'containers/pages/BoletinTendencias';
 import BoletinNews from 'containers/pages/BoletinNews';
-
-
+import Contacto from 'containers/pages/Contacto';
+import OfertasEmpleo from 'containers/pages/Fondo de fomento/OfertasEmpleo';
+import Convocatorias from 'containers/pages/Fondo de fomento/Convocatorias';
 function App() {
   return (
     <Provider store={store}>
@@ -71,6 +72,9 @@ function App() {
           <Route path="/" element={<Home />} />
           {/*Home Display */}
           <Route path="/noticias" element={<NoticiasBlog />} />
+
+          {/*Contacto Display */}
+          <Route path="/contacto" element={<Contacto />} />
 
           {/*Detail Display */}
           <Route path="/noticias/:slug" element={<NoticiasDetail />} />
@@ -117,6 +121,8 @@ function App() {
           <Route path="/FondodeFomento/CalendarioEventos" element={<CalendarioEventosFDF />} />
           <Route path="/FondodeFomento/QuejasReclamos" element={<QuejasReclamos />} />
           <Route path="/FondodeFomento/PreguntasFrecuentes" element={<PreguntasFrecuentes />} />
+          <Route path="/FondodeFomento/OfertasEmpleo" element={<OfertasEmpleo />} />
+          <Route path="/FondodeFomento/Convocatorias" element={<Convocatorias />} />
 
 
 

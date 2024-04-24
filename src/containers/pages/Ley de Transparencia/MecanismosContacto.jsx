@@ -4,6 +4,7 @@ import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
 import { motion } from 'framer-motion';
 import Accordion from 'react-bootstrap/Accordion';
+import politica from "assets/docs/Ley de Transparencia/Politica_tratamiento_datos_FEDEPANELA_Version_13_06_2022.pdf"
 function MecanismoContacto() {
 
     return (
@@ -60,6 +61,9 @@ function MecanismoContacto() {
                                             <div>
                                                 <a className="a-accordion" href="/FondodeFomento/QuejasReclamos">e. Link al formulario electrónico de solicitudes, peticiones, quejas, reclamos y denuncias</a>
                                             </div>
+                                            <div>
+                                                <a className="a-accordion" href="/contacto">Link al formulario electrónico de contáctenos</a>
+                                            </div>
                                         </div>
 
                                     </Accordion.Body>
@@ -112,7 +116,7 @@ function MecanismoContacto() {
                                     <Accordion.Body>
 
                                         <ul>
-                                            <li className="mt-"> <a href="" className="a-accordion">Políticas de seguridad de la información, sitio web</a> </li>
+                                            <li className="mt-"> <a href={politica} target="blank" className="a-accordion">Políticas de seguridad de la información</a> </li>
                                         </ul>
 
                                     </Accordion.Body>

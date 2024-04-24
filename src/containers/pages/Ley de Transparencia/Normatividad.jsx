@@ -2,8 +2,22 @@ import Layout from "hocs/layouts/Layout";
 import Navbar from "components/navigation/Navbar";
 import Footer from "components/navigation/Footer";
 import CardDownload from "components/Nuestra Fede/CardDownload";
-import re2023 from "assets/docs/Reforma-Estatutaria-2023.pdf";
-import re003 from "assets/docs/Resolucion-003-Reglamento-Elecciones-2023.pdf";
+import doc from "assets/docs/LEY_40_DE_1990.pdf";
+import doc1 from "assets/docs/RESOLUCIN_16379_DE_2003.pdf";
+import doc2 from "assets/docs/RESOLUCIN_5109_DE_2005.pdf";
+import doc3 from "assets/docs/RESOLUCIN_333_DE_2011.pdf";
+import doc4 from "assets/docs/DECRETO_1594_DE_1984.pdf";
+import doc5 from "assets/docs/DECRETO_948_DE_1995.pdf";
+import doc6 from "assets/docs/FANZINE-FINAL-BIOSEGURIDAD.pdf";
+import doc7 from "assets/docs/RESOLUCIN_16379_DE_2003.pdf";
+import doc8 from "assets/docs/RESOLUCIN_779_DE_2006.pdf";
+import doc9 from "assets/docs/RESOLUCIN_3462_DE_2008.pdf";
+import doc10 from "assets/docs/RESOLUCIN_3544_DE_2009.pdf";
+import doc11 from "assets/docs/RESOLUCIN_4121_DE_2011.pdf";
+import doc12 from "assets/docs/DECRETO-604-DE-2013.pdf";
+import doc13 from "assets/docs/LEY-100-DE-1993.pdf";
+import doc14 from "assets/docs/DECRETO-295-DE-2017.pdf";
+
 import { motion } from "framer-motion";
 import Accordion from "react-bootstrap/Accordion";
 function Normatividad() {
@@ -33,8 +47,9 @@ function Normatividad() {
                     <div className="container">
                       <div className="container">
                         <a
-                          href="https://fedepanela.org.co/gremio/descargas/ley-40-de-1990/"
+                          href={doc}
                           className="a-accordion"
+                          target="blank"
                         >
                           Ley 40 de 1990
                         </a>{" "}
@@ -45,337 +60,331 @@ function Normatividad() {
                           desarrollo de la producción de la panela y se
                           establece la cuota de fomento panelero.
                         </span>
-                        <Accordion.Header>
-                          <h2 className="h2-title-header">Comercial</h2>
-                        </Accordion.Header>
-                        <Accordion.Body>
+
+                        <h2 className="h2-title-header mt-3">Comercial</h2>
+
+                        <div>
                           <div>
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-16379-de-2003/"
-                                className="a-accordion"
-                              >
-                                Resolución 16379 de 2003
-                              </a>
-                              <br />
-                              <span>
-                                Por la cual se reglamenta el control metrológico
-                                y del contenido de producto en pre-empacados.
-                              </span>
-                            </div>
+                            <a
+                              href={doc1}
+                              className="a-accordion" target="blank"
+                            >
+                              Resolución 16379 de 2003
+                            </a>
                             <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-5109-de-2005/"
-                                className="a-accordion"
-                              >
-                                Resolución 5109 de 2005
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se establece el reglamento técnico
-                                sobre los requisitos de rotulado o etiquetado
-                                que deben cumplir los alimentos envasados y
-                                materias primas de alimentos para consumo
-                                humano.
-                              </span>
-                            </div>
-                            <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-333-de-2011/"
-                                className="a-accordion"
-                              >
-                                Resolución 333 de 2011
-                              </a>
-                              <br />
-                              <span>
-                                Por la cual se establece el reglamento técnico
-                                sobre los requisitos de rotulado o etiquetado
-                                nutricional que deben cumplir los alimentos
-                                envasados para consumo humano.
-                              </span>
-                            </div>
+                            <span>
+                              Por la cual se reglamenta el control metrológico
+                              y del contenido de producto en pre-empacados.
+                            </span>
                           </div>
-                        </Accordion.Body>
-                        <Accordion.Header>
-                          <h2 className="h2-title-header">Ambiental</h2>
-                        </Accordion.Header>
-                        <Accordion.Body>
+                          <br />
                           <div>
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/decreto-1594-de-1984/"
-                                className="a-accordion"
-                              >
-                                DDecreto 1594 de 1984
-                              </a>
-                              <br />
-                              <span>Usos del agua y residuos líquidos.</span>
-                            </div>
+                            <a
+                              href={doc2}
+                              className="a-accordion" target="blank"
+                            >
+                              Resolución 5109 de 2005
+                            </a>
                             <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/decreto-948-de-1995/"
-                                className="a-accordion"
-                              >
-                                Decreto 948 de 1995
-                              </a>
-                              <br />
-                              <span>
-                                Prevención y control de la contaminación
-                                atmosférica y la protección de la calidad del
-                                aire.
-                              </span>
-                            </div>
-                            <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/protocolo-general-de-bioseguridad-para-la-prevencion-del-covid-19-en-el-subsector-panelero/"
-                                className="a-accordion"
-                              >
-                                Protocolo general de bioseguridad para la
-                                prevención del covid-19 en el subsector panelero
-                              </a>
-                            </div>
+                            <span>
+                              Por el cual se establece el reglamento técnico
+                              sobre los requisitos de rotulado o etiquetado
+                              que deben cumplir los alimentos envasados y
+                              materias primas de alimentos para consumo
+                              humano.
+                            </span>
                           </div>
-                        </Accordion.Body>
-                        <Accordion.Header>
-                          <h2 className="h2-title-header">Sanitarias</h2>
-                        </Accordion.Header>
-                        <Accordion.Body>
+                          <br />
                           <div>
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-16379-de-2003/"
-                                className="a-accordion"
-                              >
-                                Resolución 16379 de 2003
-                              </a>
-                              <br />
-                              <span>
-                                Por la cual se reglamenta el control metrológico
-                                y del contenido de producto en pre-empacados.
-                              </span>
-                            </div>
+                            <a
+                              href={doc3}
+                              className="a-accordion"
+                            >
+                              Resolución 333 de 2011
+                            </a>
                             <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-5109-de-2005/"
-                                className="a-accordion"
-                              >
-                                Resolución 5109 de 2005
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se establece el reglamento técnico
-                                sobre los requisitos de rotulado o etiquetado
-                                que deben cumplir los alimentos envasados y
-                                materias primas de alimentos para consumo
-                                humano.
-                              </span>
-                            </div>
-                            <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-779-de-2006/"
-                                className="a-accordion"
-                              >
-                                Resolución 779 de 2006
-                              </a>
-                              <br />
-                              <span>
-                                Por la cual se establece el reglamento técnico
-                                sobre los requisitos sanitarios que se deben
-                                cumplir en la producción y comercialización de
-                                la panela para consumo humano y se dictan otras
-                                disposiciones.
-                              </span>
-                            </div>
-                            <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-3462-de-2008/"
-                                className="a-accordion"
-                              >
-                                Resolución 3462 de 2008
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se modifica el artículo 9 de las
-                                condiciones sanitarias de los trapiches y el
-                                artículo 15 sobre requisitos para la exportación
-                                de panela de la Resolución 779 de 2006 y se
-                                dictan otras disposiciones.
-                              </span>
-                            </div>
-
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-3544-de-2009/"
-                                className="a-accordion"
-                              >
-                                Resolución 3544 de 2009
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se modifica el artículo 11 y el
-                                artículo 13 de la Resolución 779 de 2006, sobre
-                                envase y rotulado respectivamente.
-                              </span>
-                            </div>
-
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-333-de-2011/"
-                                className="a-accordion"
-                              >
-                                Resolución 333 de 2011
-                              </a>
-                              <br />
-                              <span>
-                                Por la cual se establece el reglamento técnico
-                                sobre los requisitos de rotulado o etiquetado
-                                nutricional que deben cumplir los alimentos
-                                envasados para consumo humano.
-                              </span>
-                            </div>
-
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-4121-de-2011/"
-                                className="a-accordion"
-                              >
-                                Resolución 4121 de 2011
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se modifica parcialmente la
-                                Resolución 779 de 2006, modificadas por las
-                                Resoluciones 3462 de 2008 y 3544 de 2009.
-                              </span>
-                            </div>
+                            <span>
+                              Por la cual se establece el reglamento técnico
+                              sobre los requisitos de rotulado o etiquetado
+                              nutricional que deben cumplir los alimentos
+                              envasados para consumo humano.
+                            </span>
                           </div>
-                        </Accordion.Body>
-                        <Accordion.Header>
-                          <h2 className="h2-title-header">Laboral</h2>
-                        </Accordion.Header>
-                        <Accordion.Body>
+                        </div>
+
+                        <h2 className="h2-title-header my-3">Ambiental</h2>
+
+
+                        <div>
                           <div>
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/abc-resolucion-0312-2/"
-                                className="a-accordion"
-                              >
-                                ABC- Resolución 0312 de 2019
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se definen los Estándares Mínimos
-                                del Sistema de Gestión de la Seguridad y Salud
-                                en el Trabajo SG-SST.
-                              </span>
-                            </div>
+                            <a
+                              href={doc4}
+                              className="a-accordion" target="blank"
+                            >
+                              Decreto 1594 de 1984
+                            </a>
                             <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-0312-de-2019/"
-                                className="a-accordion"
-                              >
-                                Resolución 0312 de 2019
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se definen los Estándares Mínimos
-                                del Sistema de Gestión de la Seguridad y Salud
-                                en el Trabajo SG-SST.
-                              </span>
-                            </div>
-                            <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/decreto-604-de-2013/"
-                                className="a-accordion"
-                              >
-                                Decreto 604 de 2013
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se reglamenta el acceso y operación
-                                del Servicio Social Complementario de Beneficios
-                                Económicos Periódicos –BEPS.
-                              </span>
-                            </div>
-                            <br />
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/resolucion-5094-de-2013/"
-                                className="a-accordion"
-                              >
-                                Resolución 5094 de 2013
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se ajusta la planilla integrada de
-                                autoliquidación de aporte PILA de acuerdo con lo
-                                establecido en el Decreto 2616 de 2013.
-                              </span>
-                            </div>
-
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/decreto-2616-de-2013/"
-                                className="a-accordion"
-                              >
-                                Decreto 2616 de 2013
-                              </a>
-                              <br />
-                              <span>
-                                Por medio del cual se regula la cotización a
-                                seguridad social para trabajadores dependientes
-                                que laboran por períodos inferiores a un mes, se
-                                desarrolla el mecanismo financiero y operativo
-                                de que trata el artículo 172 de la Ley 1450 de
-                                2011 y se dictan disposiciones tendientes a
-                                lograr la formalización laboral de los
-                                trabajadores informales.
-                              </span>
-                            </div>
-
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/ley-100-de-1993/"
-                                className="a-accordion"
-                              >
-                                Ley 100 de 1993
-                              </a>
-                              <br />
-                              <span>
-                                Por la cual se crea el sistema de seguridad
-                                social integral y se dictan otras disposiciones.
-                              </span>
-                            </div>
-
-                            <div>
-                              <a
-                                href="https://fedepanela.org.co/gremio/descargas/decreto-295-de-2017/"
-                                className="a-accordion"
-                              >
-                                Decreto 295 de 2017
-                              </a>
-                              <br />
-                              <span>
-                                Por el cual se adiciona un Capítulo al Título 13
-                                de la Parte 2 del Libro 2 del Decreto 1833 de
-                                2016, a efectos de reglamentar la contribución
-                                de terceros para personas vinculadas al Servicio
-                                Social Complementario de Beneficios Económicos
-                                Periódicos (BEPS) y se dictan otras
-                                disposiciones
-                              </span>
-                            </div>
+                            <span>Usos del agua y residuos líquidos.</span>
                           </div>
-                        </Accordion.Body>
+                          <br />
+                          <div>
+                            <a
+                              href={doc5} target="blank"
+                              className="a-accordion"
+                            >
+                              Decreto 948 de 1995
+                            </a>
+                            <br />
+                            <span>
+                              Prevención y control de la contaminación
+                              atmosférica y la protección de la calidad del
+                              aire.
+                            </span>
+                          </div>
+                          <br />
+                          <div>
+                            <a
+                              href={doc6} target="blank"
+                              className="a-accordion"
+                            >
+                              Protocolo general de bioseguridad para la
+                              prevención del covid-19 en el subsector panelero
+                            </a>
+                          </div>
+                        </div>
+
+
+                        <h2 className="h2-title-header my-3">Sanitarias</h2>
+
+
+                        <div>
+                          <div>
+                            <a
+                              href={doc7} target="blank"
+                              className="a-accordion"
+                            >
+                              Resolución 16379 de 2003
+                            </a>
+                            <br />
+                            <span>
+                              Por la cual se reglamenta el control metrológico
+                              y del contenido de producto en pre-empacados.
+                            </span>
+                          </div>
+                          <br />
+                          <div>
+                            <a
+                              href={doc2} target="blank"
+                              className="a-accordion"
+                            >
+                              Resolución 5109 de 2005
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se establece el reglamento técnico
+                              sobre los requisitos de rotulado o etiquetado
+                              que deben cumplir los alimentos envasados y
+                              materias primas de alimentos para consumo
+                              humano.
+                            </span>
+                          </div>
+                          <br />
+                          <div>
+                            <a
+                              href={doc8} target="blank" className="a-accordion"
+                            >
+                              Resolución 779 de 2006
+                            </a>
+                            <br />
+                            <span>
+                              Por la cual se establece el reglamento técnico
+                              sobre los requisitos sanitarios que se deben
+                              cumplir en la producción y comercialización de
+                              la panela para consumo humano y se dictan otras
+                              disposiciones.
+                            </span>
+                          </div>
+                          <br />
+                          <div>
+                            <a
+                              href={doc9} target="blank" className="a-accordion"
+                            >
+                              Resolución 3462 de 2008
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se modifica el artículo 9 de las
+                              condiciones sanitarias de los trapiches y el
+                              artículo 15 sobre requisitos para la exportación
+                              de panela de la Resolución 779 de 2006 y se
+                              dictan otras disposiciones.
+                            </span>
+                          </div>
+
+                          <div>
+                            <a
+                              href={doc10} target="blank" className="a-accordion"
+                            >
+                              Resolución 3544 de 2009
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se modifica el artículo 11 y el
+                              artículo 13 de la Resolución 779 de 2006, sobre
+                              envase y rotulado respectivamente.
+                            </span>
+                          </div>
+
+                          <div>
+                            <a
+                              href={doc3} target="blank" className="a-accordion"
+                            >
+                              Resolución 333 de 2011
+                            </a>
+                            <br />
+                            <span>
+                              Por la cual se establece el reglamento técnico
+                              sobre los requisitos de rotulado o etiquetado
+                              nutricional que deben cumplir los alimentos
+                              envasados para consumo humano.
+                            </span>
+                          </div>
+
+                          <div>
+                            <a
+                              href={doc11} target="blank"
+                              className="a-accordion"
+                            >
+                              Resolución 4121 de 2011
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se modifica parcialmente la
+                              Resolución 779 de 2006, modificadas por las
+                              Resoluciones 3462 de 2008 y 3544 de 2009.
+                            </span>
+                          </div>
+                        </div>
+
+
+                        <h2 className="h2-title-header my-3">Laboral</h2>
+
+
+                        <div>
+                          <div>
+                            <a
+                              href="https://fedepanela.org.co/gremio/descargas/abc-resolucion-0312-2/"
+                              className="a-accordion"
+                            >
+                              ABC- Resolución 0312 de 2019
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se definen los Estándares Mínimos
+                              del Sistema de Gestión de la Seguridad y Salud
+                              en el Trabajo SG-SST.
+                            </span>
+                          </div>
+                          <br />
+                          <div>
+                            <a
+                              href="https://fedepanela.org.co/gremio/descargas/resolucion-0312-de-2019/"
+                              className="a-accordion"
+                            >
+                              Resolución 0312 de 2019
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se definen los Estándares Mínimos
+                              del Sistema de Gestión de la Seguridad y Salud
+                              en el Trabajo SG-SST.
+                            </span>
+                          </div>
+                          <br />
+                          <div>
+                            <a
+                              href={doc12}
+                              className="a-accordion" target="blank"
+                            >
+                              Decreto 604 de 2013
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se reglamenta el acceso y operación
+                              del Servicio Social Complementario de Beneficios
+                              Económicos Periódicos –BEPS.
+                            </span>
+                          </div>
+                          <br />
+                          <div>
+                            <a
+                              href="https://fedepanela.org.co/gremio/descargas/resolucion-5094-de-2013/"
+                              className="a-accordion"
+                            >
+                              Resolución 5094 de 2013
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se ajusta la planilla integrada de
+                              autoliquidación de aporte PILA de acuerdo con lo
+                              establecido en el Decreto 2616 de 2013.
+                            </span>
+                          </div>
+
+                          <div>
+                            <a
+                              href="https://fedepanela.org.co/gremio/descargas/decreto-2616-de-2013/"
+                              className="a-accordion"
+                            >
+                              Decreto 2616 de 2013
+                            </a>
+                            <br />
+                            <span>
+                              Por medio del cual se regula la cotización a
+                              seguridad social para trabajadores dependientes
+                              que laboran por períodos inferiores a un mes, se
+                              desarrolla el mecanismo financiero y operativo
+                              de que trata el artículo 172 de la Ley 1450 de
+                              2011 y se dictan disposiciones tendientes a
+                              lograr la formalización laboral de los
+                              trabajadores informales.
+                            </span>
+                          </div>
+
+                          <div>
+                            <a
+                              href={doc13} target="blank"
+                              className="a-accordion"
+                            >
+                              Ley 100 de 1993
+                            </a>
+                            <br />
+                            <span>
+                              Por la cual se crea el sistema de seguridad
+                              social integral y se dictan otras disposiciones.
+                            </span>
+                          </div>
+
+                          <div>
+                            <a
+                              href={doc14} target="blank"
+                              className="a-accordion"
+                            >
+                              Decreto 295 de 2017
+                            </a>
+                            <br />
+                            <span>
+                              Por el cual se adiciona un Capítulo al Título 13
+                              de la Parte 2 del Libro 2 del Decreto 1833 de
+                              2016, a efectos de reglamentar la contribución
+                              de terceros para personas vinculadas al Servicio
+                              Social Complementario de Beneficios Económicos
+                              Periódicos (BEPS) y se dictan otras
+                              disposiciones
+                            </span>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </Accordion.Body>

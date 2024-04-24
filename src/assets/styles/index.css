@@ -5,8 +5,9 @@
   font-style: normal;
 }
 
-body {
+body, .container , div {
   font-family: 'Brandon Grotesque';
+  font-size: 17px;
 }
 
 
@@ -990,7 +991,7 @@ navbar .fixed-top {
   position: relative;
   width: 200px;
   height: 150px;
-  background-color: #EDEDED;
+  background-color: #ffffff;
   border-radius: 25px;
   padding: 32px 24px;
   margin: 10px auto;
@@ -1016,7 +1017,7 @@ navbar .fixed-top {
   margin: auto;
 
 }
-
+/*
 .card-services .card1:hover:before {
   transform: scale(21);
 }
@@ -1153,6 +1154,7 @@ navbar .fixed-top {
 .card-services .card4:hover .go-arrow {
   opacity: 1;
 }
+*/
 
 /* CARD ABOUT   */
 .card_about {
@@ -1163,6 +1165,7 @@ navbar .fixed-top {
   display: block;
   margin: 0 auto;
 }
+
 
 .card_about .face {
   width: 300px;

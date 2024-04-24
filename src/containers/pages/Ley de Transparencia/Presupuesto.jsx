@@ -3,6 +3,29 @@ import Navbar from "components/navigation/Navbar";
 import Footer from "components/navigation/Footer";
 import { motion } from "framer-motion";
 import Accordion from "react-bootstrap/Accordion";
+import doc1 from "assets/docs/PRESUPUESTO-ANO-2021-3V.pdf";
+import doc2 from "assets/docs/Presupuesto-General-Asignado-2022.pdf";
+import doc3 from "assets/docs/Presupuesto-General-Asignado-2023.pdf";
+import doc4 from "assets/docs/PRESUPUESTO-INGRESOS-2016.pdf";
+import doc5 from "assets/docs/PRESUPUESTO-INGRESOS-2017-.pdf";
+import doc6 from "assets/docs/PRESUPUESTO-INGRESOS-2017-.pdf";
+import doc7 from "assets/docs/Ejecucion-Presupuestal-2019.pdf";
+import doc8 from "assets/docs/Ejecucion-Presupuestal-2020.pdf";
+import doc9 from "assets/docs/Ejecucion-presupuestal-historica-anual-del-ano-2021.pdf";
+import doc10 from "assets/docs/2-Presupuesto-Ejecutado-2022.pdf";
+
+import doc11 from "assets/docs/Estados-Financieros-2014parte-1.pdf";
+import doc12 from "assets/docs/Estados-financieros-2014-parte-2.pdf";
+import doc13 from "assets/docs/Estados-Financieros-2015.pdf";
+import doc14 from "assets/docs/ESTADOS-FINANCIEROS-2016.pdf";
+import doc15 from "assets/docs/ESTADOS-FINANCIEROS-2017.pdf";
+import doc16 from "assets/docs/BALANCE-2018.pdf";
+import doc17 from "assets/docs/ESTADOS-FINANCIEROS-FONDO-2019-1.pdf";
+import doc18 from "assets/docs/001-ESTADOS-FINANCIEROS-FONDO.pdf";
+import doc19 from "assets/docs/stados-Financieros-Fondo-2021.pdf";
+import doc20 from "assets/docs/Estados-Financieros-Comparativos-FFP-4Trim22-1.pdf";
+
+
 function Presupuesto() {
   return (
     <Layout>
@@ -52,8 +75,9 @@ function Presupuesto() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                    <div className="container">
+                    <div className="container">       {/*
                       <div>
+                 
                         <a
                           className="a-accordion"
                           href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/PRESUPUESTO-AN%CC%83O-2016-Ver-Junta-PDF.pdf"
@@ -95,10 +119,11 @@ function Presupuesto() {
                           2020
                         </a>
                       </div>
+                      */}
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2021/04/PRESUPUESTO-ANO-2021-3V.pdf"
+                          href={doc1} target="blank"
                         >
                           2021
                         </a>
@@ -107,7 +132,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/04/1-Presupuesto-General-Asignado-2022.pdf"
+                          href={doc2} target="blank"
                         >
                           2022
                         </a>
@@ -116,7 +141,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2023/06/1-Presupuesto-General-Asignado-2023.pdf"
+                          href={doc3} target="blank"
                         >
                           2023
                         </a>
@@ -134,7 +159,10 @@ function Presupuesto() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
+
+
                     <div className="container">
+                      {/*
                       <div>
                         <a
                           className="a-accordion"
@@ -151,53 +179,47 @@ function Presupuesto() {
                           2015
                         </a>
                       </div>
+*/}
+                    
+                    <div>
+                        <a
+                          className="a-accordion"
+                          href={doc4} target="blank"
+                        >
+                          2016
+                        </a>
+                      </div>
+                    <div>
+                        <a
+                          className="a-accordion"
+                          href={doc5} target="blank"
+                        >
+                          2017
+                        </a>
+                      </div>
 
-                      <Accordion.Header>
-                        {" "}
-                        <h2 className="h2-title-header"> 2016</h2>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="container">
-                          <div>
-                            <a
-                              className="a-accordion"
-                              href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/PRESUPUESTO-INGRESOS-2016.pdf"
-                            >
-                              Presupuesto de Ingresos
-                            </a>
-                          </div>
-                        </div>
-                      </Accordion.Body>
-
-                      <Accordion.Header>
-                        {" "}
-                        <h2 className="h2-title-header"> 2017</h2>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="container">
-                          <div>
-                            <a
-                              className="a-accordion"
-                              href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/PRESUPUESTO-INGRESOS-2017-.pdf"
-                            >
-                              Presupuesto de Ingresos
-                            </a>
-                          </div>
-                        </div>
-                      </Accordion.Body>
+           
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2021/04/Ejecucion-Presupuestal-2018.pdf"
+                          href={doc6} target="blank"
                         >
                           2018
+                        </a>
+                      </div>
+                      <div>
+                        <a
+                          className="a-accordion"
+                          href={doc7} target="blank"
+                        >
+                          2019
                         </a>
                       </div>
 
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2021/04/Ejecucion-Presupuestal-2020.pdf"
+                          href={doc8} target="blank"
                         >
                           2020
                         </a>
@@ -206,7 +228,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/04/2-Ejecucion-presupuestal-historica-anual-del-ano-2021.pdf"
+                          href={doc9} target="blank"
                         >
                           2021
                         </a>
@@ -215,7 +237,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2023/06/2-Presupuesto-Ejecutado-2022.pdf"
+                          href={doc10} target="blank"
                         >
                           2022
                         </a>
@@ -237,7 +259,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/descargas/estados-financieros-2014-1/"
+                          href={doc11} target="blank"
                         >
                           2014 - 1
                         </a>
@@ -245,7 +267,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/descargas/estados-financieros-2014-2/"
+                          href={doc12} target="blank"
                         >
                           2014 - 2
                         </a>
@@ -254,7 +276,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/descargas/estados-financieros-2015/"
+                          href={doc13} target="blank"
                         >
                           2015
                         </a>
@@ -262,7 +284,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/descargas/estados-financieros-2016/"
+                          href={doc14} target="blank"
                         >
                           2016
                         </a>
@@ -271,7 +293,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/descargas/estados-financieros-2017/"
+                          href={doc15} target="blank"
                         >
                           2017
                         </a>
@@ -279,7 +301,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/descargas/estados-financieros-2018/"
+                          href={doc16} target="blank"
                         >
                           2018
                         </a>
@@ -288,7 +310,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/ESTADOS-FINANCIEROS-FONDO-2019-1.pdf"
+                          href={doc17} target="blank"
                         >
                           2019
                         </a>
@@ -297,7 +319,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2021/05/001-ESTADOS-FINANCIEROS-FONDO.pdf"
+                          href={doc18} target="blank"
                         >
                           2020
                         </a>
@@ -307,7 +329,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/04/3-Estados-Financieros-Fondo-2021.pdf"
+                          href={doc19} target="blank"
                         >
                           2021
                         </a>
@@ -316,7 +338,7 @@ function Presupuesto() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2023/07/Estados-Financieros-Comparativos-FFP-4Trim22-1.pdf"
+                          href={doc20} target="blank"
                         >
                           2022
                         </a>

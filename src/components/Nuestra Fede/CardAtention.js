@@ -2,8 +2,7 @@ import { connect } from "react-redux"
 //import { useState } from 'react'
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Accordion from 'react-bootstrap/Accordion';
-import { Download } from "react-bootstrap-icons";
+
 
 
 function CardAtention({ titulo, cuerpo, cuerpo2 , i}) {
@@ -20,8 +19,8 @@ function CardAtention({ titulo, cuerpo, cuerpo2 , i}) {
                     </div>
                     <div class="content">
                         <span class="title">{titulo}</span>
-                        <p class="message">{cuerpo}</p>
-                        <p class="message mt-2">{cuerpo2}</p>
+                        <p class="message text-center">{cuerpo}</p>
+                        <p class="message mt-2 text-center">{cuerpo2}</p>
                     </div>
 
                 </div>

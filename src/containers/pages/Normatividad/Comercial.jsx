@@ -16,7 +16,7 @@ function createData(titulo, cuerpo, documento) {
 }
 
 const rows = [
-    createData('Resolución 16379 de 2023', "Por la cual se reglamenta el control metrológico y del contenido de producto en pre-empacados. (más…)", "gerencia@fedepanela.org.co", re16379),
+    createData('Resolución 16379 de 2023', "Por la cual se reglamenta el control metrológico y del contenido de producto en pre-empacados. (más…)",  re16379),
     createData('Resolución 5109 de 2005', "Por el cual se establece el reglamento técnico sobre los requisitos de rotulado o etiquetado que deben cumplir los alimentos envasados y materias primas de alimentos para consumo humano. (más…)", re5109),
     createData('Resolución 333 de 2011', "Por la cual se establece el reglamento técnico sobre los requisitos de rotulado o etiquetado nutricional que deben cumplir los alimentos envasados para consumo humano. (más…)", re333),
 

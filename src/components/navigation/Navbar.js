@@ -97,10 +97,10 @@ function NavigationBar() {
                 <NavDropdown.Item href="/FondodeFomento/CalendarioEventos">Calendario de eventos</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/directorio">Directorio</NavDropdown.Item>
 
-                {/*
-                <NavDropdown.Item href="#action3">Convocatorias</NavDropdown.Item>
-                <NavDropdown.Item href="#action3">Ofertas de empleo</NavDropdown.Item>
-                */ }
+                
+                <NavDropdown.Item href="/FondodeFomento/Convocatorias">Convocatorias</NavDropdown.Item>
+                <NavDropdown.Item href="/FondodeFomento/OfertasEmpleo">Ofertas de empleo</NavDropdown.Item>
+                
                 <NavDropdown.Item href="/FondodeFomento/QuejasReclamos">Quejas y reclamos</NavDropdown.Item>
                 <NavDropdown.Item href="/FondodeFomento/PreguntasFrecuentes">Preguntas frecuentes</NavDropdown.Item>
 
@@ -177,12 +177,14 @@ function NavigationBar() {
 
 
 
-              <NavDropdown title="Convenios" id="navbarScrollingDropdown">
+              <NavDropdown title="Cédula Panelera" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/Convenios/AexidyFHRE">AEXCID y La FHRE</NavDropdown.Item>
                 <NavDropdown.Item href="/Convenios/Finagro">Finagro</NavDropdown.Item>
                 <NavDropdown.Item href="/Convenios/NamaPanela">Nama Panela</NavDropdown.Item>
 
               </NavDropdown>
+              <Nav.Link href="/contacto">Contacto</Nav.Link>
+
 {/*
               <div className="scrolling-text-container">
                 <div className="scrolling-text">

@@ -4,9 +4,26 @@ import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Accordion from 'react-bootstrap/Accordion';
 import { Download } from "react-bootstrap-icons";
-
+import  { useState, useEffect } from 'react';
 
 function CardDownload({ titulo, cuerpo, doc }) {
+    const [descargas, setDescargas] = useState(() => {
+        // Intentar recuperar el contador de descargas desde el almacenamiento local
+        const storedDescargas = localStorage.getItem('descargas');
+        return storedDescargas ? parseInt(storedDescargas) : 0;
+    });
+
+    // Actualizar el almacenamiento local cuando el contador de descargas cambie
+    useEffect(() => {
+        localStorage.setItem('descargas', descargas.toString());
+    }, [descargas]);
+
+    const handleDescarga = () => {
+        // Incrementar el contador de descargas
+        setDescargas(descargas + 1);
+
+        // Aquí puedes realizar alguna acción adicional, como enviar una solicitud al servidor para registrar la descarga.
+    };
     return (
         <>
 
@@ -20,9 +37,13 @@ function CardDownload({ titulo, cuerpo, doc }) {
                         <p class="message">{cuerpo}</p>
                     </div>
                     <div class="actions">
-                        <a href={doc}>
+                        <a href={doc}  target="blank" onClick={handleDescarga}>
                             <button type="button" class="history"> <Download size={20} /></button>
                         </a>
+                        
+                    </div>
+                    <div className="mx-auto">
+                    <p class="message mx-auto">Número de descargas: {descargas}</p>
                     </div>
                 </div>
             </div>

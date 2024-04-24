@@ -131,7 +131,7 @@ function ProgramasFDF() {
                                     >
 
                                         <h2 class="fw-bolder h2-title">Acuerdo de competitividad</h2>
-                                        <p class="lead fw-normal text-muted mb-0 text-justify">El proyecto tiene como fin apoyar a la Secretaría Técnica de la Cadena Agroindustrial de la Panela en los desplazamientos que se realicen con fines de control y vigilancia. El Papel de la Secretaría Técnica Nacional de la Cadena es el acompañamiento permanenete integral a los requerimientos de los eslabones que la componen, a través de apoyo y seguimiento de las acciones y estrategias que se decidan al interior de la organización como tal. El papel de la Secretaría de laComisión de Control y Vigilancia es el de apoyar y coordinar las instituciones de IVC en su trabajo de garantizar la calidad de la panela.</p>
+                                        <p class="lead fw-normal text-muted mb-0 text-justify">El proyecto tiene como fin apoyar a la Secretaría Técnica de la Cadena Agroindustrial de la Panela en los desplazamientos que se realicen con fines de control y vigilancia. El Papel de la Secretaría Técnica Nacional de la Cadena es el acompañamiento permanenete integral a los requerimientos de los eslabones que la componen, a través de apoyo y seguimiento de las acciones y estrategias que se decidan al interior de la organización como tal. El papel de la Secretaría de la Comisión de Control y Vigilancia es el de apoyar y coordinar las instituciones de IVC en su trabajo de garantizar la calidad de la panela.</p>
 
                                     </motion.div>
                                 </div>

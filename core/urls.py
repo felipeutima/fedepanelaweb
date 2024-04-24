@@ -15,6 +15,7 @@ urlpatterns = [
     path('api/programas/', include('apps.programas.urls')),
     path('api/slides/', include('apps.slides.urls')),
     path('api/conexion/', include('apps.conexionp.urls')),
+    path('api/events/', include('apps.events.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 
     #path('api/contacts/', include('apps.contacts.urls'))
