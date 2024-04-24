@@ -32,11 +32,11 @@ function ProcesosRecaudoFDF() {
                             transition={{ duration: 0.9, ease: "easeOut" }}
                         >
                             <CardDownload titulo="Formato de liquidación de cuota de manejo"
-                                doc={liquidacion} />
+                                doc={liquidacion} className="my-3"/>
                         </motion.div>
                         <p class="lead fw-normal text-muted mb-0  mt-4"> Cualquier aclaración adicional, por favor comunicarse con el Delegado de Recaudo de su departamento.</p>
                         <p class="lead fw-normal text-muted mb-0 mt-2"> Cordialmente</p>
-                        <p class="lead fw-bold text-muted mb-0 mt-2"> Fondo de fomento Panelereo</p>
+                        <p class="lead fw-bold text-muted mb-0 mt-2"> Fondo de fomento Panelero</p>
                         <p class="lead fw-normal text-muted mb-0 mt-2"> Fedepanela</p>
 
 

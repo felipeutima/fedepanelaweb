@@ -1,9 +1,7 @@
 import Layout from "hocs/layouts/Layout";
 import Navbar from "components/navigation/Navbar";
 import Footer from "components/navigation/Footer";
-import CardDownload from "components/Nuestra Fede/CardDownload";
-import re2023 from "assets/docs/Reforma-Estatutaria-2023.pdf";
-import re003 from "assets/docs/Resolucion-003-Reglamento-Elecciones-2023.pdf";
+
 import { motion } from "framer-motion";
 import Accordion from "react-bootstrap/Accordion";
 function Informaciondeinteres() {
@@ -65,35 +63,35 @@ function Informaciondeinteres() {
                         </a>
                       </div>
 
-                      <Accordion.Header>
-                        <h2 className="h2-title-header">Mapa Interactivo</h2>
-                      </Accordion.Header>
 
-                      <Accordion.Body>
-                        <div>
-                          <center>
-                            <h3>Video cómo acceder a los mapas interactivos</h3>
-                          </center>
-                          <center>
-                            <iframe
-                              width="560"
-                              height="315"
-                              src="https://www.youtube.com/embed/KBOvtHTmJ1s?si=4l3v7-RGbseXJ9Zm"
-                              title="YouTube video player"
-                              frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                              allowfullscreen
-                            ></iframe>
-                          </center>
-                          <br />
-                          <a
-                            className="a-accordion"
-                            href="http://www.sipa.org.co/wp/index.php/category/precios-historicos/"
-                          >
-                            Mapa Interactivo Precios de la panela en el país
-                          </a>
-                        </div>
-                      </Accordion.Body>
+
+
+
+
+                      <div>
+                        <center>
+                          <h3>Video cómo acceder a los mapas interactivos</h3>
+                        </center>
+                        <center>
+                          <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/KBOvtHTmJ1s?si=4l3v7-RGbseXJ9Zm"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                          ></iframe>
+                        </center>
+                        <br />
+                        <a
+                          className="a-accordion"
+                          href="http://www.sipa.org.co/wp/index.php/category/precios-historicos/"
+                        >
+                          Mapa Interactivo Precios de la panela en el país
+                        </a>
+                      </div>
+
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -106,16 +104,16 @@ function Informaciondeinteres() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="http://www.sipa.org.co/wp/"
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
+                    <div>
+                      <a
+                        className="a-accordion"
+                        href="http://www.sipa.org.co/wp/"
+                      >
+                        Ver más información
+                      </a>
+                    </div>
+                  </Accordion.Body>
+
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                   <Accordion.Header>
@@ -126,16 +124,16 @@ function Informaciondeinteres() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/fondo-de-fomento/convocatorias/" /* Falta esta seccion */
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
+                    <div>
+                      <a
+                        className="a-accordion"
+                        href="/convocatorias"
+                      >
+                        Ver más información
+                      </a>
+                    </div>
+                  </Accordion.Body>
+
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="3">
@@ -147,16 +145,16 @@ function Informaciondeinteres() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="http://www.sipa.org.co/wp/index.php/glosario-panelero/"
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
+                    <div>
+                      <a
+                        className="a-accordion"
+                        href="http://www.sipa.org.co/wp/index.php/glosario-panelero/"
+                      >
+                        Ver más información
+                      </a>
+                    </div>
+                  </Accordion.Body>
+
                 </Accordion.Item>
                 <Accordion.Item eventKey="4">
                   <Accordion.Header>
@@ -167,14 +165,14 @@ function Informaciondeinteres() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                                        <div className="container">
-                            
-                                            <span>Se pueden visualizar en la página de inicio</span> <a href="https://fedepanela.org.co/gremio" className="a-accordion">https://fedepanela.org.co/gremio</a> Falta esta seccion
-                                            <br />
-                                            <span>Y en la sección de Comunicacionesd / Blog -</span><a href="https://fedepanela.org.co/gremio/category/blog/" className="a-accordion">https://fedepanela.org.co/gremio/category/blog/</a> Falta esta seccion
-                                        </div>
-                                    </Accordion.Body>
-                  
+                    <div className="container">
+
+                      <span>Se pueden visualizar en la página de inicio</span> <a href="/" className="a-accordion">https://fedepanela.org.co/</a>
+                      <br />
+                      <span>Y en la sección de Comunicacionesd / Blog -</span><a href="/noticias" className="a-accordion">https://fedepanela.org.co/noticias</a>
+                    </div>
+                  </Accordion.Body>
+
                 </Accordion.Item>
                 <Accordion.Item eventKey="5">
                   <Accordion.Header>
@@ -185,16 +183,16 @@ function Informaciondeinteres() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="http://localhost:3000/FondodeFomento/CalendarioEventos"
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
+                    <div>
+                      <a
+                        className="a-accordion"
+                        href="http://localhost:3000/FondodeFomento/CalendarioEventos"
+                      >
+                        Ver más información
+                      </a>
+                    </div>
+                  </Accordion.Body>
+
                 </Accordion.Item>
                 <Accordion.Item eventKey="6">
                   <Accordion.Header>
@@ -205,16 +203,14 @@ function Informaciondeinteres() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/fondo-de-fomento/informacion-para-ninos-ninas-y-adolescentes/" /*Falta esta seccion */
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
+                 
+                    <p className="text-muted">Sabias que desde Fedepanela y el Fondo de fomento trabajamos por el mejoramiento del nivel de vida de todos los productores de panela, para capacitarlos y defender sus derechos, queremos que conozcas algunos temas que pueden interesarte sobre nosotros.</p>
+                    <p className="text-muted">De igual manera, te invitamos a que conozcas este producto tan importante para nuestro país.</p>
+                    <p className="text-muted">Pensando en ti creamos este espacio en el que te contaremos algunas cosas que podrán ayudarte a construir la Colombia que tanto anhelas, en la que sí será posible que conviertas tus sueños en realidades.</p>
+                    <p className="text-muted">Aquí comienza uno de los viajes más maravillosos que un niño pueda tener ¡la travesía del conocimiento!</p>
+
+                  </Accordion.Body>
+
                 </Accordion.Item>
                 <Accordion.Item eventKey="7">
                   <Accordion.Header>
@@ -225,17 +221,17 @@ function Informaciondeinteres() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio" /*Falta esta seccion */
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
-                </Accordion.Item>  
+                    <div>
+                      <a
+                        className="a-accordion"
+                        href="https://fedepanela.org.co/gremio" /*Falta esta seccion */
+                      >
+                        Ver más información
+                      </a>
+                    </div>
+                  </Accordion.Body>
+
+                </Accordion.Item>
               </Accordion>
             </motion.div>
           </div>

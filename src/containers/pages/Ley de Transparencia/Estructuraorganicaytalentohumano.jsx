@@ -1,11 +1,20 @@
 import Layout from "hocs/layouts/Layout";
 import Navbar from "components/navigation/Navbar";
 import Footer from "components/navigation/Footer";
-import CardDownload from "components/Nuestra Fede/CardDownload";
-import re2023 from "assets/docs/Reforma-Estatutaria-2023.pdf";
-import re003 from "assets/docs/Resolucion-003-Reglamento-Elecciones-2023.pdf";
+
 import { motion } from "framer-motion";
 import Accordion from "react-bootstrap/Accordion";
+
+import doc from "assets/docs/Manual-de-Procedimientos-2018-incluido-devoluciones-correccion-termino.pdf";
+import doc1 from "assets/docs/MANUAL-DE-PROCEDIMIENTOS-CONTABLE-VERSION-1-2016-COREECCION-CUARTO-ENVIO-AUDITORIA-RTA.pdf";
+import doc2 from "assets/docs/Manual-de-Funciones-.pdf";
+import doc3 from "assets/docs/DIRECTORIO-DE-INFORMACION-DE-SERVIDORES-PUBLICOS.pdf";
+import doc2016 from "assets/docs/ESCALA-SALARIAL.pdf";
+import doc2017 from "assets/docs/ESCALA-SALARIAL-2017.pdf";
+import doc2018 from "assets/docs/ESCALA-SALARIAL2018.pdf";
+import doc2019 from "assets/docs/ESCALA-SALARIAL-2019.pdf";
+import doc2020 from "assets/docs/ESCALA-SALARIAL-2020-.pdf";
+
 function Estructuraorgánicaytalentohumano() {
   return (
     <Layout>
@@ -16,7 +25,7 @@ function Estructuraorgánicaytalentohumano() {
         style={{ marginTop: "100px", marginBottom: "50px" }}
       >
         <h1 className="text-center h1-title mt-5">3. Estructura orgánica y talento humano
-</h1>
+        </h1>
         <div className="row mt-5">
           <div className="col-md-12">
             <motion.div
@@ -30,21 +39,21 @@ function Estructuraorgánicaytalentohumano() {
                     {" "}
                     <h2 className="h2-title-header">
                       {" "}
-                      
-3.1. Misión y visión
+
+                      3.1. Misión y visión
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="http://localhost:3000/NuestraFederacion/PlanEstrategico"
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
+                    <div>
+                      <a
+                        className="a-accordion"
+                        href="/NuestraFederacion/PlanEstrategico"
+                      >
+                        Ver más información
+                      </a>
+                    </div>
+                  </Accordion.Body>
+
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="1">
@@ -52,21 +61,21 @@ function Estructuraorgánicaytalentohumano() {
                     {" "}
                     <h2 className="h2-title-header">
                       {" "}
-                      
+
                       3.2. Funciones y deberes
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="http://localhost:3000/FondodeFomento/EstructuraOrganica"
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
+                    <div>
+                      <a
+                        className="a-accordion"
+                        href="/FondodeFomento/EstructuraOrganica"
+                      >
+                        Ver más información
+                      </a>
+                    </div>
+                  </Accordion.Body>
+
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="2">
@@ -79,7 +88,7 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="http://localhost:3000/FondodeFomento/EstructuraOrganica"
+                          href="/FondodeFomento/EstructuraOrganica"
                         >
                           Ver más información
                         </a>
@@ -87,7 +96,8 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/11/Manual-de-Procedimientos-2018-incluido-devoluciones-correccion-termino.pdf"
+                          href={doc}
+                          target="blank"
                         >
                           a. Procesos y procedimientos para la toma de decisiones en las diferentes áreas.
                         </a>
@@ -96,12 +106,14 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/MANUAL-DE-PROCEDIMIENTOS-CONTABLE-VERSION-1-2016-COREECCION-CUARTO-ENVIO-AUDITORIA-RTA.pdf"
+                          href={doc1}
+                          target="blank"
+
                         >
                           b. Procesos y procedimientos contables
                         </a>
                       </div>
-                      
+
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -116,7 +128,7 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="http://localhost:3000/FondodeFomento/EstructuraOrganica"
+                          href="/FondodeFomento/EstructuraOrganica"
                         >
                           a. Estructura orgánica de la entidad.
                         </a>
@@ -124,7 +136,7 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/10/ORGANIGRAMA-FONDO.pdf"
+                          href="/FondodeFomento/EstructuraOrganica"
                         >
                           b. Estructura orgánica de manera gráfica y legible, en un formato accesible y usable [PDF].
                         </a>
@@ -133,81 +145,86 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/11/Manual-de-Funciones-.pdf"
+                          href={doc2}
+                          target="blank"
                         >
                           c. Descripción de la estructura orgánica, donde se dé información general de cada división o dependencia.
                         </a>
                       </div>
-                      
+
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="4">
                   <Accordion.Header>
-                    <h2 className="h2-title-header">3.5. Directorio de información de servidores públicos, contratistas y empleados</h2>
+                    <h2 className="h2-title-header">
+                      <a
+                        className="a-accordion"
+                        href={doc3}
+                        target="blank"
+                      >
+                       3.5. Directorio de información de servidores públicos, contratistas y empleados
+                      </a>
+
+                    </h2>
                   </Accordion.Header>
 
                   <Accordion.Body>
                     <div className="container">
-                      <div>
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/DIRECTORIO-DE-INFORMACION-DE-SERVIDORES-PUBLICOS.pdf"
-                        >
-                          Ver más información
-                        </a>
-                      </div>
                     
-                      <Accordion.Header>
+
+                  
                         <h2 className="h2-title-header">Escala Salarial</h2>
-                      </Accordion.Header>
+                 
 
-                      <Accordion.Body>
+                    
                         <div>
-                          
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/ESCALA-SALARIAL.pdf" /* Falta esta seccion */
-                        >
-                          2016
-                        </a>
 
-                        <br />
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/10/ESCALA-SALARIAL-2017.pdf" /* Falta esta seccion */
-                        >
-                          2017
-                        </a>
+                          <a
+                            className="a-accordion"
+                            href={doc2016}
+                            target="blank" /* Falta esta seccion */
+                          >
+                            2016
+                          </a>
 
-                        <br />
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/10/ESCALA-SALARIAL2018.pdf" /* Falta esta seccion */
-                        >
-                          2018
-                        </a>
+                          <br />
+                          <a
+                            className="a-accordion"
+                            href={doc2017}
+                            target="blank"
+                          >
+                            2017
+                          </a>
 
-                        <br />
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/10/ESCALA-SALARIAL-2019.pdf" /* Falta esta seccion */
-                        >
-                          2019
-                        </a>
+                          <br />
+                          <a
+                            className="a-accordion"
+                            href={doc2018} target="blank"
+                          >
+                            2018
+                          </a>
 
-                        <br />
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/10/ESCALA-SALARIAL-2020-.pdf" /* Falta esta seccion */
-                        >
-                          2020
-                        </a>
-                        
+                          <br />
+                          <a
+                            className="a-accordion"
+                            href={doc2019} target="blank"
+                          >
+                            2019
+                          </a>
+
+                          <br />
+                          <a
+                            className="a-accordion"
+                            href={doc2020}  target="blank"
+                          >
+                            2020
+                          </a>
+
                         </div>
-                        
-                      </Accordion.Body>
+
+              
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -222,7 +239,7 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="http://localhost:3000/NuestraFederacion/directorio"
+                          href="/NuestraFederacion/directorio"
                         >
                           Directorio Oficina Central de Fedepanela
                         </a>
@@ -230,7 +247,7 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="http://localhost:3000/NuestraFederacion/directorio"
+                          href="/NuestraFederacion/directorio"
                         >
                           Directorio de Recaudo
                         </a>
@@ -239,7 +256,7 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="http://localhost:3000/NuestraFederacion/directorio"
+                          href="/NuestraFederacion/directorio"
                         >
                           Directorio Coordinadores Técnico Regionales
                         </a>
@@ -248,12 +265,12 @@ function Estructuraorgánicaytalentohumano() {
                       <div>
                         <a
                           className="a-accordion"
-                          href="http://localhost:3000/NuestraFederacion/directorio"
+                          href="/NuestraFederacion/directorio"
                         >
                           Directorio Fondo de Fomento Panelero
                         </a>
                       </div>
-                      
+
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -268,7 +285,7 @@ function Estructuraorgánicaytalentohumano() {
                       3.7. Directorio de agremiaciones, asociaciones y otros grupos de interés - No aplica
                     </h2>
                   </Accordion.Header>
-                  
+
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="7">
@@ -280,18 +297,18 @@ function Estructuraorgánicaytalentohumano() {
                     </h2>
                   </Accordion.Header>
                   <Accordion.Body>
-                        <div>
-                        <a
-                          className="a-accordion"
-                          href="https://fedepanela.org.co/gremio/fondo-de-fomento/ofertas-de-empleo/"  /*Falta seccion*/
-                        >
-                          Ver más información
-                        </a>
-                        </div>
-                      </Accordion.Body>
-                  
+                    <div>
+                      <a
+                        className="a-accordion"
+                        href="/NuestraFederacion/ofertas" 
+                      >
+                        Ver más información
+                      </a>
+                    </div>
+                  </Accordion.Body>
+
                 </Accordion.Item>
-                
+
               </Accordion>
             </motion.div>
           </div>

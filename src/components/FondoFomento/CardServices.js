@@ -10,7 +10,7 @@ function CardServices({ titulo, cuerpo, icon }) {
     return (
         <>
             <div class="card-services mt-3">
-                <a class="card1" href="#">
+                <div class="card1" href="#">
                     <p className="mt-4">{titulo}</p>
                     <p class="small ">{cuerpo}</p>
                     <div class="go-corner" href="#">
@@ -18,7 +18,7 @@ function CardServices({ titulo, cuerpo, icon }) {
                             {icon}
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
 
 

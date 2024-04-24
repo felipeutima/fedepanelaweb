@@ -34,11 +34,11 @@ function PreguntasFrecuentes() {
                                             <div className="mt-2"> Así mismo, el artículo 2.10.3.5.4. del Decreto 1071 de 2015, estableció quienes están obligados al recaudo:</div>
                                             <div className="mt-2">"Están obligadas al recaudo de la Cuota de Fomento Panelero de que trata la Ley 40 de 1990, todas las personas naturales o jurídicas que adquieran transformen o comercialicen panela o miel de producción nacional, bien sea que se destine al mercado interno o al de exportación, o se utilice como materia prima o componente de productos industriales para el consumo humano o animal.</div>
 
-                                            <div className="mt-2">Parágrafo 5. (.....) Los segundos compradores que adquieran el producto sin verificar el pago de la cuota, responderán solidariamente de las obligaciones adquiridas por el agente recaudador" (subraya y negrilla fuera de texto)</div>
+                                            <div className="mt-2">Parágrafo 5. (.....) Los segundos compradores que adquieran el producto sin verificar el pago de la cuota, responderán solidariamente de las obligaciones adquiridas por el agente recaudador" </div>
                                             <div className="mt-2">Aunado a lo anterior, el artículo 2.10.3.5.5. del decreto en mención, concluyó de manera expresa que la Cuota de Fomento se liquidará sobre el precio del producto que figure en la correspondiente factura de venta, precio que en ningún caso será inferior al señalado semestralmente por el Ministerio de Agricultura y Desarrollo Rural.</div>
 
                                             <div className="mt-2">Es importante tener en cuenta que el Decreto 1071 de 2015 en su artículo 2.10.3.5.9. Determina que:</div>
-                                            <div className="mt-2">“Los recaudadores de la Cuota de Fomento serán fiscalmente responsables no sólo por el valor de lo percibido sino también por las cuotas dejadas de recaudar y por las liquidaciones equivocadas o defectuosas" (subraya y negrilla fuera de texto)</div>
+                                            <div className="mt-2">“Los recaudadores de la Cuota de Fomento serán fiscalmente responsables no sólo por el valor de lo percibido sino también por las cuotas dejadas de recaudar y por las liquidaciones equivocadas o defectuosas" </div>
 
                                         </div>
                                     </Accordion.Body>
@@ -65,7 +65,7 @@ function PreguntasFrecuentes() {
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
 
-                                    <Accordion.Header> <h2 className="h2-title-header">¿Quienes son los responsables del pago d ela cuota de fomento? </h2></Accordion.Header>
+                                    <Accordion.Header> <h2 className="h2-title-header">¿Quiénes son los responsables del pago de la cuota de fomento? </h2></Accordion.Header>
 
                                     <Accordion.Body>
 
@@ -88,7 +88,7 @@ function PreguntasFrecuentes() {
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="4">
-                                    <Accordion.Header> <h2 className="h2-title-header">¿Cual es el destino de los dineros recaudados?</h2></Accordion.Header>
+                                    <Accordion.Header> <h2 className="h2-title-header">¿Cuál es el destino de los dineros recaudados?</h2></Accordion.Header>
 
                                     <Accordion.Body>
 
@@ -106,7 +106,7 @@ function PreguntasFrecuentes() {
 
                                         <div className="container">
                                             <div>
-                                                Fedepanela administra los dineros del Fondo de Fomento y además existe una una Junta Directiva presidida por el Ministro de Agricultura o su delegado y compuesta por tres representantes del MADR.                                            </div>
+                                                Fedepanela administra los dineros del Fondo de Fomento y además existe una Junta Directiva presidida por el Ministro de Agricultura o su delegado y compuesta por tres representantes del MADR.                                            </div>
                                         </div>
 
                                     </Accordion.Body>
@@ -118,12 +118,12 @@ function PreguntasFrecuentes() {
 
                                         <div className="container">
                                             <div>
-                                                Mediante una etiqueta que debe estar ahderida A cada uno de los empaque de panela que se estén transportando.                                                </div>
+                                                Mediante una etiqueta que debe estar adherida a cada uno de los empaque de panela que se estén transportando.                                                </div>
                                         </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="7">
-                                    <Accordion.Header> <h2 className="h2-title-header">¿Cuales son las funciones de la junta directiva del fondo?</h2></Accordion.Header>
+                                    <Accordion.Header> <h2 className="h2-title-header">¿Cuáles son las funciones de la junta directiva del fondo?</h2></Accordion.Header>
 
                                     <Accordion.Body>
 

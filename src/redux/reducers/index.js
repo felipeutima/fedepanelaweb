@@ -6,6 +6,7 @@ import tablas from './tablas';
 import programas from './programas';
 import slides from './slides';
 import conexion from './conexion';
+import events from './events';
 
 export default combineReducers({
     news,
@@ -14,6 +15,7 @@ export default combineReducers({
     tablas,
     programas,
     slides,
-    conexion
+    conexion,
+    events
 
 })
