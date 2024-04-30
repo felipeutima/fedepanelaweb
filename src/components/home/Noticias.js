@@ -49,7 +49,7 @@ function Noticias({ newshome }) {
 
         <>
             <div className={`container-flex servicios b-example-divider   ${isSmallScreen ? "py-2" : ""}`} style={{
-                backgroundColor: ' rgba(43,52,46,0.5)',
+                backgroundColor: ' rgba(43,52,46,0)',
                 position: "",
                 bottom: "0",
                 width: "100%",
