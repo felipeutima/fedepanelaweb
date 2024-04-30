@@ -4,6 +4,9 @@ import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
 import { motion } from 'framer-motion';
 import Accordion from 'react-bootstrap/Accordion';
+import doc1 from "assets/docs/Manual-de-Procedimientos-2018-incluido-devoluciones-correccion-termino.pdf";
+import doc2 from "assets/docs/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO-RETENCION-ALMACENES.pdf";
+import doc3 from "assets/docs/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO.pdf";
 function TransparenciaPasiva() {
 
     return (
@@ -35,7 +38,7 @@ function TransparenciaPasiva() {
                                             <div className="my-2">
 
                                                 <span className="fw-bold">PROCEDIMIENTO PARA EL EJERCICIO DE LOS DERECHOS DEL TITULAR: FONDO DE FOMENTO PANELERO</span>
-                                                ha dispuesto que el área de sistemas de información sea la responsable de la atención a peticiones, consultas y reclamos por medio del que el Titular de los Datos puede ejercer sus derechos antes reseñados, que puede ser contactada en el correo electrónico <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/Ley-40-de-1990-1.pdf" target="_blank" rel="noopener">FFPprotecciondedatos@fedepanela.org.co.</a>
+                                                ha dispuesto que el área de sistemas de información sea la responsable de la atención a peticiones, consultas y reclamos por medio del que el Titular de los Datos puede ejercer sus derechos antes reseñados, que puede ser contactada en el correo electrónico <a href="FFPprotecciondedatos@fedepanela.org.co." className="a-accordion" target="blank">FFPprotecciondedatos@fedepanela.org.co.</a>
                                             </div>
                                             <div className="my-2">
                                                 Las solicitudes presentadas ante el área correspondiente, y que versen sobre el tratamiento de datos personales, podrán ser presentadas a través del canal ya descrito mediante comunicación dirigida al correo del FONDO DE FOMENTO PANELERO reseñado anteriormente, siendo necesario que la comunicación exprese de manera clara la siguiente información:
@@ -96,9 +99,9 @@ function TransparenciaPasiva() {
                                             </div>
 
                                             <ul>
-                                                <li><a href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/11/Manual-de-Procedimientos-2018-incluido-devoluciones-correccion-termino.pdf" target="_blank" rel="noopener">Política de Protección de Datos Personales - Fedepanela</a></li>
-                                                <li><a href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO-RETENCION-ALMACENES.pdf" target="_blank" rel="noopener">Política de Protección de datos Personales - Fondo de Fomento</a></li>
-                                                <li><a href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/09/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO.pdf" target="_blank" rel="noopener">Manual de Gestión de solicitudes y Tratamiento de Datos Personales - Fondo Nacional Fondo Panelero</a></li>
+                                                <li><a href={doc1} className="a-accordion"  target="blank" >Política de Protección de Datos Personales - Fedepanela</a></li>
+                                                <li><a href={doc2} className="a-accordion"  target="blank" >Política de Protección de datos Personales - Fondo de Fomento</a></li>
+                                                <li><a href={doc3}  className="a-accordion" target="blank" >Manual de Gestión de solicitudes y Tratamiento de Datos Personales - Fondo Nacional Fondo Panelero</a></li>
                                             </ul>
 
 
@@ -198,7 +201,7 @@ function TransparenciaPasiva() {
 
                                             <div className="my-2">
 
-                                            Se ha diseñado el siguiente formulario que cumple con las características indicadas <a href="/FondodeFomento/QuejasReclamos"> - Formulario solicitudes, peticiones, quejas, reclamos y denuncias</a>
+                                            Se ha diseñado el siguiente formulario que cumple con las características indicadas <a className="a-accordion" href="/FondodeFomento/QuejasReclamos"> - Formulario solicitudes, peticiones, quejas, reclamos y denuncias</a>
                                             </div>
 
 

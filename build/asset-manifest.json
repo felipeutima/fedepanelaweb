@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7efddd90.css",
-    "main.js": "/static/js/main.618b1002.js",
+    "main.js": "/static/js/main.22d300ce.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.6c597509.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.c972d41a.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.0732008c.chunk.js",
@@ -90,6 +90,7 @@
     "static/media/DECRETO-2616-DE-2013.pdf": "/static/media/DECRETO-2616-DE-2013.e9bb3ba5d05486df8504.pdf",
     "static/media/DICTAMEN-DE-AUDITORIA-GRANT-THORNTON.pdf": "/static/media/DICTAMEN-DE-AUDITORIA-GRANT-THORNTON.2028bfb0bd8a5f8bded3.pdf",
     "static/media/DECRETO-604-DE-2013.pdf": "/static/media/DECRETO-604-DE-2013.688adc06a2c7eae388dc.pdf",
+    "static/media/10.6-TABLAS_RETENCION.pdf": "/static/media/10.6-TABLAS_RETENCION.bd97ad4709a381bc7b05.pdf",
     "static/media/Informe Inteligencia de mercados 2023 II.pdf": "/static/media/Informe Inteligencia de mercados 2023 II.a8d8c376989aa6019b21.pdf",
     "static/media/bg3.jpg": "/static/media/bg3.6aa58938e48d82ba1481.jpg",
     "static/media/RESOLUCIN_333_DE_2011.pdf": "/static/media/RESOLUCIN_333_DE_2011.2deef8d30f0682b650f6.pdf",
@@ -115,6 +116,7 @@
     "static/media/cedulapa.png": "/static/media/cedulapa.b42f7ccefa2f3e719430.png",
     "static/media/FICHA-PROGRAMA-SOCIO-EMPRESARIAL-2022.pdf": "/static/media/FICHA-PROGRAMA-SOCIO-EMPRESARIAL-2022.1bcdd2080058a6b2c7ca.pdf",
     "static/media/2019-FICHA_PROGRAMA_COMERCIAL_FFP_2019.pdf": "/static/media/2019-FICHA_PROGRAMA_COMERCIAL_FFP_2019.0f25b0cd3ac5d2e680fd.pdf",
+    "static/media/10.5.Introduccion-Instrumentos-de-Gestion-de-Informacion-Publica.pdf": "/static/media/10.5.Introduccion-Instrumentos-de-Gestion-de-Informacion-Publica.6d5d59f0df85966e206d.pdf",
     "static/media/2020-Ficha-sistemas-de-informacion-2020.pdf": "/static/media/2020-Ficha-sistemas-de-informacion-2020.81c0a5faebdafc8c1b4d.pdf",
     "static/media/2019-Ficha-sistemas-de-informacion-2019-.pdf": "/static/media/2019-Ficha-sistemas-de-informacion-2019-.32780fc0bebefbd316a4.pdf",
     "static/media/ESCALA-SALARIAL-2017.pdf": "/static/media/ESCALA-SALARIAL-2017.1dcec94dce78dc225b71.pdf",
@@ -167,11 +169,13 @@
     "static/media/Anexo-de-definiciones-Destinos.pdf": "/static/media/Anexo-de-definiciones-Destinos.5b614b4841fa9c79e41f.pdf",
     "static/media/RELACION-ORDENES-DE-SERVICIO-2018.pdf": "/static/media/RELACION-ORDENES-DE-SERVICIO-2018.026a857fd99ad3890f96.pdf",
     "static/media/DIRECTORIO-DE-INFORMACION-DE-SERVIDORES-PUBLICOS.pdf": "/static/media/DIRECTORIO-DE-INFORMACION-DE-SERVIDORES-PUBLICOS.d7cfb625a91eeccb6550.pdf",
+    "static/media/Politica_FEDEPANELA.pdf": "/static/media/Politica_FEDEPANELA.8a7df62fd75eb7334899.pdf",
     "static/media/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO-RETENCION-ALMACENES.pdf": "/static/media/FORMATO-LIQUIDACION-CUOTA-DE-FOMENTO-RETENCION-ALMACENES.6c55ecb68a2a78fc9ac6.pdf",
     "static/media/Ficha-programa-Promocion-al-Consumo-FFP-2022-V12.pdf": "/static/media/Ficha-programa-Promocion-al-Consumo-FFP-2022-V12.39c5f8861fbe053d2ec4.pdf",
     "static/media/Titulo-4-Manual-de-Servicios-Cap2-Lec-Economia-Verde.pdf": "/static/media/Titulo-4-Manual-de-Servicios-Cap2-Lec-Economia-Verde.0c5a590e6987d624d428.pdf",
     "static/media/Formulario-Registro-de-Clientes-V3.pdf": "/static/media/Formulario-Registro-de-Clientes-V3.5e459f3fe8b463facf25.pdf",
     "static/media/RELACION-CONTRATOS-2020-PAGINA-2.pdf": "/static/media/RELACION-CONTRATOS-2020-PAGINA-2.759335c044460269a9a5.pdf",
+    "static/media/INFORME-PETICIONES-QUEJAS-Y-RECLAMOS.pdf": "/static/media/INFORME-PETICIONES-QUEJAS-Y-RECLAMOS.a1c2f22d5f7024849f27.pdf",
     "static/media/contratos2016.pdf": "/static/media/contratos2016.4758875d67dc942ad03e.pdf",
     "static/media/Circular-28-2023-Finagro.pdf": "/static/media/Circular-28-2023-Finagro.18817d59df5f55590967.pdf",
     "static/media/Circular-Externa-No.29-2023.pdf": "/static/media/Circular-Externa-No.29-2023.449c047f52c8855c304f.pdf",
@@ -319,6 +323,8 @@
     "static/media/Desagregado-2020.pdf": "/static/media/Desagregado-2020.913c3bb4bb78c1f3447c.pdf",
     "static/media/ING2016.pdf": "/static/media/ING2016.730849e7cdf9b10e57ef.pdf",
     "static/media/PRESUPUESTO-INGRESOS-2016.pdf": "/static/media/PRESUPUESTO-INGRESOS-2016.730849e7cdf9b10e57ef.pdf",
+    "static/media/10.4.Esquema-de-Publicacion_FFP.xlsx": "/static/media/10.4.Esquema-de-Publicacion_FFP.e4c89e354ba3277330a4.xlsx",
+    "static/media/10.7.-Esquema-de-Publicacion_FFP.xlsx": "/static/media/10.7.-Esquema-de-Publicacion_FFP.e4c89e354ba3277330a4.xlsx",
     "static/media/convenio2.jpeg": "/static/media/convenio2.492042d8033588a69f18.jpeg",
     "static/media/boton2.png": "/static/media/boton2.e6e6d1e2c46f3558bd05.png",
     "static/media/fomento.jpg": "/static/media/fomento.222b936eda372cd5d935.jpg",
@@ -371,7 +377,7 @@
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.67b634f550afa9ab6722c8fb1e3d12b3.svg",
     "index.html": "/index.html",
     "main.7efddd90.css.map": "/static/css/main.7efddd90.css.map",
-    "main.618b1002.js.map": "/static/js/main.618b1002.js.map",
+    "main.22d300ce.js.map": "/static/js/main.22d300ce.js.map",
     "reactPlayerYouTube.6c597509.chunk.js.map": "/static/js/reactPlayerYouTube.6c597509.chunk.js.map",
     "reactPlayerSoundCloud.c972d41a.chunk.js.map": "/static/js/reactPlayerSoundCloud.c972d41a.chunk.js.map",
     "reactPlayerVimeo.0732008c.chunk.js.map": "/static/js/reactPlayerVimeo.0732008c.chunk.js.map",
@@ -389,6 +395,6 @@
   },
   "entrypoints": [
     "static/css/main.7efddd90.css",
-    "static/js/main.618b1002.js"
+    "static/js/main.22d300ce.js"
   ]
 }
