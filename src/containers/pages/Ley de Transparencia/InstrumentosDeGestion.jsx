@@ -4,6 +4,8 @@ import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
 import { motion } from 'framer-motion';
 import Accordion from 'react-bootstrap/Accordion';
+import doc1 from "assets/docs/10.2.Registro-de-Activos-de-Informacion.xlsx";
+import doc2 from "assets/docs/10.2.Registro-de-Activos-de-Informacion.xlsx";
 function InstrumentosDeGestion() {
 
     return (
