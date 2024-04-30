@@ -5,7 +5,16 @@ import Footer from "components/navigation/Footer"
 import { motion } from 'framer-motion';
 import Accordion from 'react-bootstrap/Accordion';
 import doc1 from "assets/docs/10.2.Registro-de-Activos-de-Informacion.xlsx";
-import doc2 from "assets/docs/10.2.Registro-de-Activos-de-Informacion.xlsx";
+import doc2 from "assets/docs/10.4.Esquema-de-Publicacion_FFP.xlsx";
+import doc3 from "assets/docs/10.5.Introduccion-Instrumentos-de-Gestion-de-Informacion-Publica.pdf";
+import doc4 from "assets/docs/10.6-TABLAS_RETENCION.pdf";
+import doc5 from "assets/docs/10.7.-Esquema-de-Publicacion_FFP.xlsx";
+import doc6 from "assets/docs/Politica_FEDEPANELA.pdf";
+import doc7 from "assets/docs/Politica-FFP.pdf";
+import doc8 from "assets/docs/Manual-Gestion-de-Solictudes-y-Tratamiento-de-Datos-Personales-FNFP.pdf";
+import doc9 from "assets/docs/INFORME-PETICIONES-QUEJAS-Y-RECLAMOS.pdf";
+
+
 function InstrumentosDeGestion() {
 
     return (
@@ -47,7 +56,7 @@ function InstrumentosDeGestion() {
                                     <Accordion.Body>
                                         <div className="container">
                                             <p style={{ paddingLeft: '40px' }}>
-                                                <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/02/10.2.Registro-de-Activos-de-Informacion.xlsx" target="_blank" rel="noopener">Ver cuadro en Excel</a>
+                                                <a className="a-accordion"  href={doc1} target="blank" >Ver cuadro en Excel</a>
                                             </p>
                                         </div>
                                     </Accordion.Body>
@@ -59,8 +68,7 @@ function InstrumentosDeGestion() {
                                     <Accordion.Body>
                                         <div className="container">
                                             <p style={{ paddingLeft: '40px' }}>
-                                                <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/02/10.2.Registro-de-Activos-de-Informacion.xlsx" target="_blank" rel="noopener">Ver cuadro en Excel</a>
-                                                <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/02/10.2.Registro-de-Activos-de-Informacion.xlsx" target="_blank" rel="noopener">Ver cuadro en Excel</a>
+                                                <a className="a-accordion" href={doc1} target="blank" >Ver cuadro en Excel</a>
                                             </p>
                                         </div>
                                     </Accordion.Body>
@@ -72,11 +80,12 @@ function InstrumentosDeGestion() {
                                     <Accordion.Body>
                                         <div className="container">
                                             <p style={{ paddingLeft: '40px' }}>
-                                                <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/02/10.4.Esquema-de-Publicacion_FFP.xlsx" target="_blank" rel="noopener">Ver cuadro en Excel</a>
+                                                <a className="a-accordion" href={doc2} target="blank" >Ver cuadro en Excel</a>
                                             </p>
                                         </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
+
 
                                 <Accordion.Item eventKey="4">
                                     <Accordion.Header>
@@ -85,7 +94,7 @@ function InstrumentosDeGestion() {
                                     <Accordion.Body>
                                         <div className="container">
                                             <p style={{ paddingLeft: '40px' }}>
-                                                <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/02/10.5.Introduccion-Instrumentos-de-Gestion-de-Informacion-Publica.pdf" target="_blank" rel="noopener">Ver archivo PDF</a>
+                                                <a className="a-accordion" href={doc3} target="blank" >Ver archivo PDF</a>
                                             </p>
                                         </div>
                                     </Accordion.Body>
@@ -99,7 +108,7 @@ function InstrumentosDeGestion() {
                                         <div className="container">
                                             <p style={{ paddingLeft: '40px' }}>La tabla de retención documental del fondo de fomento panelero fue aprobada por el representante el representante legal de la Federación &nbsp;Nacional de Productores de Panela, Administrador del Fondo de Fomento panelero, &nbsp;mediante acta de aprobación de tablas de retención documental y SGD. &nbsp;A Continuación se presentan las tablas de retención documental de la entidad:</p>
                                             <p style={{ paddingLeft: '40px' }}>
-                                                <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/02/10.6-TABLAS_RETENCION.pdf" target="_blank" rel="noopener">Ver archivo PDF</a>
+                                                <a className="a-accordion" href={doc4} target="blank" >Ver archivo PDF</a>
                                             </p>
                                         </div>
                                     </Accordion.Body>
@@ -112,7 +121,7 @@ function InstrumentosDeGestion() {
                                     <Accordion.Body>
                                         <div className="container">
                                             <p style={{ paddingLeft: '40px' }}>
-                                                <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2022/02/10.7.-Esquema-de-Publicacion_FFP.xlsx" target="_blank" rel="noopener">Ver archivo Excel</a>
+                                                <a className="a-accordion" href={doc5} target="blank" >Ver archivo Excel</a>
                                             </p>
                                         </div>
                                     </Accordion.Body>
@@ -159,6 +168,12 @@ function InstrumentosDeGestion() {
                                             <p style={{ paddingLeft: '40px' }}>
                                                 Una vez presentada la solicitud, el FONDO DE FOMENTO PANELERO contará un término de diez (10) días hábiles, desde el recibo de la petición, para atender la solicitud o tomar las medidas que el titular exija. Si la solicitud no contiene los datos de contacto suficientes, o no refleja de manera expresa los hechos que permitan a el FONDO DE FOMENTO PANELERO atender y dar trámite a la petición, se le comunicará tal situación al remitente dentro de los cinco (5) días siguientes al recibo de la solicitud para efectos de que allegue la información necesaria dentro de los quince (15) días hábiles siguientes al recibo del requerimiento, so pena de considerarse desistida la petición.
                                             </p>
+                                            <p style={{ paddingLeft: '40px' }}>
+                                                Para tal efecto, el responsable deberá demostrar a la Superintendencia de Industria y Comercio (SIC), cuando esta así lo requiera, el soporte de dichos gastos.                                            </p>
+                                            <div > <a href={doc6} className="a-accordion">Política de Protección de Datos Personales - Fedepanela</a></div>
+                                            <div > <a href={doc7} className="a-accordion">Política de Protección de datos Personales - Fondo de Fomento</a></div>
+                                            <div > <a  href={doc8} className="a-accordion">Manual de Gestión de solicitudes y Tratamiento de Datos Personales - Fondo Nacional Fondo Panelero</a></div>
+
                                         </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
@@ -169,14 +184,14 @@ function InstrumentosDeGestion() {
                                     </Accordion.Header>
                                     <Accordion.Body>
                                         <div className="container">
-                                            <p style={{ paddingLeft: '40px' }}><strong>a. <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/11/INFORME-PETICIONES-QUEJAS-Y-RECLAMOS.pdf" target="_blank" rel="noopener">Informe de todas las peticiones, quejas, reclamos, denuncias y solicitudes de acceso a la información recibidas y los tiempos de respuesta</a></strong></p>
+                                            <p style={{ paddingLeft: '40px' }}><strong>a. <a className="a-accordion" href={doc9} target="blank" >Informe de todas las peticiones, quejas, reclamos, denuncias y solicitudes de acceso a la información recibidas y los tiempos de respuesta</a></strong></p>
                                             <p style={{ paddingLeft: '40px' }}>
                                                 En la página principal de Fedepanela en la parte de contáctenos existe un formulario en el cual las personas colocan su solicitud de acceso a la información <a href="https://fedepanela.org.co/gremio/">https://fedepanela.org.co/gremio/</a> donde toda la información es redirigida al correo: <a href="mailto:comunicaciones@fedepanela.org.co">comunicaciones@fedepanela.org.co</a>
                                             </p>
                                             <p style={{ paddingLeft: '40px' }}>
-                                                De igual se ha creado el formulario para <b>solicitudes, peticiones, quejas, reclamos y denuncias</b><br /><a href="https://fedepanela.org.co/gremio/fondo-de-fomento/quejas-y-reclamos/" target="_blank" rel="noopener">https://fedepanela.org.co/gremio/fondo-de-fomento/quejas-y-reclamos/</a>, toda la información es redirigida al correo: <a href="mailto:comunicaciones@fedepanela.org.co">comunicaciones@fedepanela.org.co</a> para que sea retransmitida a cada uno de los departamentos indicados
+                                                De igual se ha creado el formulario para <b>solicitudes, peticiones, quejas, reclamos y denuncias</b><br /><a href="https://fedepanela.org.co/gremio/fondo-de-fomento/quejas-y-reclamos/" target="blank" >https://fedepanela.org.co/gremio/fondo-de-fomento/quejas-y-reclamos/</a>, toda la información es redirigida al correo: <a href="mailto:comunicaciones@fedepanela.org.co">comunicaciones@fedepanela.org.co</a> para que sea retransmitida a cada uno de los departamentos indicados
                                             </p>
-                                            <p style={{ paddingLeft: '40px' }}><strong>b. <a href="https://fedepanela.org.co/gremio/wp-content/uploads/2020/11/INFORME-PETICIONES-QUEJAS-Y-RECLAMOS.pdf" target="_blank" rel="noopener">Número de solicitudes recibidas.</a></strong></p>
+                                            <p style={{ paddingLeft: '40px' }}><strong>b. <a href={doc9 }target="blank" >Número de solicitudes recibidas.</a></strong></p>
                                             <p style={{ paddingLeft: '40px' }}><strong>c. Número de solicitudes que fueron trasladadas a otra institución.</strong></p>
                                             <p style={{ paddingLeft: '40px' }}>Número de solicitudes que fueron trasladadas a otra institución: NINGUNA</p>
                                             <p style={{ paddingLeft: '40px' }}><strong>d. Tiempo de respuesta a cada solicitud.</strong></p>
@@ -185,7 +200,7 @@ function InstrumentosDeGestion() {
                                             </p>
                                             <p style={{ paddingLeft: '40px' }}><strong>e. Número de solicitudes en las que se negó el acceso a la información.</strong></p>
                                             <p style={{ paddingLeft: '40px' }}>
-                                            La información del recaudo de la cuota de fomento panelero es confidencial, se encuentra debidamente organizada y archivada en las instalaciones de la oficina principal de Fedepanela disponible para revisión o informes para entidades de control
+                                                La información del recaudo de la cuota de fomento panelero es confidencial, se encuentra debidamente organizada y archivada en las instalaciones de la oficina principal de Fedepanela disponible para revisión o informes para entidades de control
                                             </p>
                                         </div>
                                     </Accordion.Body>

@@ -6,7 +6,7 @@ import Layout from "hocs/layouts/Layout"
 import Trends from "components/home/Trends"
 import { connect } from "react-redux";
 import { useEffect } from "react"
-
+import Modal from 'react-bootstrap/Modal';
 
 
 
