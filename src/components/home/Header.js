@@ -2,9 +2,6 @@ import { connect } from "react-redux"
 import 'assets/styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
-import banner1 from "assets/img/banner1.png"
-import banner2 from "assets/img/banner2.png"
-import banner3 from "assets/img/banner3.png"
 
 import { useState, useEffect } from "react";
 

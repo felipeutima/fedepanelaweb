@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import bg1 from "assets/img/bg3.jpg"
-
+import CardHeader from "./CardHeader";
 import { motion } from "framer-motion"
 
 import Carousel from 'react-bootstrap/Carousel';
@@ -14,7 +14,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom"
 
 import { ArrowRightCircle } from "react-bootstrap-icons";
-
+import pselogo1 from "assets/img/pselogo1.png"
+import Logosipa from "assets/img/logo_sipa.png"
+import webmail from "assets/img/webmail-logo.svg"
 
 function Noticias({ newshome }) {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -46,6 +48,43 @@ function Noticias({ newshome }) {
 
 
         <>
+            <div className={`container-flex servicios b-example-divider   ${isSmallScreen ? "py-2" : ""}`} style={{
+                backgroundColor: ' rgba(43,52,46,0.5)',
+                position: "",
+                bottom: "0",
+                width: "100%",
+
+            }} >
+
+                <div className="container py-2 ">
+                    <div className="row">
+                        <div className="col-md-3"></div>
+
+                        <div className="col-md-6">
+                            <div className="row">
+
+                                <div className="col-md-4  col-4  d-flex justify-content-center">
+                                    <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=1001" />
+                                </div>
+
+
+                                <div className="col-md-4 col-4  d-flex justify-content-center">
+                                    <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
+                                </div>
+                                <div className="col-md-4  col-4 d-flex justify-content-center">
+                                    <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="col-md-3"></div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
             <div className="container-flex  " style={{
 
             }} >
@@ -91,47 +130,9 @@ function Noticias({ newshome }) {
                     </div>
 
 
-                    {/* 
-
-                    <div className={`container-flex servicios b-example-divider   ${isSmallScreen ? "py-2" : ""}`} style={{
-                        backgroundColor: ' rgba(43,52,46,0.5)',
-                        position: "",
-                        bottom: "0",
-                        width: "100%",
-
-                    }} >
-
-                        <div className="container py-2 ">
-                            <div className="row">
-                                <div className="col-md-3"></div>
-
-                                <div className="col-md-6">
-                                    <div className="row">
-
-                                        <div className="col-md-4  col-4  d-flex justify-content-center">
-                                            <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=1001" />
-                                        </div>
 
 
-                                        <div className="col-md-4 col-4  d-flex justify-content-center">
-                                            <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
-                                        </div>
-                                        <div className="col-md-4  col-4 d-flex justify-content-center">
-                                            <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
-                                        </div>
 
-                                    </div>
-                                </div>
-                                <div className="col-md-3"></div>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-*/}
 
                     <div className="overlay"
                         style={{
@@ -161,7 +162,7 @@ function Noticias({ newshome }) {
 
 
                                                 <div class="col-md-3 col-12 my-2 ">
-                                                    <Link to={`/noticias/${post.slug}`} style={{textDecoration:"none"}} >
+                                                    <Link to={`/noticias/${post.slug}`} style={{ textDecoration: "none" }} >
                                                         <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
                                                             <img class="img-fluid" src={post.thumbnail} alt="" />
                                                             <Card.Body>
@@ -180,7 +181,7 @@ function Noticias({ newshome }) {
 
                                         </div>
 
-                                        <a href="/noticias" style={{textDecoration:"none"}}>
+                                        <a href="/noticias" style={{ textDecoration: "none" }}>
                                             <button>
                                                 <span>Ver más</span>
                                                 <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
