@@ -119,7 +119,7 @@ DATABASES = {
         'PASSWORD': 'F3(FIeQ02&bW',
         'HOST': '190.90.160.5',  # O la dirección IP del servidor de la base de datos
         'PORT': '3306',        # Puerto de la base de datos
-}
+    }
 }
 
 
@@ -197,6 +197,16 @@ EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 
 
 if not DEBUG:
+    DATABASES = {
+      'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fedepane_nueva',
+        'USER': 'fedepane_db',
+        'PASSWORD': 'F3(FIeQ02&bW',
+        'HOST': '190.90.160.5',  # O la dirección IP del servidor de la base de datos
+        'PORT': '3306',        # Puerto de la base de datos
+     }
+    }
     #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
     AWS_ACCESS_KEY_ID=env(' ')
