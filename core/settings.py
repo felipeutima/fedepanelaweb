@@ -112,10 +112,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+      'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fedepane_nueva',
+        'USER': 'fedepane_db',
+        'PASSWORD': 'F3(FIeQ02&bW',
+        'HOST': '190.90.160.5',  # O la dirección IP del servidor de la base de datos
+        'PORT': '3306',        # Puerto de la base de datos
+}
 }
 
 
@@ -187,7 +191,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:8000',
     'http://127.0.0.1:3000',
     'http://127.0.0.1:8000',
- 
+    'https://fedepanela.org.co',
 ]
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 

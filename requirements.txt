@@ -21,4 +21,5 @@ dj-database-url==1.0.0
 python-slugify==6.1.2
 django-jazzmin==2.6.0
 django-multiselectfield
+mysqlclient
 
