@@ -14,5 +14,5 @@ class MultimediaAdmin (admin.ModelAdmin):
     ]
 
 admin.site.register(Post)
-admin.site.register(Multimedia, MultimediaAdmin)
+#admin.site.register(Multimedia, MultimediaAdmin)
 
