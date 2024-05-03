@@ -121,6 +121,7 @@ DATABASES = {
         'PORT': '3306',        # Puerto de la base de datos
     }
 }
+DATABASES["default"]["ATOMIC_REQUESTS"]=True
 
 
 # Password validation
