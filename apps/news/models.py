@@ -6,7 +6,7 @@ User = settings.AUTH_USER_MODEL
 from ckeditor.fields import RichTextField
 # Create your models here.
 from apps.category.models import Category
-
+from ckeditor_uploader.fields import RichTextUploadingField
 
 def news_thumbnail_directory(instance, filename):
     return 'news/{0}/{1}'.format(instance.title, filename)
@@ -31,7 +31,7 @@ class Post(models.Model):
     title =         models.CharField(max_length=255, blank=True, null=True)
     slug =          models.SlugField(max_length=255, unique=True, default=uuid.uuid4)
     thumbnail =     models.ImageField(upload_to=news_thumbnail_directory, max_length=500, blank=True, null=True)
-
+    description = RichTextUploadingField()
     author =        models.ForeignKey(User, on_delete=models.CASCADE)
     
     content =       RichTextField()
