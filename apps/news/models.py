@@ -31,12 +31,9 @@ class Post(models.Model):
     title =         models.CharField(max_length=255, blank=True, null=True)
     slug =          models.SlugField(max_length=255, unique=True, default=uuid.uuid4)
     thumbnail =     models.ImageField(upload_to=news_thumbnail_directory, max_length=500, blank=True, null=True)
-    description = RichTextUploadingField()
     author =        models.ForeignKey(User, on_delete=models.CASCADE)
     
-    content =       RichTextField()
-  
-
+    content =       RichTextUploadingField()
     category =      models.ForeignKey(Category, on_delete=models.PROTECT)
 
     published =     models.DateTimeField(default=timezone.now)
@@ -45,7 +42,7 @@ class Post(models.Model):
 
     objects =           models.Manager()  # default manager
     postobjects =       PostObjects()  # custom manager
-    attachments = models.FileField(upload_to=news_thumbnail_directory, max_length=500, blank=True, null=True)
+    attachment = models.FileField(upload_to=news_thumbnail_directory, max_length=500, blank=True, null=True)
 
     class Meta:
         ordering = ('-published',)
