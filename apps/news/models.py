@@ -42,7 +42,7 @@ class Post(models.Model):
 
     objects =           models.Manager()  # default manager
     postobjects =       PostObjects()  # custom manager
-    attachment = models.FileField(upload_to=news_thumbnail_directory, max_length=500, blank=True, null=True)
+    attachments = models.FileField(upload_to=news_thumbnail_directory, max_length=500, blank=True, null=True)
 
     class Meta:
         ordering = ('-published',)
