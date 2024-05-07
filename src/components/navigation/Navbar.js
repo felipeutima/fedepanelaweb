@@ -159,19 +159,19 @@ function NavigationBar() {
 
 
               <NavDropdown title="Ley de Transparencia" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/LeyTransparencia/MecanismosContacto">1. Mecanismos de contacto con el sujeto obligado</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/Informaciondeinteres">2.Información de interés</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/Estructuraorgánicaytalentohumano">3.Estructura Orgánica y talento humano</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/Normatividad">4.Normatividad</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/Presupuesto">5.Presupuesto</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/Planeacion">6.Planeación</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/Control">7.Control</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/Contratacion">8.Contratación</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/TramitesyServicios">9.Tramites Y Servicios</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/InstrumentosDeGestion">10.Instrumentos de Gestión</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/TransparenciaPasiva">11.Transparencia Pasiva</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/AccesibilidadWeb">12.Accesibilidad Web</NavDropdown.Item>
-                <NavDropdown.Item className="dropdown-item-habeas" href="/LeyTransparencia/HabeasData">13.Habeas Data</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/MecanismosContacto">Mecanismos de contacto con el sujeto obligado</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Informaciondeinteres">Información de interés</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Estructuraorgánicaytalentohumano">Estructura Orgánica y talento humano</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Normatividad">Normatividad</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Presupuesto">Presupuesto</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Planeacion">Planeación</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Control">Control</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/Contratacion">Contratación</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/TramitesyServicios">Tramites Y Servicios</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/InstrumentosDeGestion">Instrumentos de Gestión</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/TransparenciaPasiva">Transparencia Pasiva</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/AccesibilidadWeb">Accesibilidad Web</NavDropdown.Item>
+                <NavDropdown.Item className="dropdown-item-habeas" href="/LeyTransparencia/HabeasData">Habeas Data</NavDropdown.Item>
           
               </NavDropdown>
 
