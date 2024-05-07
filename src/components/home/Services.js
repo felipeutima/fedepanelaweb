@@ -5,14 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { useEffect, useState } from 'react';
 
-import bg1 from "assets/img/bg33.png"
-import boton1 from "assets/img/boton1.png"
-import boton2 from "assets/img/boton2.png"
-import boton3 from "assets/img/boton3.png"
-import boton4 from "assets/img/boton4.png"
-import boton5 from "assets/img/boton5.png"
-
-import boton8 from "assets/img/boton8.png"
 
 import { motion } from "framer-motion"
 
@@ -76,8 +68,8 @@ function Services({ programas }) {
 
                         }}>
 
-                            <h1 className="text-center text-white ">NUESTROS PROGRAMAS</h1>
-
+                            <h1 className="text-center text-white ">NUESTROS PROGRAMAS DIGITALES</h1>
+S
 
                         </div>
                     </motion.div>
