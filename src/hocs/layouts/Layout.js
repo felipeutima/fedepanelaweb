@@ -6,7 +6,7 @@ function Layout({ children }) {
 
     return (
         <div className="container-glex" style={{
-            backgroundImage: `url(${fedepng})`,
+            backgroundImage: "https://img.freepik.com/foto-gratis/fondo-textura-papel-blanco_23-2151025740.jpg?t=st=1715100032~exp=1715103632~hmac=9b84b4e7512657d29642c13a9622510cb2c714c4525769315b1d9f41c9787c2a&w=826",
             backgroundSize: '   ',
             backgroundPosition: "center",
             backgroundRepeat: 'repeat',
