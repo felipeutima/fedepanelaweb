@@ -9,12 +9,41 @@ import {
     GET_NEW_DETAIL_SUCCESS,
     GET_NEW_DETAIL_FAIL,
     GET_FILTERED_SUCCESS,
-    GET_FILTERED_FAIL
+    GET_FILTERED_FAIL,
+
+
 
 
 } from "./types"
 
+export const get_blog_list_page = (page) => async dispatch => {
+    const config = {
+        headers: {
+            'Accept': 'application/json'
+        }
+    };
 
+    try{
+
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/news/list?p=${page}`, config)
+
+        if(res.status === 200){
+            dispatch({
+                type: GET_NEWS_LIST_SUCCESS,
+                payload: res.data
+            });
+        }else{
+            dispatch({
+                type: GET_NEWS_LIST_FAIL
+            });
+        }
+
+    }catch(err){
+        dispatch({
+            type: GET_NEWS_LIST_FAIL
+        });
+    }
+}
 export const get_news = () => async dispatch => {
     const config = {
         Headers: {
