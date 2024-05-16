@@ -24,7 +24,8 @@ export default function news(state = initialState, action) {
 
                 next: payload.next,
                 previous: payload.previous,
-                news: payload.results.posts
+                news: payload.results.posts,
+                count: payload.count
             }
         case GET_NEWS_LIST_FAIL:
             return {

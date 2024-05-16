@@ -164,8 +164,7 @@ function Noticias({ newshome }) {
                                                 <div class="col-md-3 col-12 my-2 ">
                                                     <Link to={`/noticias/${post.slug}`} style={{ textDecoration: "none" }} >
                                                         <Card className="card-news text-black " style={{ background: "whitesmoke", height: "100%" }}>
-                                                            <img class="img-fluid" src={post.thumbnail} alt="" />
-                                                            <Card.Body>
+                                                        <img class="img-fluid" src={post.thumbnail===null? "https://cdn-icons-png.freepik.com/256/14441/14441518.png?uid=R102482777&ga=GA1.1.1530534781.1715822030&semt=ais_hybrid" : post.thumbnail} alt="" />                                                            <Card.Body>
                                                                 <Card.Title className="a-news  ">
 
                                                                     {post.title}
