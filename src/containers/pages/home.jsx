@@ -58,13 +58,13 @@ function Home({
                 <> <p className="text-center"></p> Cargando</>
             }
 
-            {boletinesFirst ? <>
+            {/*boletinesFirst ? <>
                 <Trends boletinesFirst={boletinesFirst && boletinesFirst} />
             </> :
                 <> <p className="text-center"></p> Cargando</>
-            }
+        */}
             {programas ? <>
-                <Services programas={programas && programas} />
+                <Services programas={programas && programas} boletinesFirst={boletinesFirst && boletinesFirst} />
             </> :
                 <> <p className="text-center"></p> Cargando</>
             }
