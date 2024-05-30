@@ -11,8 +11,7 @@ import { useState, useEffect } from 'react';
 
 import { BrowserRouter as Router, NavLink, useLocation } from 'react-router-dom';
 import axios from 'axios';
-import colombia from "assets/img/colombia.png"
-import estadosunidos from "assets/img/estadosunidos.png"
+import fomento from "assets/img/fomento.png"
 
 
 function NavigationBar() {
@@ -32,22 +31,7 @@ function NavigationBar() {
   const location = useLocation();
   const isNotHome = location.pathname !== '/';
 
-  const [copPrice, setCopPrice] = useState(null);
 
-
-  useEffect(() => {
-    const fetchCopPrice = async () => {
-      try {
-        const response = await axios.get('https://open.er-api.com/v6/latest/USD');
-        const exchangeRate = response.data.rates.COP;
-        setCopPrice(exchangeRate.toFixed(2)); // Redondear a 2 decimales
-      } catch (error) {
-        console.error('Error fetching COP price:', error);
-      }
-    };
-
-    fetchCopPrice();
-  }, []);
 
   return (
 
@@ -59,7 +43,7 @@ function NavigationBar() {
       <a href="/"> <img src={fedepng} className="img-navbar" ></img>  </a>
 
 
-      <Navbar className={`bg-body-tertiary py-3   ${isNotHome || isSmallScreen ? " " : "position-absolute"}`}
+      <Navbar className={`bg-body-tertiary py-2   ${isNotHome || isSmallScreen ? " " : "position-absolute"}`}
         expand="lg"
         style={{
           borderTop: "solid 8px #FFCC28", zIndex: 2, width: "100%",
@@ -69,14 +53,16 @@ function NavigationBar() {
         <div className="container ">
 
           <Navbar.Toggle aria-controls="navbarScroll" />
+       
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
               navbarScroll
             >
+                  <img src={fomento}  className="img-fluid" style={{ width: "50px", marginLeft: "140px"}} ></img> 
 
 
-              <NavDropdown color="#fff" style={{ marginLeft: isSmallScreen ? "" : "270px" }} title="Nuestra Federación" id="navbarScrollingDropdown">
+              <NavDropdown color="#fff" className="my-auto" style={{ marginLeft: isSmallScreen ? "" : "20px" }} title="Nuestra Federación" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="/NuestraFederacion/quienessomos">Quiénes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/PlanEstrategico">Plan Estratégico</NavDropdown.Item>
@@ -85,7 +71,7 @@ function NavigationBar() {
                 <NavDropdown.Item href="/NuestraFederacion/estatutos">Estatutos</NavDropdown.Item>
 
               </NavDropdown>
-              <NavDropdown title="Fondo de Fomento" id="navbarScrollingDropdown">
+              <NavDropdown className="my-auto" title="Fondo de Fomento" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="/FondodeFomento/QuienesSomos">Quiénes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="/FondodeFomento/EstructuraOrganica">Estructura Orgánica</NavDropdown.Item>
@@ -95,6 +81,8 @@ function NavigationBar() {
                 <NavDropdown.Item href="/FondodeFomento/ProcesosRecaudo">Procesos de recaudo</NavDropdown.Item>
                 <NavDropdown.Item href="/FondodeFomento/AtencionCiudadano">Atención al ciudadano</NavDropdown.Item>
                 <NavDropdown.Item href="/FondodeFomento/CalendarioEventos">Calendario de eventos</NavDropdown.Item>
+                <NavDropdown.Item href="/LeyTransparencia/InstrumentosDeGestion">Instrumentos de Gestión</NavDropdown.Item>
+
                 <NavDropdown.Item href="/NuestraFederacion/directorio">Directorio</NavDropdown.Item>
 
                 
@@ -105,7 +93,7 @@ function NavigationBar() {
                 <NavDropdown.Item href="/FondodeFomento/PreguntasFrecuentes">Preguntas frecuentes</NavDropdown.Item>
 
               </NavDropdown>
-              <NavDropdown title="Normatividad" id="navbarScrollingDropdown">
+              <NavDropdown className="my-auto" title="Normatividad" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/NuestraFederacion/estatutos">Estatutos</NavDropdown.Item>
                 <NavDropdown.Item href="/Normatividad/Comercial">Comercial</NavDropdown.Item>
                 <NavDropdown.Item href="/Normatividad/Ambiental">Ambiental</NavDropdown.Item>
@@ -114,7 +102,7 @@ function NavigationBar() {
               </NavDropdown>
 
 
-              <NavDropdown title="Áreas" id="navbarScrollingDropdown">
+              <NavDropdown className="my-auto" title="Áreas" id="navbarScrollingDropdown">
                 <NavDropdown title="Técnica" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="/AreaTecnica/Objetivo">Objetivos</NavDropdown.Item>
                   <NavDropdown.Item href="/AreaTecnica/AsistenciaTecnica">Asistencia Técnica y Extensión Rural</NavDropdown.Item>
@@ -155,10 +143,7 @@ function NavigationBar() {
 
               </NavDropdown>
 
-
-
-
-              <NavDropdown title="Ley de Transparencia" id="navbarScrollingDropdown">
+              <NavDropdown className="my-auto" title="Ley de Transparencia" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/LeyTransparencia/MecanismosContacto">Mecanismos de contacto con el sujeto obligado</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Informaciondeinteres">Información de interés</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Estructuraorgánicaytalentohumano">Estructura Orgánica y talento humano</NavDropdown.Item>
@@ -168,7 +153,6 @@ function NavigationBar() {
                 <NavDropdown.Item href="/LeyTransparencia/Control">Control</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/Contratacion">Contratación</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/TramitesyServicios">Tramites Y Servicios</NavDropdown.Item>
-                <NavDropdown.Item href="/LeyTransparencia/InstrumentosDeGestion">Instrumentos de Gestión</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/TransparenciaPasiva">Transparencia Pasiva</NavDropdown.Item>
                 <NavDropdown.Item href="/LeyTransparencia/AccesibilidadWeb">Accesibilidad Web</NavDropdown.Item>
                 <NavDropdown.Item className="dropdown-item-habeas" href="/LeyTransparencia/HabeasData">Habeas Data</NavDropdown.Item>
@@ -177,13 +161,13 @@ function NavigationBar() {
 
 
 
-              <NavDropdown title="Cédula Panelera" id="navbarScrollingDropdown">
+              <NavDropdown className="my-auto" title="Convenios" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/Convenios/AexidyFHRE">AEXCID y La FHRE</NavDropdown.Item>
                 <NavDropdown.Item href="/Convenios/Finagro">Finagro</NavDropdown.Item>
                 <NavDropdown.Item href="/Convenios/NamaPanela">Nama Panela</NavDropdown.Item>
 
               </NavDropdown>
-              <Nav.Link href="/contacto">Contacto</Nav.Link>
+              <Nav.Link className="my-auto" href="/contacto">Contacto</Nav.Link>
 
 {/*
               <div className="scrolling-text-container">

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6fb3608.css",
-    "main.js": "/static/js/main.14571618.js",
+    "main.js": "/static/js/main.801775e3.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.6c597509.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.c972d41a.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.0732008c.chunk.js",
@@ -186,6 +186,7 @@
     "static/media/CERTIFICACION-ARROZ-BAJO-EN-CARBONO.pdf": "/static/media/CERTIFICACION-ARROZ-BAJO-EN-CARBONO.e0c81021fd4ff89e5e98.pdf",
     "static/media/RESOLUCIN_5109_DE_2005.pdf": "/static/media/RESOLUCIN_5109_DE_2005.e8609fad19a3e81aa630.pdf",
     "static/media/res51092005.pdf": "/static/media/res51092005.e8609fad19a3e81aa630.pdf",
+    "static/media/fomento.png": "/static/media/fomento.ebce541c026776baa216.png",
     "static/media/2017-FICHA-FINAL-PROGRAMA-DE-PROMOCION-AL-CONSUMO-APROBADA-MADR.pdf": "/static/media/2017-FICHA-FINAL-PROGRAMA-DE-PROMOCION-AL-CONSUMO-APROBADA-MADR.350328f7244f29d47f00.pdf",
     "static/media/FICHA-FINAL-PROGRAMA-DE-PROMOCION-AL-CONSUMO-APROBADA-MADR.pdf": "/static/media/FICHA-FINAL-PROGRAMA-DE-PROMOCION-AL-CONSUMO-APROBADA-MADR.350328f7244f29d47f00.pdf",
     "static/media/CERTIFICACION.pdf": "/static/media/CERTIFICACION.b444cbcff7ce01ee1b64.pdf",
@@ -369,7 +370,7 @@
     "static/media/webmail-logo.svg": "/static/media/webmail-logo.71567f50dc783703832bb840f8bff842.svg",
     "index.html": "/index.html",
     "main.e6fb3608.css.map": "/static/css/main.e6fb3608.css.map",
-    "main.14571618.js.map": "/static/js/main.14571618.js.map",
+    "main.801775e3.js.map": "/static/js/main.801775e3.js.map",
     "reactPlayerYouTube.6c597509.chunk.js.map": "/static/js/reactPlayerYouTube.6c597509.chunk.js.map",
     "reactPlayerSoundCloud.c972d41a.chunk.js.map": "/static/js/reactPlayerSoundCloud.c972d41a.chunk.js.map",
     "reactPlayerVimeo.0732008c.chunk.js.map": "/static/js/reactPlayerVimeo.0732008c.chunk.js.map",
@@ -387,6 +388,6 @@
   },
   "entrypoints": [
     "static/css/main.e6fb3608.css",
-    "static/js/main.14571618.js"
+    "static/js/main.801775e3.js"
   ]
 }
