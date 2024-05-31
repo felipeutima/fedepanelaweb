@@ -112,7 +112,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-     'default': {
+      'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'fedepane_nueva',
         'USER': 'fedepane_db',

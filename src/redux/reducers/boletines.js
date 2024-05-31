@@ -5,6 +5,8 @@ import {
     GET_BOLETINES_NEWS_FAIL,
     GET_BOLETINES_HOME_SUCCESS,
     GET_BOLETINES_HOME_FAIL,
+    GET_PRICES_SUCCESS,
+    GET_PRICES_FAIL,
 
 } from '../actions/boletines/types'
 
@@ -54,6 +56,20 @@ export default function boletines(state = initialState, action) {
             return {
                 ...state,
                 boletineshome: null,
+         
+          
+            }
+        
+        case GET_PRICES_SUCCESS:
+            return {
+                ...state,
+ 
+                precios: payload.precios
+            }
+        case GET_PRICES_FAIL:
+            return {
+                ...state,
+                precios: null,
          
           
             }

@@ -60,6 +60,12 @@ import BoletinNews from 'containers/pages/BoletinNews';
 import Contacto from 'containers/pages/Contacto';
 import OfertasEmpleo from 'containers/pages/Fondo de fomento/OfertasEmpleo';
 import Convocatorias from 'containers/pages/Fondo de fomento/Convocatorias';
+import OfertaPanelera from 'containers/pages/Sistemas de informacion/OfertaPanelera';
+import PreciosMercados from 'containers/pages/Sistemas de informacion/PreciosMercados';
+import Sig from 'containers/pages/Sistemas de informacion/Sig';
+import TipsPaneleros from 'containers/pages/Sistemas de informacion/TipsPaneleros';
+import GlosarioPanelero from 'containers/pages/Sistemas de informacion/GlosarioPanelero';
+import Biblioteca from 'containers/pages/Sistemas de informacion/Biblioteca';
 function App() {
   return (
     <Provider store={store}>
@@ -186,6 +192,16 @@ function App() {
           <Route path="/AreaSocioEmpresarial/ConstruccionCapital" element={<ConstruccionCapital/>} />
           <Route path="/AreaSocioEmpresarial/SeguridadySalud" element={<SeguridadySalud/>} />
           <Route path="/AreaSocioEmpresarial/NormatividadSocio" element={<NormatividadSocio/>} />
+ 
+          {/*Area Sistemas de información*/}
+
+          <Route path="/SistemasInformacion/OfertaPanelera" element={<OfertaPanelera />} />
+          <Route path="/SistemasInformacion/PreciosMercados" element={<PreciosMercados />} />
+          <Route path="/SistemasInformacion/SIg" element={<Sig />} />
+          <Route path="/SistemasInformacion/TipsPaneleros" element={<TipsPaneleros />} />
+          <Route path="/SistemasInformacion/Glosario" element={<GlosarioPanelero />} />
+          <Route path="/SistemasInformacion/Biblioteca" element={<Biblioteca />} />
+      
  
 
 

@@ -11,6 +11,8 @@ class Boletin(models.Model):
     CATEGORIA_CHOICES = [
         ('tendencias', 'Tendencias'),
         ('news', 'News'),
+        ('precios', 'Precios'),
+     
     ]
     titulo=models.CharField(max_length=255, blank=True, null=True)
     url = models.URLField(max_length=200)
