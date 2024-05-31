@@ -8,6 +8,8 @@ import {
     GET_BOLETINES_NEWS_FAIL,
     GET_BOLETINES_HOME_SUCCESS,
     GET_BOLETINES_HOME_FAIL,
+    GET_PRICES_SUCCESS,
+    GET_PRICES_FAIL,
 
 
 
@@ -39,6 +41,35 @@ export const get_tendencias = () => async dispatch => {
     } catch (err) {
         dispatch({
             type: GET_BOLETINES_TENDENCIAS_FAIL
+        });
+
+    }
+}
+export const get_precios = () => async dispatch => {
+    const config = {
+        Headers: {
+            'Accept': " application/json"
+        }
+
+
+    };
+    try {
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/boletines/precios`, config)
+
+        if (res.status === 200) {
+            dispatch({
+                type: GET_PRICES_SUCCESS,
+                payload: res.data
+            });
+        } else {
+            dispatch({
+                type: GET_PRICES_FAIL
+            });
+        }
+
+    } catch (err) {
+        dispatch({
+            type: GET_PRICES_FAIL
         });
 
     }

@@ -14,9 +14,6 @@ def news_thumbnail_directory(instance, filename):
 
 
 class Post(models.Model):
-    class Meta:
-        verbose_name = 'Noticia'
-        verbose_name_plural = 'Noticias'
 
 
     class PostObjects(models.Manager):
@@ -46,6 +43,9 @@ class Post(models.Model):
 
     class Meta:
         ordering = ('-published',)
+        verbose_name = 'Noticia'
+        verbose_name_plural = 'Noticias'
+
 
     def __str__(self):
         return self.title
@@ -54,6 +54,9 @@ class Post(models.Model):
     def get_status(self):
         status = self.status
         return status
+
+
+     
 
 class Multimedia(models.Model):
 

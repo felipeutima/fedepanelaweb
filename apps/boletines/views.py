@@ -40,6 +40,23 @@ class ListNewsView(APIView):
             
         return Response({'news': serializer.data})
 
+class ListPreciosView(APIView):
+    permission_classes = (permissions.AllowAny,)
+    
+    class PostObjects(models.Manager):
+        def get_queryset(self):
+            return super().get_queryset()
+
+    def get(self, request, format=None):
+
+        boletines = Boletin.objects.all().order_by('-fecha').filter(categoria="precios")
+                    
+        
+        # Serializar los boletines
+        serializer = PostSerializer(boletines, many=True)
+            
+        return Response({'precios': serializer.data})
+
 
 class ListBoletinFirst(APIView):
     permission_classes = (permissions.AllowAny,)
@@ -49,18 +66,16 @@ class ListBoletinFirst(APIView):
             return super().get_queryset()
 
     def get(self, request, format=None):
+        # Obtener los últimos boletines de cada categoría
         latest_tenencias_boletin = Boletin.objects.filter(categoria="tendencias").order_by('-fecha').first()
-        
-        # Obtener el último boletín de la categoría "news"
         latest_news_boletin = Boletin.objects.filter(categoria="news").order_by('-fecha').first()
-        
-        # Crear una lista con los dos boletines
-        latest_boletines = [latest_tenencias_boletin, latest_news_boletin]
-        print(latest_boletines)
-        
+        latest_precios_boletin = Boletin.objects.filter(categoria="precios").order_by('-fecha').first()
+
+        # Crear una lista con los boletines, excluyendo los que son None
+        latest_boletines = [boletin for boletin in [latest_tenencias_boletin, latest_news_boletin] if boletin is not None]
+
         # Serializar los boletines
         serializer = PostSerializer(latest_boletines, many=True)
-        
-        return Response({'boletines': serializer.data})
 
+        return Response({'boletines': serializer.data}, status=status.HTTP_200_OK)
   

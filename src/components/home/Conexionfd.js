@@ -121,7 +121,7 @@ function Conexionfd({ conexion }) {
                                                 <p className="fw-small text-muted mb-0">{post.description}</p>
                                             </div>
                                             <div className="mb-2 text-center">
-                                                <a href={post.url} target="blank">
+                                                <a href={post.url ? post.url : post.documento} target="blank">
                                                     <button className="btn btn-success text-white fw-bold">{post.tituloBoton}</button>
                                                 </a>
                                             </div>
@@ -132,10 +132,10 @@ function Conexionfd({ conexion }) {
                                 </div>
                             ))}
 
-                        
 
 
-                           
+
+
 
                         </div>
                     </div>

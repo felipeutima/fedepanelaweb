@@ -132,12 +132,12 @@ function NavigationBar() {
                   <NavDropdown.Item href="/AreaSocioEmpresarial/NormatividadSocio">Normatividad</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Sistemas de información" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Oferta Panelera</NavDropdown.Item>
-                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Precios y Mercados</NavDropdown.Item>
-                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">SIG (Mapas)</NavDropdown.Item>
-                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Tips Paneleros</NavDropdown.Item>
-                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Glosario Panelero</NavDropdown.Item>
-                  <NavDropdown.Item href="https://www.sipa.org.co/" target="blank">Biblioteca</NavDropdown.Item>
+                  <NavDropdown.Item href="/SistemasInformacion/OfertaPanelera" target="blank">Oferta Panelera</NavDropdown.Item>
+                  <NavDropdown.Item href="/SistemasInformacion/PreciosMercados" target="blank">Precios y Mercados</NavDropdown.Item>
+                  <NavDropdown.Item href="/SistemasInformacion/SIg" target="blank">SIG (Mapas)</NavDropdown.Item>
+                  <NavDropdown.Item href="/SistemasInformacion/TipsPaneleros" target="blank">Tips Paneleros</NavDropdown.Item>
+                  <NavDropdown.Item href="/SistemasInformacion/Glosario" target="blank">Glosario Panelero</NavDropdown.Item>
+                  <NavDropdown.Item href="/SistemasInformacion/Biblioteca" target="blank">Biblioteca</NavDropdown.Item>
 
                 </NavDropdown>
 
