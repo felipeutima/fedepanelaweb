@@ -22,3 +22,16 @@ class Boletin(models.Model):
 
     def __str__(self):
         return self.titulo
+class BoletinPrecios(models.Model):
+    class Meta:
+        verbose_name = 'Boletin de precios'
+        verbose_name_plural = 'Boletines de precios'
+
+  
+    titulo=models.CharField(max_length=255, blank=True, null=True)
+    description=models.CharField(max_length=300, blank=True, null=True)
+    fecha = models.DateField(auto_now_add=True)
+    document=models.FileField(upload_to=boletines_thumbnail_directory, max_length=500, blank=True, null=True)
+
+    def __str__(self):
+        return self.titulo

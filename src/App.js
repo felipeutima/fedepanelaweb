@@ -66,6 +66,7 @@ import Sig from 'containers/pages/Sistemas de informacion/Sig';
 import TipsPaneleros from 'containers/pages/Sistemas de informacion/TipsPaneleros';
 import GlosarioPanelero from 'containers/pages/Sistemas de informacion/GlosarioPanelero';
 import Biblioteca from 'containers/pages/Sistemas de informacion/Biblioteca';
+import PreciosBlog from 'containers/pages/PreciosBlog';
 function App() {
   return (
     <Provider store={store}>
@@ -89,6 +90,10 @@ function App() {
           {/*Tendencias Display */}
 
           <Route path="/tendencias" element={<BoletinTendencias />} />
+
+          {/*Boletin de precios Display */}
+
+          <Route path="/precios" element={<PreciosBlog />} />
 
 
           {/*News Display */}

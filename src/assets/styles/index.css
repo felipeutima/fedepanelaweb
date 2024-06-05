@@ -842,8 +842,7 @@ navbar .fixed-top {
 
 .timeline .timeline-heading h4,
 .timeline .timeline-heading .h4 {
-  margin-top: 0;
-  color: inherit;
+  text-align: right;
 }
 
 .timeline .timeline-heading h4.subheading,
