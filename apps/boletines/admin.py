@@ -4,3 +4,4 @@ from .models import *
 
 
 admin.site.register(Boletin)
+admin.site.register(BoletinPrecios)

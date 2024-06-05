@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
-from .models import Boletin
+from .models import Boletin , BoletinPrecios
 from rest_framework import permissions
 from .serializers import *
 
@@ -49,11 +49,11 @@ class ListPreciosView(APIView):
 
     def get(self, request, format=None):
 
-        boletines = Boletin.objects.all().order_by('-fecha').filter(categoria="precios")
+        boletines = BoletinPrecios.objects.all().order_by('-fecha')
                     
         
         # Serializar los boletines
-        serializer = PostSerializer(boletines, many=True)
+        serializer = PricesSerializer(boletines, many=True)
             
         return Response({'precios': serializer.data})
 

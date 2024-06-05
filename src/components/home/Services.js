@@ -114,7 +114,9 @@ function Services({ programas, boletinesFirst }) {
                                                 </Link>
 
 
+
                                             </div>
+
                                         </motion.div>
 
                                     </div>
@@ -124,6 +126,17 @@ function Services({ programas, boletinesFirst }) {
 
 
                             </div>
+                   
+                                    <Link to="/precios" className="mx-auto my-4" style={{ textDecoration: "none" }}>
+                                        <button className="mx-auto my-4">
+                                            <span>Ver Boletines de precios</span>
+                                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                                <ArrowRightCircle color="white" size={"100%"} />
+                                            </svg>
+                                        </button>
+                                    </Link>
+                          
                         </div>
                         <div className="col-md-6">
                             <div className=" container">

@@ -112,7 +112,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-      'default': {
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'fedepane_nueva',
         'USER': 'fedepane_db',
@@ -120,7 +120,6 @@ DATABASES = {
         'HOST': '190.90.160.5',  # O la dirección IP del servidor de la base de datos
         'PORT': '3306',        # Puerto de la base de datos
     }
-    
 }
 DATABASES["default"]["ATOMIC_REQUESTS"]=False
 
