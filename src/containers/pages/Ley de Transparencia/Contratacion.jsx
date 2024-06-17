@@ -43,6 +43,10 @@ import doc21 from "assets/docs/RELACION-CONTRATOS-2021-LIQUIDACION.pdf";
 import doc22 from "assets/docs/RELACION-CONTRATOS-2022-LIQUIDACION.pdf";
 import doc23 from "assets/docs/Manual-de-Procedimientos-2018-incluido-devoluciones-correccion-termino.pdf";
 
+import doc20241 from "assets/docs/doc20241.pdf";
+import doc20242 from "assets/docs/20242.pdf";
+import relacion2023 from "assets/docs/relacion2023.pdf";
+
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: "#85380F",
@@ -160,7 +164,7 @@ function Contratacion() {
         className="container"
         style={{ marginTop: "100px", marginBottom: "50px" }}
       >
-        <h1 className="text-center h1-title mt-5">8. Contratación</h1>
+        <h1 className="text-center h1-title mt-5">8 Contratación</h1>
         <div className="row mt-5">
           <div className="col-md-12">
             <motion.div
@@ -262,12 +266,19 @@ function Contratacion() {
                           2023
                         </a>
                       </div>
+                      <div>
+                        <a
+                          className="a-accordion"
+                          href={doc20241} target="blank"                        >
+                          2024
+                        </a>
+                      </div>
                     </div>
 
                       {" "}
                       <h2 className="h2-title-header">
                         {" "}
-                        Ordenes de servicio
+                        Órdenes de servicio
                       </h2>
             
                     <Accordion.Body>
@@ -315,6 +326,13 @@ function Contratacion() {
                             className="a-accordion"
                             href={doc15} target="blank"                          >
                             2023
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            className="a-accordion"
+                            href={doc20242} target="blank"                          >
+                            2024
                           </a>
                         </div>
                       </div>
@@ -395,6 +413,13 @@ function Contratacion() {
                           className="a-accordion"
                           href={doc22} target="blank"                        >
                           Relación de Actas de liquidación contratos - 2022
+                        </a>
+                      </div>
+                      <div>
+                        <a
+                          className="a-accordion"
+                          href={relacion2023} target="blank"                        >
+                          Relación de Actas de liquidación contratos - 2023
                         </a>
                       </div>
                     </div>

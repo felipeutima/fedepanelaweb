@@ -9,6 +9,8 @@ import { motion } from 'framer-motion';
 import re16379 from "assets/docs/comercial/res163792023.pdf"
 import re5109 from "assets/docs/comercial/res51092005.pdf"
 import re333 from "assets/docs/comercial/res3332011.pdf"
+import comunicado from "assets/docs/comercial/COMUNICADOINVIMA.pdf"
+import tolerancia from "assets/docs/comercial/TOLERANCIA.pdf"
 
 
 function createData(titulo, cuerpo, documento) {
@@ -18,7 +20,9 @@ function createData(titulo, cuerpo, documento) {
 const rows = [
     createData('Resolución 16379 de 2023', "Por la cual se reglamenta el control metrológico y del contenido de producto en pre-empacados. (más…)",  re16379),
     createData('Resolución 5109 de 2005', "Por el cual se establece el reglamento técnico sobre los requisitos de rotulado o etiquetado que deben cumplir los alimentos envasados y materias primas de alimentos para consumo humano. (más…)", re5109),
-    createData('Resolución 333 de 2011', "Por la cual se establece el reglamento técnico sobre los requisitos de rotulado o etiquetado nutricional que deben cumplir los alimentos envasados para consumo humano. (más…)", re333),
+    createData('Resolución 810 de 2021', "Por la cual se establece el reglamento técnico sobre los requisitos de rotulado o etiquetado nutricional que deben cumplir los alimentos envasados para consumo humano. (más…)", re333),
+    createData(' Comunicado del INVIMA - Panela que no requiere Notificación Sanitaria',"", comunicado),
+    createData('Resolución 37321 dE 2014 - Tolerancia de Pesos para la presentación de panela sólida',"", tolerancia),
 
 ];
 

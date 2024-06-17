@@ -6,7 +6,7 @@ import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
-function CardPerson({ nombre, desripcion, imagen, contenido }) {
+function CardPerson({ nombre, desripcion, imagen, contenido, contenido2, contenido3, contenido4 }) {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -27,6 +27,9 @@ function CardPerson({ nombre, desripcion, imagen, contenido }) {
                         <Modal.Title>{nombre}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>{contenido}</Modal.Body>
+                    <Modal.Body className="my-2" >{contenido2}</Modal.Body>
+                    <Modal.Body className="my-2" >{contenido3}</Modal.Body>
+                    <Modal.Body className="my-2" >{contenido4}</Modal.Body>
                     <Modal.Footer>
                         <Button variant="success" onClick={handleClose}>
                             Cerrar

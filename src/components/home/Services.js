@@ -97,7 +97,7 @@ function Services({ programas, boletinesFirst }) {
 
                                             <div className=" d-flex flex-column align-items-center">
 
-                                                {post.categoria == "news" ? <h2 className="h2-title text-center">Boletines de Noticias</h2> : <h2 className="h2-title text-center">Boletin de Tendencia</h2>}
+                                                {post.categoria == "news" ? <h2 className="h2-title text-center">Boletines de Noticias</h2> : <h2 className="h2-title text-center">Boletines de Tendencia</h2>}
                                                 <Link to={post.url} target="blank" className="mx-auto">
                                                     <div className="image-container">
                                                         <img src={post.thumbnail} className="img-fluid my-2" style={{ width: isSmallScreen ? "100%" : "70%" }} alt="Boletin"></img>
