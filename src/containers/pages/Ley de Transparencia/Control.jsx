@@ -157,6 +157,24 @@ import doc121 from "assets/docs/2020-07-09-140212-certificado_69_20200630_1.pdf"
 import doc122 from "assets/docs/125106-certificado_69_20200630_6-2.pdf"
 import doc123 from "assets/docs/CERTIFICACION.pdf"
 
+import cer1 from "assets/docs/cer1.pdf"
+import cer2 from "assets/docs/cer2.pdf"
+import cer3 from "assets/docs/cer3.pdf"
+import cer4 from "assets/docs/cer4.pdf"
+import cer5 from "assets/docs/cer5.pdf"
+import cer6 from "assets/docs/cer6.pdf"
+
+import cer7 from "assets/docs/cer7.pdf"
+import cer8 from "assets/docs/cer8.pdf"
+import cer9 from "assets/docs/cer9.pdf"
+import cer10 from "assets/docs/cer10.pdf"
+import cer11 from "assets/docs/cer11.pdf"
+import cer12 from "assets/docs/cer12.pdf"
+
+import ren1 from "assets/docs/ren1.pdf"
+import ren2 from "assets/docs/ren2.pdf"
+import ren3 from "assets/docs/ren3.pdf"
+
 
 
 
@@ -173,7 +191,7 @@ function Control() {
 
             <div className="container" style={{ marginTop: "100px", marginBottom: "50px" }}>
 
-                <h1 className="text-center h1-title mt-5">7. Control</h1>
+                <h1 className="text-center h1-title mt-5">7 Control</h1>
                 <div className="row mt-5">
                     <div className="col-md-12">
                         <motion.div
@@ -265,6 +283,10 @@ function Control() {
                                                 <li> <a href={doc32} className="a-accordion">  2018</a></li>
                                                 <li> <a href={doc33} className="a-accordion">  2019</a></li>
                                                 <li> <a href={doc34} className="a-accordion">  2020</a></li>
+
+                                                <li> <a href={ren1} className="a-accordion">  2021</a></li>
+                                                <li> <a href={ren2} className="a-accordion">  2022</a></li>
+                                                <li> <a href={ren3} className="a-accordion">  2023</a></li>
 
 
                                             </ul>
@@ -412,6 +434,26 @@ function Control() {
                                                 <li> <a href={doc96} className="a-accordion">certificado_69_20220531_1 (1)</a></li>
                                                 <li> <a href={doc97} className="a-accordion">certificado_69_20220630_1 (2)</a></li>
 
+                                                <li> <a href={cer1} className="a-accordion">certificado_69_20220731_1 </a></li>
+                                                <li> <a href={cer2} className="a-accordion">certificado_69_20220831_1 </a></li>
+                                                <li> <a href={cer3} className="a-accordion">certificado_69_20220930_1  </a></li>
+                                                <li> <a href={cer4} className="a-accordion">certificado_69_20221031_1 (1) </a></li>
+                                                <li> <a href={cer5} className="a-accordion">Certificado_69_20221130 </a></li>
+                                                <li> <a href={cer6} className="a-accordion">Certificado_69_20221231 </a></li>
+
+                                            </ul>
+                                            <div className="mt-2">2023</div>
+                                            <ul>
+
+
+                                                <li> <a href={cer7} className="a-accordion">69_Certificado 28022023</a></li>
+                                                <li> <a href={cer8} className="a-accordion">69_Certificado 30042023</a></li>
+                                                <li> <a href={cer9} className="a-accordion">69_Certificado 30062023</a></li>
+                                                <li> <a href={cer10} className="a-accordion">69_Certificado 31012023</a></li>
+                                                <li> <a href={cer11} className="a-accordion">69_Certificado 31032023</a></li>
+                                                <li> <a href={cer12} className="a-accordion">69_Certificado 31052023</a></li>
+
+                                      
                                             </ul>
                                             <div className="mt-2">Informe de la rendición de cuenta fiscal a la Contraloria</div>
                                             <ul>
@@ -523,7 +565,7 @@ function Control() {
 
                                             <div className="mt-2">a. Normas, políticas, programas y proyectos dirigidos a población vulnerable de acuerdo con su misión y la normatividad aplicable.</div>
                                             <div className="mt-2">No aplica</div>
-                                           
+
                                         </div>
 
                                     </Accordion.Body>
@@ -537,14 +579,14 @@ function Control() {
                                         <div className="container">
 
                                             <div className="mt-2">El Fondo de Fomento no tiene demandas. Se adjuntan los certificados</div>
-                                            
+
                                             <ul className="mt-2">
                                                 <div> El tipo de control que se ejecuta al interior y exterior se realiza así.</div>
 
                                                 <li> <a href={doc122} className="a-accordion">Certificado 69 20200630-2</a></li>
                                                 <li> <a href={doc123} className="a-accordion">Certificación</a></li>
                                             </ul>
-                                           
+
                                         </div>
 
                                     </Accordion.Body>

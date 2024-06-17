@@ -75,6 +75,10 @@ import doc52 from "assets/docs/Informe-Gestion-1er-Trimestre-2020-FFP.pdf"
 import doc53 from "assets/docs/Informe-II-TRIMESTRE-2020-FFP.pdf"
 import doc54 from "assets/docs/Informe-3-TRIMESTRE-2020-FFP.pdf"
 import doc55 from "assets/docs/Ley_1757_de_2015.pdf"
+import ficha2023 from "assets/docs/ficha2023.pdf"
+import programa2023 from "assets/docs/programa2023.pdf"
+import promocion2023 from "assets/docs/promocion2023.pdf"
+import socio2023 from "assets/docs/socio2023.pdf"
 
 
 
@@ -94,7 +98,7 @@ function Planeacion() {
 
             <div className="container" style={{ marginTop: "100px", marginBottom: "50px" }}>
 
-                <h1 className="text-center h1-title mt-5">6. Planeación</h1>
+                <h1 className="text-center h1-title mt-5">6 Planeación</h1>
                 <div className="row mt-5">
                     <div className="col-md-12">
                         <motion.div
@@ -115,7 +119,6 @@ function Planeacion() {
 
                                             <ul>
                                                 <li> <a href={doc1} target="blank" className="a-accordion">  Ley 40 de 1990</a></li>
-                                                <li> <a href="https://www.minagricultura.gov.co/Normatividad/Paginas/Decreto-1071-2015/Decreto-1071-de-2015.aspx" className="a-accordion">  Decreto 1071 de 2015</a></li>
                                                 <li> <a href="/NuestraFederacion/PlanEstrategico" className="a-accordion">  Plan estratégico 2018-2022</a></li>
 
                                             </ul>
@@ -194,6 +197,7 @@ function Planeacion() {
                                                 <li>  <a href={doc14} target="blank" className="a-accordion">  2020</a></li>
                                                 <li>  <a href={doc15} target="blank" className="a-accordion">  2021</a></li>
                                                 <li>  <a href={doc16} target="blank" className="a-accordion">  2022</a></li>
+                                                <li>  <a href={ficha2023} target="blank" className="a-accordion">  2023</a></li>
 
 
                                             </ul>
@@ -206,6 +210,7 @@ function Planeacion() {
                                                 <li>  <a href={doc20} target="blank" className="a-accordion">  2020</a></li>
                                                 <li>  <a href={doc21} target="blank" className="a-accordion">  2021</a></li>
                                                 <li>  <a href={doc22} target="blank" className="a-accordion">  2022</a></li>
+                                                <li>  <a href={programa2023} target="blank" className="a-accordion">  2023</a></li>
 
 
                                             </ul>
@@ -230,7 +235,9 @@ function Planeacion() {
                                                 <li>  <a href={doc28} target="blank" className="a-accordion">  2018</a></li>
                                                 <li>  <a href="" className="a-accordion">  2019</a></li>
                                                 <li>  <a href="" className="a-accordion">  2020</a></li>
+                                                <li>  <a href="" className="a-accordion">  2021</a></li>
                                                 <li>  <a href={doc29} target="blank" className="a-accordion">  2022</a></li>
+                                                <li>  <a href={promocion2023} target="blank" className="a-accordion">  2023</a></li>
 
 
                                             </ul>
@@ -243,6 +250,8 @@ function Planeacion() {
                                                 <li>  <a href={doc31} target="blank" className="a-accordion">  2019</a></li>
                                                 <li>  <a href={doc32} target="blank" className="a-accordion">  2020</a></li>
                                                 <li>  <a href={doc33} target="blank" className="a-accordion">  2021</a></li>
+                                                <li>  <a href="" target="blank" className="a-accordion">  2022</a></li>
+                                                <li>  <a href="" target="blank" className="a-accordion">  2023</a></li>
 
 
                                             </ul>
@@ -251,6 +260,7 @@ function Planeacion() {
 
 
                                                 <li>  <a href={doc34} target="blank" className="a-accordion">  2022</a></li>
+                                                <li>  <a href={socio2023} target="blank" className="a-accordion">  2023</a></li>
 
 
                                             </ul>
@@ -332,7 +342,9 @@ function Planeacion() {
                                                 <li>  <a href={doc28} target="blank" className="a-accordion">  2018</a></li>
                                                 <li>  <a href="" className="a-accordion">  2019</a></li>
                                                 <li>  <a href="" className="a-accordion">  2020</a></li>
+                                                <li>  <a href="" className="a-accordion">  2021</a></li>
                                                 <li>  <a href={doc29} target="blank" className="a-accordion">  2022</a></li>
+                                                <li>  <a href={promocion2023} target="blank" className="a-accordion">  2023</a></li>
 
 
                                             </ul>

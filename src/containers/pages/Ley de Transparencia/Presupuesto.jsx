@@ -24,6 +24,8 @@ import doc17 from "assets/docs/ESTADOS-FINANCIEROS-FONDO-2019-1.pdf";
 import doc18 from "assets/docs/001-ESTADOS-FINANCIEROS-FONDO.pdf";
 import doc19 from "assets/docs/stados-Financieros-Fondo-2021.pdf";
 import doc20 from "assets/docs/Estados-Financieros-Comparativos-FFP-4Trim22-1.pdf";
+import doc2023 from "assets/docs/doc2023.pdf";
+import doc20232 from "assets/docs/doc2023-2.pdf";
 
 
 function Presupuesto() {
@@ -35,7 +37,7 @@ function Presupuesto() {
         className="container"
         style={{ marginTop: "100px", marginBottom: "50px" }}
       >
-        <h1 className="text-center h1-title mt-5">5. Presupuesto</h1>
+        <h1 className="text-center h1-title mt-5">5 Presupuesto</h1>
         <div className="row mt-5">
           <div className="col-md-12">
             <motion.div
@@ -242,6 +244,14 @@ function Presupuesto() {
                           2022
                         </a>
                       </div>
+                      <div>
+                        <a
+                          className="a-accordion"
+                          href={doc2023} target="blank"
+                        >
+                          2023
+                        </a>
+                      </div>
                     </div>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -341,6 +351,15 @@ function Presupuesto() {
                           href={doc20} target="blank"
                         >
                           2022
+                        </a>
+                      </div>
+
+                      <div>
+                        <a
+                          className="a-accordion"
+                          href={doc20232} target="blank"
+                        >
+                          2023
                         </a>
                       </div>
                     </div>

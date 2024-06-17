@@ -8,6 +8,8 @@ import de295 from "assets/docs/laboral/DECRETO-295-DE-2017.pdf"
 import de604 from "assets/docs/laboral/DECRETO-604-DE-2013.pdf"
 import de2616 from "assets/docs/laboral/DECRETO-2616-DE-2013.pdf"
 import ley100 from "assets/docs/laboral/LEY-100-DE-1993.pdf"
+import declaracion from "assets/docs/laboral/DECLARACION.pdf"
+import decreto from "assets/docs/laboral/Decreto_028.pdf"
 
 
 
@@ -17,9 +19,11 @@ function createData(titulo, cuerpo, documento) {
 
 const rows = [
     createData('Decreto 295 de 2017', "Por el cual se adiciona un Capítulo al Título 13 de la Parte 2 del Libro 2 del Decreto 1833 de 2016, a efectos de reglamentar la contribución de terceros…", de295),
-    createData('Decreto 604 de 2013', "Por el cual se reglamenta el acceso y operación del Servicio Social Complementario de Beneficios Económicos Periódicos –BEPS. (más…)", de604),
-    createData('Decreto 2616', "Por medio del cual se regula la cotización a seguridad social para trabajadores dependientes que laboran por períodos inferiores a un mes, se desarrolla el mecanismo financiero y operativo de…", de2616),
+    createData('Decreto 604 de 2013', "Por el cual se reglamenta el acceso y operación del Servicio Social Complementario de Beneficios Económicos Periódicos –BEPS. (más…)", ""),
+    createData('Reforma laboral aprobada por el Congreso', "", de2616),
     createData('Ley 100 de 1993', "Por la cual se crea el sistema de seguridad social integral y se dictan otras disposiciones. (más…)", ley100),
+    createData('Declaración de la ONU - Derechos de Los Campesinos', "", declaracion),
+    createData('Decreto 028 de 2023 - Derechos de Los Campesinos en Colombia', "", decreto),
 
 ];
 

@@ -6,6 +6,7 @@ import doc from "assets/docs/LEY_40_DE_1990.pdf";
 import doc1 from "assets/docs/RESOLUCIN_16379_DE_2003.pdf";
 import doc2 from "assets/docs/RESOLUCIN_5109_DE_2005.pdf";
 import doc3 from "assets/docs/RESOLUCIN_333_DE_2011.pdf";
+import res810 from "assets/docs/resolucion810.pdf";
 import doc4 from "assets/docs/DECRETO_1594_DE_1984.pdf";
 import doc5 from "assets/docs/DECRETO_948_DE_1995.pdf";
 import doc6 from "assets/docs/FANZINE-FINAL-BIOSEGURIDAD.pdf";
@@ -17,6 +18,11 @@ import doc11 from "assets/docs/RESOLUCIN_4121_DE_2011.pdf";
 import doc12 from "assets/docs/DECRETO-604-DE-2013.pdf";
 import doc13 from "assets/docs/LEY-100-DE-1993.pdf";
 import doc14 from "assets/docs/DECRETO-295-DE-2017.pdf";
+import decreto1071 from "assets/docs/decreto1071.pdf";
+import com from "assets/docs/COMUNICADO.pdf";
+import res37321 from "assets/docs/TOLERANCIAPESOS.pdf";
+import onu from "assets/docs/onu.pdf";
+import doc028 from "assets/docs/doc028.pdf";
 
 import { motion } from "framer-motion";
 import Accordion from "react-bootstrap/Accordion";
@@ -60,6 +66,16 @@ function Normatividad() {
                           desarrollo de la producción de la panela y se
                           establece la cuota de fomento panelero.
                         </span>
+
+                        <div>
+                          <a
+                            href={decreto1071} target="blank"
+                            className="a-accordion"
+                          >
+                            Decreto Decreto 1071 de 2015
+                          </a>
+
+                        </div>
 
                         <h2 className="h2-title-header mt-3">Comercial</h2>
 
@@ -237,17 +253,12 @@ function Normatividad() {
 
                           <div>
                             <a
-                              href={doc3} target="blank" className="a-accordion"
+                              href={res810} target="blank" className="a-accordion"
                             >
-                              Resolución 333 de 2011
+                              Resolución 810 de 2021
                             </a>
                             <br />
-                            <span>
-                              Por la cual se establece el reglamento técnico
-                              sobre los requisitos de rotulado o etiquetado
-                              nutricional que deben cumplir los alimentos
-                              envasados para consumo humano.
-                            </span>
+                      
                           </div>
 
                           <div>
@@ -264,6 +275,27 @@ function Normatividad() {
                               Resoluciones 3462 de 2008 y 3544 de 2009.
                             </span>
                           </div>
+                          <div>
+                            <a
+                              href={com} target="blank"
+                              className="a-accordion"
+                            >
+                              Comunicado del INVIMA 4000 - 0206 - 2023
+                            </a>
+                            <br />
+                        
+                          </div>
+                          <div>
+                            <a
+                              href={res37321} target="blank"
+                              className="a-accordion"
+                            >
+                              Resolución 37321 de 2014
+                            </a>
+                            <br />
+                        
+                          </div>
+
                         </div>
 
 
@@ -383,6 +415,31 @@ function Normatividad() {
                               disposiciones
                             </span>
                           </div>
+                          <div>
+                            <a
+                              href={onu} target="blank"
+                              className="a-accordion"
+                            >
+                              Declaración de la ONU
+                            </a>
+                            <br />
+                            <span>
+                            Por medio de la cual se establecen los Derechos de Los Campesinos.
+                            </span>
+                          </div>
+                          <div>
+                            <a
+                              href={doc028} target="blank"
+                              className="a-accordion"
+                            >
+                              028 de 2023
+                            </a>
+                            <br />
+                            <span>
+                            Por medio del cual se reconoce al campesinado como sujeto político de derechos y de especial protección constitucional y se integra el bloque de constitucionalidad el texto de la declaración de las naciones unidas sobre los derechos de los campesinos y de otras personas que trabajan en las zonas rurales
+                            </span>
+                          </div>
+                      
                         </div>
 
                       </div>
