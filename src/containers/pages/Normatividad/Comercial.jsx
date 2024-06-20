@@ -39,7 +39,7 @@ function Comercial() {
                 <div className="row mt-5">
 
                     {rows.map((row) => (
-                        <div className="col-md-4">
+                        <div className="col-md-4 my-3">
                             <motion.div
                                 initial={{ opacity: 0, x: -100 }} // Inicia con opacidad 0 y posición x -100
                                 animate={{ opacity: 1, x: 0 }} // Anima a opacidad 1 y posición x 100

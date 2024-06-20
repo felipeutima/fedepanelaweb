@@ -68,7 +68,6 @@ function NavigationBar() {
                 <NavDropdown.Item href="/NuestraFederacion/PlanEstrategico">Plan Estratégico</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/EstructuraFedepanela">Estructura Fedepanela</NavDropdown.Item>
                 <NavDropdown.Item href="/NuestraFederacion/directorio">Directorio</NavDropdown.Item>
-                <NavDropdown.Item href="/NuestraFederacion/estatutos">Estatutos</NavDropdown.Item>
 
               </NavDropdown>
               <NavDropdown className="my-auto" title="Fondo de Fomento" id="navbarScrollingDropdown">

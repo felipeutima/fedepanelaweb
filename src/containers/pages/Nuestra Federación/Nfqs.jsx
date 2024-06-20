@@ -57,7 +57,7 @@ function Nfqs() {
 
                                     <h2 class="fw-bolder h2-title">LA FEDERACIÓN NACIONAL DE PRODUCTORES DE PANELA "FEDEPANELA"</h2>
                                     <p class="lead fw-normal text-muted mb-0">Es una entidad gremial sin ánimo de lucro, que representa a los productores
-                                        paneleros de todo el país <br />Tiene como objetivo principal propender por el mejoramiento del nivel de vida de todos
+                                        paneleros de todo el país. <br /> <br /> Tiene como objetivo principal propender por el mejoramiento del nivel de vida de todos
                                         los productores que laboran en el subsector panelero, para hacer competitiva y rentable
                                         esta actividad, defender los intereses colectivos y el ingreso remunerativo de sus
                                         afiliados, así como contribuir al desarrollo tecnológico, social, comercial y ambiental
