@@ -4,7 +4,7 @@ import Navbar from "components/navigation/Navbar"
 import Footer from "components/navigation/Footer"
 import Form from 'react-bootstrap/Form';
 import CardAtention from "components/Nuestra Fede/CardAtention";
-import { EnvelopeFill, ClockFill, GeoAltFill, HouseFill } from 'react-bootstrap-icons';
+import { EnvelopeFill, ClockFill, Check, HouseFill } from 'react-bootstrap-icons';
 import Button from 'react-bootstrap/Button';
 
 import { useState } from 'react';
@@ -31,7 +31,7 @@ function QuejasReclamos() {
                                 cuerpo="Carrera 49B No. 91 - 48
                                 Barrio La Castellana
                                 "
-                                i={<EnvelopeFill />}
+                                i={<HouseFill />}
                                 cuerpo2="Bogotá – Colombia
                                 Telefonos (57-1) 6 22 20 66" />
 
@@ -46,6 +46,13 @@ function QuejasReclamos() {
                             <CardAtention titulo="Correo para notificaciones judiciales"
                                 cuerpo="juridica@fedepanela.org.co"
                                 i={<EnvelopeFill />}
+                                />
+
+                        </div>
+                        <div className="col-md-6 mx-auto my-4">
+                            <CardAtention titulo="Tu opinión es importante para nosotros."
+                                cuerpo="Contacta nuestro buzón de quejas y reclamos en quejasyreclamos@fedepanela.org.co"
+                                i={<Check />}
                                 />
 
                         </div>
@@ -104,13 +111,13 @@ function QuejasReclamos() {
                                 <Form.Label>Subida de archivos</Form.Label>
                                 <Form.Control type="file" />
                             </Form.Group>
-                            <Form.Check
-                                    type="checkbox"
 
-                                    id="terms" >Acepto el
-                                    <a className="a-accordion my-2" onClick={handleShow}> almacenamiento, uso y tratamiento de mis datos personales</a>  
-
-                                </Form.Check>
+                            <Form.Check type="checkbox" label={
+                                    <>
+                                        Acepto el <a href="#" className="a-accordion my-2" onClick={handleShow}>almacenamiento, uso y tratamiento de mis datos personales</a>
+                                    </>
+                                } />
+ 
 
                             <Button className="sign-in_btn btn-success mt-4 " type="submit" >
                                 Enviar

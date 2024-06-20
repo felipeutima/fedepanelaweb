@@ -16,7 +16,7 @@ import junta from "assets/img/Fedepanela-Junta-Directiva.jpg"
 function EstructuraFede() {
 
     const [show2, setShow2] = useState(false);
-    const handleClose2 = () => setShow(false);
+    const handleClose2 = () => setShow2(false);
 
     const [show, setShow] = useState(false);
     const handleClose1 = () => setShow(false);
