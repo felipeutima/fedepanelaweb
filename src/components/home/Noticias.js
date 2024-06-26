@@ -64,7 +64,7 @@ function Noticias({ newshome }) {
                             <div className="row">
 
                                 <div className="col-md-4  col-4  d-flex justify-content-center">
-                                    <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=1001" />
+                                    <CardHeader img={pselogo1} link="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=10691" />
                                 </div>
 
 
@@ -72,7 +72,7 @@ function Noticias({ newshome }) {
                                     <CardHeader img={Logosipa} link="http://www.sipa.org.co/wp/" />
                                 </div>
                                 <div className="col-md-4  col-4 d-flex justify-content-center">
-                                    <CardHeader img={webmail} link="https://www.fedepanela.org.co:2093/" />
+                                    <CardHeader img={webmail} link="https://www.fedepanela.org.co:2096/" />
                                 </div>
 
                             </div>

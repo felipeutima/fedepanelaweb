@@ -88,6 +88,17 @@ function Footer() {
 
 
                 </div>
+                <div classNax-2e="row align-items-center">
+
+                  <div className="col">
+                    <p className="mb-0 text-white text-center"><TelephoneFill color="white" className="mx-3" size={20} />Quejas y reclamos a quejasyreclamos@fedepanela.org.co</p>
+                  </div>
+
+
+
+
+
+                </div>
 
               </div>
             </div>
