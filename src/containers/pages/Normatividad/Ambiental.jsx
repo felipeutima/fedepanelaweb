@@ -150,7 +150,7 @@ function Ambiental() {
  
 
                 </div>
-                <h2 className="text-center h1-title mt-5">Adaptación</h2>
+                <h2 className="text-center h1-title mt-5">Adaptación al cambio climático</h2>
                 <div className="row mt-5 px-5">
                   
 
